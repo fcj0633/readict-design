@@ -1,0 +1,168 @@
+{
+  "at": "2026-11-18T09:11:31.978Z",
+  "mode": "production preview; local Windows headless Chromium; no CPU throttling; n=3 per book",
+  "runs": [
+    {
+      "book": "fixture",
+      "iteration": 0,
+      "importMs": 136.1999999997206,
+      "flipsMs": [
+        21.200000000186265,
+        33.09999999962747,
+        33.10000000009313,
+        33
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 56.6999999997206,
+          "duration": 158
+        }
+      ]
+    },
+    {
+      "book": "fixture",
+      "iteration": 1,
+      "importMs": 148.10000000009313,
+      "flipsMs": [
+        32.8000000002794,
+        33.299999999813735,
+        34.200000000186265,
+        33.10000000009313
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 69.79999999981374,
+          "duration": 222
+        }
+      ]
+    },
+    {
+      "book": "fixture",
+      "iteration": 2,
+      "importMs": 148.90000000037253,
+      "flipsMs": [
+        28.5,
+        33.90000000037253,
+        32.799999999813735,
+        34.39999999990687
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 65.10000000009313,
+          "duration": 203
+        }
+      ]
+    },
+    {
+      "book": "moby-dick",
+      "iteration": 0,
+      "importMs": 493.5,
+      "flipsMs": [
+        33,
+        33.5,
+        33.89999999990687,
+        33.5
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 62.700000000186265,
+          "duration": 209
+        }
+      ]
+    },
+    {
+      "book": "moby-dick",
+      "iteration": 1,
+      "importMs": 461.79999999981374,
+      "flipsMs": [
+        25.799999999813735,
+        32.200000000186265,
+        34.5,
+        31.600000000093132
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 62.10000000009313,
+          "duration": 204
+        }
+      ]
+    },
+    {
+      "book": "moby-dick",
+      "iteration": 2,
+      "importMs": 462.1999999997206,
+      "flipsMs": [
+        23.700000000186265,
+        32.89999999990687,
+        34.5,
+        32
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 60.5,
+          "duration": 205
+        }
+      ]
+    },
+    {
+      "book": "user",
+      "iteration": 0,
+      "importMs": 435.60000000009313,
+      "flipsMs": [
+        23.199999999720603,
+        32.700000000186265,
+        34.39999999990687,
+        33.10000000009313
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 73.10000000009313,
+          "duration": 235
+        }
+      ]
+    },
+    {
+      "book": "user",
+      "iteration": 1,
+      "importMs": 416,
+      "flipsMs": [
+        23.799999999813735,
+        33,
+        33,
+        33.1999999997206
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 57.5,
+          "duration": 211
+        }
+      ]
+    },
+    {
+      "book": "user",
+      "iteration": 2,
+      "importMs": 412.6999999997206,
+      "flipsMs": [
+        23,
+        32.6999999997206,
+        33.3000000002794,
+        32.39999999990687
+      ],
+      "iframeCount": 1,
+      "longTasks": [
+        {
+          "start": 59,
+          "duration": 209
+        }
+      ]
+    }
+  ]
+}

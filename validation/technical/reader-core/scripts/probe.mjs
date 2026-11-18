@@ -1,0 +1,5 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+await mkdir('evidence',{recursive:true}); const results=[];
+for(const [name,url] of [ ...['run','running','children','gaunt','book','qzxqzxunknown'].map(w=>['dictionary:'+w,'https://api.dictionaryapi.dev/api/v2/entries/en/'+w]), ['translation','https://api.mymemory.translated.net/get?q=The%20children%20are%20running%20toward%20the%20old%20house.&langpair=en%7Czh-CN']]){
+const start=performance.now();try{const r=await fetch(url,{signal:AbortSignal.timeout(20000)});const body=await r.text();results.push({name,url,status:r.status,ms:Math.round(performance.now()-start),cors:r.headers.get('access-control-allow-origin'),body:JSON.parse(body)});}catch(e){results.push({name,url,ms:Math.round(performance.now()-start),error:String(e)});}}
+await writeFile('evidence/online-probes.json',JSON.stringify({at:new Date().toISOString(),results},null,2)); console.log(results.map(({body,...r})=>({...r,hasChinese:body?/[\u4e00-\u9fff]/.test(JSON.stringify(body)):false})));

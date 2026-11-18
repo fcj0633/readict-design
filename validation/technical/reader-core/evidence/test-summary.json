@@ -1,0 +1,363 @@
+[
+  {
+    "title": "A: public licensed Moby-Dick, real chapter and pagination",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 2258,
+    "attachments": [
+      {
+        "name": "public-book-import",
+        "data": {
+          "ms": 419,
+          "spine": 144,
+          "location": {
+            "start": {
+              "index": 6,
+              "href": "chapter_001.xhtml",
+              "cfi": "epubcfi(/6/14!/4/8/6/2[c001p0002]/1:0)",
+              "displayed": {
+                "page": 2,
+                "total": 9
+              },
+              "location": -1,
+              "percentage": 0
+            },
+            "end": {
+              "index": 6,
+              "href": "chapter_001.xhtml",
+              "cfi": "epubcfi(/6/14!/4/8/10/2[c001p0004]/1:460)",
+              "displayed": {
+                "page": 2,
+                "total": 9
+              },
+              "location": -1,
+              "percentage": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "A: internal hyperlink navigation and external URL suppression",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1310,
+    "attachments": []
+  },
+  {
+    "title": "E: card edge geometry 1366x768",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1920,
+    "attachments": []
+  },
+  {
+    "title": "E: card edge geometry 1440x900",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1998,
+    "attachments": []
+  },
+  {
+    "title": "E: card edge geometry 1920x1080",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 2237,
+    "attachments": []
+  },
+  {
+    "title": "D: word CFI survives font, resize and reload in unchanged normalized book",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1945,
+    "attachments": [
+      {
+        "name": "reflow-cfi",
+        "data": {
+          "cfi": "epubcfi(/6/2!/4/8,/1:58,/1:65)",
+          "text": "running",
+          "top": 327.109375,
+          "bottom": 359.109375,
+          "canvasTop": 135,
+          "canvasBottom": 681
+        }
+      }
+    ]
+  },
+  {
+    "title": "H: real online translation request without interception",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 8090,
+    "attachments": [
+      {
+        "name": "real-translation",
+        "data": {
+          "ok": true,
+          "text": "孩子们正朝老房子跑去。",
+          "ms": 6949.5999999996275
+        }
+      }
+    ]
+  },
+  {
+    "title": "D: DOM mutation experiment records CFI sensitivity",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1207,
+    "attachments": [
+      {
+        "name": "dom-mutation",
+        "data": {
+          "cfi": "epubcfi(/6/2!/4/8,/1:58,/1:65)",
+          "before": "running",
+          "after": "IndexSizeError: Failed to execute 'setStart' on 'Range': There is no child at offset 53.",
+          "restored": "running",
+          "changed": true
+        }
+      }
+    ]
+  },
+  {
+    "title": "E: full target rectangle stays uncovered during successive clicks",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1835,
+    "attachments": [
+      {
+        "name": "successive-targets",
+        "data": [
+          [
+            {
+              "word": "running",
+              "overlap": false
+            }
+          ],
+          [
+            {
+              "word": "Smith",
+              "overlap": false
+            }
+          ],
+          [
+            {
+              "word": "bold",
+              "overlap": false
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "A: pagination, markup, chapter transition and restore",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 2373,
+    "attachments": [
+      {
+        "name": "pagination",
+        "data": {
+          "location": {
+            "start": {
+              "index": 1,
+              "href": "ch2.xhtml",
+              "cfi": "epubcfi(/6/4!/4/610/1:159)",
+              "displayed": {
+                "page": 68,
+                "total": 68
+              },
+              "location": -1,
+              "percentage": 0
+            },
+            "end": {
+              "index": 1,
+              "href": "ch2.xhtml",
+              "cfi": "epubcfi(/6/4!/4/610/7:26)",
+              "displayed": {
+                "page": 68,
+                "total": 68
+              },
+              "location": -1,
+              "percentage": 0
+            }
+          },
+          "importMs": 100.40000000037253,
+          "frames": 1
+        }
+      }
+    ]
+  },
+  {
+    "title": "A: image, long chapter, font reflow and resize",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 2344,
+    "attachments": [
+      {
+        "name": "long-chapter-metrics",
+        "data": {
+          "before": {
+            "location": {
+              "start": {
+                "index": 1,
+                "href": "ch2.xhtml",
+                "cfi": "epubcfi(/6/4!/4/2/1:0)",
+                "displayed": {
+                  "page": 1,
+                  "total": 68
+                },
+                "location": -1,
+                "percentage": 0
+              },
+              "end": {
+                "index": 1,
+                "href": "ch2.xhtml",
+                "cfi": "epubcfi(/6/4!/4/16/1:158)",
+                "displayed": {
+                  "page": 1,
+                  "total": 68
+                },
+                "location": -1,
+                "percentage": 0
+              }
+            },
+            "importMs": 240.79999999981374,
+            "frames": 1
+          },
+          "after": {
+            "location": {
+              "start": {
+                "index": 1,
+                "href": "ch2.xhtml",
+                "cfi": "epubcfi(/6/4!/4/2/1:0)",
+                "displayed": {
+                  "page": 1,
+                  "total": 151
+                },
+                "location": -1,
+                "percentage": 0
+              },
+              "end": {
+                "index": 1,
+                "href": "ch2.xhtml",
+                "cfi": "epubcfi(/6/4!/4/12/1:144)",
+                "displayed": {
+                  "page": 1,
+                  "total": 151
+                },
+                "location": -1,
+                "percentage": 0
+              }
+            },
+            "importMs": 240.79999999981374,
+            "frames": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1950,
+    "attachments": [
+      {
+        "name": "word-anchor",
+        "data": {
+          "surface": "running",
+          "resolved": "running",
+          "rect": {
+            "x": 0
+          },
+          "cfi": "epubcfi(/6/2!/4/8,/1:58,/1:65)",
+          "clickMs": 52.299999999813735
+        }
+      }
+    ]
+  },
+  {
+    "title": "B: word split by inline elements",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1444,
+    "attachments": []
+  },
+  {
+    "title": "H: manual translation only, cache and failure isolation (MOCK transport)",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1828,
+    "attachments": []
+  },
+  {
+    "title": "E: rapid switching rejects stale dictionary responses (MOCK transport)",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 2489,
+    "attachments": []
+  },
+  {
+    "title": "I: untrusted scripts, event handlers, remote resources and malformed import",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 1716,
+    "attachments": []
+  },
+  {
+    "title": "A: supplied real EPUB import and IndexedDB refresh recovery",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 3082,
+    "attachments": [
+      {
+        "name": "real-book",
+        "data": {
+          "location": {
+            "start": {
+              "index": 5,
+              "href": "text/part0000_split_004.html",
+              "cfi": "epubcfi(/6/12!/4/14/18/2/1:237)",
+              "displayed": {
+                "page": 2,
+                "total": 3
+              },
+              "location": -1,
+              "percentage": 0
+            },
+            "end": {
+              "index": 5,
+              "href": "text/part0000_split_004.html",
+              "cfi": "epubcfi(/6/12!/4/14/34/2/1:150)",
+              "displayed": {
+                "page": 2,
+                "total": 3
+              },
+              "location": -1,
+              "percentage": 0
+            }
+          },
+          "importMs": 300.79999999981374,
+          "frames": 1
+        }
+      }
+    ]
+  },
+  {
+    "title": "G: real online browser query without interception",
+    "project": "chromium",
+    "status": "passed",
+    "durationMs": 3292,
+    "attachments": [
+      {
+        "name": "online-browser-query",
+        "data": {
+          "errors": 0,
+          "text": "×\n查询 · Free Dictionary API · 英英实测\nrun\n\n原文：running · 推测词性：verb\n\n/ɹʊn/ 发音\n\n词性为规则推测，不代表具体词义消歧。此服务不提供中文释义。\n\nverb · To run.\n\n其他释义\nHe said, “The children are running toward the old house.”\nReadict deterministic fixture · ch1.xhtml\n\n翻译例句 收藏单词及原文\n\n翻译按钮会将当前句子发送至 MyMemory。"
+        }
+      }
+    ]
+  }
+]

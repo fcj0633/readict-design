@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-18T09:11:46.294Z",
+  "os": "Windows_NT",
+  "release": "10.0.26100",
+  "arch": "x64",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13500HX",
+  "logicalCpus": 20,
+  "memoryGiB": 15.727043151855469,
+  "node": "v24.14.0",
+  "dependencies": {
+    "node_modules/@floating-ui/dom": "1.8.0",
+    "node_modules/@playwright/test": "1.65.1",
+    "node_modules/compromise": "14.20.0",
+    "node_modules/dompurify": "3.4.18",
+    "node_modules/epubjs": "0.3.93",
+    "node_modules/jszip": "3.10.1",
+    "node_modules/react": "19.3.1",
+    "node_modules/react-dom": "19.3.1",
+    "node_modules/typescript": "7.0.2",
+    "node_modules/vite": "8.3.6"
+  }
+}

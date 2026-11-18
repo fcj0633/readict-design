@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-18T09:07:13.538Z",
+  "engines": [
+    {
+      "name": "chromium",
+      "version": "159.0.8154.6",
+      "initial": {
+        "cfi": "epubcfi(/6/2!/4/16/1:0)",
+        "text": "Dr. Smith arrived at 3.14 p.m. He said, ",
+        "visible": true,
+        "top": 159
+      },
+      "refreshed": {
+        "cfi": "epubcfi(/6/2!/4/16/1:0)",
+        "text": "Dr. Smith arrived at 3.14 p.m. He said, "
+      },
+      "input": {
+        "caretPositionFromPoint": "function",
+        "caretRangeFromPoint": "function"
+      },
+      "contentMatch": true
+    },
+    {
+      "name": "firefox",
+      "error": "Error: browserType.launch: spawn UNKNOWN\nCall log:\n\u001b[2m  - <launching> C:\\Users\\Administrator\\AppData\\Local\\ms-playwright\\firefox-1572\\firefox\\firefox.exe -no-remote -headless -profile C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-RKogBM -juggler-pipe -silent\u001b[22m\n"
+    },
+    {
+      "name": "webkit",
+      "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: '已加载' }) to be visible\u001b[22m\n"
+    }
+  ],
+  "source": {
+    "cfi": "epubcfi(/6/2!/4/16/1:0)",
+    "href": "ch1.xhtml",
+    "at": 1794992834896,
+    "pipeline": "sanitize-v1",
+    "hash": "aef2e78f8f4d576674ab0c4ea8cf05c0579a55f3b6a59ff8775f4071b77fb76f",
+    "text": "Dr. Smith arrived at 3.14 p.m. He said, "
+  }
+}

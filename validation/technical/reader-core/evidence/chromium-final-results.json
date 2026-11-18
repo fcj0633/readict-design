@@ -1,0 +1,849 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=chromium",
+      "--output=test-results-chromium"
+    ],
+    "configFile": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\playwright.config.ts",
+    "rootDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests",
+        "snapshotDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests",
+        "testIgnore": [],
+        "testMatch": "*.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5174",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/browser-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "evidence/html-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://127.0.0.1:5174",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "extended.spec.ts",
+      "file": "extended.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A: public licensed Moby-Dick, real chapter and pagination",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:29.366Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "public-book-import",
+                      "contentType": "application/json",
+                      "body": "eyJtcyI6NDE5LCJzcGluZSI6MTQ0LCJsb2NhdGlvbiI6eyJzdGFydCI6eyJpbmRleCI6NiwiaHJlZiI6ImNoYXB0ZXJfMDAxLnhodG1sIiwiY2ZpIjoiZXB1YmNmaSgvNi8xNCEvNC84LzYvMltjMDAxcDAwMDJdLzE6MCkiLCJkaXNwbGF5ZWQiOnsicGFnZSI6MiwidG90YWwiOjl9LCJsb2NhdGlvbiI6LTEsInBlcmNlbnRhZ2UiOjB9LCJlbmQiOnsiaW5kZXgiOjYsImhyZWYiOiJjaGFwdGVyXzAwMS54aHRtbCIsImNmaSI6ImVwdWJjZmkoLzYvMTQhLzQvOC8xMC8yW2MwMDFwMDAwNF0vMTo0NjApIiwiZGlzcGxheWVkIjp7InBhZ2UiOjIsInRvdGFsIjo5fSwibG9jYXRpb24iOi0xLCJwZXJjZW50YWdlIjowfX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-bd2b233b36a3cf8215b3",
+          "file": "extended.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "A: internal hyperlink navigation and external URL suppression",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1310,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:31.814Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-11be129198c49559d8d8",
+          "file": "extended.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "E: card edge geometry 1366x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1920,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:33.138Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-cb370bef61c75321e7bd",
+          "file": "extended.spec.ts",
+          "line": 5,
+          "column": 98
+        },
+        {
+          "title": "E: card edge geometry 1440x900",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1998,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:35.075Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-e768aed3e9fb66e1d404",
+          "file": "extended.spec.ts",
+          "line": 5,
+          "column": 98
+        },
+        {
+          "title": "E: card edge geometry 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:37.106Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-144bd468d0eecf1c1fdf",
+          "file": "extended.spec.ts",
+          "line": 5,
+          "column": 98
+        },
+        {
+          "title": "D: word CFI survives font, resize and reload in unchanged normalized book",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1945,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:39.363Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "reflow-cfi",
+                      "contentType": "application/json",
+                      "body": "eyJjZmkiOiJlcHViY2ZpKC82LzIhLzQvOCwvMTo1OCwvMTo2NSkiLCJ0ZXh0IjoicnVubmluZyIsInRvcCI6MzI3LjEwOTM3NSwiYm90dG9tIjozNTkuMTA5Mzc1LCJjYW52YXNUb3AiOjEzNSwiY2FudmFzQm90dG9tIjo2ODF9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-9dd13a779e1cfd7ed1f2",
+          "file": "extended.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "H: real online translation request without interception",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:41.326Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "real-translation",
+                      "contentType": "application/json",
+                      "body": "eyJvayI6dHJ1ZSwidGV4dCI6IuWtqeWtkOS7rOato+acneiAgeaIv+WtkOi3keWOu+OAgiIsIm1zIjo2OTQ5LjU5OTk5OTk5OTYyNzV9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7fda23695dabe9104257-c0d0c3a62fd2e6e5aeea",
+          "file": "extended.spec.ts",
+          "line": 11,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "invariants.spec.ts",
+      "file": "invariants.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "D: DOM mutation experiment records CFI sensitivity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:49.467Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "dom-mutation",
+                      "contentType": "application/json",
+                      "body": "eyJjZmkiOiJlcHViY2ZpKC82LzIhLzQvOCwvMTo1OCwvMTo2NSkiLCJiZWZvcmUiOiJydW5uaW5nIiwiYWZ0ZXIiOiJJbmRleFNpemVFcnJvcjogRmFpbGVkIHRvIGV4ZWN1dGUgJ3NldFN0YXJ0JyBvbiAnUmFuZ2UnOiBUaGVyZSBpcyBubyBjaGlsZCBhdCBvZmZzZXQgNTMuIiwicmVzdG9yZWQiOiJydW5uaW5nIiwiY2hhbmdlZCI6dHJ1ZX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0503263d67ff54fe9da6-9772feaf2c3e9c87c726",
+          "file": "invariants.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "E: full target rectangle stays uncovered during successive clicks",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:50.710Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "successive-targets",
+                      "contentType": "application/json",
+                      "body": "W1t7IndvcmQiOiJydW5uaW5nIiwib3ZlcmxhcCI6ZmFsc2V9XSxbeyJ3b3JkIjoiU21pdGgiLCJvdmVybGFwIjpmYWxzZX1dLFt7IndvcmQiOiJib2xkIiwib3ZlcmxhcCI6ZmFsc2V9XV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0503263d67ff54fe9da6-068ac8b57666edea3eea",
+          "file": "invariants.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reader.spec.ts",
+      "file": "reader.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A: pagination, markup, chapter transition and restore",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2373,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:52.599Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "pagination",
+                      "contentType": "application/json",
+                      "body": "eyJsb2NhdGlvbiI6eyJzdGFydCI6eyJpbmRleCI6MSwiaHJlZiI6ImNoMi54aHRtbCIsImNmaSI6ImVwdWJjZmkoLzYvNCEvNC82MTAvMToxNTkpIiwiZGlzcGxheWVkIjp7InBhZ2UiOjY4LCJ0b3RhbCI6Njh9LCJsb2NhdGlvbiI6LTEsInBlcmNlbnRhZ2UiOjB9LCJlbmQiOnsiaW5kZXgiOjEsImhyZWYiOiJjaDIueGh0bWwiLCJjZmkiOiJlcHViY2ZpKC82LzQhLzQvNjEwLzc6MjYpIiwiZGlzcGxheWVkIjp7InBhZ2UiOjY4LCJ0b3RhbCI6Njh9LCJsb2NhdGlvbiI6LTEsInBlcmNlbnRhZ2UiOjB9fSwiaW1wb3J0TXMiOjEwMC40MDAwMDAwMDAzNzI1MywiZnJhbWVzIjoxfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d61dbd0b0c89280be049",
+          "file": "reader.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "A: image, long chapter, font reflow and resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2344,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:54.996Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "long-chapter-metrics",
+                      "contentType": "application/json",
+                      "body": "eyJiZWZvcmUiOnsibG9jYXRpb24iOnsic3RhcnQiOnsiaW5kZXgiOjEsImhyZWYiOiJjaDIueGh0bWwiLCJjZmkiOiJlcHViY2ZpKC82LzQhLzQvMi8xOjApIiwiZGlzcGxheWVkIjp7InBhZ2UiOjEsInRvdGFsIjo2OH0sImxvY2F0aW9uIjotMSwicGVyY2VudGFnZSI6MH0sImVuZCI6eyJpbmRleCI6MSwiaHJlZiI6ImNoMi54aHRtbCIsImNmaSI6ImVwdWJjZmkoLzYvNCEvNC8xNi8xOjE1OCkiLCJkaXNwbGF5ZWQiOnsicGFnZSI6MSwidG90YWwiOjY4fSwibG9jYXRpb24iOi0xLCJwZXJjZW50YWdlIjowfX0sImltcG9ydE1zIjoyNDAuNzk5OTk5OTk5ODEzNzQsImZyYW1lcyI6MX0sImFmdGVyIjp7ImxvY2F0aW9uIjp7InN0YXJ0Ijp7ImluZGV4IjoxLCJocmVmIjoiY2gyLnhodG1sIiwiY2ZpIjoiZXB1YmNmaSgvNi80IS80LzIvMTowKSIsImRpc3BsYXllZCI6eyJwYWdlIjoxLCJ0b3RhbCI6MTUxfSwibG9jYXRpb24iOi0xLCJwZXJjZW50YWdlIjowfSwiZW5kIjp7ImluZGV4IjoxLCJocmVmIjoiY2gyLnhodG1sIiwiY2ZpIjoiZXB1YmNmaSgvNi80IS80LzEyLzE6MTQ0KSIsImRpc3BsYXllZCI6eyJwYWdlIjoxLCJ0b3RhbCI6MTUxfSwibG9jYXRpb24iOi0xLCJwZXJjZW50YWdlIjowfX0sImltcG9ydE1zIjoyNDAuNzk5OTk5OTk5ODEzNzQsImZyYW1lcyI6MX19"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-8ed10e3eceae630fc974",
+          "file": "reader.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1950,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:57.365Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "word-anchor",
+                      "contentType": "application/json",
+                      "body": "eyJzdXJmYWNlIjoicnVubmluZyIsInJlc29sdmVkIjoicnVubmluZyIsInJlY3QiOnsieCI6MH0sImNmaSI6ImVwdWJjZmkoLzYvMiEvNC84LC8xOjU4LC8xOjY1KSIsImNsaWNrTXMiOjUyLjI5OTk5OTk5OTgxMzczNX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-278ebce32f03d994b0c2",
+          "file": "reader.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "B: word split by inline elements",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1444,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:16:59.343Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-c72663205e6735f31aaf",
+          "file": "reader.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "H: manual translation only, cache and failure isolation (MOCK transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1828,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:17:00.808Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-a7710f873dadebc20923",
+          "file": "reader.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "E: rapid switching rejects stale dictionary responses (MOCK transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:17:02.657Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-5c73f69bd850c8b4a36f",
+          "file": "reader.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "I: untrusted scripts, event handlers, remote resources and malformed import",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:17:05.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d9a11ddc99e3dc8e4e1a",
+          "file": "reader.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "A: supplied real EPUB import and IndexedDB refresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3082,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:17:06.905Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "real-book",
+                      "contentType": "application/json",
+                      "body": "eyJsb2NhdGlvbiI6eyJzdGFydCI6eyJpbmRleCI6NSwiaHJlZiI6InRleHQvcGFydDAwMDBfc3BsaXRfMDA0Lmh0bWwiLCJjZmkiOiJlcHViY2ZpKC82LzEyIS80LzE0LzE4LzIvMToyMzcpIiwiZGlzcGxheWVkIjp7InBhZ2UiOjIsInRvdGFsIjozfSwibG9jYXRpb24iOi0xLCJwZXJjZW50YWdlIjowfSwiZW5kIjp7ImluZGV4Ijo1LCJocmVmIjoidGV4dC9wYXJ0MDAwMF9zcGxpdF8wMDQuaHRtbCIsImNmaSI6ImVwdWJjZmkoLzYvMTIhLzQvMTQvMzQvMi8xOjE1MCkiLCJkaXNwbGF5ZWQiOnsicGFnZSI6MiwidG90YWwiOjN9LCJsb2NhdGlvbiI6LTEsInBlcmNlbnRhZ2UiOjB9fSwiaW1wb3J0TXMiOjMwMC43OTk5OTk5OTk4MTM3NCwiZnJhbWVzIjoxfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-b98a1b1aaf0dc873486e",
+          "file": "reader.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "G: real online browser query without interception",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3292,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:17:10.008Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "online-browser-query",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOjAsInRleHQiOiLDl1xu5p+l6K+iIMK3IEZyZWUgRGljdGlvbmFyeSBBUEkgwrcg6Iux6Iux5a6e5rWLXG5ydW5cblxu5Y6f5paH77yacnVubmluZyDCtyDmjqjmtYvor43mgKfvvJp2ZXJiXG5cbi/JucqKbi8g5Y+R6Z+zXG5cbuivjeaAp+S4uuinhOWImeaOqOa1i++8jOS4jeS7o+ihqOWFt+S9k+ivjeS5iea2iOatp+OAguatpOacjeWKoeS4jeaPkOS+m+S4reaWh+mHiuS5ieOAglxuXG52ZXJiIMK3IFRvIHJ1bi5cblxu5YW25LuW6YeK5LmJXG5IZSBzYWlkLCDigJxUaGUgY2hpbGRyZW4gYXJlIHJ1bm5pbmcgdG93YXJkIHRoZSBvbGQgaG91c2Uu4oCdXG5SZWFkaWN0IGRldGVybWluaXN0aWMgZml4dHVyZSDCtyBjaDEueGh0bWxcblxu57+76K+R5L6L5Y+lIOaUtuiXj+WNleivjeWPiuWOn+aWh1xuXG7nv7vor5HmjInpkq7kvJrlsIblvZPliY3lj6XlrZDlj5HpgIHoh7MgTXlNZW1vcnnjgIIifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-0ad9396f6fe663072756",
+          "file": "reader.spec.ts",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T09:16:28.673Z",
+    "duration": 45111.477,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

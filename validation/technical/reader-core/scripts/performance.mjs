@@ -1,0 +1,12 @@
+import {chromium} from 'playwright';import {writeFile} from 'node:fs/promises';
+const browser=await chromium.launch();const result={at:new Date().toISOString(),mode:'production preview; local Windows headless Chromium; no CPU throttling; n=3 per book',runs:[]};
+for(const book of ['fixture','moby-dick','user'])for(let i=0;i<3;i++){
+ const context=await browser.newContext({viewport:{width:1440,height:900}});const page=await context.newPage();await page.addInitScript(()=>{window.__longTasks=[];try{new PerformanceObserver(list=>window.__longTasks.push(...list.getEntries().map(e=>({start:e.startTime,duration:e.duration})))).observe({type:'longtask',buffered:true});}catch{}});
+ await page.goto('http://127.0.0.1:5175');await page.getByRole('status').filter({hasText:'已加载'}).waitFor();
+ if(book==='moby-dick'){await page.getByRole('button',{name:'公开样书',exact:true}).click();await page.locator('header').filter({hasText:'Moby-Dick'}).waitFor();await page.getByRole('status').filter({hasText:'已加载'}).waitFor();await page.evaluate(async()=>{await window.__spike.rendition.display('chapter_001.xhtml');});}
+ if(book==='user'){await page.getByLabel('导入 EPUB').setInputFiles('C:/Users/Administrator/Downloads/Then There Were None (Tenery V B) (z-library.sk, 1lib.sk, z-lib.sk).epub');await page.locator('header').filter({hasText:'Then There Were None'}).waitFor();await page.getByRole('status').filter({hasText:'已加载'}).waitFor();await page.evaluate(async()=>{await window.__spike.rendition.display(5);});}
+ await page.waitForTimeout(200); // Drain the prior chapter display's relocation event before timing a turn.
+ const data=await page.evaluate(async()=>{const s=window.__spike;const flips=[];for(let j=0;j<4;j++){const start=performance.now();await new Promise(async(resolve,reject)=>{const timeout=setTimeout(()=>reject(Error('relocation timeout')),5000);s.rendition.once('relocated',()=>{clearTimeout(timeout);flips.push(performance.now()-start);resolve();});if(j%2)await s.rendition.prev();else await s.rendition.next();});}return{importMs:s.importMs,flipsMs:flips,iframeCount:document.querySelectorAll('iframe').length,longTasks:window.__longTasks};});
+ result.runs.push({book,iteration:i,...data});await context.close();
+}
+await browser.close();await writeFile('evidence/performance.json',JSON.stringify(result,null,2));console.log(result.runs.map(({longTasks,...r})=>({...r,longTasks:longTasks.length,maxLongTaskMs:Math.max(0,...longTasks.map(t=>t.duration))})));

@@ -1,0 +1,96 @@
+{
+  "passed": 13,
+  "results": [
+    {
+      "passed": true,
+      "label": "分页不丢词、不重复 1440×900",
+      "detail": {
+        "count": 4,
+        "total": 440,
+        "visible": 440,
+        "unique": 440
+      }
+    },
+    {
+      "passed": true,
+      "label": "分页不丢词、不重复 1366×768",
+      "detail": {
+        "count": 4,
+        "total": 440,
+        "visible": 440,
+        "unique": 440
+      }
+    },
+    {
+      "passed": true,
+      "label": "分页不丢词、不重复 390×844",
+      "detail": {
+        "count": 7,
+        "total": 440,
+        "visible": 440,
+        "unique": 440
+      }
+    },
+    {
+      "passed": true,
+      "label": "键盘右键翻到下一页"
+    },
+    {
+      "passed": true,
+      "label": "键盘段落进入、词语移动与查词"
+    },
+    {
+      "passed": true,
+      "label": "Escape 关闭键盘查词"
+    },
+    {
+      "passed": true,
+      "label": "点击阅读区外空白关闭卡片"
+    },
+    {
+      "passed": true,
+      "label": "白色主题正文与辅助文字对比度",
+      "detail": {
+        "paper": "rgb(255, 255, 255)",
+        "text": "rgb(48, 46, 43)",
+        "secondary": "rgb(113, 106, 97)",
+        "textContrast": 13.536533326667696,
+        "secondaryContrast": 5.334865400737963
+      }
+    },
+    {
+      "passed": true,
+      "label": "暖色主题正文与辅助文字对比度",
+      "detail": {
+        "paper": "rgb(255, 253, 250)",
+        "text": "rgb(48, 46, 43)",
+        "secondary": "rgb(113, 106, 97)",
+        "textContrast": 13.33189793879532,
+        "secondaryContrast": 5.254216816334435
+      }
+    },
+    {
+      "passed": true,
+      "label": "深色主题正文与辅助文字对比度",
+      "detail": {
+        "paper": "rgb(43, 47, 44)",
+        "text": "rgb(233, 231, 224)",
+        "secondary": "rgb(183, 184, 173)",
+        "textContrast": 10.979828638907437,
+        "secondaryContrast": 6.775646967182991
+      }
+    },
+    {
+      "passed": true,
+      "label": "尊重减少动态效果设置"
+    },
+    {
+      "passed": true,
+      "label": "本地记录损坏时恢复可用默认界面"
+    },
+    {
+      "passed": true,
+      "label": "本地存储不可用时当前会话仍可更改设置"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const j=JSON.parse(await readFile('evidence/chromium-final-results.json'));const summary=[];
+function walk(s){for(const spec of s.specs||[])for(const t of spec.tests)for(const r of t.results)summary.push({title:spec.title,project:t.projectName,status:r.status,durationMs:r.duration,attachments:(r.attachments||[]).filter(a=>a.contentType==='application/json'&&a.body).map(a=>({name:a.name,data:JSON.parse(Buffer.from(a.body,'base64').toString())}))});for(const c of s.suites||[])walk(c);}walk(j);await writeFile('evidence/test-summary.json',JSON.stringify(summary,null,2));console.log(summary.map(({attachments,...s})=>s));

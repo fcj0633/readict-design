@@ -1,0 +1,329 @@
+{
+  "passed": 41,
+  "results": [
+    {
+      "passed": true,
+      "label": "卡片边界 1440×900",
+      "detail": {
+        "r": {
+          "x": 720,
+          "y": 228,
+          "width": 390,
+          "height": 531.65625
+        },
+        "v": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "打开词典无正文布局位移 1440",
+      "detail": {
+        "before": {
+          "x": 370,
+          "y": 221,
+          "width": 660,
+          "height": 570
+        },
+        "after": {
+          "x": 370,
+          "y": 221,
+          "width": 660,
+          "height": 570
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "主释义与两条其他释义默认可见"
+    },
+    {
+      "passed": true,
+      "label": "默认不自动翻译"
+    },
+    {
+      "passed": true,
+      "label": "卡片边界 1920×1080",
+      "detail": {
+        "r": {
+          "x": 960,
+          "y": 247,
+          "width": 390,
+          "height": 531.65625
+        },
+        "v": {
+          "width": 1920,
+          "height": 1080
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "打开词典无正文布局位移 1920",
+      "detail": {
+        "before": {
+          "x": 610,
+          "y": 240,
+          "width": 660,
+          "height": 714
+        },
+        "after": {
+          "x": 610,
+          "y": 240,
+          "width": 660,
+          "height": 714
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "主释义与两条其他释义默认可见"
+    },
+    {
+      "passed": true,
+      "label": "默认不自动翻译"
+    },
+    {
+      "passed": true,
+      "label": "卡片边界 1366×768",
+      "detail": {
+        "r": {
+          "x": 683,
+          "y": 209,
+          "width": 390,
+          "height": 531.65625
+        },
+        "v": {
+          "width": 1366,
+          "height": 768
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "打开词典无正文布局位移 1366",
+      "detail": {
+        "before": {
+          "x": 333,
+          "y": 202.390625,
+          "width": 660,
+          "height": 469.609375
+        },
+        "after": {
+          "x": 333,
+          "y": 202.390625,
+          "width": 660,
+          "height": 469.609375
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "主释义与两条其他释义默认可见"
+    },
+    {
+      "passed": true,
+      "label": "默认不自动翻译"
+    },
+    {
+      "passed": true,
+      "label": "单词位于left边界",
+      "detail": {
+        "r": {
+          "x": 399,
+          "y": 228,
+          "width": 390,
+          "height": 393.359375
+        },
+        "v": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "单词位于right边界",
+      "detail": {
+        "r": {
+          "x": 608,
+          "y": 228,
+          "width": 390,
+          "height": 393.359375
+        },
+        "v": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "单词位于bottom边界",
+      "detail": {
+        "r": {
+          "x": 370,
+          "y": 401,
+          "width": 390,
+          "height": 340.578125
+        },
+        "v": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "展开剩余词义"
+    },
+    {
+      "passed": true,
+      "label": "展开词义后仍在视口内",
+      "detail": {
+        "r": {
+          "x": 720,
+          "y": 228,
+          "width": 390,
+          "height": 606.25
+        },
+        "v": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "可切换当前释义"
+    },
+    {
+      "passed": true,
+      "label": "收藏成功卡片保留"
+    },
+    {
+      "passed": true,
+      "label": "翻页保存稳定字符偏移",
+      "detail": 721
+    },
+    {
+      "passed": true,
+      "label": "刷新恢复阅读位置",
+      "detail": {
+        "expected": "2\n/\n4\n本章",
+        "actual": "2\n/\n4\n本章",
+        "offsetBefore": 721
+      }
+    },
+    {
+      "passed": true,
+      "label": "改变字号后原位置仍在当前页面"
+    },
+    {
+      "passed": true,
+      "label": "目录与设置保持标准正文宽度"
+    },
+    {
+      "passed": true,
+      "label": "同词不同语境显示收藏本句"
+    },
+    {
+      "passed": true,
+      "label": "run/runs/running 归并为一个主体并关联三个句子"
+    },
+    {
+      "passed": true,
+      "label": "长原句与长释义卡片边界",
+      "detail": {
+        "r": {
+          "x": 988,
+          "y": 209,
+          "width": 390,
+          "height": 675
+        },
+        "v": {
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "词典超时保留原文"
+    },
+    {
+      "passed": true,
+      "label": "无词条仍显示原文"
+    },
+    {
+      "passed": true,
+      "label": "收藏失败不显示成功"
+    },
+    {
+      "passed": true,
+      "label": "快速切换查询不串词"
+    },
+    {
+      "passed": true,
+      "label": "关闭后迟到请求不重开卡片"
+    },
+    {
+      "passed": true,
+      "label": "收藏搜索匹配原句"
+    },
+    {
+      "passed": true,
+      "label": "导入格式检查"
+    },
+    {
+      "passed": true,
+      "label": "模拟导入加入书架"
+    },
+    {
+      "passed": true,
+      "label": "删除书籍仍保留收藏快照"
+    },
+    {
+      "passed": true,
+      "label": "取消收藏删除主体和全部语境"
+    },
+    {
+      "passed": true,
+      "label": "390px 窄屏卡片边界",
+      "detail": {
+        "r": {
+          "x": 16,
+          "y": 261,
+          "width": 358,
+          "height": 566.8125
+        },
+        "v": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "passed": true,
+      "label": "窄屏无横向页面溢出"
+    },
+    {
+      "passed": true,
+      "label": "刷新持久化偏好"
+    },
+    {
+      "passed": true,
+      "label": "无浏览器脚本异常",
+      "detail": []
+    },
+    {
+      "passed": true,
+      "label": "无浏览器控制台错误",
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

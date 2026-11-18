@@ -1,0 +1,26 @@
+# Dependencies and generated builds
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/.artifacts/
+**/.cache/
+**/*.tsbuildinfo
+**/test-results/
+**/test-results-*/
+**/playwright-report/
+.local/
+
+# Local settings and secrets
+**/.env
+**/.env.*
+!**/.env.example
+**/*.local
+**/.DS_Store
+**/Thumbs.db
+**/.idea/
+**/.vscode/
+
+# New transient logs; preserve imported historical evidence
+*.log
+!validation/ui/**/evidence/*.log
+!validation/technical/**/evidence/**/*.log

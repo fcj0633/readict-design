@@ -1,0 +1,27 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - strong [ref=e5]: READICT / 技术验证
+    - generic [ref=e6]: 技术实验
+    - generic [ref=e7] [cursor=pointer]: 导入 EPUB
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - status [ref=e10]: 正在加载 EPUB…
+      - generic [ref=e11]: — / — · 章节页码，随版式变化
+    - generic [ref=e13]:
+      - button "上一页" [ref=e14] [cursor=pointer]
+      - button "下一页" [ref=e15] [cursor=pointer]
+  - complementary [ref=e16]:
+    - generic [ref=e17]:
+      - text: 章节
+      - combobox "章节" [ref=e18] [cursor=pointer]:
+        - option "跳转目录" [disabled] [selected]
+    - generic [ref=e19]:
+      - text: 字号
+      - combobox "字号" [ref=e20] [cursor=pointer]:
+        - option "16"
+        - option "18" [selected]
+        - option "22"
+        - option "28"
+    - button "测试样书" [ref=e21] [cursor=pointer]
+    - button "公开样书" [ref=e22] [cursor=pointer]
+    - generic [ref=e23]: 收藏主体 0在线词典为英英数据中文释义尚未接入

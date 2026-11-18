@@ -1,0 +1,596 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=chromium"
+    ],
+    "configFile": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\playwright.config.ts",
+    "rootDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests",
+        "snapshotDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests",
+        "testIgnore": [],
+        "testMatch": "*.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5174",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/browser-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "evidence/html-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://127.0.0.1:5174",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "reader.spec.ts",
+      "file": "reader.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A: pagination, markup, chapter transition and restore",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3113,
+                  "error": {
+                    "message": "TypeError: Cannot read properties of undefined (reading 'href')",
+                    "stack": "TypeError: Cannot read properties of undefined (reading 'href')\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:10:1006\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:10:942",
+                    "location": {
+                      "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                      "column": 1006,
+                      "line": 10
+                    },
+                    "snippet": " \u001b[90m  8 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m metrics(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mreturn\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m{location\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mcurrentLocation()\u001b[33m,\u001b[39mimportMs\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mimportMs\u001b[33m,\u001b[39mclickMs\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mclickMs\u001b[33m,\u001b[39mframes\u001b[33m:\u001b[39mdocument\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlength}\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m}\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m mockDictionary(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mroute(\u001b[32m'https://api.dictionaryapi.dev/**'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m r\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m word\u001b[33m=\u001b[39mdecodeURIComponent(r\u001b[33m.\u001b[39mrequest()\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39msplit(\u001b[32m'/'\u001b[39m)\u001b[33m.\u001b[39mpop()\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m r\u001b[33m.\u001b[39mfulfill({json\u001b[33m:\u001b[39m[{word\u001b[33m,\u001b[39mphonetics\u001b[33m:\u001b[39m[{text\u001b[33m:\u001b[39m\u001b[32m'/test/'\u001b[39m}]\u001b[33m,\u001b[39mmeanings\u001b[33m:\u001b[39m[{partOfSpeech\u001b[33m:\u001b[39m\u001b[32m'noun'\u001b[39m\u001b[33m,\u001b[39mdefinitions\u001b[33m:\u001b[39m[{definition\u001b[33m:\u001b[39m\u001b[32m'MOCK noun definition'\u001b[39m}]}\u001b[33m,\u001b[39m{partOfSpeech\u001b[33m:\u001b[39m\u001b[32m'verb'\u001b[39m\u001b[33m,\u001b[39mdefinitions\u001b[33m:\u001b[39m[{definition\u001b[33m:\u001b[39m\u001b[32m'MOCK verb definition'\u001b[39m}]}]}]})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m}\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m test(\u001b[32m'A: pagination, markup, chapter transition and restore'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m m\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39mexpect(m\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39mexpect(m\u001b[33m.\u001b[39mframes)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'bold'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'em'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'carefully styled'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'下一页'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveText(before)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m saved\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m loaded(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(saved)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'章节'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mselectOption(\u001b[32m'ch3.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'body'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Final marker'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'上一页'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoBe(\u001b[32m'ch2.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'pagination'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m'A: image, long chapter, font reflow and resize'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'章节'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mselectOption(\u001b[32m'ch2.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'img'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(()\u001b[33m=>\u001b[39mpage\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'img'\u001b[39m)\u001b[33m.\u001b[39mevaluate((img\u001b[33m:\u001b[39many)\u001b[33m=>\u001b[39mimg\u001b[33m.\u001b[39mnaturalWidth))\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'字号'\u001b[39m)\u001b[33m.\u001b[39mselectOption(\u001b[32m'28'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m.\u001b[39mtoBeGreaterThan(before\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({width\u001b[33m:\u001b[39m\u001b[35m1366\u001b[39m\u001b[33m,\u001b[39mheight\u001b[33m:\u001b[39m\u001b[35m768\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'long-chapter-metrics'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify({before\u001b[33m,\u001b[39mafter\u001b[33m:\u001b[39m\u001b[36mawait\u001b[39m metrics(page)})\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m test(\u001b[32m'B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m mockDictionary(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m click(page\u001b[33m,\u001b[39m\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'surface'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'sentence'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'The children are running toward the old house.'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'MOCK verb definition'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m result\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m,\u001b[39mc\u001b[33m=\u001b[39ms\u001b[33m.\u001b[39mcontext()\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m {surface\u001b[33m:\u001b[39mc\u001b[33m.\u001b[39msurface\u001b[33m,\u001b[39mresolved\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mgetRange(c\u001b[33m.\u001b[39mcfi)\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39mrect\u001b[33m:\u001b[39m{x\u001b[33m:\u001b[39m\u001b[35m0\u001b[39m}\u001b[33m,\u001b[39mcfi\u001b[33m:\u001b[39mc\u001b[33m.\u001b[39mcfi\u001b[33m,\u001b[39mclickMs\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mclickMs}\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39mexpect(result\u001b[33m.\u001b[39mresolved)\u001b[33m.\u001b[39mtoBe(\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39mexpect((\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation)\u001b[33m.\u001b[39mtoEqual(before\u001b[33m.\u001b[39mlocation)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'收藏单词及原文'\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'收藏单词及原文'\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39mexpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(localStorage\u001b[33m.\u001b[39mgetItem(\u001b[32m'favorites'\u001b[39m)\u001b[33m!\u001b[39m)[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mcontexts\u001b[33m.\u001b[39mlength))\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m a\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m point(page\u001b[33m,\u001b[39m\u001b[32m'running'\u001b[39m)\u001b[33m,\u001b[39mb\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m)\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mwidth)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m1440\u001b[39m)\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m900\u001b[39m)\u001b[33m;\u001b[39mexpect(a\u001b[33m.\u001b[39mx\u001b[33m<\u001b[39m\u001b[33mb\u001b[39m\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m||\u001b[39ma\u001b[33m.\u001b[39mx\u001b[33m>\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mwidth\u001b[33m||\u001b[39ma\u001b[33m.\u001b[39my\u001b[33m<\u001b[39m\u001b[33mb\u001b[39m\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m||\u001b[39ma\u001b[33m.\u001b[39my\u001b[33m>\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({path\u001b[33m:\u001b[39m\u001b[32m`evidence/${info.project.name}-card.png`\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Escape'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m))\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m cfi\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mdisplay(cfi)\u001b[33m;\u001b[39m}\u001b[33m,\u001b[39mresult\u001b[33m.\u001b[39mcfi)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(()\u001b[33m=>\u001b[39mpage\u001b[33m.\u001b[39mevaluate(cfi\u001b[33m=>\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mgetRange(cfi)\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39mresult\u001b[33m.\u001b[39mcfi))\u001b[33m.\u001b[39mtoBe(\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'word-anchor'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(result)\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m'B: word split by inline elements'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m mockDictionary(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m click(page\u001b[33m,\u001b[39m\u001b[32m'ken'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'surface'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'broken'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(()\u001b[33m=>\u001b[39mpage\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m s\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mgetRange(s\u001b[33m.\u001b[39mcontext()\u001b[33m.\u001b[39mcfi)\u001b[33m.\u001b[39mtoString()\u001b[33m;\u001b[39m}))\u001b[33m.\u001b[39mtoBe(\u001b[32m'broken'\u001b[39m)\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                        "column": 1006,
+                        "line": 10
+                      },
+                      "message": "TypeError: Cannot read properties of undefined (reading 'href')\n\n   8 | async function metrics(page:Page){return page.evaluate(()=>{const s=(window as any).__spike;return{location:s.rendition.currentLocation(),importMs:s.importMs,clickMs:s.clickMs,frames:document.querySelectorAll('iframe').length};});}\n   9 | async function mockDictionary(page:Page){await page.route('https://api.dictionaryapi.dev/**',async r=>{const word=decodeURIComponent(r.request().url().split('/').pop()!);await r.fulfill({json:[{word,phonetics:[{text:'/test/'}],meanings:[{partOfSpeech:'noun',definitions:[{definition:'MOCK noun definition'}]},{partOfSpeech:'verb',definitions:[{definition:'MOCK verb definition'}]}]}]});});}\n> 10 | test('A: pagination, markup, chapter transition and restore',async({page},info)=>{await start(page);const m=await metrics(page);expect(m.location.start.displayed.total).toBeGreaterThan(1);expect(m.frames).toBe(1);await expect(page.frameLocator('iframe').locator('strong').first()).toHaveText('bold');await expect(page.frameLocator('iframe').locator('em').first()).toHaveText('carefully styled');const before=await page.getByTestId('cfi').innerText();await page.getByRole('button',{name:'下一页',exact:true}).click();await expect(page.getByTestId('cfi')).not.toHaveText(before);const saved=await page.getByTestId('cfi').innerText();await page.reload();await loaded(page);await expect(page.getByTestId('cfi')).toHaveText(saved);await page.getByLabel('章节',{exact:true}).selectOption('ch3.xhtml');await expect(page.frameLocator('iframe').locator('body')).toContainText('Final marker');await page.getByRole('button',{name:'上一页',exact:true}).click();await expect.poll(async()=>(await metrics(page)).location.start.href).toBe('ch2.xhtml');await info.attach('pagination',{body:JSON.stringify(await metrics(page)),contentType:'application/json'});});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^\n  11 | test('A: image, long chapter, font reflow and resize',async({page},info)=>{await start(page);await page.getByLabel('章节',{exact:true}).selectOption('ch2.xhtml');await expect(page.frameLocator('iframe').locator('img')).toBeVisible();await expect.poll(()=>page.frameLocator('iframe').locator('img').evaluate((img:any)=>img.naturalWidth)).toBeGreaterThan(0);const before=await metrics(page);await page.getByLabel('字号').selectOption('28');await expect.poll(async()=>(await metrics(page)).location.start.displayed.total).toBeGreaterThan(before.location.start.displayed.total);await page.setViewportSize({width:1366,height:768});await page.waitForTimeout(400);await info.attach('long-chapter-metrics',{body:JSON.stringify({before,after:await metrics(page)}),contentType:'application/json'});});\n  12 | test('B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds',async({page},info)=>{await mockDictionary(page);await start(page);const before=await metrics(page);await click(page,'running');await expect(page.getByTestId('surface')).toHaveText('running');await expect(page.getByTestId('sentence')).toContainText('The children are running toward the old house.');await expect(page.getByRole('dialog')).toContainText('MOCK verb definition');const result=await page.evaluate(async()=>{const s=(window as any).__spike,c=s.context();return {surface:c.surface,resolved:s.rendition.getRange(c.cfi).toString(),rect:{x:0},cfi:c.cfi,clickMs:s.clickMs};});expect(result.resolved).toBe('running');expect((await metrics(page)).location).toEqual(before.location);await page.getByRole('button',{name:'收藏单词及原文'}).click();await page.getByRole('button',{name:'收藏单词及原文'}).click();expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('favorites')!)[0].contexts.length)).toBe(1);const a=await point(page,'running'),b=await page.getByRole('dialog').boundingBox();expect(b!.x).toBeGreaterThanOrEqual(0);expect(b!.x+b!.width).toBeLessThanOrEqual(1440);expect(b!.y+b!.height).toBeLessThanOrEqual(900);expect(a.x<b!.x||a.x>b!.x+b!.width||a.y<b!.y||a.y>b!.y+b!.height).toBeTruthy();await page.screenshot({path:`evidence/${info.project.name}-card.png`});await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).toBeHidden();await page.evaluate(async cfi=>{await (window as any).__spike.rendition.display(cfi);},result.cfi);await expect.poll(()=>page.evaluate(cfi=>(window as any).__spike.rendition.getRange(cfi).toString(),result.cfi)).toBe('running');await info.attach('word-anchor',{body:JSON.stringify(result),contentType:'application/json'});});\n  13 | test('B: word split by inline elements',async({page})=>{await mockDictionary(page);await start(page);await click(page,'ken');await expect(page.getByTestId('surface')).toHaveText('broken');await expect.poll(()=>page.evaluate(()=>{const s=(window as any).__spike;return s.rendition.getRange(s.context().cfi).toString();})).toBe('broken');});\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:10:1006\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:10:942"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:00:43.768Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-A-pagination-markup-chapter-transition-and-restore-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-A-pagination-markup-chapter-transition-and-restore-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-A-pagination-markup-chapter-transition-and-restore-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                    "column": 1006,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d61dbd0b0c89280be049",
+          "file": "reader.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "A: image, long chapter, font reflow and resize",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5909,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:11:336",
+                    "location": {
+                      "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                      "column": 336,
+                      "line": 11
+                    },
+                    "snippet": " \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m mockDictionary(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mroute(\u001b[32m'https://api.dictionaryapi.dev/**'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m r\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m word\u001b[33m=\u001b[39mdecodeURIComponent(r\u001b[33m.\u001b[39mrequest()\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39msplit(\u001b[32m'/'\u001b[39m)\u001b[33m.\u001b[39mpop()\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m r\u001b[33m.\u001b[39mfulfill({json\u001b[33m:\u001b[39m[{word\u001b[33m,\u001b[39mphonetics\u001b[33m:\u001b[39m[{text\u001b[33m:\u001b[39m\u001b[32m'/test/'\u001b[39m}]\u001b[33m,\u001b[39mmeanings\u001b[33m:\u001b[39m[{partOfSpeech\u001b[33m:\u001b[39m\u001b[32m'noun'\u001b[39m\u001b[33m,\u001b[39mdefinitions\u001b[33m:\u001b[39m[{definition\u001b[33m:\u001b[39m\u001b[32m'MOCK noun definition'\u001b[39m}]}\u001b[33m,\u001b[39m{partOfSpeech\u001b[33m:\u001b[39m\u001b[32m'verb'\u001b[39m\u001b[33m,\u001b[39mdefinitions\u001b[33m:\u001b[39m[{definition\u001b[33m:\u001b[39m\u001b[32m'MOCK verb definition'\u001b[39m}]}]}]})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m}\n \u001b[90m 10 |\u001b[39m test(\u001b[32m'A: pagination, markup, chapter transition and restore'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m m\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39mexpect(m\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39mexpect(m\u001b[33m.\u001b[39mframes)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'bold'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'em'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'carefully styled'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'下一页'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveText(before)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m saved\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m loaded(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(saved)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'章节'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mselectOption(\u001b[32m'ch3.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'body'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Final marker'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'上一页'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mhref)\u001b[33m.\u001b[39mtoBe(\u001b[32m'ch2.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'pagination'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m test(\u001b[32m'A: image, long chapter, font reflow and resize'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'章节'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mselectOption(\u001b[32m'ch2.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'img'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(()\u001b[33m=>\u001b[39mpage\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'img'\u001b[39m)\u001b[33m.\u001b[39mevaluate((img\u001b[33m:\u001b[39many)\u001b[33m=>\u001b[39mimg\u001b[33m.\u001b[39mnaturalWidth))\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'字号'\u001b[39m)\u001b[33m.\u001b[39mselectOption(\u001b[32m'28'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m.\u001b[39mtoBeGreaterThan(before\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39msetViewportSize({width\u001b[33m:\u001b[39m\u001b[35m1366\u001b[39m\u001b[33m,\u001b[39mheight\u001b[33m:\u001b[39m\u001b[35m768\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'long-chapter-metrics'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify({before\u001b[33m,\u001b[39mafter\u001b[33m:\u001b[39m\u001b[36mawait\u001b[39m metrics(page)})\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                                                                                                                                                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m test(\u001b[32m'B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m mockDictionary(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m click(page\u001b[33m,\u001b[39m\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'surface'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'sentence'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'The children are running toward the old house.'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'MOCK verb definition'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m result\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m,\u001b[39mc\u001b[33m=\u001b[39ms\u001b[33m.\u001b[39mcontext()\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m {surface\u001b[33m:\u001b[39mc\u001b[33m.\u001b[39msurface\u001b[33m,\u001b[39mresolved\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mgetRange(c\u001b[33m.\u001b[39mcfi)\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39mrect\u001b[33m:\u001b[39m{x\u001b[33m:\u001b[39m\u001b[35m0\u001b[39m}\u001b[33m,\u001b[39mcfi\u001b[33m:\u001b[39mc\u001b[33m.\u001b[39mcfi\u001b[33m,\u001b[39mclickMs\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mclickMs}\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39mexpect(result\u001b[33m.\u001b[39mresolved)\u001b[33m.\u001b[39mtoBe(\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39mexpect((\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation)\u001b[33m.\u001b[39mtoEqual(before\u001b[33m.\u001b[39mlocation)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'收藏单词及原文'\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'收藏单词及原文'\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39mexpect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mparse(localStorage\u001b[33m.\u001b[39mgetItem(\u001b[32m'favorites'\u001b[39m)\u001b[33m!\u001b[39m)[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mcontexts\u001b[33m.\u001b[39mlength))\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m a\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m point(page\u001b[33m,\u001b[39m\u001b[32m'running'\u001b[39m)\u001b[33m,\u001b[39mb\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m)\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mwidth)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m1440\u001b[39m)\u001b[33m;\u001b[39mexpect(b\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m900\u001b[39m)\u001b[33m;\u001b[39mexpect(a\u001b[33m.\u001b[39mx\u001b[33m<\u001b[39m\u001b[33mb\u001b[39m\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m||\u001b[39ma\u001b[33m.\u001b[39mx\u001b[33m>\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mx\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mwidth\u001b[33m||\u001b[39ma\u001b[33m.\u001b[39my\u001b[33m<\u001b[39m\u001b[33mb\u001b[39m\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m||\u001b[39ma\u001b[33m.\u001b[39my\u001b[33m>\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39my\u001b[33m+\u001b[39mb\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mheight)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({path\u001b[33m:\u001b[39m\u001b[32m`evidence/${info.project.name}-card.png`\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Escape'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m))\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m cfi\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mdisplay(cfi)\u001b[33m;\u001b[39m}\u001b[33m,\u001b[39mresult\u001b[33m.\u001b[39mcfi)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(()\u001b[33m=>\u001b[39mpage\u001b[33m.\u001b[39mevaluate(cfi\u001b[33m=>\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mgetRange(cfi)\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39mresult\u001b[33m.\u001b[39mcfi))\u001b[33m.\u001b[39mtoBe(\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'word-anchor'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(result)\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m test(\u001b[32m'B: word split by inline elements'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m mockDictionary(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m click(page\u001b[33m,\u001b[39m\u001b[32m'ken'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'surface'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'broken'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(()\u001b[33m=>\u001b[39mpage\u001b[33m.\u001b[39mevaluate(()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m s\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mgetRange(s\u001b[33m.\u001b[39mcontext()\u001b[33m.\u001b[39mcfi)\u001b[33m.\u001b[39mtoString()\u001b[33m;\u001b[39m}))\u001b[33m.\u001b[39mtoBe(\u001b[32m'broken'\u001b[39m)\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m test(\u001b[32m'H: manual translation only, cache and failure isolation (MOCK transport)'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page})\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m mockDictionary(page)\u001b[33m;\u001b[39m\u001b[36mlet\u001b[39m requests\u001b[33m=\u001b[39m\u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mroute(\u001b[32m'https://api.mymemory.translated.net/**'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m r\u001b[33m=>\u001b[39m{requests\u001b[33m++\u001b[39m\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m r\u001b[33m.\u001b[39mfulfill({json\u001b[33m:\u001b[39m{responseStatus\u001b[33m:\u001b[39m\u001b[35m200\u001b[39m\u001b[33m,\u001b[39mresponseData\u001b[33m:\u001b[39m{translatedText\u001b[33m:\u001b[39m\u001b[32m'【MOCK】孩子们正在奔跑。'\u001b[39m}}})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m click(page\u001b[33m,\u001b[39m\u001b[32m'running'\u001b[39m)\u001b[33m;\u001b[39mexpect(requests)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'翻译例句'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'translation'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'【MOCK】'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'翻译例句'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'translation'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'【MOCK】'\u001b[39m)\u001b[33m;\u001b[39mexpect(requests)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Escape'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m click(page\u001b[33m,\u001b[39m\u001b[32m'business'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39munroute(\u001b[32m'https://api.mymemory.translated.net/**'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mroute(\u001b[32m'https://api.mymemory.translated.net/**'\u001b[39m\u001b[33m,\u001b[39mr\u001b[33m=>\u001b[39mr\u001b[33m.\u001b[39mfulfill({status\u001b[33m:\u001b[39m\u001b[35m503\u001b[39m\u001b[33m,\u001b[39mbody\u001b[33m:\u001b[39m\u001b[32m'unavailable'\u001b[39m}))\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'翻译例句'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'alert'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'翻译失败'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'MOCK'\u001b[39m)\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                        "column": 336,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n   9 | async function mockDictionary(page:Page){await page.route('https://api.dictionaryapi.dev/**',async r=>{const word=decodeURIComponent(r.request().url().split('/').pop()!);await r.fulfill({json:[{word,phonetics:[{text:'/test/'}],meanings:[{partOfSpeech:'noun',definitions:[{definition:'MOCK noun definition'}]},{partOfSpeech:'verb',definitions:[{definition:'MOCK verb definition'}]}]}]});});}\n  10 | test('A: pagination, markup, chapter transition and restore',async({page},info)=>{await start(page);const m=await metrics(page);expect(m.location.start.displayed.total).toBeGreaterThan(1);expect(m.frames).toBe(1);await expect(page.frameLocator('iframe').locator('strong').first()).toHaveText('bold');await expect(page.frameLocator('iframe').locator('em').first()).toHaveText('carefully styled');const before=await page.getByTestId('cfi').innerText();await page.getByRole('button',{name:'下一页',exact:true}).click();await expect(page.getByTestId('cfi')).not.toHaveText(before);const saved=await page.getByTestId('cfi').innerText();await page.reload();await loaded(page);await expect(page.getByTestId('cfi')).toHaveText(saved);await page.getByLabel('章节',{exact:true}).selectOption('ch3.xhtml');await expect(page.frameLocator('iframe').locator('body')).toContainText('Final marker');await page.getByRole('button',{name:'上一页',exact:true}).click();await expect.poll(async()=>(await metrics(page)).location.start.href).toBe('ch2.xhtml');await info.attach('pagination',{body:JSON.stringify(await metrics(page)),contentType:'application/json'});});\n> 11 | test('A: image, long chapter, font reflow and resize',async({page},info)=>{await start(page);await page.getByLabel('章节',{exact:true}).selectOption('ch2.xhtml');await expect(page.frameLocator('iframe').locator('img')).toBeVisible();await expect.poll(()=>page.frameLocator('iframe').locator('img').evaluate((img:any)=>img.naturalWidth)).toBeGreaterThan(0);const before=await metrics(page);await page.getByLabel('字号').selectOption('28');await expect.poll(async()=>(await metrics(page)).location.start.displayed.total).toBeGreaterThan(before.location.start.displayed.total);await page.setViewportSize({width:1366,height:768});await page.waitForTimeout(400);await info.attach('long-chapter-metrics',{body:JSON.stringify({before,after:await metrics(page)}),contentType:'application/json'});});\n     |                                                                                                                                                                                                                                                                                                                                                ^\n  12 | test('B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds',async({page},info)=>{await mockDictionary(page);await start(page);const before=await metrics(page);await click(page,'running');await expect(page.getByTestId('surface')).toHaveText('running');await expect(page.getByTestId('sentence')).toContainText('The children are running toward the old house.');await expect(page.getByRole('dialog')).toContainText('MOCK verb definition');const result=await page.evaluate(async()=>{const s=(window as any).__spike,c=s.context();return {surface:c.surface,resolved:s.rendition.getRange(c.cfi).toString(),rect:{x:0},cfi:c.cfi,clickMs:s.clickMs};});expect(result.resolved).toBe('running');expect((await metrics(page)).location).toEqual(before.location);await page.getByRole('button',{name:'收藏单词及原文'}).click();await page.getByRole('button',{name:'收藏单词及原文'}).click();expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('favorites')!)[0].contexts.length)).toBe(1);const a=await point(page,'running'),b=await page.getByRole('dialog').boundingBox();expect(b!.x).toBeGreaterThanOrEqual(0);expect(b!.x+b!.width).toBeLessThanOrEqual(1440);expect(b!.y+b!.height).toBeLessThanOrEqual(900);expect(a.x<b!.x||a.x>b!.x+b!.width||a.y<b!.y||a.y>b!.y+b!.height).toBeTruthy();await page.screenshot({path:`evidence/${info.project.name}-card.png`});await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).toBeHidden();await page.evaluate(async cfi=>{await (window as any).__spike.rendition.display(cfi);},result.cfi);await expect.poll(()=>page.evaluate(cfi=>(window as any).__spike.rendition.getRange(cfi).toString(),result.cfi)).toBe('running');await info.attach('word-anchor',{body:JSON.stringify(result),contentType:'application/json'});});\n  13 | test('B: word split by inline elements',async({page})=>{await mockDictionary(page);await start(page);await click(page,'ken');await expect(page.getByTestId('surface')).toHaveText('broken');await expect.poll(()=>page.evaluate(()=>{const s=(window as any).__spike;return s.rendition.getRange(s.context().cfi).toString();})).toBe('broken');});\n  14 | test('H: manual translation only, cache and failure isolation (MOCK transport)',async({page})=>{await mockDictionary(page);let requests=0;await page.route('https://api.mymemory.translated.net/**',async r=>{requests++;await r.fulfill({json:{responseStatus:200,responseData:{translatedText:'【MOCK】孩子们正在奔跑。'}}});});await start(page);await click(page,'running');expect(requests).toBe(0);await page.getByRole('button',{name:'翻译例句',exact:true}).click();await expect(page.getByTestId('translation')).toContainText('【MOCK】');await page.getByRole('button',{name:'翻译例句',exact:true}).click();await expect(page.getByTestId('translation')).toContainText('【MOCK】');expect(requests).toBe(1);await page.keyboard.press('Escape');await click(page,'business');await page.unroute('https://api.mymemory.translated.net/**');await page.route('https://api.mymemory.translated.net/**',r=>r.fulfill({status:503,body:'unavailable'}));await page.getByRole('button',{name:'翻译例句',exact:true}).click();await expect(page.getByRole('alert')).toContainText('翻译失败');await expect(page.getByRole('dialog')).toContainText('MOCK');});\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:11:336"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:00:48.443Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-A-image-long-chapter-font-reflow-and-resize-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-A-image-long-chapter-font-reflow-and-resize-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-A-image-long-chapter-font-reflow-and-resize-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                    "column": 336,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-8ed10e3eceae630fc974",
+          "file": "reader.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1344,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:00:55.214Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "word-anchor",
+                      "contentType": "application/json",
+                      "body": "eyJzdXJmYWNlIjoicnVubmluZyIsInJlc29sdmVkIjoicnVubmluZyIsInJlY3QiOnsieCI6MH0sImNmaSI6ImVwdWJjZmkoLzYvMiEvNC84LC8xOjU4LC8xOjY1KSIsImNsaWNrTXMiOjQzLjU5OTk5OTk5OTYyNzQ3fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-278ebce32f03d994b0c2",
+          "file": "reader.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "B: word split by inline elements",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:00:56.738Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-c72663205e6735f31aaf",
+          "file": "reader.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "H: manual translation only, cache and failure isolation (MOCK transport)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60174,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                        "column": 964,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '翻译例句', exact: true })\u001b[22m\n\n\n  12 | test('B-E: real clicks, exact context, CFI roundtrip, no reflow and card bounds',async({page},info)=>{await mockDictionary(page);await start(page);const before=await metrics(page);await click(page,'running');await expect(page.getByTestId('surface')).toHaveText('running');await expect(page.getByTestId('sentence')).toContainText('The children are running toward the old house.');await expect(page.getByRole('dialog')).toContainText('MOCK verb definition');const result=await page.evaluate(async()=>{const s=(window as any).__spike,c=s.context();return {surface:c.surface,resolved:s.rendition.getRange(c.cfi).toString(),rect:{x:0},cfi:c.cfi,clickMs:s.clickMs};});expect(result.resolved).toBe('running');expect((await metrics(page)).location).toEqual(before.location);await page.getByRole('button',{name:'收藏单词及原文'}).click();await page.getByRole('button',{name:'收藏单词及原文'}).click();expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('favorites')!)[0].contexts.length)).toBe(1);const a=await point(page,'running'),b=await page.getByRole('dialog').boundingBox();expect(b!.x).toBeGreaterThanOrEqual(0);expect(b!.x+b!.width).toBeLessThanOrEqual(1440);expect(b!.y+b!.height).toBeLessThanOrEqual(900);expect(a.x<b!.x||a.x>b!.x+b!.width||a.y<b!.y||a.y>b!.y+b!.height).toBeTruthy();await page.screenshot({path:`evidence/${info.project.name}-card.png`});await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).toBeHidden();await page.evaluate(async cfi=>{await (window as any).__spike.rendition.display(cfi);},result.cfi);await expect.poll(()=>page.evaluate(cfi=>(window as any).__spike.rendition.getRange(cfi).toString(),result.cfi)).toBe('running');await info.attach('word-anchor',{body:JSON.stringify(result),contentType:'application/json'});});\n  13 | test('B: word split by inline elements',async({page})=>{await mockDictionary(page);await start(page);await click(page,'ken');await expect(page.getByTestId('surface')).toHaveText('broken');await expect.poll(()=>page.evaluate(()=>{const s=(window as any).__spike;return s.rendition.getRange(s.context().cfi).toString();})).toBe('broken');});\n> 14 | test('H: manual translation only, cache and failure isolation (MOCK transport)',async({page})=>{await mockDictionary(page);let requests=0;await page.route('https://api.mymemory.translated.net/**',async r=>{requests++;await r.fulfill({json:{responseStatus:200,responseData:{translatedText:'【MOCK】孩子们正在奔跑。'}}});});await start(page);await click(page,'running');expect(requests).toBe(0);await page.getByRole('button',{name:'翻译例句',exact:true}).click();await expect(page.getByTestId('translation')).toContainText('【MOCK】');await page.getByRole('button',{name:'翻译例句',exact:true}).click();await expect(page.getByTestId('translation')).toContainText('【MOCK】');expect(requests).toBe(1);await page.keyboard.press('Escape');await click(page,'business');await page.unroute('https://api.mymemory.translated.net/**');await page.route('https://api.mymemory.translated.net/**',r=>r.fulfill({status:503,body:'unavailable'}));await page.getByRole('button',{name:'翻译例句',exact:true}).click();await expect(page.getByRole('alert')).toContainText('翻译失败');await expect(page.getByRole('dialog')).toContainText('MOCK');});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^\n  15 | test('E: rapid switching rejects stale dictionary responses (MOCK transport)',async({page})=>{await page.route('https://api.dictionaryapi.dev/**',async r=>{const word=r.request().url().split('/').pop();await new Promise(resolve=>setTimeout(resolve,word==='run'?600:10));await r.fulfill({json:[{word,meanings:[{partOfSpeech:'noun',definitions:[{definition:'MOCK '+word}]}]}]});});await start(page);await click(page,'running');await page.keyboard.press('Escape');await click(page,'children');await expect(page.getByRole('dialog')).toContainText('MOCK child');await page.waitForTimeout(800);await expect(page.getByRole('dialog')).not.toContainText('MOCK run');});\n  16 | test('I: untrusted scripts, event handlers, remote resources and malformed import',async({page})=>{const leaks:string[]=[];page.on('request',r=>{if(r.url().includes('example.com'))leaks.push(r.url());});await start(page);await page.getByLabel('导入 EPUB').setInputFiles(path.join(root,'public/books/hostile.epub'));await loaded(page);await expect(page.frameLocator('iframe').locator('body')).toContainText('Clickable hostile text.');expect(await page.evaluate(()=>(window as any).__epubExecuted)).toBeUndefined();expect(await page.locator('iframe').getAttribute('sandbox')).toBe('allow-same-origin');expect(await page.frameLocator('iframe').locator('script,[onclick],[onerror],iframe').count()).toBe(0);expect(leaks).toEqual([]);await page.getByLabel('导入 EPUB').setInputFiles({name:'bad.epub',mimeType:'application/epub+zip',buffer:Buffer.from('not a zip')});await expect(page.getByRole('status')).toContainText('导入失败');});\n  17 | test('A: supplied real EPUB import and IndexedDB refresh recovery',async({page},info)=>{const book='C:/Users/Administrator/Downloads/Then There Were None (Tenery V B) (z-library.sk, 1lib.sk, z-lib.sk).epub';test.skip(!fs.existsSync(book),'User file unavailable on this machine');await start(page);await page.getByLabel('导入 EPUB').setInputFiles(book);await loaded(page);await expect(page.locator('header')).toContainText('Then There Were None');await expect.poll(()=>page.getByLabel('章节',{exact:true}).locator('option').count()).toBeGreaterThan(30);await page.evaluate(async()=>{await (window as any).__spike.rendition.display(5);});await page.getByRole('button',{name:'下一页',exact:true}).click();await page.waitForTimeout(300);const cfi=await page.getByTestId('cfi').innerText();await page.reload();await loaded(page);await expect(page.getByTestId('cfi')).toHaveText(cfi);await page.screenshot({path:`evidence/${info.project.name}-user-book.png`});await info.attach('real-book',{body:JSON.stringify(await metrics(page)),contentType:'application/json'});});\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:14:964"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:00:57.871Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-H-manual-translatio-eb2ad-e-isolation-MOCK-transport--chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-H-manual-translatio-eb2ad-e-isolation-MOCK-transport--chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results\\reader-H-manual-translatio-eb2ad-e-isolation-MOCK-transport--chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-a7710f873dadebc20923",
+          "file": "reader.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "E: rapid switching rejects stale dictionary responses (MOCK transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2751,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:01:58.688Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-5c73f69bd850c8b4a36f",
+          "file": "reader.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "I: untrusted scripts, event handlers, remote resources and malformed import",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1628,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:02:01.631Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d9a11ddc99e3dc8e4e1a",
+          "file": "reader.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "A: supplied real EPUB import and IndexedDB refresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4118,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:02:03.294Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "real-book",
+                      "contentType": "application/json",
+                      "body": "eyJsb2NhdGlvbiI6eyJzdGFydCI6eyJpbmRleCI6NSwiaHJlZiI6InRleHQvcGFydDAwMDBfc3BsaXRfMDA0Lmh0bWwiLCJjZmkiOiJlcHViY2ZpKC82LzEyIS80LzE0LzE4LzIvMToyMzcpIiwiZGlzcGxheWVkIjp7InBhZ2UiOjIsInRvdGFsIjozfSwibG9jYXRpb24iOi0xLCJwZXJjZW50YWdlIjowfSwiZW5kIjp7ImluZGV4Ijo1LCJocmVmIjoidGV4dC9wYXJ0MDAwMF9zcGxpdF8wMDQuaHRtbCIsImNmaSI6ImVwdWJjZmkoLzYvMTIhLzQvMTQvMzQvMi8xOjE1MCkiLCJkaXNwbGF5ZWQiOnsicGFnZSI6MiwidG90YWwiOjN9LCJsb2NhdGlvbiI6LTEsInBlcmNlbnRhZ2UiOjB9fSwiaW1wb3J0TXMiOjQwNi44OTk5OTk5OTk5MDY4NywiZnJhbWVzIjoxfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-b98a1b1aaf0dc873486e",
+          "file": "reader.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "G: real online browser query without interception",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:02:07.440Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "online-browser-query",
+                      "contentType": "application/json",
+                      "body": "eyJlcnJvcnMiOjAsInRleHQiOiLDl1xu5p+l6K+iIMK3IEZyZWUgRGljdGlvbmFyeSBBUEkgwrcg6Iux6Iux5a6e5rWLXG5ydW5cblxu5Y6f5paH77yacnVubmluZyDCtyDmjqjmtYvor43mgKfvvJp2ZXJiXG5cbi/JucqKbi8g5Y+R6Z+zXG5cbuivjeaAp+S4uuinhOWImeaOqOa1i++8jOS4jeS7o+ihqOWFt+S9k+ivjeS5iea2iOatp+OAguatpOacjeWKoeS4jeaPkOS+m+S4reaWh+mHiuS5ieOAglxuXG52ZXJiIMK3IFRvIHJ1bi5cblxu5YW25LuW6YeK5LmJXG5IZSBzYWlkLCDigJxUaGUgY2hpbGRyZW4gYXJlIHJ1bm5pbmcgdG93YXJkIHRoZSBvbGQgaG91c2Uu4oCdXG5SZWFkaWN0IGRldGVybWluaXN0aWMgZml4dHVyZSDCtyBjaDEueGh0bWxcblxu57+76K+R5L6L5Y+lIOaUtuiXj+WNleivjeWPiuWOn+aWh1xuXG7nv7vor5HmjInpkq7kvJrlsIblvZPliY3lj6XlrZDlj5HpgIHoh7MgTXlNZW1vcnnjgIIifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-0ad9396f6fe663072756",
+          "file": "reader.spec.ts",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T09:00:43.288Z",
+    "duration": 87444.776,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

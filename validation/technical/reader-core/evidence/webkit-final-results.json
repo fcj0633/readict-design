@@ -1,0 +1,271 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=webkit",
+      "--grep",
+      "untrusted|word split",
+      "--output=test-results-webkit"
+    ],
+    "configFile": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\playwright.config.ts",
+    "rootDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/test-results-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Java-learning/Readict/experiments/reader-tech-spike/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests",
+        "snapshotDir": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests",
+        "testIgnore": [],
+        "testMatch": "*.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5174",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "browserName": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/browser-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "evidence/html-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://127.0.0.1:5174",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "reader.spec.ts",
+      "file": "reader.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "B: word split by inline elements",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 35066,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('dialog') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('dialog') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog')\u001b[22m\n\n    at click (D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:7:147)\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:13:102",
+                    "location": {
+                      "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                      "column": 147,
+                      "line": 7
+                    },
+                    "snippet": " \u001b[90m  5 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m start(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m loaded(page)\u001b[33m;\u001b[39m}\n \u001b[90m  6 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m point(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m\u001b[33m,\u001b[39mword\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39moccurrence\u001b[33m=\u001b[39m\u001b[35m0\u001b[39m){\u001b[36mreturn\u001b[39m page\u001b[33m.\u001b[39mevaluate(({word\u001b[33m,\u001b[39moccurrence})\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m f\u001b[33m=\u001b[39mdocument\u001b[33m.\u001b[39mquerySelector(\u001b[32m'iframe'\u001b[39m)\u001b[33m!\u001b[39m\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m d\u001b[33m=\u001b[39mf\u001b[33m.\u001b[39mcontentDocument\u001b[33m!\u001b[39m\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m walker\u001b[33m=\u001b[39md\u001b[33m.\u001b[39mcreateTreeWalker(d\u001b[33m.\u001b[39mbody\u001b[33m,\u001b[39m\u001b[35m4\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mlet\u001b[39m n\u001b[33m:\u001b[39m\u001b[33mNode\u001b[39m\u001b[33m|\u001b[39m\u001b[36mnull\u001b[39m\u001b[33m;\u001b[39m\u001b[36mlet\u001b[39m count\u001b[33m=\u001b[39m\u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\u001b[36mwhile\u001b[39m((n\u001b[33m=\u001b[39mwalker\u001b[33m.\u001b[39mnextNode())){\u001b[36mconst\u001b[39m value\u001b[33m=\u001b[39mn\u001b[33m.\u001b[39mtextContent\u001b[33m||\u001b[39m\u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\u001b[36mlet\u001b[39m pos\u001b[33m=\u001b[39m\u001b[33m-\u001b[39m\u001b[35m1\u001b[39m\u001b[33m;\u001b[39m\u001b[36mwhile\u001b[39m((pos\u001b[33m=\u001b[39mvalue\u001b[33m.\u001b[39mindexOf(word\u001b[33m,\u001b[39mpos\u001b[33m+\u001b[39m\u001b[35m1\u001b[39m))\u001b[33m>=\u001b[39m\u001b[35m0\u001b[39m){\u001b[36mconst\u001b[39m r\u001b[33m=\u001b[39md\u001b[33m.\u001b[39mcreateRange()\u001b[33m;\u001b[39mr\u001b[33m.\u001b[39msetStart(n\u001b[33m,\u001b[39mpos)\u001b[33m;\u001b[39mr\u001b[33m.\u001b[39msetEnd(n\u001b[33m,\u001b[39mpos\u001b[33m+\u001b[39mword\u001b[33m.\u001b[39mlength)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m b\u001b[33m=\u001b[39mr\u001b[33m.\u001b[39mgetBoundingClientRect()\u001b[33m,\u001b[39mfbox\u001b[33m=\u001b[39mf\u001b[33m.\u001b[39mgetBoundingClientRect()\u001b[33m;\u001b[39m\u001b[36mif\u001b[39m(b\u001b[33m.\u001b[39mleft\u001b[33m>=\u001b[39m\u001b[35m0\u001b[39m\u001b[33m&&\u001b[39mb\u001b[33m.\u001b[39mright\u001b[33m<\u001b[39m\u001b[33mf\u001b[39m\u001b[33m.\u001b[39mclientWidth\u001b[33m&&\u001b[39mb\u001b[33m.\u001b[39mtop\u001b[33m>=\u001b[39m\u001b[35m0\u001b[39m\u001b[33m&&\u001b[39mb\u001b[33m.\u001b[39mbottom\u001b[33m<\u001b[39m\u001b[33mf\u001b[39m\u001b[33m.\u001b[39mclientHeight){\u001b[36mif\u001b[39m(count\u001b[33m++\u001b[39m\u001b[33m===\u001b[39moccurrence)\u001b[36mreturn\u001b[39m{x\u001b[33m:\u001b[39mfbox\u001b[33m.\u001b[39mleft\u001b[33m+\u001b[39mb\u001b[33m.\u001b[39mleft\u001b[33m+\u001b[39mb\u001b[33m.\u001b[39mwidth\u001b[33m/\u001b[39m\u001b[35m2\u001b[39m\u001b[33m,\u001b[39my\u001b[33m:\u001b[39mfbox\u001b[33m.\u001b[39mtop\u001b[33m+\u001b[39mb\u001b[33m.\u001b[39mtop\u001b[33m+\u001b[39mb\u001b[33m.\u001b[39mheight\u001b[33m/\u001b[39m\u001b[35m2\u001b[39m}\u001b[33m;\u001b[39m}}}\u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Visible word unavailable: '\u001b[39m\u001b[33m+\u001b[39mword)\u001b[33m;\u001b[39m}\u001b[33m,\u001b[39m{word\u001b[33m,\u001b[39moccurrence})\u001b[33m;\u001b[39m}\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m click(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m\u001b[33m,\u001b[39mword\u001b[33m:\u001b[39mstring){\u001b[36mconst\u001b[39m p\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m point(page\u001b[33m,\u001b[39mword)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mclick(p\u001b[33m.\u001b[39mx\u001b[33m,\u001b[39mp\u001b[33m.\u001b[39my)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'dialog'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m}\n \u001b[90m    |\u001b[39m                                                                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m metrics(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mreturn\u001b[39m page\u001b[33m.\u001b[39mevaluate(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m s\u001b[33m=\u001b[39m(window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39m__spike\u001b[33m;\u001b[39m\u001b[36mreturn\u001b[39m{location\u001b[33m:\u001b[39m\u001b[36mawait\u001b[39m s\u001b[33m.\u001b[39mrendition\u001b[33m.\u001b[39mcurrentLocation()\u001b[33m,\u001b[39mimportMs\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mimportMs\u001b[33m,\u001b[39mclickMs\u001b[33m:\u001b[39ms\u001b[33m.\u001b[39mclickMs\u001b[33m,\u001b[39mframes\u001b[33m:\u001b[39mdocument\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlength}\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m}\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m mockDictionary(page\u001b[33m:\u001b[39m\u001b[33mPage\u001b[39m){\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mroute(\u001b[32m'https://api.dictionaryapi.dev/**'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m r\u001b[33m=>\u001b[39m{\u001b[36mconst\u001b[39m word\u001b[33m=\u001b[39mdecodeURIComponent(r\u001b[33m.\u001b[39mrequest()\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39msplit(\u001b[32m'/'\u001b[39m)\u001b[33m.\u001b[39mpop()\u001b[33m!\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m r\u001b[33m.\u001b[39mfulfill({json\u001b[33m:\u001b[39m[{word\u001b[33m,\u001b[39mphonetics\u001b[33m:\u001b[39m[{text\u001b[33m:\u001b[39m\u001b[32m'/test/'\u001b[39m}]\u001b[33m,\u001b[39mmeanings\u001b[33m:\u001b[39m[{partOfSpeech\u001b[33m:\u001b[39m\u001b[32m'noun'\u001b[39m\u001b[33m,\u001b[39mdefinitions\u001b[33m:\u001b[39m[{definition\u001b[33m:\u001b[39m\u001b[32m'MOCK noun definition'\u001b[39m}]}\u001b[33m,\u001b[39m{partOfSpeech\u001b[33m:\u001b[39m\u001b[32m'verb'\u001b[39m\u001b[33m,\u001b[39mdefinitions\u001b[33m:\u001b[39m[{definition\u001b[33m:\u001b[39m\u001b[32m'MOCK verb definition'\u001b[39m}]}]}]})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m}\n \u001b[90m 10 |\u001b[39m test(\u001b[32m'A: pagination, markup, chapter transition and restore'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}\u001b[33m,\u001b[39minfo)\u001b[33m=>\u001b[39m{\u001b[36mawait\u001b[39m start(page)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m m\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m metrics(page)\u001b[33m;\u001b[39mexpect(m\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mstart\u001b[33m.\u001b[39mdisplayed\u001b[33m.\u001b[39mtotal)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39mexpect(m\u001b[33m.\u001b[39mframes)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'bold'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'em'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'carefully styled'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'下一页'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveText(before)\u001b[33m;\u001b[39m\u001b[36mconst\u001b[39m saved\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m loaded(page)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'cfi'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(saved)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'章节'\u001b[39m\u001b[33m,\u001b[39m{exact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mselectOption(\u001b[32m'ch3.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mframeLocator(\u001b[32m'iframe'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'body'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Final marker'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m{name\u001b[33m:\u001b[39m\u001b[32m'上一页'\u001b[39m\u001b[33m,\u001b[39mexact\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m()\u001b[33m=>\u001b[39m(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m.\u001b[39mlocation\u001b[33m?.\u001b[39mstart\u001b[33m?.\u001b[39mhref)\u001b[33m.\u001b[39mtoBe(\u001b[32m'ch2.xhtml'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m info\u001b[33m.\u001b[39mattach(\u001b[32m'pagination'\u001b[39m\u001b[33m,\u001b[39m{body\u001b[33m:\u001b[39m\u001b[33mJSON\u001b[39m\u001b[33m.\u001b[39mstringify(\u001b[36mawait\u001b[39m metrics(page))\u001b[33m,\u001b[39mcontentType\u001b[33m:\u001b[39m\u001b[32m'application/json'\u001b[39m})\u001b[33m;\u001b[39m})\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                        "column": 147,
+                        "line": 7
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('dialog') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog')\u001b[22m\n\n\n   5 | async function start(page:Page){await page.goto('/');await loaded(page);}\n   6 | async function point(page:Page,word:string,occurrence=0){return page.evaluate(({word,occurrence})=>{const f=document.querySelector('iframe')!;const d=f.contentDocument!;const walker=d.createTreeWalker(d.body,4);let n:Node|null;let count=0;while((n=walker.nextNode())){const value=n.textContent||'';let pos=-1;while((pos=value.indexOf(word,pos+1))>=0){const r=d.createRange();r.setStart(n,pos);r.setEnd(n,pos+word.length);const b=r.getBoundingClientRect(),fbox=f.getBoundingClientRect();if(b.left>=0&&b.right<f.clientWidth&&b.top>=0&&b.bottom<f.clientHeight){if(count++===occurrence)return{x:fbox.left+b.left+b.width/2,y:fbox.top+b.top+b.height/2};}}}throw Error('Visible word unavailable: '+word);},{word,occurrence});}\n>  7 | async function click(page:Page,word:string){const p=await point(page,word);await page.mouse.click(p.x,p.y);await expect(page.getByRole('dialog')).toBeVisible();}\n     |                                                                                                                                                   ^\n   8 | async function metrics(page:Page){return page.evaluate(async()=>{const s=(window as any).__spike;return{location:await s.rendition.currentLocation(),importMs:s.importMs,clickMs:s.clickMs,frames:document.querySelectorAll('iframe').length};});}\n   9 | async function mockDictionary(page:Page){await page.route('https://api.dictionaryapi.dev/**',async r=>{const word=decodeURIComponent(r.request().url().split('/').pop()!);await r.fulfill({json:[{word,phonetics:[{text:'/test/'}],meanings:[{partOfSpeech:'noun',definitions:[{definition:'MOCK noun definition'}]},{partOfSpeech:'verb',definitions:[{definition:'MOCK verb definition'}]}]}]});});}\n  10 | test('A: pagination, markup, chapter transition and restore',async({page},info)=>{await start(page);const m=await metrics(page);expect(m.location.start.displayed.total).toBeGreaterThan(1);expect(m.frames).toBe(1);await expect(page.frameLocator('iframe').locator('strong').first()).toHaveText('bold');await expect(page.frameLocator('iframe').locator('em').first()).toHaveText('carefully styled');const before=await page.getByTestId('cfi').innerText();await page.getByRole('button',{name:'下一页',exact:true}).click();await expect(page.getByTestId('cfi')).not.toHaveText(before);const saved=await page.getByTestId('cfi').innerText();await page.reload();await loaded(page);await expect(page.getByTestId('cfi')).toHaveText(saved);await page.getByLabel('章节',{exact:true}).selectOption('ch3.xhtml');await expect(page.frameLocator('iframe').locator('body')).toContainText('Final marker');await page.getByRole('button',{name:'上一页',exact:true}).click();await expect.poll(async()=>(await metrics(page)).location?.start?.href).toBe('ch2.xhtml');await info.attach('pagination',{body:JSON.stringify(await metrics(page)),contentType:'application/json'});});\n    at click (D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:7:147)\n    at D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts:13:102"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:12:40.507Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results-webkit\\reader-B-word-split-by-inline-elements-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results-webkit\\reader-B-word-split-by-inline-elements-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\test-results-webkit\\reader-B-word-split-by-inline-elements-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Java-learning\\Readict\\experiments\\reader-tech-spike\\tests\\reader.spec.ts",
+                    "column": 147,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3dc462af91e0c6aed18e",
+          "file": "reader.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "I: untrusted scripts, event handlers, remote resources and malformed import",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T09:13:17.064Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-469f5325f5c2a3f6dd80",
+          "file": "reader.spec.ts",
+          "line": 16,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T09:12:39.987Z",
+    "duration": 46232.176,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

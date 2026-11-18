@@ -1,0 +1,27 @@
+[
+  {
+    "name": "fixture",
+    "bytes": 3482,
+    "sha256": "aef2e78f8f4d576674ab0c4ea8cf05c0579a55f3b6a59ff8775f4071b77fb76f",
+    "opfPath": "OEBPS/content.opf",
+    "epubVersion": "3.0",
+    "spineItems": 3
+  },
+  {
+    "name": "hostile",
+    "bytes": 92619,
+    "sha256": "3a201b5a67d56cb4fe13c3575df17566facf02b28cbbceb981c2c755940ff941",
+    "opfPath": "OEBPS/content.opf",
+    "epubVersion": "3.0",
+    "spineItems": 3
+  },
+  {
+    "name": "moby-dick",
+    "bytes": 1628868,
+    "sha256": "81bc079841a38e91a02a7776d04786a2fc311cfd300064e9fc533ce7c54cf7b4",
+    "opfPath": "OPS/package.opf",
+    "epubVersion": "3.0",
+    "spineItems": 144,
+    "rights": "This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license."
+  }
+]

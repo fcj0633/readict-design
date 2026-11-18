@@ -1,0 +1,211 @@
+{
+  "at": "2026-11-18T09:06:22.631Z",
+  "nlp": [
+    {
+      "sentence": "The children are running.",
+      "word": "children",
+      "expected": {
+        "lemma": "child",
+        "pos": "noun"
+      },
+      "actual": {
+        "lemma": "child",
+        "pos": "noun",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "The children are running.",
+      "word": "running",
+      "expected": {
+        "lemma": "run",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "run",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "She runs a business.",
+      "word": "runs",
+      "expected": {
+        "lemma": "run",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "run",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "He played a game.",
+      "word": "played",
+      "expected": {
+        "lemma": "play",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "play",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "She studies English.",
+      "word": "studies",
+      "expected": {
+        "lemma": "study",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "study",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "I saw a saw.",
+      "word": "saw",
+      "expected": {
+        "lemma": "see",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "see",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "I saw a saw.",
+      "word": "saw",
+      "expected": {
+        "lemma": "saw",
+        "pos": "noun"
+      },
+      "actual": {
+        "lemma": "saw",
+        "pos": "noun",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "The leaves fell.",
+      "word": "leaves",
+      "expected": {
+        "lemma": "leaf",
+        "pos": "noun"
+      },
+      "actual": {
+        "lemma": "leaves",
+        "pos": "noun",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": false
+    },
+    {
+      "sentence": "She leaves tomorrow.",
+      "word": "leaves",
+      "expected": {
+        "lemma": "leave",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "leave",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "The book is better.",
+      "word": "better",
+      "expected": {
+        "lemma": "good",
+        "pos": "adjective"
+      },
+      "actual": {
+        "lemma": "better",
+        "pos": "adjective",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": false
+    },
+    {
+      "sentence": "They went home.",
+      "word": "went",
+      "expected": {
+        "lemma": "go",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "go",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": true
+    },
+    {
+      "sentence": "The well-known reader doesn’t stop.",
+      "word": "doesn’t",
+      "expected": {
+        "lemma": "do",
+        "pos": "verb"
+      },
+      "actual": {
+        "lemma": "does do not",
+        "pos": "verb",
+        "method": "compromise heuristic; no semantic disambiguation"
+      },
+      "correct": false
+    }
+  ],
+  "sentences": [
+    {
+      "source": "Dr. Smith arrived. He left.",
+      "word": "Smith",
+      "expected": "Dr. Smith arrived. ",
+      "actual": "Dr. Smith arrived. ",
+      "correct": true
+    },
+    {
+      "source": "It cost 3.14 dollars. He paid.",
+      "word": "dollars",
+      "expected": "It cost 3.14 dollars. ",
+      "actual": "It cost 3.14 dollars. ",
+      "correct": true
+    },
+    {
+      "source": "He said, “Go now!” Then left.",
+      "word": "Go",
+      "expected": "He said, “Go now!” ",
+      "actual": "He said, “Go now!” ",
+      "correct": true
+    },
+    {
+      "source": "Meet Mr. Jones tomorrow. Bring books.",
+      "word": "Jones",
+      "expected": "Meet Mr. Jones tomorrow. ",
+      "actual": "Meet Mr. Jones tomorrow. ",
+      "correct": true
+    },
+    {
+      "source": "First sentence. Second sentence.",
+      "word": "Second",
+      "expected": "Second sentence.",
+      "actual": "Second sentence.",
+      "correct": true
+    }
+  ],
+  "note": "Small diagnostic corpus, not an accuracy benchmark"
+}

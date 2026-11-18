@@ -1,0 +1,1984 @@
+{
+  "original_files": 218,
+  "present": 218,
+  "unchanged": 209,
+  "intentional_updates": [
+    "validation/technical/reader-core/README.md",
+    "validation/ui/2026-11-18/report.md",
+    "docs/ux/design-spec.md",
+    "prototypes/reader-ui/README.md",
+    "prototypes/reader-ui/scripts/browser-check.js",
+    "prototypes/reader-ui/scripts/browser-initial.js",
+    "prototypes/reader-ui/scripts/browser-integrity.js",
+    "prototypes/reader-ui/scripts/browser-preview.js",
+    "prototypes/reader-ui/scripts/mcp-browser.mjs"
+  ],
+  "unexpected_changes_or_missing": [],
+  "broken_markdown_links": [],
+  "legacy_executable_output_paths": [],
+  "passed": true,
+  "files": [
+    {
+      "old": "ui-ux设计需求.md",
+      "new": "docs/ux/requirements.md",
+      "original_sha256": "bdc1ebd2286d5751494a5b636947846b91657485a87907b14556d34b07ef244a",
+      "current_sha256": "bdc1ebd2286d5751494a5b636947846b91657485a87907b14556d34b07ef244a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "原版书英语阅读与场景化词汇学习系统_PRD_V1.1.md",
+      "new": "docs/requirements/prd/PRD-v1.1.md",
+      "original_sha256": "b9e61c74f1387cd1930e788361799ce722e2996eb7e71c3b69483c9dabe0065c",
+      "current_sha256": "b9e61c74f1387cd1930e788361799ce722e2996eb7e71c3b69483c9dabe0065c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "阅读器界面调研分析.docx",
+      "new": "docs/ux/research/阅读器界面调研分析.docx",
+      "original_sha256": "e2b27df7c7c7e87a41393c8377adda22eb2722f81c6c517b6c5b71055566a53b",
+      "current_sha256": "e2b27df7c7c7e87a41393c8377adda22eb2722f81c6c517b6c5b71055566a53b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/anchor-bottom.png",
+      "new": "validation/ui/2026-11-18/evidence/anchor-bottom.png",
+      "original_sha256": "83ced1b11ad83a18c114401907ac12f7378fdc48bc928cc2427d18da50edc7bd",
+      "current_sha256": "83ced1b11ad83a18c114401907ac12f7378fdc48bc928cc2427d18da50edc7bd",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/anchor-left.png",
+      "new": "validation/ui/2026-11-18/evidence/anchor-left.png",
+      "original_sha256": "260c3291dabacb517dbd1773a4a0b490d0c956c5f278e658f1e299629a280c48",
+      "current_sha256": "260c3291dabacb517dbd1773a4a0b490d0c956c5f278e658f1e299629a280c48",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/anchor-right.png",
+      "new": "validation/ui/2026-11-18/evidence/anchor-right.png",
+      "original_sha256": "4e6adaf0fde84b810cb7526a08e230330c77d8e99fe82b10a0264894857c6918",
+      "current_sha256": "4e6adaf0fde84b810cb7526a08e230330c77d8e99fe82b10a0264894857c6918",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/bookshelf.png",
+      "new": "validation/ui/2026-11-18/evidence/bookshelf.png",
+      "original_sha256": "8131d1b89b82c60754b511ac2802d97ece349a81c275460feaeabfce58363df9",
+      "current_sha256": "8131d1b89b82c60754b511ac2802d97ece349a81c275460feaeabfce58363df9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/browser-check-results.json",
+      "new": "validation/ui/2026-11-18/evidence/browser-check-results.json",
+      "original_sha256": "ec46586594e4ef2917eecf3ccc583507fc24ca9bae6263eed0edfc1698c9551f",
+      "current_sha256": "ec46586594e4ef2917eecf3ccc583507fc24ca9bae6263eed0edfc1698c9551f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/browser-integrity-results.json",
+      "new": "validation/ui/2026-11-18/evidence/browser-integrity-results.json",
+      "original_sha256": "701be821c20b4eae1fa5f7ece40de633b1da9b0c59045b2d3379b8b3995f459c",
+      "current_sha256": "701be821c20b4eae1fa5f7ece40de633b1da9b0c59045b2d3379b8b3995f459c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/browser-preview-results.json",
+      "new": "validation/ui/2026-11-18/evidence/browser-preview-results.json",
+      "original_sha256": "fccf433f14b6f14fb46a4d261eadd88707cf300a3bed1d0b8d766c9f38c4edfe",
+      "current_sha256": "fccf433f14b6f14fb46a4d261eadd88707cf300a3bed1d0b8d766c9f38c4edfe",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/browser-results.json",
+      "new": "validation/ui/2026-11-18/evidence/browser-results.json",
+      "original_sha256": "216f74205be31633fe446e86bb22c391bbbeeb52471171167552bf6128cda6cf",
+      "current_sha256": "216f74205be31633fe446e86bb22c391bbbeeb52471171167552bf6128cda6cf",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/check-failure.png",
+      "new": "validation/ui/2026-11-18/evidence/check-failure.png",
+      "original_sha256": "ebf2831909f2f551f09cc98bdfb2221069d2088d903cf699c822e25958267b72",
+      "current_sha256": "ebf2831909f2f551f09cc98bdfb2221069d2088d903cf699c822e25958267b72",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/comparison-dictionary.png",
+      "new": "validation/ui/2026-11-18/evidence/comparison-dictionary.png",
+      "original_sha256": "fc5e4f476e4ee9aeb130d7e6d42e40ac880c4ca97dfe780623be7e2585d5b0e3",
+      "current_sha256": "fc5e4f476e4ee9aeb130d7e6d42e40ac880c4ca97dfe780623be7e2585d5b0e3",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/comparison-full.png",
+      "new": "validation/ui/2026-11-18/evidence/comparison-full.png",
+      "original_sha256": "18fdd28f18787fb4a90cb8cecdf1873ed49c3b482d57fe1772d5fb49da6d8026",
+      "current_sha256": "18fdd28f18787fb4a90cb8cecdf1873ed49c3b482d57fe1772d5fb49da6d8026",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/comparison-pass1.png",
+      "new": "validation/ui/2026-11-18/evidence/comparison-pass1.png",
+      "original_sha256": "fd139c26177839ee4021ddc8016067b513914671f9392c0bb282e45f5d788bb9",
+      "current_sha256": "fd139c26177839ee4021ddc8016067b513914671f9392c0bb282e45f5d788bb9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-07-00-931Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-07-00-931Z.log",
+      "original_sha256": "316e1b6d52efe35a98bec0c592705c4df4999af9dc9014b17730e134b7325017",
+      "current_sha256": "316e1b6d52efe35a98bec0c592705c4df4999af9dc9014b17730e134b7325017",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-09-35-014Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-09-35-014Z.log",
+      "original_sha256": "71ebfd008dd652968f5d10cc87d657d4392a078e9612ee0c64d741deebbe2354",
+      "current_sha256": "71ebfd008dd652968f5d10cc87d657d4392a078e9612ee0c64d741deebbe2354",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-11-08-555Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-11-08-555Z.log",
+      "original_sha256": "3afc816141ef54de5d71a0303bece0db39f50214d4ada23d56201fb58b60df2e",
+      "current_sha256": "3afc816141ef54de5d71a0303bece0db39f50214d4ada23d56201fb58b60df2e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-11-49-768Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-11-49-768Z.log",
+      "original_sha256": "bfea9eaa9cecac34b1f04b4742538d71df5831e63237a6a98ede35a7973522e2",
+      "current_sha256": "bfea9eaa9cecac34b1f04b4742538d71df5831e63237a6a98ede35a7973522e2",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-13-07-872Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-13-07-872Z.log",
+      "original_sha256": "6a9f68c812b4ae6260557c64c3dd0bc3e332e915ee9b54745f250ea3d51f107c",
+      "current_sha256": "6a9f68c812b4ae6260557c64c3dd0bc3e332e915ee9b54745f250ea3d51f107c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-14-50-195Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-14-50-195Z.log",
+      "original_sha256": "d26fb30e70383dd153479394ba5af91a60a1ebb4123128a297969ff725cd7414",
+      "current_sha256": "d26fb30e70383dd153479394ba5af91a60a1ebb4123128a297969ff725cd7414",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-15-57-802Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-15-57-802Z.log",
+      "original_sha256": "fd91e4685a48e140b4f92a00a2767eef4e613eb098f21c5709b4df1a91954d84",
+      "current_sha256": "fd91e4685a48e140b4f92a00a2767eef4e613eb098f21c5709b4df1a91954d84",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-16-46-658Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-16-46-658Z.log",
+      "original_sha256": "e07248ffba339307576bf3b49ce2ab8c4b9b153fd212cf89f6c34bafe6e2a06c",
+      "current_sha256": "e07248ffba339307576bf3b49ce2ab8c4b9b153fd212cf89f6c34bafe6e2a06c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-16-53-468Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-16-53-468Z.log",
+      "original_sha256": "a6064905fb49fd96366b362f96afc809e6f15258d7f3543ae40f9dad6b4649f9",
+      "current_sha256": "a6064905fb49fd96366b362f96afc809e6f15258d7f3543ae40f9dad6b4649f9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-18-01-217Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-18-01-217Z.log",
+      "original_sha256": "b67f8b8d0b74987e8e30d329c37ceceae4e3ab62e7a4f1a6b54e7cb4e27bf620",
+      "current_sha256": "b67f8b8d0b74987e8e30d329c37ceceae4e3ab62e7a4f1a6b54e7cb4e27bf620",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-18-08-983Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-18-08-983Z.log",
+      "original_sha256": "5a8138f838f6ece202b344faa5816acac5c26f8a5fb2732152fca08d717045a3",
+      "current_sha256": "5a8138f838f6ece202b344faa5816acac5c26f8a5fb2732152fca08d717045a3",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-19-18-965Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-19-18-965Z.log",
+      "original_sha256": "aee48b04e4cff63ec4337eb1b6bd1098726105eb6cc68b5900a95f6de29ec361",
+      "current_sha256": "aee48b04e4cff63ec4337eb1b6bd1098726105eb6cc68b5900a95f6de29ec361",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/console-2026-11-18T09-20-45-400Z.log",
+      "new": "validation/ui/2026-11-18/evidence/console-2026-11-18T09-20-45-400Z.log",
+      "original_sha256": "25de22f43098f31fd2a3219ba34b31107b99b8abbb295a089fb09effd396dfb2",
+      "current_sha256": "25de22f43098f31fd2a3219ba34b31107b99b8abbb295a089fb09effd396dfb2",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/contents.png",
+      "new": "validation/ui/2026-11-18/evidence/contents.png",
+      "original_sha256": "2a8449ad99bd1f1c705d3f60811a6a18f8bbe38298e7c1936f5755c13b9da406",
+      "current_sha256": "2a8449ad99bd1f1c705d3f60811a6a18f8bbe38298e7c1936f5755c13b9da406",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-1366.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-1366.png",
+      "original_sha256": "df236901ad072c1784d03f963b7d6c53f5683f492279609ce2f266cea9990a24",
+      "current_sha256": "df236901ad072c1784d03f963b7d6c53f5683f492279609ce2f266cea9990a24",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-1440.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-1440.png",
+      "original_sha256": "c9865a176fcf60fdf5c94097276fdb76bc65322006641ff059317d1da73058bc",
+      "current_sha256": "c9865a176fcf60fdf5c94097276fdb76bc65322006641ff059317d1da73058bc",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-1920.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-1920.png",
+      "original_sha256": "fc226bfab9b3222b5688a2ed81efa3257b5e37cb7ba7f08fdee0a6eb5cb930dd",
+      "current_sha256": "fc226bfab9b3222b5688a2ed81efa3257b5e37cb7ba7f08fdee0a6eb5cb930dd",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-clean.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-clean.png",
+      "original_sha256": "c9865a176fcf60fdf5c94097276fdb76bc65322006641ff059317d1da73058bc",
+      "current_sha256": "c9865a176fcf60fdf5c94097276fdb76bc65322006641ff059317d1da73058bc",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-expanded.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-expanded.png",
+      "original_sha256": "e2dade0630f8aef0014d04c2f54ce01711f439e70a4e3953b6259aa77d76962e",
+      "current_sha256": "e2dade0630f8aef0014d04c2f54ce01711f439e70a4e3953b6259aa77d76962e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-final.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-final.png",
+      "original_sha256": "9e2c39eea57addf376efeee87193492f1163b00818d0642c4ec239e83db76002",
+      "current_sha256": "9e2c39eea57addf376efeee87193492f1163b00818d0642c4ec239e83db76002",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-initial.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-initial.png",
+      "original_sha256": "edd0c441a5ea7171c3d5f29f39f7943d048d2e87d7100d6450a81c9b603d2459",
+      "current_sha256": "edd0c441a5ea7171c3d5f29f39f7943d048d2e87d7100d6450a81c9b603d2459",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/dictionary-mobile.png",
+      "new": "validation/ui/2026-11-18/evidence/dictionary-mobile.png",
+      "original_sha256": "31857e0d4c565c90eabf1e524cf2e284342fab21b6e77da82e53cdd429256860",
+      "current_sha256": "31857e0d4c565c90eabf1e524cf2e284342fab21b6e77da82e53cdd429256860",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/favorite-detail.png",
+      "new": "validation/ui/2026-11-18/evidence/favorite-detail.png",
+      "original_sha256": "8886be77c34feb86906d281fd67705cb12d7009d3fee56086051930e6bebb8d0",
+      "current_sha256": "8886be77c34feb86906d281fd67705cb12d7009d3fee56086051930e6bebb8d0",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/favorite-error.png",
+      "new": "validation/ui/2026-11-18/evidence/favorite-error.png",
+      "original_sha256": "917bbfcea75afc74f42183e0e7edd47be8e968603bbd2698796d3372116a159d",
+      "current_sha256": "917bbfcea75afc74f42183e0e7edd47be8e968603bbd2698796d3372116a159d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/favorites-book-deleted.png",
+      "new": "validation/ui/2026-11-18/evidence/favorites-book-deleted.png",
+      "original_sha256": "55990659d8ae57f0da9998282be00066ddf478d58f60d9a7621d5eae2783a47f",
+      "current_sha256": "55990659d8ae57f0da9998282be00066ddf478d58f60d9a7621d5eae2783a47f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/favorites-sentences.png",
+      "new": "validation/ui/2026-11-18/evidence/favorites-sentences.png",
+      "original_sha256": "ee8bbb3a1ffc27446cd26038173678c267ae02fd47b0364ea28a29c4c6e613f4",
+      "current_sha256": "ee8bbb3a1ffc27446cd26038173678c267ae02fd47b0364ea28a29c4c6e613f4",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/favorites-words.png",
+      "new": "validation/ui/2026-11-18/evidence/favorites-words.png",
+      "original_sha256": "bf1567a569c9e028f26c413f14354b2b6105069a6d2b1e9206d1b34badaf75d7",
+      "current_sha256": "bf1567a569c9e028f26c413f14354b2b6105069a6d2b1e9206d1b34badaf75d7",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/import-error.png",
+      "new": "validation/ui/2026-11-18/evidence/import-error.png",
+      "original_sha256": "b7e31f02b71e3462849e66ec40665da182377c7419b6ed229becfd94363c73d8",
+      "current_sha256": "b7e31f02b71e3462849e66ec40665da182377c7419b6ed229becfd94363c73d8",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/import-loading.png",
+      "new": "validation/ui/2026-11-18/evidence/import-loading.png",
+      "original_sha256": "5a8504f61411f1ba822c067c924a319acde18df940ceae0ff03658281d989c8b",
+      "current_sha256": "5a8504f61411f1ba822c067c924a319acde18df940ceae0ff03658281d989c8b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/integrity-results.json",
+      "new": "validation/ui/2026-11-18/evidence/integrity-results.json",
+      "original_sha256": "a8a0705e6ae81555234c9d831147b7f1b24babe583f91e3c3d51ade24bd9d681",
+      "current_sha256": "a8a0705e6ae81555234c9d831147b7f1b24babe583f91e3c3d51ade24bd9d681",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/long-content.png",
+      "new": "validation/ui/2026-11-18/evidence/long-content.png",
+      "original_sha256": "def9dce420b1f7dfa7086e84b7fd6ab261965128a075b2d86f03309fea183a2e",
+      "current_sha256": "def9dce420b1f7dfa7086e84b7fd6ab261965128a075b2d86f03309fea183a2e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/lookup-empty.png",
+      "new": "validation/ui/2026-11-18/evidence/lookup-empty.png",
+      "original_sha256": "2fa9ba13b410669ff20ba668c1f707906d729fc58fc84b301a99b7920ad860db",
+      "current_sha256": "2fa9ba13b410669ff20ba668c1f707906d729fc58fc84b301a99b7920ad860db",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/lookup-error.png",
+      "new": "validation/ui/2026-11-18/evidence/lookup-error.png",
+      "original_sha256": "6b099dfe0457def9b9cfecd2d1edb5182dbdaae1d3c1f3ff0fe3c80d9edec105",
+      "current_sha256": "6b099dfe0457def9b9cfecd2d1edb5182dbdaae1d3c1f3ff0fe3c80d9edec105",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/mcp-last-result.json",
+      "new": "validation/ui/2026-11-18/evidence/mcp-last-result.json",
+      "original_sha256": "30d1e9c80a841ee6f10b2f8abef127b5299620dd6d7fadaaa78c105d44b4975c",
+      "current_sha256": "30d1e9c80a841ee6f10b2f8abef127b5299620dd6d7fadaaa78c105d44b4975c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-1366.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-1366.png",
+      "original_sha256": "401a6f5e4d04558f17a4de993f8b33419f4089bffa2d93441fa916fdefc7ae73",
+      "current_sha256": "401a6f5e4d04558f17a4de993f8b33419f4089bffa2d93441fa916fdefc7ae73",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-1440.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-1440.png",
+      "original_sha256": "5adafe35f0a474fb9420cb360a4835b0854a2b9f864b2dac4f647ee4c1a29225",
+      "current_sha256": "5adafe35f0a474fb9420cb360a4835b0854a2b9f864b2dac4f647ee4c1a29225",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-1920.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-1920.png",
+      "original_sha256": "ed994c84bf8a182c8b0e5277558c0cfea5108bfa8c5aca10a484e207d1191364",
+      "current_sha256": "ed994c84bf8a182c8b0e5277558c0cfea5108bfa8c5aca10a484e207d1191364",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-clean.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-clean.png",
+      "original_sha256": "5adafe35f0a474fb9420cb360a4835b0854a2b9f864b2dac4f647ee4c1a29225",
+      "current_sha256": "5adafe35f0a474fb9420cb360a4835b0854a2b9f864b2dac4f647ee4c1a29225",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-dark.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-dark.png",
+      "original_sha256": "cc71b1d86b09be090710d12e61360d4f751493d5f299f6a9022221149450acad",
+      "current_sha256": "cc71b1d86b09be090710d12e61360d4f751493d5f299f6a9022221149450acad",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-demo-chapter.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-demo-chapter.png",
+      "original_sha256": "e3841e10264083a0f60dec1c88c2ec29b133280d0a9d2c7e8793954928db4a85",
+      "current_sha256": "e3841e10264083a0f60dec1c88c2ec29b133280d0a9d2c7e8793954928db4a85",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-final.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-final.png",
+      "original_sha256": "5adafe35f0a474fb9420cb360a4835b0854a2b9f864b2dac4f647ee4c1a29225",
+      "current_sha256": "5adafe35f0a474fb9420cb360a4835b0854a2b9f864b2dac4f647ee4c1a29225",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-initial.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-initial.png",
+      "original_sha256": "8303f081ebbeea5ebd6a6246f146ca349c94a9fc4b3c67147e8df47906a233a0",
+      "current_sha256": "8303f081ebbeea5ebd6a6246f146ca349c94a9fc4b3c67147e8df47906a233a0",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reader-mobile.png",
+      "new": "validation/ui/2026-11-18/evidence/reader-mobile.png",
+      "original_sha256": "f8f0cf50734a4a1c7828472e08cb8bcbf8cf476e617882395d2a835d7db1f416",
+      "current_sha256": "f8f0cf50734a4a1c7828472e08cb8bcbf8cf476e617882395d2a835d7db1f416",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/reading-settings.png",
+      "new": "validation/ui/2026-11-18/evidence/reading-settings.png",
+      "original_sha256": "a4712fd761d1dd1f14a2935f1cf8701fb95080bf68b104ad2e40c94492459094",
+      "current_sha256": "a4712fd761d1dd1f14a2935f1cf8701fb95080bf68b104ad2e40c94492459094",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/settings-mobile.png",
+      "new": "validation/ui/2026-11-18/evidence/settings-mobile.png",
+      "original_sha256": "bac43a0256d79e188676922a6e6c1587115f6ec19e80c9e2b463185128d9f48f",
+      "current_sha256": "bac43a0256d79e188676922a6e6c1587115f6ec19e80c9e2b463185128d9f48f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/storage-recovery.png",
+      "new": "validation/ui/2026-11-18/evidence/storage-recovery.png",
+      "original_sha256": "e90d1a1e63a68ff9d91c7f5f5c6521ad8e29e95ae7bea19a0f07b734d9f2e255",
+      "current_sha256": "e90d1a1e63a68ff9d91c7f5f5c6521ad8e29e95ae7bea19a0f07b734d9f2e255",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/theme-dark.png",
+      "new": "validation/ui/2026-11-18/evidence/theme-dark.png",
+      "original_sha256": "91a562bb8322c1e579d37edc72aaa5295c6ded5f07316c5d3b550a51351a4ef2",
+      "current_sha256": "91a562bb8322c1e579d37edc72aaa5295c6ded5f07316c5d3b550a51351a4ef2",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/theme-warm.png",
+      "new": "validation/ui/2026-11-18/evidence/theme-warm.png",
+      "original_sha256": "bb47f11cac78594d5955f40f5c41dad6d9dec93ede0b73aa77f5aaafa089cac6",
+      "current_sha256": "bb47f11cac78594d5955f40f5c41dad6d9dec93ede0b73aa77f5aaafa089cac6",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/theme-white.png",
+      "new": "validation/ui/2026-11-18/evidence/theme-white.png",
+      "original_sha256": "fc481ee70e18b82ad13d3a99af24cf01b5d3fa2ef77afd3297249e70b546a91e",
+      "current_sha256": "fc481ee70e18b82ad13d3a99af24cf01b5d3fa2ef77afd3297249e70b546a91e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/translation-error.png",
+      "new": "validation/ui/2026-11-18/evidence/translation-error.png",
+      "original_sha256": "6e7269f01e295c5efa3e76b26eec0534ac138ea2269ad45cb29f94026e16f824",
+      "current_sha256": "6e7269f01e295c5efa3e76b26eec0534ac138ea2269ad45cb29f94026e16f824",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/translation-loading.png",
+      "new": "validation/ui/2026-11-18/evidence/translation-loading.png",
+      "original_sha256": "3fd53bd8348d38b3aed164b2448083ca5702cbfac6e769a79f8949b6563a8729",
+      "current_sha256": "3fd53bd8348d38b3aed164b2448083ca5702cbfac6e769a79f8949b6563a8729",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/translation-success.png",
+      "new": "validation/ui/2026-11-18/evidence/translation-success.png",
+      "original_sha256": "ba6099ed5e3fb0f596bde39e888924b8b7520b38524ad916c77ce41e060d2e85",
+      "current_sha256": "ba6099ed5e3fb0f596bde39e888924b8b7520b38524ad916c77ce41e060d2e85",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/word-saved.png",
+      "new": "validation/ui/2026-11-18/evidence/word-saved.png",
+      "original_sha256": "9e7c8539b21799ae2192f2638ece4346134651a04207d9a04ef118b619c83785",
+      "current_sha256": "9e7c8539b21799ae2192f2638ece4346134651a04207d9a04ef118b619c83785",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/concepts/reader-01.png",
+      "new": "docs/ux/assets/concepts/reader-01.png",
+      "original_sha256": "389461a8a46a00f1c2defc40e5cccbba3f12574f239642ecd672651cbc24fa3d",
+      "current_sha256": "389461a8a46a00f1c2defc40e5cccbba3f12574f239642ecd672651cbc24fa3d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/concepts/reader-02.png",
+      "new": "docs/ux/assets/concepts/reader-02.png",
+      "original_sha256": "8efa1749196912d55335cc5168b3449a7b5513afa707f99ae3e89b71b033c3b7",
+      "current_sha256": "8efa1749196912d55335cc5168b3449a7b5513afa707f99ae3e89b71b033c3b7",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/concepts/reader-03.png",
+      "new": "docs/ux/assets/concepts/reader-03.png",
+      "original_sha256": "c50ab64fe7a426a71d072c0dd7448014fc51ab9393f190809503c0bc2dc2b151",
+      "current_sha256": "c50ab64fe7a426a71d072c0dd7448014fc51ab9393f190809503c0bc2dc2b151",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/concepts/reader-selected.png",
+      "new": "docs/ux/assets/concepts/reader-selected.png",
+      "original_sha256": "8fa11a4d4d552932e134a3977f5a47472905536c0274e11e6855ed1fe2e43663",
+      "current_sha256": "8fa11a4d4d552932e134a3977f5a47472905536c0274e11e6855ed1fe2e43663",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/references/langa-dictionary.png",
+      "new": "docs/ux/assets/references/langa-dictionary.png",
+      "original_sha256": "284bf8922d37530a032d98ee7ce2bee3cfa26a91e0288243ec27c3d2f33e37be",
+      "current_sha256": "284bf8922d37530a032d98ee7ce2bee3cfa26a91e0288243ec27c3d2f33e37be",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/references/weread-dictionary.png",
+      "new": "docs/ux/assets/references/weread-dictionary.png",
+      "original_sha256": "9ccbf06f641413621f9afd9270c4bf776ea0a5bddb82d976065e1bd19969a26b",
+      "current_sha256": "9ccbf06f641413621f9afd9270c4bf776ea0a5bddb82d976065e1bd19969a26b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "artifacts/ux/references/weread-reader.png",
+      "new": "docs/ux/assets/references/weread-reader.png",
+      "original_sha256": "df1b1958c67993516b72d4ad5902738d722152d04d9e88824884f827ffb9d977",
+      "current_sha256": "df1b1958c67993516b72d4ad5902738d722152d04d9e88824884f827ffb9d977",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/.gitignore",
+      "new": "validation/technical/reader-core/.gitignore",
+      "original_sha256": "fdec72dcb22f3a624bec9a1ee6e65d73939ba547dbfc8ac7d6ca00401d62eeee",
+      "current_sha256": "fdec72dcb22f3a624bec9a1ee6e65d73939ba547dbfc8ac7d6ca00401d62eeee",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/index.html",
+      "new": "validation/technical/reader-core/index.html",
+      "original_sha256": "2ba1edcbc3fa7e7ae3695e2553783d855aa509b8e5e985eaabaaa4491dec315d",
+      "current_sha256": "2ba1edcbc3fa7e7ae3695e2553783d855aa509b8e5e985eaabaaa4491dec315d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/package-lock.json",
+      "new": "validation/technical/reader-core/package-lock.json",
+      "original_sha256": "b127dada90a7db2fe4582a952c7596e27b8044c1011bb268c8bba1ef28fd4aa7",
+      "current_sha256": "b127dada90a7db2fe4582a952c7596e27b8044c1011bb268c8bba1ef28fd4aa7",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/package.json",
+      "new": "validation/technical/reader-core/package.json",
+      "original_sha256": "436694b71b07513b853e96cf76836b5aff95de0d9417fc5f6704a5265706cecb",
+      "current_sha256": "436694b71b07513b853e96cf76836b5aff95de0d9417fc5f6704a5265706cecb",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/playwright.config.ts",
+      "new": "validation/technical/reader-core/playwright.config.ts",
+      "original_sha256": "fa38778515a14476f5e59e51a14d63c7f1c6d1f8e0b671f3f8ebeed118921ce6",
+      "current_sha256": "fa38778515a14476f5e59e51a14d63c7f1c6d1f8e0b671f3f8ebeed118921ce6",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/README.md",
+      "new": "validation/technical/reader-core/README.md",
+      "original_sha256": "1e8f9bd9e6896d48f7f25d01c847e9b8b7c7c7d7a05f4e108a1d2eddd297da40",
+      "current_sha256": "934377ab815d92ab190f345f5af7e219312d8572243b8b282539225e1750ab7f",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "experiments/reader-tech-spike/REPORT.md",
+      "new": "validation/technical/reader-core/REPORT.md",
+      "original_sha256": "3291021498ed405071f92bad31f88fb2ee19dbdacc7401c453e3accb8d9cab83",
+      "current_sha256": "3291021498ed405071f92bad31f88fb2ee19dbdacc7401c453e3accb8d9cab83",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/SAMPLES.md",
+      "new": "validation/technical/reader-core/SAMPLES.md",
+      "original_sha256": "66e34ef5d20b9220a53b66081daf51cc866428f8c6f7176ba747e2aebbf741fe",
+      "current_sha256": "66e34ef5d20b9220a53b66081daf51cc866428f8c6f7176ba747e2aebbf741fe",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/tsconfig.json",
+      "new": "validation/technical/reader-core/tsconfig.json",
+      "original_sha256": "3c72300e654d4cd766313cdc14a23c1ec61667edb6d313e01a6bec147d4ac282",
+      "current_sha256": "3c72300e654d4cd766313cdc14a23c1ec61667edb6d313e01a6bec147d4ac282",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/vite.config.ts",
+      "new": "validation/technical/reader-core/vite.config.ts",
+      "original_sha256": "bd1027a805cf50b04e1b3d4782e86a43af774101cd0c53322ed90671e419eb2d",
+      "current_sha256": "bd1027a805cf50b04e1b3d4782e86a43af774101cd0c53322ed90671e419eb2d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/books.json",
+      "new": "validation/technical/reader-core/evidence/books.json",
+      "original_sha256": "8ea1f586db7e95f1a5fec895bb1cd0ae0deaea95545f606ce939c4de2ad5b1eb",
+      "current_sha256": "8ea1f586db7e95f1a5fec895bb1cd0ae0deaea95545f606ce939c4de2ad5b1eb",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/browser-results.json",
+      "new": "validation/technical/reader-core/evidence/browser-results.json",
+      "original_sha256": "feed5720a310615af8f221f239de85fc24f1dc6c7f34031a570724306137fcca",
+      "current_sha256": "feed5720a310615af8f221f239de85fc24f1dc6c7f34031a570724306137fcca",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-card.png",
+      "new": "validation/technical/reader-core/evidence/chromium-card.png",
+      "original_sha256": "328ad408735dad09cd1b0187799aebc366105d8497cbab24fe353b86e16c237c",
+      "current_sha256": "328ad408735dad09cd1b0187799aebc366105d8497cbab24fe353b86e16c237c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-cross-browser-restore.png",
+      "new": "validation/technical/reader-core/evidence/chromium-cross-browser-restore.png",
+      "original_sha256": "d841e8f59b9b123f77bc0f419e1040b27a6b81e8526b63f8ae8e44a537136f68",
+      "current_sha256": "d841e8f59b9b123f77bc0f419e1040b27a6b81e8526b63f8ae8e44a537136f68",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-edges-1366.png",
+      "new": "validation/technical/reader-core/evidence/chromium-edges-1366.png",
+      "original_sha256": "16a345f4970e34d52f75e34ffcd6bd07098aaf26c968ae3c3315e724759409ad",
+      "current_sha256": "16a345f4970e34d52f75e34ffcd6bd07098aaf26c968ae3c3315e724759409ad",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-edges-1440.png",
+      "new": "validation/technical/reader-core/evidence/chromium-edges-1440.png",
+      "original_sha256": "bd792486a840482836515b76b1a47774c837fccc1cf33b87dbce35e316acbf82",
+      "current_sha256": "bd792486a840482836515b76b1a47774c837fccc1cf33b87dbce35e316acbf82",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-edges-1920.png",
+      "new": "validation/technical/reader-core/evidence/chromium-edges-1920.png",
+      "original_sha256": "c8b3c198e1c604d7fa76a7b928a5847114576bdf187b51e7b4ade80bc8c6e172",
+      "current_sha256": "c8b3c198e1c604d7fa76a7b928a5847114576bdf187b51e7b4ade80bc8c6e172",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-final-results.json",
+      "new": "validation/technical/reader-core/evidence/chromium-final-results.json",
+      "original_sha256": "feed5720a310615af8f221f239de85fc24f1dc6c7f34031a570724306137fcca",
+      "current_sha256": "feed5720a310615af8f221f239de85fc24f1dc6c7f34031a570724306137fcca",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-intermediate-results.json",
+      "new": "validation/technical/reader-core/evidence/chromium-intermediate-results.json",
+      "original_sha256": "7f71c0df6bf68b19fd643bfc25eb46f76c4626e8b176afb9c7cea54a2b64dbfe",
+      "current_sha256": "7f71c0df6bf68b19fd643bfc25eb46f76c4626e8b176afb9c7cea54a2b64dbfe",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-moby-dick.png",
+      "new": "validation/technical/reader-core/evidence/chromium-moby-dick.png",
+      "original_sha256": "e97e3c7d52a22b9ee128b40362c9a57ed82ca3aa142919adc8a20a96e218b968",
+      "current_sha256": "e97e3c7d52a22b9ee128b40362c9a57ed82ca3aa142919adc8a20a96e218b968",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-real-online-card.png",
+      "new": "validation/technical/reader-core/evidence/chromium-real-online-card.png",
+      "original_sha256": "c2c9fb2b5b7173c6a21578ccb59bb91d501254273e35d2150f33cbaff12ea995",
+      "current_sha256": "c2c9fb2b5b7173c6a21578ccb59bb91d501254273e35d2150f33cbaff12ea995",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-user-book.png",
+      "new": "validation/technical/reader-core/evidence/chromium-user-book.png",
+      "original_sha256": "e4cca6874561bf5f56ba4507bd5a48210c5f7aa92c44229f5c6e50fbfa481063",
+      "current_sha256": "e4cca6874561bf5f56ba4507bd5a48210c5f7aa92c44229f5c6e50fbfa481063",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/cross-browser.json",
+      "new": "validation/technical/reader-core/evidence/cross-browser.json",
+      "original_sha256": "50026581fb330f1c8f5dd4522caacea3687b6d6dd245973593d23bfd59e62121",
+      "current_sha256": "50026581fb330f1c8f5dd4522caacea3687b6d6dd245973593d23bfd59e62121",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/dependency-audit.json",
+      "new": "validation/technical/reader-core/evidence/dependency-audit.json",
+      "original_sha256": "a480b036c4affbcbf376ecff8da7df1ec563e1e02cb7248bd2d60246712b0e2c",
+      "current_sha256": "a480b036c4affbcbf376ecff8da7df1ec563e1e02cb7248bd2d60246712b0e2c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/environment.json",
+      "new": "validation/technical/reader-core/evidence/environment.json",
+      "original_sha256": "99683a97835d3fe2845da7273ecc2fe1f834ecf6de2c360c112fe6b46e5c315e",
+      "current_sha256": "99683a97835d3fe2845da7273ecc2fe1f834ecf6de2c360c112fe6b46e5c315e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/first-chromium-results.json",
+      "new": "validation/technical/reader-core/evidence/first-chromium-results.json",
+      "original_sha256": "9afbf5fcabc776a48653da929e2026e8ea14b5ac2e357b3e59c3ab9dec865d2d",
+      "current_sha256": "9afbf5fcabc776a48653da929e2026e8ea14b5ac2e357b3e59c3ab9dec865d2d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/initial-chromium-results.json",
+      "new": "validation/technical/reader-core/evidence/initial-chromium-results.json",
+      "original_sha256": "9afbf5fcabc776a48653da929e2026e8ea14b5ac2e357b3e59c3ab9dec865d2d",
+      "current_sha256": "9afbf5fcabc776a48653da929e2026e8ea14b5ac2e357b3e59c3ab9dec865d2d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/online-probes.json",
+      "new": "validation/technical/reader-core/evidence/online-probes.json",
+      "original_sha256": "8487f80a8bb3487b2fbcc4a17c885934ace6336a4c934e0100a11a5a9b1e996d",
+      "current_sha256": "8487f80a8bb3487b2fbcc4a17c885934ace6336a4c934e0100a11a5a9b1e996d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/online-ui.json",
+      "new": "validation/technical/reader-core/evidence/online-ui.json",
+      "original_sha256": "eb2f55d6ef2955ca0b6f6365722cd2fedb1b1a9c99d68e70d5bba4459141c75a",
+      "current_sha256": "eb2f55d6ef2955ca0b6f6365722cd2fedb1b1a9c99d68e70d5bba4459141c75a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/performance.json",
+      "new": "validation/technical/reader-core/evidence/performance.json",
+      "original_sha256": "caeffbcf8a119a5ec26b52eb01c6add95ec103a07a7ba45a91d3e27168c246c5",
+      "current_sha256": "caeffbcf8a119a5ec26b52eb01c6add95ec103a07a7ba45a91d3e27168c246c5",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/production-dependency-audit.json",
+      "new": "validation/technical/reader-core/evidence/production-dependency-audit.json",
+      "original_sha256": "b2960c9eb83e1eb0292e3eaaac52cc245e680d295c8f72e3ed610bbb017a0ada",
+      "current_sha256": "b2960c9eb83e1eb0292e3eaaac52cc245e680d295c8f72e3ed610bbb017a0ada",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/real-book-source.json",
+      "new": "validation/technical/reader-core/evidence/real-book-source.json",
+      "original_sha256": "16fce2473254cd361e6ff2d522c572b48d819e914df94c2f3c384bbea09003a9",
+      "current_sha256": "16fce2473254cd361e6ff2d522c572b48d819e914df94c2f3c384bbea09003a9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/test-summary.json",
+      "new": "validation/technical/reader-core/evidence/test-summary.json",
+      "original_sha256": "6d7eb0941d87406ac43c078da1080889f716cc26cbdf5d998cc30059cb037f88",
+      "current_sha256": "6d7eb0941d87406ac43c078da1080889f716cc26cbdf5d998cc30059cb037f88",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/text-analysis.json",
+      "new": "validation/technical/reader-core/evidence/text-analysis.json",
+      "original_sha256": "414d84e7d1fc6adba762bfbb21acdf57c14b7e21305a96ad30167df3063fab29",
+      "current_sha256": "414d84e7d1fc6adba762bfbb21acdf57c14b7e21305a96ad30167df3063fab29",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/unit-results.txt",
+      "new": "validation/technical/reader-core/evidence/unit-results.txt",
+      "original_sha256": "287178239ef39a55524f103b55bee207b5512879fff10b781e1040974995bb11",
+      "current_sha256": "287178239ef39a55524f103b55bee207b5512879fff10b781e1040974995bb11",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/user-book.json",
+      "new": "validation/technical/reader-core/evidence/user-book.json",
+      "original_sha256": "8f776eba8a7cdb4ab704dad4b28b4452a598652caedbdc13a7cd4cd42d46e195",
+      "current_sha256": "8f776eba8a7cdb4ab704dad4b28b4452a598652caedbdc13a7cd4cd42d46e195",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-final-results.json",
+      "new": "validation/technical/reader-core/evidence/webkit-final-results.json",
+      "original_sha256": "5f774d4c8e4961e48486ba06775fc5eecf38b061f80d6422bf6ee4cdf04f247d",
+      "current_sha256": "5f774d4c8e4961e48486ba06775fc5eecf38b061f80d6422bf6ee4cdf04f247d",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/chromium-html-report/index.html",
+      "new": "validation/technical/reader-core/evidence/chromium-html-report/index.html",
+      "original_sha256": "5ed6838ce350a9d57cf63b26956f8d5bc2be6e3a935893b1475f2981679ce4ff",
+      "current_sha256": "5ed6838ce350a9d57cf63b26956f8d5bc2be6e3a935893b1475f2981679ce4ff",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/html-report/index.html",
+      "new": "validation/technical/reader-core/evidence/html-report/index.html",
+      "original_sha256": "5ed6838ce350a9d57cf63b26956f8d5bc2be6e3a935893b1475f2981679ce4ff",
+      "current_sha256": "5ed6838ce350a9d57cf63b26956f8d5bc2be6e3a935893b1475f2981679ce4ff",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/mcp/console-2026-11-18T08-56-07-065Z.log",
+      "new": "validation/technical/reader-core/evidence/mcp/console-2026-11-18T08-56-07-065Z.log",
+      "original_sha256": "df61ac2d75cf9a27e1a8c2064524edd98793bda168ab1e0d292412b3f57b69b5",
+      "current_sha256": "df61ac2d75cf9a27e1a8c2064524edd98793bda168ab1e0d292412b3f57b69b5",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/mcp/page-2026-11-18T08-56-07-741Z.yml",
+      "new": "validation/technical/reader-core/evidence/mcp/page-2026-11-18T08-56-07-741Z.yml",
+      "original_sha256": "d37cfdaf3c07aad6a0117160570d62ed665437bbc5abe083e976b88b83dac96a",
+      "current_sha256": "d37cfdaf3c07aad6a0117160570d62ed665437bbc5abe083e976b88b83dac96a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/index.html",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/index.html",
+      "original_sha256": "d58e944b9b2b17d1f4108f3d4f30bad92781520d2b867ac8a04b04cad1be4204",
+      "current_sha256": "d58e944b9b2b17d1f4108f3d4f30bad92781520d2b867ac8a04b04cad1be4204",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/data/428e36a540a0b99f8810b37d9004a93e95fe0307.zip",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/data/428e36a540a0b99f8810b37d9004a93e95fe0307.zip",
+      "original_sha256": "ccac9773fecc995f37ba20c486eeff1ea25a6defd316975be1168b433bfdbc5c",
+      "current_sha256": "ccac9773fecc995f37ba20c486eeff1ea25a6defd316975be1168b433bfdbc5c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/data/7e84fda211cc0398b188a13154e319a6bc98d20d.md",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/data/7e84fda211cc0398b188a13154e319a6bc98d20d.md",
+      "original_sha256": "a9170f623f24ca26cbb1a377fb361c4ac8c37a01696b2b089da087d104f1f627",
+      "current_sha256": "a9170f623f24ca26cbb1a377fb361c4ac8c37a01696b2b089da087d104f1f627",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/data/ec5b273bc33de3d04202b63e027e35bde6ea408b.png",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/data/ec5b273bc33de3d04202b63e027e35bde6ea408b.png",
+      "original_sha256": "2acf3eb3e7465f514d6d5d196e0223cab7513ef0e195836c92e9b9481503d91a",
+      "current_sha256": "2acf3eb3e7465f514d6d5d196e0223cab7513ef0e195836c92e9b9481503d91a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/codeMirrorModule.-QdMvsKi.css",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/codeMirrorModule.-QdMvsKi.css",
+      "original_sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8",
+      "current_sha256": "20be824a82832b62cc04642d31da3c609fd280b23f1cdcb1e622c4f40aac5ab8",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/codicon.DCmgc-ay.ttf",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/codicon.DCmgc-ay.ttf",
+      "original_sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9",
+      "current_sha256": "0f1d5219934e96e83b8db162d60b4d8c09b5de1e7d38031cbafe4a3c0f2889c9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/defaultSettingsView.C8BeHuxd.css",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/defaultSettingsView.C8BeHuxd.css",
+      "original_sha256": "278101b68ab48ee6323a6afbf4e0e629324e10e96902a62a0875643a1bba3d94",
+      "current_sha256": "278101b68ab48ee6323a6afbf4e0e629324e10e96902a62a0875643a1bba3d94",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/index.BY2vkw8A.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/index.BY2vkw8A.js",
+      "original_sha256": "03747a9e732da1e50a15438830d0e98c791c8df4f7efea49dd24f628951bc77f",
+      "current_sha256": "03747a9e732da1e50a15438830d0e98c791c8df4f7efea49dd24f628951bc77f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/index.B_TqY17P.css",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/index.B_TqY17P.css",
+      "original_sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003",
+      "current_sha256": "08a212fcacae1866f44f065654afcc4c7d03409c68c74b3315c5bda17a0ca003",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/index.html",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/index.html",
+      "original_sha256": "8c62d0abbc39be5ecbfa799cdfd181a53d92f93c08c8bfbe622c2e96fece9a95",
+      "current_sha256": "8c62d0abbc39be5ecbfa799cdfd181a53d92f93c08c8bfbe622c2e96fece9a95",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/manifest.webmanifest",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/manifest.webmanifest",
+      "original_sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9",
+      "current_sha256": "d8540500603a32a39fe7e5a0375dc0f9ebafd11118e06a846db7efc608223ab9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/playwright-logo.svg",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/playwright-logo.svg",
+      "original_sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9",
+      "current_sha256": "6b0a4367bdeab10995bc239278f04c68c10e48adbec15e799e01909a0d66dcb9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/snapshot.-ChLTbql.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/snapshot.-ChLTbql.js",
+      "original_sha256": "339b2b5c67ef769f60fe959f78a3cfa42b2b8833e30f19cd32bf5194efe833b6",
+      "current_sha256": "339b2b5c67ef769f60fe959f78a3cfa42b2b8833e30f19cd32bf5194efe833b6",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/snapshot.html",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/snapshot.html",
+      "original_sha256": "7b889f89c715eadd359d10462e3d8b6292cc632a7a86de75b07e8fc9934d1972",
+      "current_sha256": "7b889f89c715eadd359d10462e3d8b6292cc632a7a86de75b07e8fc9934d1972",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/sw.bundle.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/sw.bundle.js",
+      "original_sha256": "f2a3172345fbf372075d51204139002fe80dc573714a5c7508b581c049f94aca",
+      "current_sha256": "f2a3172345fbf372075d51204139002fe80dc573714a5c7508b581c049f94aca",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/uiMode.CyMfwkXJ.css",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/uiMode.CyMfwkXJ.css",
+      "original_sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b",
+      "current_sha256": "fb403cf0b07007bc1d771e29737f7408924da300e2fab8b289a3ef2e8fc08d7b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/uiMode.DuLwZHRf.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/uiMode.DuLwZHRf.js",
+      "original_sha256": "185efd95559d290f77cb5bb7c4efd58aeb8f0f74a5ae0b31d40d7a5413f0314c",
+      "current_sha256": "185efd95559d290f77cb5bb7c4efd58aeb8f0f74a5ae0b31d40d7a5413f0314c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/uiMode.html",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/uiMode.html",
+      "original_sha256": "777b88825dacada77675168a4b44e17406992b85c7245cdde8588012cc42ba8b",
+      "current_sha256": "777b88825dacada77675168a4b44e17406992b85c7245cdde8588012cc42ba8b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/xtermModule.kHJ-D0s7.css",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/xtermModule.kHJ-D0s7.css",
+      "original_sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5",
+      "current_sha256": "0dd60056134e6a2994a86b59a1e9789b9f04e92924da109aef8c923acaf08ce5",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/assets/codeMirrorModule-DNqxPF-E.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/assets/codeMirrorModule-DNqxPF-E.js",
+      "original_sha256": "53102e1a7795f44c51b4f4172f9493d94922892a1f5cefe31edf50278e0b89cd",
+      "current_sha256": "53102e1a7795f44c51b4f4172f9493d94922892a1f5cefe31edf50278e0b89cd",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/assets/defaultSettingsView-BQT9Z6FV.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/assets/defaultSettingsView-BQT9Z6FV.js",
+      "original_sha256": "807a114bcf1e58a0f46a931b42ae3b94b1ba049d3d6a308f869dea12e9d15034",
+      "current_sha256": "807a114bcf1e58a0f46a931b42ae3b94b1ba049d3d6a308f869dea12e9d15034",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/assets/rolldown-runtime-QTnfLwEv.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/assets/rolldown-runtime-QTnfLwEv.js",
+      "original_sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+      "current_sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/evidence/webkit-html-report/trace/assets/urlMatch-Cgl6axSs.js",
+      "new": "validation/technical/reader-core/evidence/webkit-html-report/trace/assets/urlMatch-Cgl6axSs.js",
+      "original_sha256": "2d35d162cc21790c6adc218fbd1c3ef77865646b50f60157e04715f48974d182",
+      "current_sha256": "2d35d162cc21790c6adc218fbd1c3ef77865646b50f60157e04715f48974d182",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/public/books/fixture.epub",
+      "new": "validation/technical/reader-core/public/books/fixture.epub",
+      "original_sha256": "aef2e78f8f4d576674ab0c4ea8cf05c0579a55f3b6a59ff8775f4071b77fb76f",
+      "current_sha256": "aef2e78f8f4d576674ab0c4ea8cf05c0579a55f3b6a59ff8775f4071b77fb76f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/public/books/hostile.epub",
+      "new": "validation/technical/reader-core/public/books/hostile.epub",
+      "original_sha256": "3a201b5a67d56cb4fe13c3575df17566facf02b28cbbceb981c2c755940ff941",
+      "current_sha256": "3a201b5a67d56cb4fe13c3575df17566facf02b28cbbceb981c2c755940ff941",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/public/books/moby-dick.epub",
+      "new": "validation/technical/reader-core/public/books/moby-dick.epub",
+      "original_sha256": "81bc079841a38e91a02a7776d04786a2fc311cfd300064e9fc533ce7c54cf7b4",
+      "current_sha256": "81bc079841a38e91a02a7776d04786a2fc311cfd300064e9fc533ce7c54cf7b4",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/analysis.mjs",
+      "new": "validation/technical/reader-core/scripts/analysis.mjs",
+      "original_sha256": "e962e96a36b38e21719bad947a31ce6bfff1071bab5d4e41ec429898763d0734",
+      "current_sha256": "e962e96a36b38e21719bad947a31ce6bfff1071bab5d4e41ec429898763d0734",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/capture.mjs",
+      "new": "validation/technical/reader-core/scripts/capture.mjs",
+      "original_sha256": "640f57a3fe9d6e89c8c8a572d7d1f519067202286e7f9be6569f7800a30af5a5",
+      "current_sha256": "640f57a3fe9d6e89c8c8a572d7d1f519067202286e7f9be6569f7800a30af5a5",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/compatibility.mjs",
+      "new": "validation/technical/reader-core/scripts/compatibility.mjs",
+      "original_sha256": "a896d98c7581a48ce5d08ff889af18e94467adbeacaf6efe25ab4711c87a1dc8",
+      "current_sha256": "a896d98c7581a48ce5d08ff889af18e94467adbeacaf6efe25ab4711c87a1dc8",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/fixtures.mjs",
+      "new": "validation/technical/reader-core/scripts/fixtures.mjs",
+      "original_sha256": "e69ec0f541d9229616490e5cd67229ab092ae5d3af705341b1633d9f3a88316f",
+      "current_sha256": "e69ec0f541d9229616490e5cd67229ab092ae5d3af705341b1633d9f3a88316f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/performance.mjs",
+      "new": "validation/technical/reader-core/scripts/performance.mjs",
+      "original_sha256": "0ad3bef3d781328bafd619d28926efe16aa1768b87e05fdf3f900b1a3fea63f2",
+      "current_sha256": "0ad3bef3d781328bafd619d28926efe16aa1768b87e05fdf3f900b1a3fea63f2",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/probe.mjs",
+      "new": "validation/technical/reader-core/scripts/probe.mjs",
+      "original_sha256": "25796c0eb5b4855e3b09ec858e7cb5379f0d29fec710cb30aa1817238ed7e84f",
+      "current_sha256": "25796c0eb5b4855e3b09ec858e7cb5379f0d29fec710cb30aa1817238ed7e84f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/scripts/summary.mjs",
+      "new": "validation/technical/reader-core/scripts/summary.mjs",
+      "original_sha256": "9220d709fe26f441a90ec2c8758d7a12f78af15205ec48e8f26df2bc5868ca4e",
+      "current_sha256": "9220d709fe26f441a90ec2c8758d7a12f78af15205ec48e8f26df2bc5868ca4e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/src/core.ts",
+      "new": "validation/technical/reader-core/src/core.ts",
+      "original_sha256": "a5755d5d52438c3b5769cc92b4fc32e38ea0647550ab38fc206eb36f0874e5f1",
+      "current_sha256": "a5755d5d52438c3b5769cc92b4fc32e38ea0647550ab38fc206eb36f0874e5f1",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/src/importBook.ts",
+      "new": "validation/technical/reader-core/src/importBook.ts",
+      "original_sha256": "4187e5a384dedcc6d09d5ea08199eb2c8eaa7ededc22b5b759f5eb1cf4d29ea6",
+      "current_sha256": "4187e5a384dedcc6d09d5ea08199eb2c8eaa7ededc22b5b759f5eb1cf4d29ea6",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/src/main.tsx",
+      "new": "validation/technical/reader-core/src/main.tsx",
+      "original_sha256": "a961fb4dbfeb71ae2d35b3b764fb76de1162cfdc2fc28bd9b379858df08a57ed",
+      "current_sha256": "a961fb4dbfeb71ae2d35b3b764fb76de1162cfdc2fc28bd9b379858df08a57ed",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/src/services.ts",
+      "new": "validation/technical/reader-core/src/services.ts",
+      "original_sha256": "19d272007769617e24b23eb502ea61c9ae1349ee0d63ee1b402a5a85915bf072",
+      "current_sha256": "19d272007769617e24b23eb502ea61c9ae1349ee0d63ee1b402a5a85915bf072",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/src/style.css",
+      "new": "validation/technical/reader-core/src/style.css",
+      "original_sha256": "b677be97001afd0eda26eef599a07a3919c5d70fd31ec14707b20b43a896a223",
+      "current_sha256": "b677be97001afd0eda26eef599a07a3919c5d70fd31ec14707b20b43a896a223",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results/.last-run.json",
+      "new": "validation/technical/reader-core/test-results/.last-run.json",
+      "original_sha256": "8832d72f025852ca2a4198d96c559240d5977f8dc4884ded89cb24bccd5cf3de",
+      "current_sha256": "8832d72f025852ca2a4198d96c559240d5977f8dc4884ded89cb24bccd5cf3de",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results/reader-B-word-split-by-inline-elements-webkit/test-failed-1.png",
+      "new": "validation/technical/reader-core/test-results/reader-B-word-split-by-inline-elements-webkit/test-failed-1.png",
+      "original_sha256": "2acf3eb3e7465f514d6d5d196e0223cab7513ef0e195836c92e9b9481503d91a",
+      "current_sha256": "2acf3eb3e7465f514d6d5d196e0223cab7513ef0e195836c92e9b9481503d91a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results-chromium/.last-run.json",
+      "new": "validation/technical/reader-core/test-results-chromium/.last-run.json",
+      "original_sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "current_sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results-webkit/.last-run.json",
+      "new": "validation/technical/reader-core/test-results-webkit/.last-run.json",
+      "original_sha256": "8832d72f025852ca2a4198d96c559240d5977f8dc4884ded89cb24bccd5cf3de",
+      "current_sha256": "8832d72f025852ca2a4198d96c559240d5977f8dc4884ded89cb24bccd5cf3de",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results-webkit/reader-B-word-split-by-inline-elements-webkit/error-context.md",
+      "new": "validation/technical/reader-core/test-results-webkit/reader-B-word-split-by-inline-elements-webkit/error-context.md",
+      "original_sha256": "a9170f623f24ca26cbb1a377fb361c4ac8c37a01696b2b089da087d104f1f627",
+      "current_sha256": "a9170f623f24ca26cbb1a377fb361c4ac8c37a01696b2b089da087d104f1f627",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results-webkit/reader-B-word-split-by-inline-elements-webkit/test-failed-1.png",
+      "new": "validation/technical/reader-core/test-results-webkit/reader-B-word-split-by-inline-elements-webkit/test-failed-1.png",
+      "original_sha256": "2acf3eb3e7465f514d6d5d196e0223cab7513ef0e195836c92e9b9481503d91a",
+      "current_sha256": "2acf3eb3e7465f514d6d5d196e0223cab7513ef0e195836c92e9b9481503d91a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/test-results-webkit/reader-B-word-split-by-inline-elements-webkit/trace.zip",
+      "new": "validation/technical/reader-core/test-results-webkit/reader-B-word-split-by-inline-elements-webkit/trace.zip",
+      "original_sha256": "ccac9773fecc995f37ba20c486eeff1ea25a6defd316975be1168b433bfdbc5c",
+      "current_sha256": "ccac9773fecc995f37ba20c486eeff1ea25a6defd316975be1168b433bfdbc5c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/tests/core.test.ts",
+      "new": "validation/technical/reader-core/tests/core.test.ts",
+      "original_sha256": "2eec66c460132bd27e11d42f8639ed104a912de9b1888a4aa1a673cc5f33645e",
+      "current_sha256": "2eec66c460132bd27e11d42f8639ed104a912de9b1888a4aa1a673cc5f33645e",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/tests/extended.spec.ts",
+      "new": "validation/technical/reader-core/tests/extended.spec.ts",
+      "original_sha256": "635dc95f14345b10dd802b1923898722628eef34850a9f2398e0ea5d81e140b9",
+      "current_sha256": "635dc95f14345b10dd802b1923898722628eef34850a9f2398e0ea5d81e140b9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/tests/invariants.spec.ts",
+      "new": "validation/technical/reader-core/tests/invariants.spec.ts",
+      "original_sha256": "63c7462c0b180116375989fb9468a374c4c79b825d428faf145bafe61cf4c27a",
+      "current_sha256": "63c7462c0b180116375989fb9468a374c4c79b825d428faf145bafe61cf4c27a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "experiments/reader-tech-spike/tests/reader.spec.ts",
+      "new": "validation/technical/reader-core/tests/reader.spec.ts",
+      "original_sha256": "fea19dc8f2db90b31a7a5fff2595457ca773b1023d633c694504d4a84a692def",
+      "current_sha256": "fea19dc8f2db90b31a7a5fff2595457ca773b1023d633c694504d4a84a692def",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/.gitignore",
+      "new": "prototypes/reader-ui/.gitignore",
+      "original_sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8",
+      "current_sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/.oxlintrc.json",
+      "new": "prototypes/reader-ui/.oxlintrc.json",
+      "original_sha256": "466e8885c2694e497a232c34dbad6c46c2fc9bbc805059c2796821b2f5eeff2b",
+      "current_sha256": "466e8885c2694e497a232c34dbad6c46c2fc9bbc805059c2796821b2f5eeff2b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/components.json",
+      "new": "prototypes/reader-ui/components.json",
+      "original_sha256": "156858e2da20785ac0f1853580c7e34d5b8496f519e8839d2176e85947d4f779",
+      "current_sha256": "156858e2da20785ac0f1853580c7e34d5b8496f519e8839d2176e85947d4f779",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/design-qa.md",
+      "new": "validation/ui/2026-11-18/report.md",
+      "original_sha256": "628084dd3dd84a7f5fa26a87b121d9f8a0038daf644cba985657c376ccb8fc49",
+      "current_sha256": "a2e8bdbe893b544740ed292917f35ec4f354ca54cd508ef76e3ae0ebdbd87aff",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/DESIGN.md",
+      "new": "docs/ux/design-spec.md",
+      "original_sha256": "a53d900a50bfeb9eb5b31026bb9735b490bc8fb16c7dbce7aa37a592f2ba58c2",
+      "current_sha256": "748e6c9f88aef360ce3e693dce5e0e7dd68f41a3edcd7ad137fa5a65ed39e359",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/index.html",
+      "new": "prototypes/reader-ui/index.html",
+      "original_sha256": "e660e327b9c49a3c9ccfef10939e9824923385c4301c1deea9e7e747124163e4",
+      "current_sha256": "e660e327b9c49a3c9ccfef10939e9824923385c4301c1deea9e7e747124163e4",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/package-lock.json",
+      "new": "prototypes/reader-ui/package-lock.json",
+      "original_sha256": "1942dcd57170efc079f685cdc9bf632e6cb365c25aeeddc3b18e077262a817ea",
+      "current_sha256": "1942dcd57170efc079f685cdc9bf632e6cb365c25aeeddc3b18e077262a817ea",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/package.json",
+      "new": "prototypes/reader-ui/package.json",
+      "original_sha256": "d631bdbf73c34b08c5488de11f3a6fcc829367c500dd7f72e0383553f147e52b",
+      "current_sha256": "d631bdbf73c34b08c5488de11f3a6fcc829367c500dd7f72e0383553f147e52b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/README.md",
+      "new": "prototypes/reader-ui/README.md",
+      "original_sha256": "639b79cd19281388d6bac132c5b61473e0c1ace5d8b6e622049b09195b861d89",
+      "current_sha256": "e39ce770f3688b230b644c06779f5c6aa4c4b97bf6c3a021508899a9ddf9ace0",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/tsconfig.app.json",
+      "new": "prototypes/reader-ui/tsconfig.app.json",
+      "original_sha256": "710d39cf9a34644504ba00ec1c45baae4b6b8abad29582fd53434d5666c6462c",
+      "current_sha256": "710d39cf9a34644504ba00ec1c45baae4b6b8abad29582fd53434d5666c6462c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/tsconfig.json",
+      "new": "prototypes/reader-ui/tsconfig.json",
+      "original_sha256": "e59e37057dd513e569853041202b37ef189b3425220e5a8b49b52e8d6beacdb8",
+      "current_sha256": "e59e37057dd513e569853041202b37ef189b3425220e5a8b49b52e8d6beacdb8",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/tsconfig.node.json",
+      "new": "prototypes/reader-ui/tsconfig.node.json",
+      "original_sha256": "d366cc0827139db39c61815f22491bbfda56c654354a42ad7795143d314e45e8",
+      "current_sha256": "d366cc0827139db39c61815f22491bbfda56c654354a42ad7795143d314e45e8",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/vite.config.ts",
+      "new": "prototypes/reader-ui/vite.config.ts",
+      "original_sha256": "e77c17286c5e9a53fe19dee5d54e62a4427ed09cb5b75509d6c7d0bb22f7e9c0",
+      "current_sha256": "e77c17286c5e9a53fe19dee5d54e62a4427ed09cb5b75509d6c7d0bb22f7e9c0",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/public/favicon.svg",
+      "new": "prototypes/reader-ui/public/favicon.svg",
+      "original_sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66",
+      "current_sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/public/icons.svg",
+      "new": "prototypes/reader-ui/public/icons.svg",
+      "original_sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a",
+      "current_sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/public/covers/garden.jpg",
+      "new": "prototypes/reader-ui/public/covers/garden.jpg",
+      "original_sha256": "c1ff4991e46ca6655a1235d4bce407e598f45d7a8615b0a29d57b52342a4a6c0",
+      "current_sha256": "c1ff4991e46ca6655a1235d4bce407e598f45d7a8615b0a29d57b52342a4a6c0",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/public/covers/pride.jpg",
+      "new": "prototypes/reader-ui/public/covers/pride.jpg",
+      "original_sha256": "3c765e7b904cd856d3b45f73aadc5e35d05f190a326520bb6e3500dbcb506090",
+      "current_sha256": "3c765e7b904cd856d3b45f73aadc5e35d05f190a326520bb6e3500dbcb506090",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/scripts/browser-check.js",
+      "new": "prototypes/reader-ui/scripts/browser-check.js",
+      "original_sha256": "f6a6488497ec2f9d4053dbad359dd43e3c8ba66943fd164d06be188cdbf7eb56",
+      "current_sha256": "37e24e1245614e827125b9d1f2d2e51a80416c61064e2f94c4e4549fe87b4f9f",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/scripts/browser-diagnostics.js",
+      "new": "prototypes/reader-ui/scripts/browser-diagnostics.js",
+      "original_sha256": "3ab845ad6da34f2eef97e69d746a4ab93f17b3a89ed82ffef975906d039123d7",
+      "current_sha256": "3ab845ad6da34f2eef97e69d746a4ab93f17b3a89ed82ffef975906d039123d7",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/scripts/browser-initial.js",
+      "new": "prototypes/reader-ui/scripts/browser-initial.js",
+      "original_sha256": "12fc85d49b0ff1c5a1bdcc386194b98ec0e11011fa90826b2959fcc2f70a64ef",
+      "current_sha256": "51fc0837a823fd08eaef5a7ee9e72c4679dc8dda571b32f5a5c233cae53dcb46",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/scripts/browser-integrity.js",
+      "new": "prototypes/reader-ui/scripts/browser-integrity.js",
+      "original_sha256": "f2f2a8a30825d0d3e19f4480bb640ee6273071d581f76cb5ab75f0ed497c946a",
+      "current_sha256": "b5db128c24ba504651c64d6a987a877709a607c59119cfe5648932d9569d78d6",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/scripts/browser-preview.js",
+      "new": "prototypes/reader-ui/scripts/browser-preview.js",
+      "original_sha256": "1d443b7e66c9db5e27e085519542280f81ba9dcd61d599fab62cc385e996d041",
+      "current_sha256": "8537a4d2e84ce8748cdb7dff24a6f0c31b8b06d63f7d2ed34378e7e68d59ed2d",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/scripts/mcp-browser.mjs",
+      "new": "prototypes/reader-ui/scripts/mcp-browser.mjs",
+      "original_sha256": "694fabd7bfea5e9ab60714f4a0919a6fad9c8d771820dc0d712b18ca2727028b",
+      "current_sha256": "6d9d64e5eacc5481a78dbbb24a915d29b5b64b496cfcca303640abdcd758ef82",
+      "present": true,
+      "unchanged": false,
+      "allowed_update": true
+    },
+    {
+      "old": "frontend/src/App.css",
+      "new": "prototypes/reader-ui/src/App.css",
+      "original_sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+      "current_sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/App.tsx",
+      "new": "prototypes/reader-ui/src/App.tsx",
+      "original_sha256": "a0ae6fc461fb55425c64016f553b4a44f7249d86ffa4943a8d9adc949a949042",
+      "current_sha256": "a0ae6fc461fb55425c64016f553b4a44f7249d86ffa4943a8d9adc949a949042",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/index.css",
+      "new": "prototypes/reader-ui/src/index.css",
+      "original_sha256": "9bde270cb8d0493a24091df8ae292e3a2b3484f91d738fa70a037866fe206d48",
+      "current_sha256": "9bde270cb8d0493a24091df8ae292e3a2b3484f91d738fa70a037866fe206d48",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/main.tsx",
+      "new": "prototypes/reader-ui/src/main.tsx",
+      "original_sha256": "484f93f3048565a86a47e308f5a12ee27aa12f5291f3b52a4bb5dc03d887dbc7",
+      "current_sha256": "484f93f3048565a86a47e308f5a12ee27aa12f5291f3b52a4bb5dc03d887dbc7",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/readict.css",
+      "new": "prototypes/reader-ui/src/readict.css",
+      "original_sha256": "d226702a59509ebe0dd97c5b5d52c04c667eee1ae4a874022016ed6ea3ed15a9",
+      "current_sha256": "d226702a59509ebe0dd97c5b5d52c04c667eee1ae4a874022016ed6ea3ed15a9",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/assets/hero.png",
+      "new": "prototypes/reader-ui/src/assets/hero.png",
+      "original_sha256": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+      "current_sha256": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/assets/react.svg",
+      "new": "prototypes/reader-ui/src/assets/react.svg",
+      "original_sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5",
+      "current_sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/assets/vite.svg",
+      "new": "prototypes/reader-ui/src/assets/vite.svg",
+      "original_sha256": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+      "current_sha256": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/Bookshelf.tsx",
+      "new": "prototypes/reader-ui/src/components/Bookshelf.tsx",
+      "original_sha256": "1c193e991d1181a9b8f0708ed299942870c815fa0f18582f6eb0a34c4b49163a",
+      "current_sha256": "1c193e991d1181a9b8f0708ed299942870c815fa0f18582f6eb0a34c4b49163a",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/common.tsx",
+      "new": "prototypes/reader-ui/src/components/common.tsx",
+      "original_sha256": "2794c26c37321e76fc5b907679d2b93a199d8ec67c1d51c22136f115b7245ef6",
+      "current_sha256": "2794c26c37321e76fc5b907679d2b93a199d8ec67c1d51c22136f115b7245ef6",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/DictionaryPopover.tsx",
+      "new": "prototypes/reader-ui/src/components/DictionaryPopover.tsx",
+      "original_sha256": "1664263cde9799348a894b7defbd869da56fac306583fa553573e79c9ad4932b",
+      "current_sha256": "1664263cde9799348a894b7defbd869da56fac306583fa553573e79c9ad4932b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/Favorites.tsx",
+      "new": "prototypes/reader-ui/src/components/Favorites.tsx",
+      "original_sha256": "089e34dd60b93e2bcef8eb48de17af49a2746e9a93abf9f6d68e077e56362629",
+      "current_sha256": "089e34dd60b93e2bcef8eb48de17af49a2746e9a93abf9f6d68e077e56362629",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/Reader.tsx",
+      "new": "prototypes/reader-ui/src/components/Reader.tsx",
+      "original_sha256": "ed1887478b64edef188a03f5aa3a8b528e166ae318a36b27fc3f84388ed03dc5",
+      "current_sha256": "ed1887478b64edef188a03f5aa3a8b528e166ae318a36b27fc3f84388ed03dc5",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ReaderPanels.tsx",
+      "new": "prototypes/reader-ui/src/components/ReaderPanels.tsx",
+      "original_sha256": "ee337a958f13ca239f62e03149f8dc2a42f44ac249b364722da5c29fcb6fc5ba",
+      "current_sha256": "ee337a958f13ca239f62e03149f8dc2a42f44ac249b364722da5c29fcb6fc5ba",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/alert-dialog.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/alert-dialog.tsx",
+      "original_sha256": "d39348ea094dea9b83ecf1baac1cd0ef98b73944bcca1e592da04fd30f452787",
+      "current_sha256": "d39348ea094dea9b83ecf1baac1cd0ef98b73944bcca1e592da04fd30f452787",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/button.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/button.tsx",
+      "original_sha256": "c635b418a7ee7d1375f9a4764fa7aa98b3664e7d52905c41441bcd1dfabf4bca",
+      "current_sha256": "c635b418a7ee7d1375f9a4764fa7aa98b3664e7d52905c41441bcd1dfabf4bca",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/collapsible.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/collapsible.tsx",
+      "original_sha256": "ead4349ff7b01d696ef89294a81d18ee1d3f732321398896462c834ab9b9e065",
+      "current_sha256": "ead4349ff7b01d696ef89294a81d18ee1d3f732321398896462c834ab9b9e065",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/dialog.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/dialog.tsx",
+      "original_sha256": "8081cc14ab4d744b75925706523192f60cc75863e05cb986aaf6a08677c83304",
+      "current_sha256": "8081cc14ab4d744b75925706523192f60cc75863e05cb986aaf6a08677c83304",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/scroll-area.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/scroll-area.tsx",
+      "original_sha256": "8a3208346940824bb191ac70301a0f9fbcb211a717721bdb9952d4fad4306ced",
+      "current_sha256": "8a3208346940824bb191ac70301a0f9fbcb211a717721bdb9952d4fad4306ced",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/select.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/select.tsx",
+      "original_sha256": "4ba225fb838887a2493a8908774f1294ffbc2030af1e372425c6de76f598f0eb",
+      "current_sha256": "4ba225fb838887a2493a8908774f1294ffbc2030af1e372425c6de76f598f0eb",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/skeleton.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/skeleton.tsx",
+      "original_sha256": "4c2af7fa9c645358a0fb188779deab6f0b981733b62befc25e18aaebea1350dc",
+      "current_sha256": "4c2af7fa9c645358a0fb188779deab6f0b981733b62befc25e18aaebea1350dc",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/sonner.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/sonner.tsx",
+      "original_sha256": "2dd975ad2170ba2570b00e58713dcbda90f26a7fffdaceb1ef7255f450c2d2a6",
+      "current_sha256": "2dd975ad2170ba2570b00e58713dcbda90f26a7fffdaceb1ef7255f450c2d2a6",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/tabs.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/tabs.tsx",
+      "original_sha256": "04c251a62bddfe55d09bf157ce150b1fc527b1fcfdbb10d51188b1e36dd3e3c0",
+      "current_sha256": "04c251a62bddfe55d09bf157ce150b1fc527b1fcfdbb10d51188b1e36dd3e3c0",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/components/ui/tooltip.tsx",
+      "new": "prototypes/reader-ui/src/components/ui/tooltip.tsx",
+      "original_sha256": "100101631756e1bebc1f1831e1642b26cd11a6a6c4affb6c638c42001dc14e83",
+      "current_sha256": "100101631756e1bebc1f1831e1642b26cd11a6a6c4affb6c638c42001dc14e83",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/data/mock.ts",
+      "new": "prototypes/reader-ui/src/data/mock.ts",
+      "original_sha256": "5d3baf343dd09f388d85c1924f84e67fc575d919593264be825769a6e680069b",
+      "current_sha256": "5d3baf343dd09f388d85c1924f84e67fc575d919593264be825769a6e680069b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/lib/services.test.ts",
+      "new": "prototypes/reader-ui/src/lib/services.test.ts",
+      "original_sha256": "d7ea02a50cd2fab03c72a83e6c2cccc9b89dddda5aab56d26d986123a7571408",
+      "current_sha256": "d7ea02a50cd2fab03c72a83e6c2cccc9b89dddda5aab56d26d986123a7571408",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/lib/services.ts",
+      "new": "prototypes/reader-ui/src/lib/services.ts",
+      "original_sha256": "9ab701c6bb04777eec2e0ce15c3d35fbea4eb206aa9e97c7f940241c3f60883b",
+      "current_sha256": "9ab701c6bb04777eec2e0ce15c3d35fbea4eb206aa9e97c7f940241c3f60883b",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/lib/store.tsx",
+      "new": "prototypes/reader-ui/src/lib/store.tsx",
+      "original_sha256": "a919d4b9f772450cc37cc7ab674908e22378bb250b0a23eec8436af95fec9070",
+      "current_sha256": "a919d4b9f772450cc37cc7ab674908e22378bb250b0a23eec8436af95fec9070",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/lib/types.ts",
+      "new": "prototypes/reader-ui/src/lib/types.ts",
+      "original_sha256": "3c50d1c0ad9d91254cee97b6858001ab9e287b15114efe3568d3e6b91e50bdbc",
+      "current_sha256": "3c50d1c0ad9d91254cee97b6858001ab9e287b15114efe3568d3e6b91e50bdbc",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    },
+    {
+      "old": "frontend/src/lib/utils.ts",
+      "new": "prototypes/reader-ui/src/lib/utils.ts",
+      "original_sha256": "14300d758170c270c75b057f38fedb3793a5920ea872f0477e29fb131185e8a7",
+      "current_sha256": "14300d758170c270c75b057f38fedb3793a5920ea872f0477e29fb131185e8a7",
+      "present": true,
+      "unchanged": true,
+      "allowed_update": false
+    }
+  ]
+}

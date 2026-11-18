@@ -1,0 +1,6 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {wordAt,sentenceAt,analyze} from '../src/core.ts';
+test('word boundary: apostrophes, curly apostrophes, hyphens and whitespace',()=>{assert.equal(wordAt('The well-known reader doesn’t stop.',5)?.text,'well-known');assert.equal(wordAt('doesn’t',4)?.text,'doesn’t');assert.equal(wordAt('cat dog',3),undefined);});
+test('context is a literal source substring containing target offsets',()=>{const text='He said, “The children are running.” She runs a business.';const i=text.indexOf('running');const s=sentenceAt(text,i);assert.equal(s.text,text.slice(s.start,s.end));assert.ok(s.start<=i&&s.end>i);assert.ok(!s.text.includes('business'));});
+test('same surface different occurrence: noun and verb',()=>{const s='I saw a saw.';assert.equal(analyze(s,{text:'saw',start:2,end:5}).pos,'verb');assert.equal(analyze(s,{text:'saw',start:8,end:11}).pos,'noun');});
+test('regular and irregular lemmatization in context',()=>{for(const [s,w,lemma] of [['The children are running.','children','child'],['The children are running.','running','run'],['She runs a business.','runs','run'],['He played a game.','played','play'],['She studies English.','studies','study']]){const i=s.indexOf(w);assert.equal(analyze(s,{text:w,start:i,end:i+w.length}).lemma,lemma);}});

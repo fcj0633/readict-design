@@ -1,0 +1,16 @@
+
+> test:unit
+> node --import tsx --test tests/core.test.ts
+
+✔ word boundary: apostrophes, curly apostrophes, hyphens and whitespace (1.8028ms)
+✔ context is a literal source substring containing target offsets (27.249ms)
+✔ same surface different occurrence: noun and verb (100.9678ms)
+✔ regular and irregular lemmatization in context (32.9103ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1596.6921
