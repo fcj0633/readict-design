@@ -1,14 +1,18 @@
 # Readict V1.1 系统技术设计文档
 
-文档版本：0.2（2026-11-19 修订，正式开发设计草案）  
+文档版本：0.3（2026-11-19 持久层修订，正式开发设计草案）  
 编写日期：2026-11-18  
 唯一功能需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)  
 适用仓库：本设计保存在 readict-design；后续正式实现位于独立的 readict-app。  
-状态：已完成工程设计修订，尚未实现、未通过生产验收；第 17 章的阻断项未关闭。技术方向采纳记录见 ADR-0001，不代表验证已通过；尚未发布开发交付基线。
+状态：已完成工程设计修订，尚未实现、未通过生产验收；第 17 章的阻断项未关闭。技术方向采纳记录见 ADR-0001／ADR-0002，不代表验证已通过；尚未发布开发交付基线。
 
 ### 2026-11-19 修订说明
 
 依据用户实施指令、[CR-0002](../../requirements/changes/CR-0002-密码规则与本地词典及音频阶段安排.md) 与 [ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)：开发和验收统一本机 MySQL；密码调整为数字＋英文字母；本地 COL 为首版词典、腾讯云 TMT 为翻译目标；音频等待后续文件。新增完整[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。第 2 章 EPUB 历史结果保留原适用边界，修订不代表新实现通过测试。
+
+### 2026-11-19 持久层补充修订
+
+按用户确认改为 MyBatis-Plus＋自定义 MyBatis XML；采用 com.baomidou:mybatis-plus-spring-boot4-starter:3.5.18，保留 Java 21／Boot 4.1.2，实际集成待执行。[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)替代 ADR-0001 中原业务持久层选择，不影响本机数据库、COL 和 TMT 决定。独立[M00 执行文档](../implementation/M00-工程基础与本机环境执行文档.md)提供开发步骤；本次不创建正式应用或验证数据库。PRD 功能范围不变。
 
 ## 阅读导航
 
@@ -157,7 +161,7 @@ flowchart LR
 | 词法 | compromise 启发式 + 明确词形修正规则 + 词典词形数据 | 足够轻量，失败可回退 | 非语义消歧；改用服务端 NLP 要先证明收益和延迟 |
 | Java | Java 21 LTS、Maven、Spring Boot 4.1 稳定系列 | 本机已有 JDK 21；官方系统要求支持 | 开工时锁定当时安全补丁版；未运行正式兼容构建 |
 | Web／安全 | Spring MVC、Validation、Spring Security、Spring Session JDBC | 传统请求、事务和 Cookie 会话简单可控 | 供应商超时需单独预算，不能占满 Web 线程 |
-| 持久化 | Spring JDBC（JdbcClient）、显式 SQL、Flyway | 收藏去重、并发更新和索引行为透明 | 比 ORM 多写映射；MyBatis/JPA 均可行，本版不增加框架 |
+| 业务持久化 | MyBatis-Plus 3.5.18 Boot 4 Starter＋自定义 MyBatis XML，Spring 事务；Flyway 独占迁移 | BaseMapper 简单 CRUD，复杂查询／锁／去重／版本更新显式 SQL，符合用户技术偏好 | 不重复引入普通／Boot 3 MyBatis Starter，不把 ORM 当连接池或权限检查；目标组合待 M00 验证 |
 | 数据库 | 本机 MySQL80／MySQL 8.0.44、InnoDB、utf8mb4 | 开发、集成测试及阶段验收使用同一本机实例，独立 readict_dev／readict_test | 服务运行不等于账号连接、驱动、迁移、Session、事务已通过；不要求升级或独立实例 |
 | 文件 | 私有本地目录，StoragePort 接口 | 单实例运维简单 | 磁盘、备份与 DB 不原子；需清理任务和恢复演练 |
 | 后台任务 | MySQL 任务表 + 进程内有界线程池 + 定时恢复 | 无需消息中间件，任务可恢复 | 任务需租约／重试，不能仅依赖内存 Future |
@@ -211,7 +215,7 @@ interface ReaderEngine {
 
 ### 6.1 模块职责
 
-按业务包组织一个 Maven 应用，各模块内分 `api / application / domain / infrastructure`，不为每层建立独立服务。Controller 仅校验传输数据；Application 编排鉴权和事务；Repository 使用参数化 SQL；外部 Provider 和 Storage 经接口调用。
+按业务包组织一个 Maven 应用，各模块内分 `api / application / domain / infrastructure`，不为每层建立独立服务。Controller 仅校验传输数据；Application 编排鉴权和事务；Repository 经 Mapper／BaseMapper 使用参数绑定，复杂 SQL 写 XML；外部 Provider 和 Storage 经接口调用。
 
 | 模块 | 核心职责 | 事务与外部调用 |
 |---|---|---|
@@ -225,7 +229,17 @@ interface ReaderEngine {
 
 跨模块通过应用服务，不允许 Controller 直接读别的模块内部表。共享类型仅包含用户标识、错误模型、分页和事务基础设施。所有者 ID 从认证主体取得，不接受请求体中的 `userId`。
 
-### 6.2 请求与后台资源预算
+### 6.2 MyBatis-Plus、XML 与连接基础设施
+
+业务数据访问采用 MP Boot 4 Starter；它提供通用 Mapper 与 MyBatis 集成，不替代 HikariCP、MySQL Connector/J 或 Spring 事务。只直接选择一个 MP Starter，不再直接引入普通 MyBatis Starter、MyBatis-Spring 或 Boot 3 MP Starter；相关核心包作为传递依赖由选定集成解析。Flyway 使用 Boot 4 的 spring-boot-starter-flyway＋flyway-mysql，为唯一 schema 管理；Session JDBC 在 M01 依框架实现，不重写为业务 Mapper。
+
+Mapper 接口按 com.readict.<module>.infrastructure.persistence.mapper 管理，XML 在 resources/mapper/<module>，统一 MapperScan、mapper-locations、驼峰配置与 type-handlers-package；业务 Entity 与 API DTO 分离。Controller 不直接调用 Mapper；Repository 明确 userId 和资源所属条件，BaseMapper.selectById 不是所有权证明。普通单表操作可用 BaseMapper，JOIN、FOR UPDATE、收藏归并／去重、游标排序和条件版本更新使用显式 XML。绑定参数用 #{}，不拼接用户输入；排序字段白名单化。
+
+@Transactional 放应用服务的公共代理方法，跨 Mapper 同 DataSource，外呼不包长事务；异常传播和行数检查明确。二级缓存关闭，本地缓存设 STATEMENT，不以多租户插件替代鉴权；本版不默认安装分页、乐观锁、逻辑删除和自动 DDL。进度／设置仍显式 WHERE version=expectedVersion，书籍仍用生命周期状态，不能因 MP 功能改变去重、删除或快照语义。
+
+UUID／BINARY(16) 继续使用应用生成 UUID＋IdType.INPUT、全局 UuidBinaryTypeHandler（固定 big-endian）和必要 autoResultMap；Instant／DATETIME(3) 用 UTC 处理器，null 和毫秒精度明确。禁止默认雪花 ID 改写主键。M00 用基础设施 system_metadata 表验证 BaseMapper／XML／事务；UUID 用测试专用 Mapper 只读参数往返，不建业务 probe 表。详细配置、SQL 与验收见独立 M00 文档。
+
+### 6.3 请求与后台资源预算
 
 首版默认单实例导入并发 1、待处理任务上限 10、用户同时有效导入任务上限 2；超限返回 429，不能无限堆积内存。Web 请求、导入执行器、供应商外呼分别设限。词典总超时 3 秒、翻译 15 秒为初始工程预算，不是供应商 SLA；连接超时 2 秒，不自动重试计费请求。所有预算可配置，经实测调整。
 
@@ -514,7 +528,7 @@ user_settings 与用户一对一，默认值沿用原型：Georgia、20px、1.8�
 
 ### 13.1 通用约定与实体关系
 
-下列为逻辑／字段级设计，正式开发通过 Flyway 在本机独立 readict_dev／readict_test 中生成可执行 DDL，不在本次创建数据库或改表。业务主键使用应用生成 UUID，MySQL 存 BINARY(16)，API 使用标准 UUID 字符串；BIGINT version 为非负递增整数。UTC DATETIME(3) 保存服务端时间，输出 ISO-8601 UTC；数据库连接时区固定 UTC。文本默认 utf8mb4；lemma_key 等身份字段显式采用二进制比较，不能依赖默认不区分重音的排序规则。
+下列为逻辑／字段级设计，正式开发通过 Flyway 在本机独立 readict_dev／readict_test 中生成可执行 DDL，M00 先建 system_metadata 元信息表及基线行以验证基础链路，业务表后续模块按需迁移，不在本次创建数据库或改表。业务主键使用应用生成 UUID，MySQL 存 BINARY(16)，API 使用标准 UUID 字符串；BIGINT version 为非负递增整数。UTC DATETIME(3) 保存服务端时间，输出 ISO-8601 UTC；数据库连接时区固定 UTC。文本默认 utf8mb4；lemma_key 等身份字段显式采用二进制比较，不能依赖默认不区分重音的排序规则。
 
 SHA-256 存 BINARY(32)，API 输出小写十六进制。各表显式外键；普通 JSON 只存非检索附加信息，主要业务键、偏移、状态不藏在 JSON 中。业务状态使用 VARCHAR + CHECK，由应用枚举映射；CHECK 包含范围和互斥关系，复杂跨表规则由事务维护。
 
@@ -611,7 +625,7 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 
 ### 14.1 通用规则
 
-路径前缀 `/api/v1`，JSON camelCase，UTF-8。除 csrf、注册、登录和密码恢复挑战／验证／重置外均需当前 Session；密码恢复匿名接口仍须 CSRF、限流和一次所有权凭证，不能因匿名开放而跳过验证；读私有资源也需认证。跨用户 ID 返回 404，未登录返回 401，CSRF 错误返回 403。状态变更附 CSRF；上传／收藏／翻译使用 `Idempotency-Key: UUID`，进度和偏好使用 body requestId + expectedVersion。服务端生成 requestId 追踪日志但不返回内部异常堆栈。
+路径前缀 `/api/v1`，JSON camelCase，UTF-8。除 M00 的最小 system/status 开发入口、csrf、注册、登录和密码恢复挑战／验证／重置外均需当前 Session；密码恢复匿名接口仍须 CSRF、限流和一次所有权凭证，不能因匿名开放而跳过验证；读私有资源也需认证。跨用户 ID 返回 404，未登录返回 401，CSRF 错误返回 403。状态变更附 CSRF；上传／收藏／翻译使用 `Idempotency-Key: UUID`，进度和偏好使用 body requestId + expectedVersion。服务端生成 requestId 追踪日志但不返回内部异常堆栈。
 
 成功响应直接是资源或列表 `{items,nextCursor}`，无二次 success 布尔包裹；错误使用 `application/problem+json`，字段兼容 Problem Details：
 
@@ -634,6 +648,7 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 
 | 方法与路径 | 请求要点 | 成功契约／权限及错误 |
 |---|---|---|
+| GET `/system/status`（M00） | 无，开发回环入口，校验元信息就绪 | 200 `{status:UP,service:readict,requestId}`；未就绪 503 SYSTEM_NOT_READY；不含数据库／账号／SQL；M01 再确认鉴权边界 |
 | GET `/auth/csrf` | 无 | 200 `{token,headerName}`，匿名可用，no-store |
 | POST `/auth/register` | `{identifierType:email\|phone,identifier,password}` | 201 当前用户基础信息，不自动登录；409 IDENTIFIER_UNAVAILABLE；422 PASSWORD_POLICY |
 | POST `/auth/password-reset/challenges` | `{identifierType,identifier}`，CSRF 和限流 | 202 统一申请提示；验证服务未配置 503，不能发送假成功验证码 |
@@ -886,7 +901,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 | V08 开发阶段必须完成 | 词形与词性失败集 | 至少 100 项分层语料，包含 leaves/fell、better、doesn’t、重复词；报告 lemma、POS 分别命中情况与 fallback | 精确修正规则／供应商词形映射；不为覆盖率编造置信度，AI 消歧仍不进入 V1.1 |
 | V09 开发阶段必须完成 | 服务器分句与原句完整性 | 称谓、缩写、小数、对话、脚注、诗歌、跨块句；验证 canonical ranges 稳定且包含目标 | 返回 fragment 标识或拒绝不支持范围，扩展明确规则并升 pipelineVersion |
 | V10 开发阶段必须完成 | DOM 释放、性能、键盘 | 50 次切书、500 次翻页、heap／Blob／监听器统计；段落键盘查词与读屏抽查；第 15 章指标 | 优化热点和清理；确认是否需要 Worker，不先引入 |
-| V11 开发阶段必须完成 | 本机环境与备份 | Boot/JDK/驱动/Flyway／Session 组合构建与真实连接；本机 readict_test 的迁移、事务、并发和数据库＋文件恢复演练 | 补配置、库隔离与恢复脚本；不要求 MySQL 8.4、独立实例或 Docker |
+| V11 开发阶段必须完成 | 本机环境与备份 | Boot/JDK／MP Boot 4 Starter／XML／驱动／Flyway 组合构建与真实连接，Session 在 M01 启用；本机 readict_test 的迁移、事务、并发和数据库＋文件恢复演练 | 补配置、库隔离与恢复脚本；不要求 MySQL 8.4、独立实例或 Docker |
 | V12 后续增强，条件可升级 | Firefox／Safari／移动触屏 | 真实 Firefox、macOS Safari/iOS、390px 触屏；排查历史 WebKit 坐标失败，不能只运行 Chromium 模拟 UA | 保持明确支持矩阵；若要求同时首发则升级为上线阻断 |
 | V13 后续增强，安全失败则阻断 | 独立阅读域桥 | 搭建最小隔离页面验证消息来源、结构化 source／矩形、焦点、下载授权及 CSP；不传 Session 给非可信正文 | 保留当前有限支持或暂停上线，不绕过 same-origin 限制 |
 | V14 账号完整验收前必须完成 | 手机号／邮箱验证与密码恢复 | 选择验证服务，验证所有权证明、挑战过期／次数、一次消费、限流和重置后会话失效；注册／改密／重置统一数字＋字母密码规则 | 账号模块保持部分完成；不得仅凭标识重置或标为全量验收通过 |
@@ -913,7 +928,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 | 模块 | 实施内容 | 退出条件 |
 |---|---|---|
-| M00 | 正式工程、配置、Flyway、本机 readict_dev／readict_test、日志与 API 基础 | 本机真实连接、迁移与事务检查；无独立实例或 Docker 前置 |
+| M00 | 正式工程、MP Boot 4／XML、Flyway、本机 readict_dev／readict_test、日志与 API 基础；独立执行文档见下文 | 本机真实连接、迁移／Mapper／类型／事务检查；无独立实例或 Docker 前置 |
 | M01 | 注册登录、设置、改密退出、Session、验证与密码恢复 | 数字＋字母规则一致，用户隔离；恢复服务未完成则仅部分完成 |
 | M02 | COL 离线转换、数据集／义项／词形、Java 查询 | 固定词表、计数、幂等与切换；音频不作文字退出门槛 |
 | M03 | 安全 EPUB、产物索引、任务、书架和文件生命周期 | V03／V04 新实现通过，READY 对应真实文件 |
@@ -928,8 +943,8 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 ### 18.2 模块实施基线
 
-细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
+细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。M00 逐步实施见[独立执行文档](../implementation/M00-工程基础与本机环境执行文档.md)，任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
 
 ### 18.3 设计交付约束
 
-本文是一份供实现和评审使用的系统设计，不包含正式源码或可执行数据库迁移。已确认方向见 ADR-0001，后续重要采纳决定继续遵循仓库 ADR 流程；发布开发基线时引用本设计的 Git 提交、PRD、已确认 ADR 和新验证结果，不能将“设计已写完”等同“系统可上线”。本次按用户指令修订 PRD、本文、模块计划、CR／ADR 和相关索引；不修改原型、实验、历史证据或 readict-app，不创建数据库。
+本文是一份供实现和评审使用的系统设计，不包含正式源码或可执行数据库迁移。已确认方向见 ADR-0001，后续重要采纳决定继续遵循仓库 ADR 流程；发布开发基线时引用本设计的 Git 提交、PRD、已确认 ADR 和新验证结果，不能将“设计已写完”等同“系统可上线”。本轮持久层修订仅调整本文、模块计划、M00 执行文档、ADR 和技术索引；PRD 不因框架替换发生变更；不修改原型、实验、历史证据或 readict-app，不创建数据库。

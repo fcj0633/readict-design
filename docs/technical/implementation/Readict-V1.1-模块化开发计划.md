@@ -1,12 +1,12 @@
 # Readict V1.1 模块化开发计划
 
-版本：0.1；日期：2026-11-19。  
+版本：0.2；日期：2026-11-19（业务持久层与 M00 执行指导修订）。  
 状态：技术方向已按用户指令确定，正式功能尚未开发；本文件是开发任务基线，不是实现／测试完成报告。
 
 需求：[PRD V1.1（2026-11-19 修订）](../../requirements/prd/PRD-v1.1.md)。  
-设计：[系统技术设计 0.2](../architecture/Readict-V1.1-系统技术设计.md)。  
+设计：[系统技术设计 0.3](../architecture/Readict-V1.1-系统技术设计.md)。  
 变更：[CR-0002](../../requirements/changes/CR-0002-密码规则与本地词典及音频阶段安排.md)。  
-决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)。
+决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)及[ADR-0002（持久层）](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)。
 
 ## 1. 目标、范围与执行方式
 
@@ -24,7 +24,7 @@
 
 2026-11-19 只读检查：Windows 11 amd64，JDK 21.0.10、Maven 3.9.14、Node 24.14.0、npm 11.9.0，MySQL 客户端 8.0.44，MySQL80 服务运行；约 16 GiB 内存、20 个逻辑处理器。Docker 命令存在，但 Linux 引擎连接失败。Maven 本地缓存有若干 Boot／驱动版本，不证明正式依赖组合能构建或运行。
 
-**开发、集成测试和阶段验收均使用本机 MySQL80／MySQL 8.0.44。** 同一实例分 `readict_dev`、`readict_test` 及最小权限账号；不另设 MySQL 8.4 实例，不覆盖其他项目数据库。尚未验证应用账号、真实数据库连接、Flyway、Session、事务和并发；本次未创建上述库。测试工具必须检查显式测试配置和数据库名，只允许清理 readict_test，禁止对开发库执行删库／清表。
+**开发、集成测试和阶段验收均使用本机 MySQL80／MySQL 8.0.44。** 同一实例分 `readict_dev`、`readict_test` 及最小权限账号；不另设 MySQL 8.4 实例，不覆盖其他项目数据库。尚未验证应用账号、真实数据库连接、MP／XML、Flyway、Session、事务和并发；本次未创建上述库。测试工具必须检查显式测试配置和数据库名，只允许清理 readict_test，禁止对开发库执行删库／清表。
 
 ### 2.2 选型矩阵
 
@@ -37,7 +37,7 @@
 | 阅读 | epub.js 0.3.93 为适配起点，DOM Range、CFI、单页分页 | Chromium 实验通过有限用例；依赖风险、Edge 和新安全产物未通过正式验收 |
 | 词法 | compromise 14.20.0 提示 POS，后端规则／数据映射确认 lemma | 小诊断集 9/12，不是生产准确率；失败集必须保留 |
 | Java | Java 21、Spring Boot 4.1.2、Maven、Spring MVC／Validation | 目标组合尚未构建；使用稳定补丁，若可达依赖或兼容问题需记录升级决定 |
-| 数据与认证 | Spring JDBC／JdbcClient、Flyway core＋MySQL 模块、Connector/J、Spring Security、Spring Session JDBC | 依赖优先由 Boot BOM 管理并记录解析版本；本机真实集成待完成 |
+| 数据与认证 | MyBatis-Plus Boot 4 Starter 3.5.18＋MyBatis XML、HikariCP／Connector/J、Flyway Starter＋MySQL 模块、Spring Security；Session JDBC 在 M01 启用 | Boot BOM 管理对应依赖；不重复引入普通或 Boot 3 MyBatis Starter；真实集成待 M00 验证 |
 | 数据库 | 本机 MySQL80／8.0.44、InnoDB、utf8mb4、READ COMMITTED | 服务已运行；独立库和账号待建立，不要求 Docker |
 | 文件和任务 | 私有本地目录、StoragePort、MySQL 任务／租约、进程内有界执行器 | 设计已确定，新实现的预算、安全和补偿待验证；无 Redis／队列／对象存储 |
 | EPUB 安全处理 | JDK 安全 XML、版本化白名单与确定性序列化；ph-css 解析 CSS | ph-css 只解析，仍需自有安全规则；具体补丁和恶意样本验证在 M03 锁定 |
@@ -69,6 +69,7 @@ Boot 版本要求见[官方系统要求](https://docs.spring.io/spring-boot/syst
 
 | 变化 | 正式约束 |
 |---|---|
+| 业务持久层 | Repository → Mapper／BaseMapper，简单 CRUD 与复杂 XML 分工；显式用户条件、事务／版本／唯一约束不变，UUID input＋BINARY／UTC TypeHandler，不用全局逻辑删除 |
 | 本地词典数据 | 增加 datasetId／datasetVersion／entryId／senseId；来源与原始 key 可追溯；词形一对多，不把每个索引键当 lemma |
 | 查询及收藏 | Java 只读活动数据集；lookup 引用绑定用户和 source；收藏保存数据集／义项身份和快照，切换不改写历史释义 |
 | 数据集导入 | 新版本 staging → 完整校验 → 事务切换活动指针；失败不影响旧版本，幂等可重跑 |
@@ -80,7 +81,7 @@ Boot 版本要求见[官方系统要求](https://docs.spring.io/spring-boot/syst
 
 ### 3.3 数据迁移及提交
 
-Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，通过新迁移修正。模块只创建需要的表，按 M01 用户／Session／恢复、M02 词典、M03 书籍／产物／任务、M04 进度、M06 收藏／幂等、M07 翻译／配额、M08 清理辅助状态推进；共享辅助表只由一个模块负责。恢复挑战表在验证方式确定后补齐，不能用占位不安全表绕过验证。
+Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，通过新迁移修正。模块只创建需要的表，先 M00 元信息 V1／Flyway history，再按 M01 用户／Session／恢复、M02 词典、M03 书籍／产物／任务、M04 进度、M06 收藏／幂等、M07 翻译／配额、M08 清理辅助状态推进；共享辅助表只由一个模块负责。恢复挑战表在验证方式确定后补齐，不能用占位不安全表绕过验证。
 
 每个任务用 `Mxx-yy` 编号，提交写中文修改内容、原因、实际验证、关联任务和基线；一个提交只纳入相关完整行为。每次任务完成后按用户要求主动提交本任务改动，说明内容、原因和实际验证；无改动不建空提交，推送需另有明确要求。保存源码、脱敏测试与配置示例，不提交凭据、用户 EPUB、原始词典或转换全文、node_modules、构建产物和个人配置；本地数据引用使用配置路径，不写死设计仓库绝对路径。
 
@@ -90,17 +91,17 @@ Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，�
 
 ### M00 工程基础与本机环境
 
-前置：无。交付：可独立启动的正式前后端、基础配置和数据库迁移机制。
+前置：无。交付：可独立启动的正式前后端、基础配置和数据库迁移机制。详细执行见[M00 独立执行文档](M00-工程基础与本机环境执行文档.md)；文档完成不代表模块实现。
 
 | 任务 | 工作与完成证据 |
 |---|---|
 | M00-01 | 新建 Java／React 工程、配置示例、忽略规则、运行文档；记录 Java／Node／BOM／锁文件版本，构建可复现 |
 | M00-02 | 规划并经授权配置本机 readict_dev／readict_test 和最小权限账号；验证真实连接和读写边界，凭据不写 Git |
-| M00-03 | 接入 Flyway core＋MySQL 模块、连接池、事务管理、UTC／utf8mb4／READ COMMITTED；空测试库迁移、二次启动、回滚检查 |
+| M00-03 | 接入 MP Boot 4 Starter／BaseMapper／XML、HikariCP、Flyway Starter＋MySQL 模块、Spring 事务与 UUID／UTC TypeHandler；元信息 V1、二次启动、真实提交／回滚、版本更新及测试误连保护 |
 | M00-04 | 统一 Problem Details、requestId、日志脱敏、健康与就绪、生产配置禁 Mock；前端 API 客户端和会话错误占位 |
 | M00-05 | 本机运行约定：Vite 5173 代理 /api 到后端 8080；端口占用明确失败而非自动漂移；测试库清理双重校验，其他项目库不动 |
 
-数据／接口：配置、迁移元信息、健康接口；此阶段不创建全部业务表。异常：数据库断连、配置缺失、迁移失败必须显式启动失败，不吞错。退出：构建和启动通过、本机真实事务回滚成功、重复启动不重建数据、无泄密。MySQL 服务存在不算此模块完成。Docker 不参与。
+数据／接口：system_metadata 基础设施表、Flyway history、/api/v1/system/status 与存活／就绪；不创建用户／书籍／收藏业务表，Session JDBC 及会话表在 M01 启用。异常：数据库断连、配置缺失、迁移失败必须显式启动失败，不吞错。退出：构建和启动通过、本机 BaseMapper／XML、UUID／时间映射、真实事务回滚和条件更新成功、测试 profile 误连被拒绝、重复启动不重建数据、无泄密。MySQL 服务存在不算此模块完成。Docker 不参与。
 
 ### M01 用户、认证与设置
 
@@ -129,7 +130,7 @@ Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，�
 | M02-02 | 按标题、Unicode 音标、区域／义项、词性、原顺序提取；去掉脚本、样式、例句，不执行 MDD JS；中英混合需专用规则，异常入清单 |
 | M02-03 | 保留索引 key／实际 headword／区域、词形关系和证据；处理 runs/run、running 独立义项、ran、children 缺字、saw 同形词，不无条件合并 |
 | M02-04 | 生成 JSONL＋manifest；固定序列化与排序，校对总／成功／跳过／失败数和摘要；工具中断可重跑，不静默丢数据 |
-| M02-05 | 分批导入本机数据库新数据集、核对与事务切换活动版本，失败保留旧版；Java LocalDictionaryProvider 查询及有界缓存 |
+| M02-05 | 分批导入本机数据库新数据集、核对与事务切换活动版本，失败保留旧版；Java LocalDictionaryProvider 经 Repository／Mapper 查询及有界缓存 |
 | M02-06 | 人工核对至少 50 代表词，建立转换回归样本；检查中文／IPA／POS／顺序、重复导入、无结果和未知词形 |
 
 接口：离线 CLI 和 Java DictionaryProvider，正式查询 API 由 M05 使用；不新增词典上传管理产品页面。错误：DATASET_NOT_READY／CONVERSION_FAILED／DICTIONARY_NOT_CONFIGURED；质量无法确认时保留未提取标记，不能生成假中文。退出：固定词表质量、计数对账、幂等和数据集切换通过；正式分发仍需核实词典数据权利。音频只记录 A01，不纳入退出条件。
@@ -159,7 +160,7 @@ Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，�
 | M04-02 | 产物摘要验证、样式主题、字号行距宽度、图片限制、上一页／下一页、章节边界与翻页串行 |
 | M04-03 | CFI＋产物／流水线版本＋文本 quote；验证恢复，唯一文本 fallback，不确定回章节起点且不自动覆盖旧位置 |
 | M04-04 | 初始化／重排屏蔽过渡位置写回，字体／图片迟到调度、窗口变化、首尾状态、焦点不触发后台翻页 |
-| M04-05 | 进度防抖、串行请求、expectedVersion、冲突提示、本地待同步；切书／进入收藏 flush，退出失败不声称已同步 |
+| M04-05 | 进度防抖、串行请求、XML 显式 expectedVersion 条件更新、冲突提示、本地待同步；切书／进入收藏 flush，退出失败不声称已同步 |
 | M04-06 | 切书 generation、请求／观察器／事件销毁、Blob 回收；三桌面＋390px、分页覆盖和位置往返验证 |
 
 错误：BOOK_NOT_READY／ANCHOR_INVALID／PROGRESS_CONFLICT／ARTIFACT_REVOKED；正文已加载时进度失败可继续阅读并提示未同步。退出：不同版式恢复同内容，无丢文／重复跳读，错误 CFI 不静默跳首个重复句，旧异步事件不覆盖当前书籍。
@@ -186,7 +187,7 @@ Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，�
 | 任务 | 工作与完成证据 |
 |---|---|
 | M06-01 | 用户＋lemma 主体唯一、主体＋contextKey 唯一；按来源／版本／章节／句位置算 key，不按全文同文或单词 CFI 去重 |
-| M06-02 | 验证 source 和字典身份；事务保存主体与语境，保留首次释义，三态和保存中／失败状态，不提前显示成功 |
+| M06-02 | 验证 source 和字典身份；Mapper／XML 在应用事务中保存主体与语境，保留首次释义，三态和保存中／失败状态，不提前显示成功 |
 | M06-03 | 单词／句子投影、搜索、来源筛选含已删除书、稳定时间游标、详情与原文 target 恢复 |
 | M06-04 | 整主体取消确认、级联语境删除、幂等回执、响应丢失确认，取消后旧保存重放不复活 |
 | M06-05 | 书籍 DELETING 后拒新 source 操作，解绑来源而保留快照、文件清理补偿，删除后原文入口不可用 |
