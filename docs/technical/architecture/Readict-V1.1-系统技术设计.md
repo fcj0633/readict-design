@@ -1,10 +1,10 @@
 # Readict V1.1 系统技术设计文档
 
-文档版本：0.3（2026-11-19 持久层修订，正式开发设计草案）  
+文档版本：0.4（2026-11-19 M01 认证与分阶段验证修订，正式开发设计草案）  
 编写日期：2026-11-18  
 唯一功能需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)  
 适用仓库：本设计保存在 readict-design；后续正式实现位于独立的 readict-app。  
-状态：已完成工程设计修订，尚未实现、未通过生产验收；第 17 章的阻断项未关闭。技术方向采纳记录见 ADR-0001／ADR-0002，不代表验证已通过；尚未发布开发交付基线。
+状态：M00 已完成本机阶段实施，见归档证据；M01 及后续业务尚未实现、未通过生产验收。第 17 章阻断项未关闭，技术方向见 ADR-0001／ADR-0002／ADR-0003；尚未发布开发交付基线。
 
 ### 2026-11-19 修订说明
 
@@ -13,6 +13,10 @@
 ### 2026-11-19 持久层补充修订
 
 按用户确认改为 MyBatis-Plus＋自定义 MyBatis XML；采用 com.baomidou:mybatis-plus-spring-boot4-starter:3.5.18，保留 Java 21／Boot 4.1.2，实际集成待执行。[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)替代 ADR-0001 中原业务持久层选择，不影响本机数据库、COL 和 TMT 决定。独立[M00 执行文档](../implementation/M00-工程基础与本机环境执行文档.md)提供开发步骤；本次不创建正式应用或验证数据库。PRD 功能范围不变。
+
+### 2026-11-19 M01 执行指导补充
+
+新增[M01 执行文档](../implementation/M01-用户认证与个人设置执行文档.md)和[ADR-0003](../decisions/ADR-0003-M01会话认证与分阶段验证.md)，细化真实 M00 起点、V2～V4、显式认证持久化、CSRF、恢复和模拟／真实通道边界。M00 当前结果见[实施与验收记录](../../../validation/implementation/m00/README.md)；上面的持久层修订说明保留其编写时语境，不覆盖后续实施事实。本轮只写文档，M01 不标完成。
 
 ## 阅读导航
 
@@ -512,17 +516,23 @@ sequenceDiagram
 
 限流初值：同 IP 登录失败 20 次／10 分钟、同账号 5 次／10 分钟后短暂退避，不永久锁死账号；按规范化账号的 HMAC 键统计，响应 429 和 Retry-After。数据库时间桶可跨进程重启保留，应用入口另做有界内存防护；代理来源仅信任配置的 Nginx，不接受任意 X-Forwarded-For。
 
+JSON 登录采用 Boot BOM 管理的 `spring-boot-starter-session-jdbc`，由 AuthenticationManager 校验后显式调用组合 SessionAuthenticationStrategy（changeSessionId＋CsrfAuthenticationStrategy），创建最小 Serializable Principal，再调用与过滤链共享的 SecurityContextRepository.saveContext。只设置 SecurityContextHolder 不算登录持久化完成。主体包含 UUID、authVersion、authenticatedAt，principal name 为用户 UUID，便于框架索引清理。绝对有效期根据不可变认证时间检查，不能仅使用滑动空闲期限。
+
+CSRF 使用 HttpSessionCsrfTokenRepository 和默认 XorCsrfTokenRequestAttributeHandler；csrf GET 实体化并返回掩码 token，前端原样发送 X-CSRF-TOKEN，响应 no-store。403 CSRF_MISSING／CSRF_INVALID 后获取新 token，变更请求由用户明确重试，不无条件重放。退出使用框架 LogoutFilter；数据库不可用时认证 fail-closed 返回503，不当成匿名放行。真实跨请求／重启／Session 表／轮换仍需 M01 证明。
+
 ### 12.3 偏好
 
 user_settings 与用户一对一，默认值沿用原型：Georgia、20px、1.8、660px、warm，口音默认 en-GB。只接受第 5 章枚举，不接受任意 CSS 字符串。设置立即本地生效，防抖 500ms 提交全量设置和 expectedVersion；失败提示未同步并允许重试，登录后服务器版本为基线。跨标签页用 BroadcastChannel 提醒更新，服务端版本决定冲突，不用客户端时间覆盖。
 
 字体实际缺失时使用 serif／sans-serif 回退并显示实际字体可能不同；加载完成重新验证位置。白／暖／深色主题使用独立语义色，正文、选词、按钮焦点须检查对比度；减少动态效果随系统设置，不把动画作为状态变化的唯一反馈。
 
-### 12.4 密码恢复的待实现契约
+### 12.4 联系方式验证与密码恢复的分阶段契约
 
 恢复分为“申请挑战 → 验证所有权 → 生成短时一次性恢复凭证 → 重置”。匿名申请返回统一消息以减少账号枚举；账号／IP 限流，验证码或链接凭证仅保存摘要，绑定用途与账号、过期和尝试次数。凭证在重置事务内锁定并一次消费，更新密码及 authVersion，所有旧会话失效。不得把密码发给用户，也不得将未验证的联系方式当作所有权证明。
 
-验证服务和验证码／邮件链接形式尚待确定；对应挑战存储、限额和真实发送验证作为 M01-05 任务，不假装已接入。未配置时返回明确不可用，不实现通用绕过验证码入口。密码校验规则统一，注册／改密／重置均覆盖 abc12345、ABC12345、Abc12345、abc1234! 通过；abcdefgh、12345678、Abcdefgh、abc1234 不通过。现有 PBKDF2 参数与长度上限保留。
+本地流程采用六位短时挑战和高熵一次恢复 token；真实供应商／投递接入尚待确定，未来改用链接形式需再确认契约。VerificationSender 分不可用、测试捕获、受限 dev outbox 和未来真实适配器。挑战／凭证保存 REAL、DEV_LOCAL 或 DUMMY 模式，DEV_LOCAL 永不将真实 email_verified／phone_verified 置真，开发恢复证明只在显式 dev/test 接受，真实环境必须拒绝。真实绑定目标挑战成功才能构成所有权证明；仅持有未经验证的账号标识不能恢复。核心账号、本地模拟和真实发送分别验收；模拟通过不代表 M01 全范围完成。未配置时返回明确不可用，不实现通用绕过验证码入口。密码校验规则统一，注册／改密／重置均覆盖 abc12345、ABC12345、Abc12345、abc1234! 通过；abcdefgh、12345678、Abcdefgh、abc1234 不通过。现有 PBKDF2 参数与长度上限保留。
+
+V1 保留已执行内容；V2 建 app_user／user_settings，V3 从实际 Session JDBC JAR 的官方 MySQL schema 建框架表，V4 建 verification_challenge、password_reset_credential 和 rate_bucket。V4 在 M01-02 登录持久限流启用前执行，M01-05 再启用挑战业务。六位码保存带用途／挑战身份的 HMAC，恢复 token 高熵仅保存摘要；错误次数在失败时仍提交，凭证消费和改密同事务。应用写设置、改密及恢复事务锁用户并复核 authVersion，固定 user→挑战／凭证锁顺序；会话删除失败由版本即时拒绝和重试清理保证，不引入队列。
 
 ## 13. 数据库与文件模型
 
@@ -560,6 +570,7 @@ erDiagram
 |---|---|---|
 | app_user | id；email VARCHAR(254) NULL；email_key VARCHAR(254) NULL；phone_e164 VARCHAR(16) NULL；password_hash VARCHAR(512)；email_verified、phone_verified BOOLEAN；status VARCHAR(16)；auth_version BIGINT；created_at、updated_at | PK(id)；UNIQUE(email_key)；UNIQUE(phone_e164)；CHECK 至少一种登录标识；status=ACTIVE／DISABLED |
 | user_settings | user_id；font VARCHAR(32)；font_size SMALLINT；line_height DECIMAL(2,1)；content_width SMALLINT；theme VARCHAR(8)；pronunciation VARCHAR(5)；version BIGINT；last_request_id；last_request_hash；updated_at | PK/FK(user_id)；枚举白名单与数值 CHECK；用户注册事务创建默认行 |
+| verification_challenge / password_reset_credential | 用户／用途／目标HMAC／信任模式／有效期／尝试／消费，恢复token摘要唯一、challenge_id唯一；M01 V4建表 | 用户外键；到期清理索引；一次消费和版本检查见[M01数据设计](../implementation/M01-用户认证与个人设置执行文档.md#33-v4挑战恢复凭证与限流) |
 | SPRING_SESSION / SPRING_SESSION_ATTRIBUTES | 框架会话字段、过期时间、principal 索引及属性 | 使用所选 Spring Session 版本的 MySQL 官方 schema，经 Flyway 管理，禁运行期自动改表 |
 
 email_key 由应用规范化后存入，不能只用 SQL LOWER 代替 IDNA 处理。手机号／邮箱注册并发靠唯一约束。改密码和停用用户递增 auth_version；普通偏好变更不使会话失效。
@@ -613,7 +624,7 @@ book.active_artifact_id 引用自身产物，是可空 FK；先插 book，再插
 |---|---|
 | mutation_receipt | `user_id, operation, request_id` 唯一；保存 request_hash、状态、资源 ID、最小结果、expires_at；与变更同事务，24h 内重放。正文不保存原文全文 |
 | file_cleanup_task | 目标为服务器生成的存储 key 列表／目录 ID；state、attempt、next_attempt_at、lease；删除重试与孤儿回收，不执行用户提供路径 |
-| rate_bucket | `scope, key_hmac, window_start` 唯一，count、reserved_chars、expires_at；登录和翻译额度的原子计数与清理 |
+| rate_bucket | `scope, key_hmac, window_start` 主键，counter、reserved_chars、expires_at；M01 创建，登录／验证计数；reserved_chars 初始0，M07 扩展额度语义 |
 
 私有文件结构由 StoragePort 管理，例如 `staging/{importId}`、`users/{userId}/books/{bookId}/source.epub`、`artifacts/{artifactId}/{reader.epub,index.json,cover.*}`；全部在配置根目录下解析。用户原始文件名仅作展示，不能成为磁盘路径。首版不跨用户共享去重存储，避免所有权、删除和存在性侧信道复杂度。
 
@@ -625,7 +636,7 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 
 ### 14.1 通用规则
 
-路径前缀 `/api/v1`，JSON camelCase，UTF-8。除 M00 的最小 system/status 开发入口、csrf、注册、登录和密码恢复挑战／验证／重置外均需当前 Session；密码恢复匿名接口仍须 CSRF、限流和一次所有权凭证，不能因匿名开放而跳过验证；读私有资源也需认证。跨用户 ID 返回 404，未登录返回 401，CSRF 错误返回 403。状态变更附 CSRF；上传／收藏／翻译使用 `Idempotency-Key: UUID`，进度和偏好使用 body requestId + expectedVersion。服务端生成 requestId 追踪日志但不返回内部异常堆栈。
+路径前缀 `/api/v1`，JSON camelCase，UTF-8。除 M00 的最小 system/status 开发入口、csrf、注册、登录、合法 CSRF 的退出和密码恢复挑战／验证／重置外均需当前 Session；密码恢复匿名接口仍须 CSRF、限流和一次所有权凭证，不能因匿名开放而跳过验证；读私有资源也需认证。跨用户 ID 返回 404，未登录返回 401，CSRF 错误返回 403。状态变更附 CSRF；上传／收藏／翻译使用 `Idempotency-Key: UUID`，进度和偏好使用 body requestId + expectedVersion。服务端生成 requestId 追踪日志但不返回内部异常堆栈。
 
 成功响应直接是资源或列表 `{items,nextCursor}`，无二次 success 布尔包裹；错误使用 `application/problem+json`，字段兼容 Problem Details：
 
@@ -650,12 +661,14 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 |---|---|---|
 | GET `/system/status`（M00） | 无，开发回环入口，校验元信息就绪 | 200 `{status:UP,service:readict,requestId}`；未就绪 503 SYSTEM_NOT_READY；不含数据库／账号／SQL；M01 再确认鉴权边界 |
 | GET `/auth/csrf` | 无 | 200 `{token,headerName}`，匿名可用，no-store |
-| POST `/auth/register` | `{identifierType:email\|phone,identifier,password}` | 201 当前用户基础信息，不自动登录；409 IDENTIFIER_UNAVAILABLE；422 PASSWORD_POLICY |
+| POST `/auth/register` | `{identifierType:email\|phone,identifier,password}` | 201 `{user}` 安全基础信息，不自动登录；409 IDENTIFIER_UNAVAILABLE；422 PASSWORD_POLICY |
 | POST `/auth/password-reset/challenges` | `{identifierType,identifier}`，CSRF 和限流 | 202 统一申请提示；验证服务未配置 503，不能发送假成功验证码 |
-| POST `/auth/password-reset/verify` | `{challengeId,proof}`，proof 形式待验证服务决定 | 200 `{resetToken,expiresAt}`；错误／过期／超次数统一校验，凭证不记日志 |
+| POST `/auth/password-reset/verify` | `{challengeId,proof}`，当前本地流程为六位字符串，真实通道待验证 | 200 `{resetToken,expiresAt,simulation}`；错误／过期／超次数统一校验，凭证不记日志 |
 | POST `/auth/password-reset/complete` | `{resetToken,newPassword}`，CSRF | 204，凭证一次消费，失效全部会话；422 PASSWORD_POLICY，失效凭证 410 |
-| POST `/auth/login` | `{identifierType,identifier,password}` | 200 `{user}`，设置 Session；401 INVALID_CREDENTIALS；429 |
-| GET `/auth/me` | 无 | 200 `{id,email?,phone?,emailVerified,phoneVerified}`；不返回密码／hash |
+| POST `/auth/verification/challenges` | 登录，`{identifierType}`，仅本人绑定目标 | 202 `{challengeId,expiresIn,retryAfter,simulation}`；未配置503，限流429 |
+| POST `/auth/verification/verify` | 登录，`{challengeId,proof}`，用途／目标／所有权校验 | 200 `{emailVerified,phoneVerified,simulation}`；模拟不得将真实 verified 置真；无效挑战422 |
+| POST `/auth/login` | `{identifierType,identifier,password}` | 200 `{user}`，轮换并显式保存 Session；401 INVALID_CREDENTIALS；409 ALREADY_AUTHENTICATED；429 |
+| GET `/auth/me` | 无 | 200 `{id,email,phone,emailVerified,phoneVerified}`，email／phone可空；不返回密码／hash |
 | POST `/auth/logout` | CSRF | 204，重复退出可成功；清当前会话 |
 | PUT `/auth/password` | `{currentPassword,newPassword}` | 204，失效所有会话；旧密码不符 422 |
 | GET `/me/settings` | 无 | 200 `{preferences,version}` |
@@ -681,6 +694,8 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 | DELETE `/favorites/{id}` | Idempotency-Key | 204 删除整个主体和全部语境；重复为 204 |
 
 接口参数 `source` 为第 8 章 SourceContext 的可序列化字段；range CFI 视为辅助锚点，服务端以索引位置校验原文。词典查找失败响应仍应带已校验 source；若网络整体失败，前端保留本地原句，收藏本句可通过已知 favoriteId 和服务端词形校验完成。书籍删除后查词／翻译来源不能再用原 bookId；收藏详情已有快照仍能显示，本版不额外实现对已删除书籍快照的再次翻译入口。
+
+M01 的逐字段接口、UserView、CSRF 和模拟模式错误语义以[M01 执行文档第9节](../implementation/M01-用户认证与个人设置执行文档.md#9-核心-api-完整契约)为细化契约；本节表不代表接口已经实现。
 
 ### 14.3 阅读清单
 
@@ -943,7 +958,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 ### 18.2 模块实施基线
 
-细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。M00 逐步实施见[独立执行文档](../implementation/M00-工程基础与本机环境执行文档.md)，任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
+细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。M01 的六项任务、V2～V4、前后端文件和验收矩阵见[M01 执行文档](../implementation/M01-用户认证与个人设置执行文档.md)。M00 逐步实施见[独立执行文档](../implementation/M00-工程基础与本机环境执行文档.md)，任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
 
 ### 18.3 设计交付约束
 

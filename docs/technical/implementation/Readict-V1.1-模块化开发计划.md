@@ -1,14 +1,14 @@
 # Readict V1.1 模块化开发计划
 
-版本：0.3；日期：2026-11-19（补记 M00 实施结果与文档归档约定）。
+版本：0.4；日期：2026-11-19（补充 M01 独立执行指导与分阶段验证契约）。
 状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；业务模块尚未开发。本文件保留任务基线，真实结果见 [M00 验收记录](../../../validation/implementation/m00/README.md)。
 
 当前仓库约定：源码、迁移和正式测试在 readict-app；详细文档、实施记录及截图在 readict-design。应用不建 docs/，单次环境准备和验收脚本不提交，个人便利工具放在忽略的 .local/。以下环境与选型表中的“未验证”等描述保留原始计划编写时的基线，M00 当前结果以验收记录为准。
 
 需求：[PRD V1.1（2026-11-19 修订）](../../requirements/prd/PRD-v1.1.md)。  
-设计：[系统技术设计 0.3](../architecture/Readict-V1.1-系统技术设计.md)。  
+设计：[系统技术设计 0.4](../architecture/Readict-V1.1-系统技术设计.md)。  
 变更：[CR-0002](../../requirements/changes/CR-0002-密码规则与本地词典及音频阶段安排.md)。  
-决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)及[ADR-0002（持久层）](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)。
+决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002（持久层）](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)和[ADR-0003（M01认证）](../decisions/ADR-0003-M01会话认证与分阶段验证.md)。
 
 ## 1. 目标、范围与执行方式
 
@@ -63,7 +63,7 @@ Boot 版本要求见[官方系统要求](https://docs.spring.io/spring-boot/syst
 
 ### 3.1 按业务模块组织
 
-未来 readict-app 采用 `frontend/`、`backend/`、`tools/dictionary-import/`、`docs/`。前端按 auth／books／reader／dictionary／favorites／settings 组织；后端一个 Maven 应用，按 identity／library／reading／lexical／translation／favorites／operations 组织包，模块内按需分 api／application／domain／infrastructure。不要预建大量空模块或把每个业务包拆成服务。
+readict-app 已有 `frontend/`、`backend/`，后续按需增加 `tools/dictionary-import/`；不创建 docs/，详细文档与证据归设计仓库。前端按 auth／books／reader／dictionary／favorites／settings 组织；后端一个 Maven 应用，按 identity／library／reading／lexical／translation／favorites／operations 组织包，模块内按需分 api／application／domain／infrastructure。不要预建大量空模块或把每个业务包拆成服务。
 
 前端 API 客户端统一处理 Cookie、CSRF、Problem Details 和 requestId；服务端 userId 从认证主体取得，不接收客户端伪造。保留系统设计已有 `/api/v1` 契约、乐观版本、来源校验和幂等语义。
 
@@ -83,7 +83,7 @@ Boot 版本要求见[官方系统要求](https://docs.spring.io/spring-boot/syst
 
 ### 3.3 数据迁移及提交
 
-Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，通过新迁移修正。模块只创建需要的表，先 M00 元信息 V1／Flyway history，再按 M01 用户／Session／恢复、M02 词典、M03 书籍／产物／任务、M04 进度、M06 收藏／幂等、M07 翻译／配额、M08 清理辅助状态推进；共享辅助表只由一个模块负责。恢复挑战表在验证方式确定后补齐，不能用占位不安全表绕过验证。
+Flyway 迁移按模块递增，编号不可复用；已执行迁移不修改，通过新迁移修正。模块只创建需要的表，先 M00 元信息 V1／Flyway history，再按 M01 用户／Session／恢复、M02 词典、M03 书籍／产物／任务、M04 进度、M06 收藏／幂等、M07 翻译／配额、M08 清理辅助状态推进；共享辅助表只由一个模块负责。M01 按 V2 用户／设置、V3 官方 Session schema、V4 挑战／恢复／限流执行；V4 在核心登录限流启用前迁移，本地与真实证明模式严格区分，不能用占位不安全表绕过验证。
 
 每个任务用 `Mxx-yy` 编号，提交写中文修改内容、原因、实际验证、关联任务和基线；一个提交只纳入相关完整行为。每次任务完成后按用户要求主动提交本任务改动，说明内容、原因和实际验证；无改动不建空提交，推送需另有明确要求。保存源码、脱敏测试与配置示例，不提交凭据、用户 EPUB、原始词典或转换全文、node_modules、构建产物和个人配置；本地数据引用使用配置路径，不写死设计仓库绝对路径。
 
@@ -109,18 +109,18 @@ M00-01～M00-05 已完成本机阶段验收；其余任务状态仍为**未开�
 
 ### M01 用户、认证与设置
 
-前置：M00。接口：/auth/*、/me/settings。数据：user、settings、Session、限流；恢复存储在 M01-05 决定方式后落实。
+前置：M00。接口：/auth/*、/me/settings。数据：app_user、user_settings、框架 Session、verification_challenge、password_reset_credential、rate_bucket。详细目录、DDL、DTO、调用流程、命令、排障和退出条件见[M01 独立执行文档](M01-用户认证与个人设置执行文档.md)，决定见[ADR-0003](../decisions/ADR-0003-M01会话认证与分阶段验证.md)。当前 M01 未开始，不因文档编写改成完成。
 
 | 任务 | 工作与完成证据 |
 |---|---|
 | M01-01 | 邮箱／手机号规范化和唯一约束、注册；新密码规则和统一提示，工程上限、盐、PBKDF2 及参数版本保留 |
-| M01-02 | 密码登录、Session 轮换、CSRF、限流、退出、当前用户；两用户权限隔离和相同错误反馈 |
+| M01-02 | Boot Session JDBC、JSON认证／显式 saveContext、Session轮换、CSRF更新、持久限流、当前用户；两用户隔离与统一失败反馈 |
 | M01-03 | 改密与 authVersion，全部旧 Session 立即失效；前端清私有缓存并要求重新登录 |
 | M01-04 | 账号页面、注册／登录／改密 UI，个人阅读／主题／口音偏好，版本冲突及保存失败反馈 |
-| M01-05 | 按 PRD 确定手机号／邮箱验证服务和所有权证明，实施忘记密码／验证／一次恢复凭证／重置；加入过期、尝试次数、限流、一次消费和重置后会话失效 |
+| M01-05 | 先完成捕获Sender／受限dev outbox、挑战／验证／一次恢复凭证／重置；区分模拟与真实证明，过期／次数／重发／消费／失效；真实通道单独确定与验收 |
 | M01-06 | 在 readict_test 验证标识并发唯一、密码边界、CSRF、认证失效、偏好刷新恢复及恢复挑战失败路径 |
 
-错误：INVALID_CREDENTIALS／PASSWORD_POLICY／IDENTIFIER_UNAVAILABLE／SETTINGS_CONFLICT，验证码错误与过期不泄露账号。现有未验证联系方式不能直接用于重置。验证服务未定可先交付 M01-01～04，但整模块标“部分完成、恢复待定”，不能标全部账号验收通过；其他模块可在已验收登录隔离基础上继续。
+错误：INVALID_CREDENTIALS／PASSWORD_POLICY／IDENTIFIER_UNAVAILABLE／SETTINGS_CONFLICT，验证码错误与过期不泄露账号。现有未验证联系方式不能直接用于重置。验证服务未定可先交付 M01-01～04，再验收本地模拟恢复；状态分“本机核心和模拟流程验收通过”与“M01 全范围完成”。DEV_LOCAL 不置真实 verified=true；真实发送／所有权／恢复未通过，整模块保持部分完成，后续模块可在已验收登录隔离基础上继续。
 
 退出：密码与第 7 章案例一致；注册、改密、重置同规则；所有权证明和真实验证服务通过才完成账号全范围。密码哈希是安全设计目标，不宣称已做性能校准。
 
