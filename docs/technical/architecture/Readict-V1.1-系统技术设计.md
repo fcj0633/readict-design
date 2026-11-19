@@ -1,10 +1,14 @@
 # Readict V1.1 系统技术设计文档
 
-文档版本：0.1（正式开发设计草案）  
+文档版本：0.2（2026-11-19 修订，正式开发设计草案）  
 编写日期：2026-11-18  
 唯一功能需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)  
 适用仓库：本设计保存在 readict-design；后续正式实现位于独立的 readict-app。  
-状态：已完成工程设计，尚未实现、未通过生产验收；第 17 章列出的上线阻断项未关闭。本文不构成已批准 ADR 或已发布开发交付基线。
+状态：已完成工程设计修订，尚未实现、未通过生产验收；第 17 章的阻断项未关闭。技术方向采纳记录见 ADR-0001，不代表验证已通过；尚未发布开发交付基线。
+
+### 2026-11-19 修订说明
+
+依据用户实施指令、[CR-0002](../../requirements/changes/CR-0002-密码规则与本地词典及音频阶段安排.md) 与 [ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)：开发和验收统一本机 MySQL；密码调整为数字＋英文字母；本地 COL 为首版词典、腾讯云 TMT 为翻译目标；音频等待后续文件。新增完整[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。第 2 章 EPUB 历史结果保留原适用边界，修订不代表新实现通过测试。
 
 ## 阅读导航
 
@@ -107,6 +111,8 @@ UI 视觉继续采用已选定的 Editorial 方向：暖白纸面、克制的深
 
 2026-11-18 本机只读核查：Windows 11 amd64；Oracle JDK／javac 21.0.10；Maven 3.9.14；Node 24.14.0；npm 11.9.0；MySQL 客户端 8.0.44，`MySQL80` 服务运行中；Docker 命令存在，但未验证引擎可用、未拉取镜像。未连接业务数据库，未读取凭据，未运行正式后端。
 
+2026-11-19 补充只读核查：JDK、Maven、Node、MySQL 客户端版本与上述一致，MySQL80 运行；Docker Linux 引擎连接失败。仍未验证应用账号鉴权连接、Flyway、Session 和正式业务事务。本机开发库／测试库仅为规划，本次未创建。
+
 前端和实验已有依赖以各自 package-lock 为事实，不因为本文采用目标栈就统一升级。原型组件库、React、TypeScript、Vite、Floating UI 的具体版本见 [原型 package.json](../../../prototypes/reader-ui/package.json) 和 [实验 package.json](../../../validation/technical/reader-core/package.json)。正式工程另行锁定依赖，必须先治理已知风险。
 
 ## 3. 系统总体架构
@@ -123,8 +129,8 @@ flowchart LR
     U --> R[epub.js 适配器与无脚本 iframe]
     J --> DB[(MySQL: 业务 / Session / 任务)]
     J --> F[私有文件: 原始 EPUB / 阅读产物 / 索引]
-    J --> D[标准英汉词典适配器]
-    J --> T[句子翻译适配器]
+    J --> D[本地 COL 结构化词典适配器]
+    J --> T[腾讯云 TMT 翻译适配器]
     J --> W[进程内有界导入执行器]
     W --> DB
     W --> F
@@ -152,12 +158,12 @@ flowchart LR
 | Java | Java 21 LTS、Maven、Spring Boot 4.1 稳定系列 | 本机已有 JDK 21；官方系统要求支持 | 开工时锁定当时安全补丁版；未运行正式兼容构建 |
 | Web／安全 | Spring MVC、Validation、Spring Security、Spring Session JDBC | 传统请求、事务和 Cookie 会话简单可控 | 供应商超时需单独预算，不能占满 Web 线程 |
 | 持久化 | Spring JDBC（JdbcClient）、显式 SQL、Flyway | 收藏去重、并发更新和索引行为透明 | 比 ORM 多写映射；MyBatis/JPA 均可行，本版不增加框架 |
-| 数据库 | 正式 MySQL 8.4 LTS、InnoDB、utf8mb4 | Java 生态成熟；本机 MySQL 可辅助开发 | 本地 8.0 不代表已验证 8.4；验收必须用目标版本 |
+| 数据库 | 本机 MySQL80／MySQL 8.0.44、InnoDB、utf8mb4 | 开发、集成测试及阶段验收使用同一本机实例，独立 readict_dev／readict_test | 服务运行不等于账号连接、驱动、迁移、Session、事务已通过；不要求升级或独立实例 |
 | 文件 | 私有本地目录，StoragePort 接口 | 单实例运维简单 | 磁盘、备份与 DB 不原子；需清理任务和恢复演练 |
 | 后台任务 | MySQL 任务表 + 进程内有界线程池 + 定时恢复 | 无需消息中间件，任务可恢复 | 任务需租约／重试，不能仅依赖内存 Future |
-| 测试 | Java 单测、目标 MySQL 集成测试、前端单测、Playwright | 覆盖事务、真实 DOM 与关键流程 | Docker/Testcontainers 是否可用另验，不因命令存在就认定可用 |
+| 测试 | Java 单测、本机 readict_test 集成测试、前端单测、Playwright | 覆盖事务、真实 DOM 与关键流程 | Docker／Testcontainers 不作前置条件；测试禁止连接 readict_dev 或其他项目数据库 |
 
-外部依据核查于 2026-11-18：[Spring Boot 系统要求](https://docs.spring.io/spring-boot/system-requirements.html)支持本机 Java／Maven；[Spring Session JDBC](https://docs.spring.io/spring-session/reference/configuration/jdbc.html)支持用 JDBC 保存会话；[Spring Security CSRF](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html)说明状态变更请求的默认防护；[MySQL LTS 说明](https://dev.mysql.com/doc/refman/8.4/en/mysql-releases.html)支持选择 8.4 LTS。这些官方能力说明不等于项目集成已通过。
+外部依据核查于 2026-11-18：[Spring Boot 系统要求](https://docs.spring.io/spring-boot/system-requirements.html)支持本机 Java／Maven；[Spring Session JDBC](https://docs.spring.io/spring-session/reference/configuration/jdbc.html)支持用 JDBC 保存会话；[Spring Security CSRF](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html)说明状态变更请求的默认防护。2026-11-19 按用户决定改为本机 MySQL80 开发与验收，未来生产环境另行确定。这些官方能力说明不等于项目集成已通过。
 
 ## 5. 前端模块与组件
 
@@ -369,10 +375,10 @@ token 初版使用英文字母，允许词内直／弯撇号和连字符；边�
 
 ```ts
 interface NormalizedDictionaryEntry {
-  entryId:string; provider:string; providerVersion:string;
+  entryId:string; datasetId:string; datasetVersion:string; provider:string; providerVersion:string;
   lemma:string; lemmaKey:string; lemmaMethod:string;
   originalSurface:string; detectedPos:string; posMethod:string;
-  phonetics:{accent:'en-GB'|'en-US'|'unknown'; ipa?:string; audioId?:string}[];
+  phonetics:{accent:'en-GB'|'en-US'|'unknown'; ipa?:string; audioId?:string|null}[];
   senses:{senseId:string; pos:string; zh:string; providerOrder:number}[];
   attribution:string; cachePolicy:'none'|'memory'|'persistent';
   snapshotAllowed:boolean;
@@ -383,13 +389,23 @@ Provider 原始响应在适配器内部解析并校验，不透传到 UI。POS �
 
 标准英汉词典数据必须来自有授权的词典产品。禁止将英文 definition 翻译后标作词典中文释义，禁止用大模型生成基础释义冒充标准来源。无中文词典配置时正式环境返回 `DICTIONARY_NOT_CONFIGURED`，开发演示可独立启用明确标注的 Mock，不能让 Mock 进入正式验收。
 
-**【待验证候选方案】** Oxford 的具体英汉产品及其他合法英汉供应商，需要真实接口、固定词表和商业条款验证；现有报告没有证明任何一家满足要求。缺少持久缓存许可时不建公共缓存，缺少收藏快照许可时不能上线收藏释义功能，须换供应商而非默认忽略限制。
+**【工程设计决策】** 首版采用本地 COL 数据集，在线词典不作为首版实现任务。COL 技术可读不等于授权已核实；正式持久化、分发和收藏快照使用须核实数据权利。Oxford 等在线服务只保留未来替代候选，不影响当前本地适配开发。数据集导入规则见第 9.4 节。
 
 ### 9.3 缓存、发音与降级
 
-缓存键包含 provider、产品／版本、源／目标语言、lemmaKey；POS 排序在读出后做，不为每个句子复制公共词条。默认仅进程内有界缓存（最多 5000 项、TTL 最多 24h），实际 TTL 不超过授权。持久缓存只有权利允许时启用；404 短期负缓存最多 5 分钟，超时和鉴权失败不缓存。Provider 切换不复用旧缓存，收藏快照继续标明原来源。
+首版本地词典由版本化数据库数据集提供，内存缓存只加速读取。缓存键包括 datasetId、datasetVersion、lemmaKey；POS 排序在读出后做，不为每句复制词条。内存最多 5000 项、TTL 最多 24h，切换活动数据集即失效；未命中最多负缓存 5 分钟。数据集本身是持久数据，不是受 TTL 淘汰的在线缓存；导入和快照使用仍受数据授权约束。
 
-音频使用受控 `audioId`，后端解析到供应商白名单 URL，拒绝任意客户端 URL，避免 SSRF。代理／缓存必须受授权允许；若仅允许直链，通过后端返回经检查的短时 URL，并记录用户会向外部音频域发起请求。优先个人设置口音，无对应口音时展示“该口音暂缺”，不能偷偷将另一口音标成所选口音。speechSynthesis 可作为明确标注“设备朗读”的辅助回退，不冒称词典录音。音频失败只影响播放按钮，不清空词条。
+音频需求保留，当前状态为“等待用户后续提供文件分析”。已读 COL MDD 只有 result-min.css 和 yd_col.js，没有发现音频；MDX 抽查有 Unicode 音标，不能由此推断口音或录音可用。audioId 可空，当前显示“音频待补充”，本轮不验收真实录音，不阻塞其他模块。来源、编码、文件组织、词条／口音映射、鉴权、播放和缓存方案待文件分析后决定；如将来使用远程资源仍须白名单和防 SSRF。设备朗读不自动代替录音；若后续采用需独立标注，音频失败不清空词条。
+
+### 9.4 COL 离线转换与版本化数据
+
+**【已验证事实】** 2026-11-19 快速检查的 COL MDX 有 121872 个索引项，251 条分散抽查可读取、有中文，代表词包括 book/run/runs/running/children/saw。running 有独立义项，children 的词形说明存在缺字，索引项不等于独立 lemma 数。临时 js-mdict 7.0.0 读取的 MDD 仅含 result-min.css 与 yd_col.js；未发现音频。该结果是快速抽查，未做全量语义或授权核验，临时工具未作为正式工程依赖。
+
+**【工程设计决策】** Node 离线工具读取 dict/col 的 MDX／MDD，转换为版本化 JSONL 和数据集 manifest，再批量导入本机 MySQL。正式查询由 Java LocalDictionaryProvider 完成，无常驻 Node 词典服务、不把整本 MDX 发到浏览器、不在点击时转换。解析工具优先验证 js-mdict 6.0.6（MIT）；此前 7.0.0 的成功不证明该版本已兼容，锁版本与依赖风险需在 M02 检查。
+
+提取 .title、.phonetic、.collinsMajorTrans、.collinsOrder 与词性标签；去除 .exampleLists、脚本、样式和原始交互。中英解释同一段时建立专用提取规则，不能无条件按第一个汉字截断。无法可靠提取的记录写问题清单，不编造中文或词性。源 key、实际 headword、多区域和顺序分别保存；runs 可映射 run，running 不能无条件归为 run。词形提示需证据确认，未知回退规则不变。
+
+产物 manifest 包括 sourceHash、datasetVersion、converterVersion、parserVersion、总数／成功／失败／跳过数与内容摘要。新数据集先完整导入并校验，再事务切换活动指针；重复导入幂等，失败保留旧活动版本。查询缓存按数据集隔离，历史收藏保存其数据集和义项身份及首次释义，不随切换更新。完整任务见模块计划 M02。
 
 ## 10. 主动异步翻译
 
@@ -411,7 +427,7 @@ Provider 原始响应在适配器内部解析并校验，不透传到 UI。POS �
 
 初始个人配额 60 次实际 Provider 调用／小时、每日文本 20000 个 Unicode code point，可配置并不高于供应商额度；缓存命中不消耗外部调用额度。数据库按用户＋时间桶预留额度，超时也保守计入，避免并发绕过；供应商失败不反复自动重试。UI 显示重试按钮和 Retry-After，翻译失败不阻止词典和收藏原句。
 
-**【待验证候选方案】** 正式 Provider 尚未确定。MyMemory 的历史联通性仅作接口集成参考，不是上线选型；第 17 章须验证长句、准确性、隐私、配额、可用性及允许保存译文的条款。
+**【工程设计决策】** 正式目标为腾讯云 TMT，采用官方 Java SDK，经 TranslationProvider 调用；业务 en → zh-CN 在适配器映射为供应商语言代码，按当前接口限制校验。凭据、区域、项目、额度和真实调用尚未配置／验证，本次不购买或开通服务。MyMemory 仅保留历史证据，不作自动回退。第 17 章继续验证长句、质量、隐私、配额、可用性及保存译文条款。
 
 ## 11. 收藏与原文语境
 
@@ -466,11 +482,11 @@ sequenceDiagram
 
 手机号或邮箱 + 密码注册／登录，支持仅填其中一种。email 采用 trim、域名 IDNA 规范化和小写登录键策略；界面说明邮箱登录不区分大小写。手机号使用明确国家区号并转换 E.164，不默认所有号码为中国大陆；邮箱 ≤254 字符、电话 ≤16 字符。各自唯一索引；不用两个 nullable 字段的组合唯一索引代替单字段唯一性。
 
-密码至少 8 个 Unicode code point，必须含 ASCII `A-Z` 和 `a-z`，与 PRD 一致；工程上限 128 个 code point／512 UTF-8 字节，禁止前后 trim 或 Unicode 归一化密码。前后端校验一致但以后端为准。采用 Spring PasswordEncoder 的 PBKDF2-HMAC-SHA256，随机盐至少 16 字节、256-bit 输出、初始 600000 次迭代，带算法／参数版本前缀。该参数是起始设计，不是本机测量结果；需校准至目标机器可承受的登录预算并限制并发。登录成功可按新参数重哈希。
+密码不少于 8 个 Unicode code point，必须含至少一个 ASCII 数字 `0-9` 和一个英文字母 `A-Z` 或 `a-z`；不要求大小写同时出现，允许额外符号但不强制要求。注册、修改和重置密码使用相同规则；登录只验证已有密码哈希，不用新规则拒绝历史有效密码。工程上限 128 个 code point／512 UTF-8 字节，禁止前后 trim 或 Unicode 归一化密码。前后端校验一致但以后端为准。采用 Spring PasswordEncoder 的 PBKDF2-HMAC-SHA256，随机盐至少 16 字节、256-bit 输出、初始 600000 次迭代，带算法／参数版本前缀。该参数是起始设计，不是本机测量结果；需校准至目标机器可承受的登录预算并限制并发。登录成功可按新参数重哈希。
 
 选择 PBKDF2 是为了使用 Java 原生密码学能力并避免 bcrypt 输入截断问题；Argon2id 是可行替代，但需要评估实现库和内存预算。不得存储可逆密码、明文或无盐摘要。找不到账号和密码不匹配返回相同 `INVALID_CREDENTIALS`，做等价哈希开销和限流；注册重复标识给统一“账号不可用”信息，日志不得记录密码。
 
-PRD 没要求短信／邮件验证码、找回密码和绑定换绑，本次不把这些额外流程列为 P0。现有注册标识不代表邮箱／手机号所有权已验证；字段 `email_verified / phone_verified` 初始 false，不能据此发送敏感资料或实现密码重置。公开上线的身份冒用与账号恢复策略作为产品／安全待决事项记录，不伪造短信供应商已接入。
+更正原 0.1 稿的引用错误：PRD 第 11.1 节明确要求忘记密码及密码重置，并要求技术设计确定手机号／邮箱验证方式。因此账号模块须包含恢复流程；短信／邮件验证方式、服务供应商、凭据和成本尚待决定，不因未决定而将需求移出范围。email_verified／phone_verified 初始 false；未取得账号所有权证明不得重置密码，不能只凭登录标识或现有未验证邮箱操作。恢复接口契约见第 14 章，M01 可以先交付登录等子任务，但恢复未验收时不得标记完整账号需求完成。
 
 ### 12.2 Session 与失效
 
@@ -488,11 +504,17 @@ user_settings 与用户一对一，默认值沿用原型：Georgia、20px、1.8�
 
 字体实际缺失时使用 serif／sans-serif 回退并显示实际字体可能不同；加载完成重新验证位置。白／暖／深色主题使用独立语义色，正文、选词、按钮焦点须检查对比度；减少动态效果随系统设置，不把动画作为状态变化的唯一反馈。
 
+### 12.4 密码恢复的待实现契约
+
+恢复分为“申请挑战 → 验证所有权 → 生成短时一次性恢复凭证 → 重置”。匿名申请返回统一消息以减少账号枚举；账号／IP 限流，验证码或链接凭证仅保存摘要，绑定用途与账号、过期和尝试次数。凭证在重置事务内锁定并一次消费，更新密码及 authVersion，所有旧会话失效。不得把密码发给用户，也不得将未验证的联系方式当作所有权证明。
+
+验证服务和验证码／邮件链接形式尚待确定；对应挑战存储、限额和真实发送验证作为 M01-05 任务，不假装已接入。未配置时返回明确不可用，不实现通用绕过验证码入口。密码校验规则统一，注册／改密／重置均覆盖 abc12345、ABC12345、Abc12345、abc1234! 通过；abcdefgh、12345678、Abcdefgh、abc1234 不通过。现有 PBKDF2 参数与长度上限保留。
+
 ## 13. 数据库与文件模型
 
 ### 13.1 通用约定与实体关系
 
-下列为逻辑／字段级设计，正式开发通过 Flyway 生成可执行 DDL，不在本次创建数据库。业务主键使用应用生成 UUID，MySQL 存 BINARY(16)，API 使用标准 UUID 字符串；BIGINT version 为非负递增整数。UTC DATETIME(3) 保存服务端时间，输出 ISO-8601 UTC；数据库连接时区固定 UTC。文本默认 utf8mb4；lemma_key 等身份字段显式采用二进制比较，不能依赖默认不区分重音的排序规则。
+下列为逻辑／字段级设计，正式开发通过 Flyway 在本机独立 readict_dev／readict_test 中生成可执行 DDL，不在本次创建数据库或改表。业务主键使用应用生成 UUID，MySQL 存 BINARY(16)，API 使用标准 UUID 字符串；BIGINT version 为非负递增整数。UTC DATETIME(3) 保存服务端时间，输出 ISO-8601 UTC；数据库连接时区固定 UTC。文本默认 utf8mb4；lemma_key 等身份字段显式采用二进制比较，不能依赖默认不区分重音的排序规则。
 
 SHA-256 存 BINARY(32)，API 输出小写十六进制。各表显式外键；普通 JSON 只存非检索附加信息，主要业务键、偏移、状态不藏在 JSON 中。业务状态使用 VARCHAR + CHECK，由应用枚举映射；CHECK 包含范围和互斥关系，复杂跨表规则由事务维护。
 
@@ -510,7 +532,10 @@ erDiagram
     BOOK_CHAPTER o|--o{ FAVORITE_WORD_CONTEXT : optional_chapter
     APP_USER ||--o{ SENTENCE_TRANSLATION : requests
     SENTENCE_TRANSLATION o|--o{ FAVORITE_WORD_CONTEXT : optional_translation
+    DICTIONARY_DATASET ||--o{ DICTIONARY_ENTRY : contains
     DICTIONARY_ENTRY ||--o{ DICTIONARY_SENSE : senses
+    DICTIONARY_DATASET ||--o{ DICTIONARY_FORM_MAPPING : maps
+    DICTIONARY_ENTRY ||--o{ DICTIONARY_FORM_MAPPING : candidate
 ```
 
 图中主体至少一个语境是应用事务不变量，不能只靠外键保证；首次保存必须同事务插入，不能先建立空主体。公共词典缓存与收藏只作来源引用／快照，不做必须存在的强外键。
@@ -545,11 +570,13 @@ book.active_artifact_id 引用自身产物，是可空 FK；先插 book，再插
 
 | 表 | 关键字段 | 约束与生命周期 |
 |---|---|---|
-| dictionary_entry（授权允许才启用） | id；provider VARCHAR(64)；provider_version VARCHAR(64)；source_lang VARCHAR(16)；target_lang VARCHAR(16)；lemma_key VARCHAR(128)；headword VARCHAR(128)；phonetics_json JSON；attribution TEXT；license_policy_version VARCHAR(64)；expires_at；created_at | UNIQUE(provider,provider_version,source_lang,target_lang,lemma_key)；INDEX(expires_at)；无授权时不落表 |
+| dictionary_entry（首版本地数据，使用须有授权） | id；dataset_id；entry_key VARCHAR(128)；section_order INT；provider VARCHAR(64)；provider_version VARCHAR(64)；source_lang VARCHAR(16)；target_lang VARCHAR(16)；lemma_key VARCHAR(128)；headword VARCHAR(128)；phonetics_json JSON；attribution TEXT；license_policy_version VARCHAR(64)；created_at | FK dataset；UNIQUE(dataset_id,entry_key,section_order)；INDEX(dataset_id,lemma_key)；同 headword 可有多个区域，不以 lemma 唯一约束丢掉同形记录；使用须有授权 |
 | dictionary_sense | id；entry_id；provider_sense_key VARCHAR(128)；pos VARCHAR(24)；meaning_zh TEXT；provider_order INT | FK entry ON DELETE CASCADE；UNIQUE(entry_id,provider_order)；ID 不能由客户端臆造 |
 | sentence_translation | id；user_id；cache_key；provider；provider_version；source_lang；target_lang；source_text TEXT；translated_text TEXT；translated_at；expires_at | FK user；UNIQUE(user_id,cache_key)；INDEX(expires_at)；同摘要命中仍比较全文；失败不写成功行 |
 
-无持久词典缓存时 entryId 是服务端进程内、绑定用户的短期 lookup 引用（默认 10 分钟），附 entry/sense 及授权元数据；过期返回 410 `LOOKUP_EXPIRED`，前端重新查询后保存。不能为解决引用过期擅自持久化未授权词条。词典未命中不是合法可收藏词条。
+新增 dictionary_dataset：id、source_hash、dataset_version、converter_version、parser_version、status（IMPORTING／READY／FAILED）、counts_json、content_hash、created_at；UNIQUE(source_hash,dataset_version,converter_version)。dictionary_active 只有单个受控 slot，FK 指向 READY 数据集，在导入校验后事务切换。新增 dictionary_form_mapping：dataset_id、surface_key、entry_id、relation、evidence、priority，UNIQUE(dataset_id,surface_key,entry_id,relation)，支持一词多候选，不能用一对一映射损失 running/saw 多词性。
+
+本地 entryId／senseId 为数据集内稳定身份；请求仍使用绑定用户和 source 的 lookupId（10 分钟）选择义项，过期 410 LOOKUP_EXPIRED。收藏事务校验 datasetId、entryId、senseId 和 lemma，禁止客户端臆造。主体快照增加 dictionary_dataset_id（可空历史引用）及 dataset_version、entry_key；不使用级联删除数据集来删除收藏。历史数据集保留引用期，切换不改写首次快照。未命中不是合法首次收藏词条；无授权不得绕过许可导入或公开分发。
 
 翻译缓存过期删除时，语境 translation_id 置空，语境中已有授权译文快照保留；不因缓存过期抹掉用户已保存译文。供应商条款变化时需单独处理保留／删除要求，不能假定许可永远有效。
 
@@ -584,7 +611,7 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 
 ### 14.1 通用规则
 
-路径前缀 `/api/v1`，JSON camelCase，UTF-8。除 csrf、注册、登录外均需当前 Session；读私有资源也需认证。跨用户 ID 返回 404，未登录返回 401，CSRF 错误返回 403。状态变更附 CSRF；上传／收藏／翻译使用 `Idempotency-Key: UUID`，进度和偏好使用 body requestId + expectedVersion。服务端生成 requestId 追踪日志但不返回内部异常堆栈。
+路径前缀 `/api/v1`，JSON camelCase，UTF-8。除 csrf、注册、登录和密码恢复挑战／验证／重置外均需当前 Session；密码恢复匿名接口仍须 CSRF、限流和一次所有权凭证，不能因匿名开放而跳过验证；读私有资源也需认证。跨用户 ID 返回 404，未登录返回 401，CSRF 错误返回 403。状态变更附 CSRF；上传／收藏／翻译使用 `Idempotency-Key: UUID`，进度和偏好使用 body requestId + expectedVersion。服务端生成 requestId 追踪日志但不返回内部异常堆栈。
 
 成功响应直接是资源或列表 `{items,nextCursor}`，无二次 success 布尔包裹；错误使用 `application/problem+json`，字段兼容 Problem Details：
 
@@ -609,6 +636,9 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 |---|---|---|
 | GET `/auth/csrf` | 无 | 200 `{token,headerName}`，匿名可用，no-store |
 | POST `/auth/register` | `{identifierType:email\|phone,identifier,password}` | 201 当前用户基础信息，不自动登录；409 IDENTIFIER_UNAVAILABLE；422 PASSWORD_POLICY |
+| POST `/auth/password-reset/challenges` | `{identifierType,identifier}`，CSRF 和限流 | 202 统一申请提示；验证服务未配置 503，不能发送假成功验证码 |
+| POST `/auth/password-reset/verify` | `{challengeId,proof}`，proof 形式待验证服务决定 | 200 `{resetToken,expiresAt}`；错误／过期／超次数统一校验，凭证不记日志 |
+| POST `/auth/password-reset/complete` | `{resetToken,newPassword}`，CSRF | 204，凭证一次消费，失效全部会话；422 PASSWORD_POLICY，失效凭证 410 |
 | POST `/auth/login` | `{identifierType,identifier,password}` | 200 `{user}`，设置 Session；401 INVALID_CREDENTIALS；429 |
 | GET `/auth/me` | 无 | 200 `{id,email?,phone?,emailVerified,phoneVerified}`；不返回密码／hash |
 | POST `/auth/logout` | CSRF | 204，重复退出可成功；清当前会话 |
@@ -626,7 +656,7 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 | GET `/books/{id}/progress` | 无 | 200 `{progress:null}` 或 `{progress:ReadingProgress}` |
 | PUT `/books/{id}/progress` | 第 14.4 节 | 200 新 version；409 PROGRESS_CONFLICT；422 ANCHOR_INVALID |
 | POST `/dictionary/lookups` | `{bookId,source,posHint,lemmaCandidate}` | 200 `{lookupId,entry,source,favoriteState}`；词条无结果 200 `{entry:null,source,...}`；502/504 不抹原文 |
-| GET `/dictionary/audio/{audioId}` | 当前用户可用的短期音频引用 | 200 授权音频流或 302 白名单短时 URL；不可用 404；上游失败 502 |
+| GET `/dictionary/audio/{audioId}`（预留） | audioId 可空；实际来源与播放契约待文件分析 | 本轮不实现真实播放；未配置 503 AUDIO_NOT_READY，不返回虚构音频 URL；不得标为已验收 |
 | POST `/translations` | `{bookId,source,sourceLang:en,targetLang:zh-CN}` + Idempotency-Key | 200 第 14.5 节，cacheHit 标识；429／504／422 长度限制 |
 | POST `/favorites` | 第 14.6 节 + Idempotency-Key | 201 新主体／语境，200 已存在；410 LOOKUP_EXPIRED；409 SOURCE_CHANGED |
 | GET `/favorites/state` | `lemmaKey,bookId,artifactId,spineHref,blockId,sentenceStart,sentenceEnd` | 200 `{favoriteId?,contextId?,state}`；键必须服务端规范化和源位置验证 |
@@ -768,7 +798,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 ### 15.4 部署、备份与观测
 
-开发 Windows + 本机 JDK／Maven／Node；生产建议 Linux 单机 + Nginx + Java 21 + MySQL 8.4 + 专用数据盘，可用 systemd 管理，无强制 Docker 要求。本次不安装或升级环境。配置外部化：数据库地址、storageRoot、最大预算、Provider 凭据／白名单、Cookie／代理信任、任务并发；生产启动校验必需配置，不能自动启用 Mock。
+开发 Windows + 本机 JDK／Maven／Node；开发、集成测试和阶段验收均使用本机 MySQL80／MySQL 8.0.44，在同一实例分 readict_dev／readict_test 和对应最小权限账号；测试清理只可作用于 readict_test。未来生产操作系统、数据库版本和部署实例另行决定，不作为当前环境已验证事实，无强制 Docker 要求。本次不安装或升级环境。配置外部化：数据库地址、storageRoot、最大预算、Provider 凭据／白名单、Cookie／代理信任、任务并发；生产启动校验必需配置，不能自动启用 Mock。
 
 健康探针区分进程存活与就绪；就绪检查 DB 和存储可写，不每次探测都请求计费 Provider。指标包括 API 时延、Provider 超时与缓存命中、导入阶段耗时／队列、磁盘余量、清理重试、数据库冲突、progress 冲突、词形 fallback 比例。日志包含 requestId、任务 ID、错误码和耗时，不包含全文内容。内部管理接口仅本机／受控网络访问。
 
@@ -831,11 +861,11 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 |---|---|---|
 | 纯函数／前端单测 | token 边界、inline 跨节点映射、同词多位置、代理项、句内范围、三态、generation 与 abort | 精确字符断言；旧请求不更新当前状态；原句不被翻译覆盖 |
 | Java 单测 | lemma 规范化、固定词形表、Provider 映射、请求摘要、源范围校验、枚举与密码策略 | 固定输入可复现，不以实现原样镜像的断言凑数量 |
-| MySQL 8.4 集成 | 20 并发同词同句保存、不同句追加、取消与重放、删除来源、版本冲突、唯一键／死锁 | 同词一主体、同句一语境，快照首次值不变，无跨用户读取；版本只增 |
+| 本机 MySQL80／readict_test 集成 | 20 并发同词同句保存、不同句追加、取消与重放、删除来源、版本冲突、唯一键／死锁 | 同词一主体、同句一语境，快照首次值不变，无跨用户读取；版本只增 |
 | 文件／导入集成 | 断流、越界、重复路径、XML 实体、SVG/CSS 外链、真实超预算、崩溃与重启 | 不执行代码、不对外请求、不超配置预算，READY 与真实文件一致 |
 | 阅读器端到端 | 三桌面＋390px、左右底部取词、长释义／原句、字体变化／窗口变化／刷新 | 卡片不越界、不遮目标、不改正文宽度，锚点解析原文且可见 |
 | 调用竞态端到端 | 连点／关闭／翻页期间迟到词典和翻译，收藏响应丢失 | 不串词、不重新打开、不自动翻译、不虚假保存 |
-| 真实服务验收 | 固定词表、中文义项、IPA、音频口音、翻译超限／额度／错误 | 标明请求日期和延迟分布，来源／条款明确；不得用 Mock 代替 |
+| 词典数据与翻译验收 | COL 固定词表、中文义项、IPA、词形；TMT 超限／额度／错误 | 数据转换与真实外呼分别留证；音频等待文件分析，不计入本轮通过项；不得用 Mock 代替真实验证 |
 | 用户／安全 | 两用户互访所有资源、CSRF、密码变更、会话过期、日志脱敏 | 所有私有入口隔离、旧会话失效、日志无凭据／全文 |
 
 分页完整性验证比较章节在不同版式的可读文本覆盖和位置序列，检查首尾和跨章，不要求不同字号页数相同；保存锚点需要往返解析到同一内容。收藏回原文必须核对目标词／句，不只检查路由变化。
@@ -846,29 +876,30 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 | 编号／级别 | 问题与输入 | 执行方法及通过门槛 | 失败后的决定 |
 |---|---|---|---|
-| V01 阻断上线 | 标准英汉词典与许可：run/running、children、saw 多 POS、冷僻词、多音词至少 50 项 | 获取合法试用凭据和合同，保存脱敏真实响应；核对中文、headword、POS、IPA、口音音频、归因、展示／缓存／快照权利 | 更换 Provider；不以英英机器翻译或 Mock 补齐 |
+| V01 阻断相关能力公开发布 | 本地 COL 质量与许可：run/running、children、saw 多 POS、冷僻词至少 50 项 | 核对中文、headword、POS、IPA、词形、归因、持久化／分发／快照权利，导入计数可对账；录音另见 V15 | 修正转换或换合法数据源；不以英英机器翻译或 Mock 补齐 |
 | V02 阻断上线 | epub.js／XML 传递依赖风险 | 对正式锁文件审计；逐项确认运行路径可达性，测试安全版本／有记录补丁和回归样书；形成风险处置记录 | 不能消除／隔离则暂停发布并比较替代引擎，不接受“历史构建通过” |
 | V03 阻断上线 | Java 安全处理＋真实资源预算 | 在旧恶意样书外增加压缩炸弹、嵌套路径、OPF 远程引用、CSS/SVG/XML 畸形输入；在受限测试环境观察网络、CPU、内存和磁盘 | 加强 allowlist／资源限制；无法有界终止时采用隔离导入进程并复验 |
 | V04 阻断上线 | 规范化产物、文本索引与 CFI | EPUB2/3、跨 inline、br、非 BMP、重复句、隐藏内容、不同样式的固定语料；两次产物摘要一致，DOM 块文本与索引逐字相等，CFI 往返且不改变节点 | 修正流水线版本，拒收不支持结构；不能悄悄压缩正文后复用旧 CFI |
 | V05 阻断上线 | Chrome／Edge 正式版本核心兼容 | 实际浏览器真实点击、CFI 刷新／字体迟到／200% 缩放／视口变化，三种桌面；记录浏览器和系统缩放 | 修复适配器；首发目标浏览器失败不得放行 |
-| V06 阻断上线 | 正式翻译 Provider | 不少于 20 条句子含对话／长句；验证字节限制、真实延迟、超时／配额／计费／隐私／译文保存许可 | 换供应商或调整经确认的限制，不能把 MyMemory 历史成功作 SLA |
+| V06 阻断翻译正式发布 | 腾讯云 TMT 目标适配器 | 不少于 20 条句子含对话／长句；验证字节限制、真实延迟、超时／配额／计费／隐私／译文保存许可 | 换供应商或调整经确认的限制，不能把 MyMemory 历史成功作 SLA |
 | V07 阻断上线 | 事务、权限、删除、幂等 | 目标 MySQL 并发与故障注入；在发布文件后／DB 提交前、收藏提交后／响应前、删除期间中断；两个用户互访全端点 | 修正事务／补偿和权限范围，零错误数据才验收 |
 | V08 开发阶段必须完成 | 词形与词性失败集 | 至少 100 项分层语料，包含 leaves/fell、better、doesn’t、重复词；报告 lemma、POS 分别命中情况与 fallback | 精确修正规则／供应商词形映射；不为覆盖率编造置信度，AI 消歧仍不进入 V1.1 |
 | V09 开发阶段必须完成 | 服务器分句与原句完整性 | 称谓、缩写、小数、对话、脚注、诗歌、跨块句；验证 canonical ranges 稳定且包含目标 | 返回 fragment 标识或拒绝不支持范围，扩展明确规则并升 pipelineVersion |
 | V10 开发阶段必须完成 | DOM 释放、性能、键盘 | 50 次切书、500 次翻页、heap／Blob／监听器统计；段落键盘查词与读屏抽查；第 15 章指标 | 优化热点和清理；确认是否需要 Worker，不先引入 |
-| V11 开发阶段必须完成 | 环境与备份 | 正式 Boot/JDK/驱动/Flyway 组合构建；MySQL8.4 集成；Docker 若使用先验证；数据库＋文件整套恢复演练 | 补环境隔离和恢复脚本；不升级用户本机数据库冒充验收 |
+| V11 开发阶段必须完成 | 本机环境与备份 | Boot/JDK/驱动/Flyway／Session 组合构建与真实连接；本机 readict_test 的迁移、事务、并发和数据库＋文件恢复演练 | 补配置、库隔离与恢复脚本；不要求 MySQL 8.4、独立实例或 Docker |
 | V12 后续增强，条件可升级 | Firefox／Safari／移动触屏 | 真实 Firefox、macOS Safari/iOS、390px 触屏；排查历史 WebKit 坐标失败，不能只运行 Chromium 模拟 UA | 保持明确支持矩阵；若要求同时首发则升级为上线阻断 |
 | V13 后续增强，安全失败则阻断 | 独立阅读域桥 | 搭建最小隔离页面验证消息来源、结构化 source／矩形、焦点、下载授权及 CSP；不传 Session 给非可信正文 | 保留当前有限支持或暂停上线，不绕过 same-origin 限制 |
-| V14 上线前产品／安全确认 | 未验证邮箱／手机号及账号恢复 | 明确展示未验证标识、重复注册策略、滥用限制和用户支持方式；如要求验证所有权，补 CR 和短信／邮件接口验收 | 不把未验证标识标成已认证联系方式；不临时做不安全密码重置 |
+| V14 账号完整验收前必须完成 | 手机号／邮箱验证与密码恢复 | 选择验证服务，验证所有权证明、挑战过期／次数、一次消费、限流和重置后会话失效；注册／改密／重置统一数字＋字母密码规则 | 账号模块保持部分完成；不得仅凭标识重置或标为全量验收通过 |
+| V15 待用户补充材料 | 音频文件分析 | 文件到位后检查格式、编码、索引、词条映射、口音、可读性、播放、授权和存储；未到位保持未开始 | 不阻塞其他模块；不得将设备朗读或 CSS/JS 当词典录音 |
 
 ### 17.4 需求覆盖矩阵
 
 | PRD 功能 | 设计章节 | 新实现验收重点 |
 |---|---|---|
-| 手机／邮箱注册登录、改密退出、用户隔离 | 6、12、13、14、15 | 密码策略、CSRF、authVersion、跨用户负向测试 |
+| 手机／邮箱注册登录、改密／重置／退出、用户隔离 | 6、12、13、14、15 | 数字＋字母密码规则、所有权验证、CSRF、authVersion、跨用户负向测试 |
 | 导入 EPUB、书架、元数据、资源保存、删除 | 7、11、13、14、16 | 真实有界解析、READY 原子发布、文件最终删除 |
 | 单页、目录、翻页、偏好、进度恢复 | 5、7、12、14 | 实际排版、CFI 内容验证、重排／多窗口冲突 |
-| 单词原型、词性优先、释义、音标发音 | 8、9、14 | 可信中文词典、原词形回退、真实口音与许可 |
+| 单词原型、词性优先、释义、音标；发音保留 | 8、9、14 | 本地 COL 结构数据与许可、原词形回退；音频待文件分析，不标记本轮已完成 |
 | 非模态查词卡片与真实原文 | 5、8、14 | 不改 DOM／分页、坐标边界、原文独立、键盘与焦点 |
 | 主动异步翻译 | 10、14、16 | 默认零请求、结果绑定、限流、原句与译文分别保存 |
 | lemma 主体、多语境收藏及回看 | 11、13、14、16 | 唯一约束、首次快照、重复句位置、取消与重放 |
@@ -880,18 +911,25 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 ### 18.1 分阶段交付
 
-| 阶段 | 实施内容 | 退出条件 |
+| 模块 | 实施内容 | 退出条件 |
 |---|---|---|
-| 0 设计交付与风险预处理 | 评审本文，确认 PRD／UX 差异、容量和首发浏览器；获取词典／翻译试用及许可；启动 V01～V06 | Provider 可行性明确，安全高风险有处置路径；重要取舍再形成 ADR，本文不伪造其已批准 |
-| 1 正式工程和持久基础 | readict-app 新建 React／Java 工程，锁版本、配置、Flyway、错误契约、日志脱敏、用户和 Session | 目标版本构建、注册登录／改密／隔离集成测试通过；生产禁 Mock |
-| 2 书籍与安全产物 | 上传／任务／存储、解析、索引、章节、清理、书架和导入 UI | V03／V04 对新实现通过，READY 文件一致；可用 fixture 和合法公开样书 |
-| 3 阅读器集成 | ReaderEngine、分页、目录、样式、位置恢复、版本保存、键盘和生命周期 | 原型外观与真实 EPUB 同时成立，V05；不复制包词正文实现 |
-| 4 查词链路 | source 校验、词形规则、英汉 Provider、虚拟锚点卡片、音频 | V01／V08／V09；原文与词典独立、真实来源标注、竞态通过 |
-| 5 主动翻译与收藏闭环 | 翻译 Adapter／配额／缓存、收藏事务／快照、列表／详情／回原文、删除保留 | V06／V07，重放与删除竞争通过，核心闭环无 Mock 替代 |
-| 6 发布前质量 | 依赖治理、兼容、性能、键盘、恢复演练、支持文案、运行手册 | 所有阻断项关闭或范围经明确决策调整，V02／V10／V11／V14 有记录 |
+| M00 | 正式工程、配置、Flyway、本机 readict_dev／readict_test、日志与 API 基础 | 本机真实连接、迁移与事务检查；无独立实例或 Docker 前置 |
+| M01 | 注册登录、设置、改密退出、Session、验证与密码恢复 | 数字＋字母规则一致，用户隔离；恢复服务未完成则仅部分完成 |
+| M02 | COL 离线转换、数据集／义项／词形、Java 查询 | 固定词表、计数、幂等与切换；音频不作文字退出门槛 |
+| M03 | 安全 EPUB、产物索引、任务、书架和文件生命周期 | V03／V04 新实现通过，READY 对应真实文件 |
+| M04 | ReaderEngine、分页、目录、设置、位置恢复、版本保存 | 内容锚点往返、重排／切书／键盘正确；V05 |
+| M05 | 原句／词形 POS、本地查询、非模态定位卡片与竞态 | V01／V08／V09，文字和音标正确，无布局位移 |
+| M06 | 收藏去重、快照、列表／回原文、取消与源书删除 | 本机事务并发与权限通过，取消重放不复活 |
+| M07 | TMT 适配、主动请求、缓存／配额、译文与收藏 | V06 真实调用，默认零请求，译文不串词 |
+| M08 | 导入／清理恢复、幂等、一致性与故障补偿 | V07 故障和竞争通过，无假成功／丢快照 |
+| M09 | 本机阶段验收、兼容／性能／安全／恢复和运行交付 | 数据库全在本机测试库；V02／V10／V11／V14；音频 V15 明确未验收 |
 
 基础工程和数据契约可在供应商验证并行时开发，但不能在 Provider 未通过时把对应功能标为完成。若 EPUB 安全方案不能通过，不继续堆叠依赖其上的正式功能，先关闭内核风险。补充实验只针对明确未决项建立最小验证，不重做已有完整实验。
 
-### 18.2 设计交付约束
+### 18.2 模块实施基线
 
-本文是一份供实现和评审使用的系统设计，不包含正式源码或可执行数据库迁移。后续重要采纳决定遵循仓库 ADR 流程；发布开发基线时引用本设计的 Git 提交、PRD、已确认 ADR 和新验证结果，不能将“设计已写完”等同“系统可上线”。本次只维护本文和两个技术入口索引，不修改原始需求、原型、实验、历史证据或 readict-app。
+细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
+
+### 18.3 设计交付约束
+
+本文是一份供实现和评审使用的系统设计，不包含正式源码或可执行数据库迁移。已确认方向见 ADR-0001，后续重要采纳决定继续遵循仓库 ADR 流程；发布开发基线时引用本设计的 Git 提交、PRD、已确认 ADR 和新验证结果，不能将“设计已写完”等同“系统可上线”。本次按用户指令修订 PRD、本文、模块计划、CR／ADR 和相关索引；不修改原型、实验、历史证据或 readict-app，不创建数据库。
