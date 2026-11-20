@@ -5,7 +5,7 @@
 - [Readict V1.1 系统技术设计文档](architecture/Readict-V1.1-系统技术设计.md)：整体架构、模块、阅读器、数据库与 API、关键一致性规则及待验证任务；区分已有证据、工程设计和候选方案。
 - [Readict V1.1 模块化开发计划](implementation/Readict-V1.1-模块化开发计划.md)：本机 MySQL 开发验收、M00～M09 详细任务／依赖／退出条件和音频待材料安排；M00 已通过本机验收，其余模块按计划推进。
 - [M00 工程基础与本机环境执行文档](implementation/M00-工程基础与本机环境执行文档.md)：目标目录、依赖、账号、YAML、Mapper／XML、类型处理、事务、API、命令和排障；是实施指导，不是已通过报告。
-- [M01 用户认证与个人设置执行文档](implementation/M01-用户认证与个人设置执行文档.md)：基于真实 M00 的六项执行指导、V2～V4、Session／CSRF、账号设置和本地／真实验证阶段；尚未实施。
+- [M01 用户认证与个人设置执行文档](implementation/M01-用户认证与个人设置执行文档.md)：基于真实 M00 的六项执行指导、V2～V4、Session／CSRF、账号设置和本地／真实验证阶段；核心与本地模拟已验收，真实通道待接入，见 [验收记录](../../validation/implementation/m01/README.md)。
 - [M01 用户认证与个人设置流程图解](implementation/M01-用户认证与个人设置流程图解.md)：11 张 Mermaid 架构／ER／流程／时序／状态图，解释 M01 各业务链路与安全边界；仅为实施辅助，不代表已完成。
 - [ADR-0003](decisions/ADR-0003-M01会话认证与分阶段验证.md)：显式认证持久化、authVersion 和分阶段所有权验证。
 
