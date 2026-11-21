@@ -1,0 +1,91 @@
+sourceOrdinal,indexKey,group,classification,localOutcome,finalOutcome,errors,reviewer,userApproved
+964,acrylic fibre,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+1045,act on,skipped,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+2844,allophane,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+3024,altar boy,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+4968,appended,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+6494,atomizer,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+7375,baby,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+7434,Bachelor of Arts,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+7548,back out,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+8298,barbette,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+8861,battered,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+9643,belt man,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+11203,bldg,boundary,SOURCE_RELATION_TARGET_MISSING,FAIL,FAIL,SOURCE_DEFECT_NOT_REPORTED,Codex,False
+15036,cable car,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+15048,cabmen,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+15298,calcium oxide,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+15301,calcsinter,boundary,COMPLETE_IN_SCOPE,ALIAS,ALIAS,,Codex,False
+16224,carbon tetrachloride,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+16499,carpet bug,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+18763,childlike,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+21864,committing,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+24659,count out,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+27285,database,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+30390,diplomacies,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+31405,distributing,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+31561,diving bell,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+33993,Eccles cake,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+36458,equimolecular,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+37237,evaporates,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+37462,excess demand,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+37561,ex div.,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+37807,expectation,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+38787,fang,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+41099,floor manager,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+46383,graduation,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+47886,gyrodyne,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+48647,hanging pawn,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+51312,Homoousian,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+52440,hydrocephalus,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+52562,hyetograph,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+53203,idlers,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+55178,innovates,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+55601,interactive engineering,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+57025,jack rafter,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+57307,jehadi,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+57426,Jet Ski,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+59315,koreans,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+60617,LBV,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+60937,leg bye,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+61932,linguistic philosophy,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+66778,metritis,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+68210,mobile library,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+70238,muzzle,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+74031,olfaction,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+74265,onshoring,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+76814,pantothenic acid,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+79668,phone box,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+80977,plan,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+81165,platina,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+81771,pointillism,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+82435,poring,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+83161,praying,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+86997,radio source,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+88105,reclaiming,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+91078,ring around,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+93333,sandwiches,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+93861,Scales,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+94243,schwa,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+95702,semantic memory,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+97448,showd,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+97699,sickness benefit,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False
+97848,sight-reading,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+101453,sphinxlike,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+101503,spiffing,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+102309,squirts,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+104455,stupefies,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+105615,supplementing,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+106026,swarms,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+107802,tee-joint,boundary,COMPLETE_IN_SCOPE,ALIAS,ALIAS,,Codex,False
+108305,tern,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+109285,throve,boundary,COMPLETE_IN_SCOPE,FAIL,FAIL,MEANING_MISMATCH;NOT_COMPLETE,Codex,False
+109399,thwarts,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+112582,Tupi,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+113908,underwear,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+117068,volcanoes,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+118135,way,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+118313,we'd,boundary,COMPLETE_IN_SCOPE,FAIL,FAIL,MEANING_MISMATCH;NOT_COMPLETE,Codex,False
+118636,welts,success,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+119710,wins,boundary,COMPLETE_IN_SCOPE,ENTRY,ENTRY,,Codex,False
+119799,Wisdom of Solomon,skipped,OUT_OF_SCOPE_PHRASE,SKIP,SKIP,,Codex,False

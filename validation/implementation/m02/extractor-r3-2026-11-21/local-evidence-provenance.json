@@ -1,0 +1,37 @@
+{
+  "directory": ".artifacts/m02-r3-20261121",
+  "sourceOrFullGoldDistributed": false,
+  "databaseUsed": false,
+  "scripts": {
+    "archive.py": "6dd27531a94a2040534621be495cbc47f82608c99b8b644ddfb2a1ca2b43f1d6",
+    "enrich-known-gold.mjs": "6de8c8bb9fb3ac9a539ac6fc6e5018e7c916cef2d24c9979b4426231e407e7ef",
+    "evaluate-holdout-v2.mjs": "c451a6e52b585ef434287bca521981889d97a65f023bc5bce1e141fb88f0a350",
+    "evaluate-holdout-v3.mjs": "350c142591e8f83b82a2da5c83eda0ada2e00fd923d94d00d409311659616f54",
+    "evaluate-holdout-v4.mjs": "9ae47c875e44438cccaee99d27c73e9941c8b67d6ef1d7675b5a17a63566e28b",
+    "evaluate-holdout-v5.mjs": "62d433a578b7e5d1c1efd56db173fa80bcc9ed151d8523dd07ae1ecef6518e79",
+    "evaluate-holdout.mjs": "84b915390b9a614df7414f5cd5e602cc14637693dc06babaa49d167d1345b532",
+    "extract-r2.mjs": "cd43aa93ab67ceeeda8ae5b07794356f6e142730f97b9d8340b3c71e8e81e287",
+    "known-scan.mjs": "d3e3f3d6fa3144155315de1c8df30815a71092a3ef75c2c79dafd3953a3e9288",
+    "open-holdout-v2.mjs": "42fed57f4a961cc2c7611a70510f940c50fb87d464129dc6fc0153c673743e85",
+    "open-holdout-v3.mjs": "97edc188d0b38ee26aef527fb5ba3f18609011064a405ab4d6168606a6450bfe",
+    "open-holdout-v4.mjs": "ed03d61d5ee9b5149c2d73d3614e245dbceb3984d4d7a73c9195029359fff15e",
+    "open-holdout-v5.mjs": "c26dabd65deef21666bcf491a5b08ba4bfc5e4349804cc298525c9dc6295e653",
+    "open-holdout.mjs": "2ceaf41adb365e15b33356ad6888c33b00f3899c2f33a756d0c72d3e34c3d7b4"
+  },
+  "goldFiles": {
+    "holdout-gold-1.json": "5bb47a520ac95d47559c703598c0494e1c22832c95af56a35d363b513aafa7ae",
+    "holdout-gold-2.json": "187b9164eaadae03d7f60283774f0988d8277da1967ff37581d110147a69df8b",
+    "holdout-gold-3.json": "4ec71ec2fd56964d57a1904a5885c142f082be2e80c65c8a18abc5d8edc16800",
+    "holdout-gold-4.json": "7223c634e15891acda73f78a6ed844688c5b5d90da534be954d47ab7a25c7fca",
+    "holdout-gold-5.json": "9d0c57ff33b27e7550a633d46b22763038f915b556ebc9b070b5aaca3c0ea211",
+    "known-gold.jsonl": "4d2fcdc6b15fa2d7691970af021984f5807c67b66cff26b8ffca936e00f6a498"
+  },
+  "testLogSha256": "2570591c4e11f6306ae07e441b3e690ba6df80a7929786f41de0e05ae5b93d2e",
+  "tests": {
+    "passed": 57,
+    "failed": 0
+  },
+  "finalCandidateFreeze": 5,
+  "npmTestLogSha256": "a3b32eba286f8b84a3ea8ab28a17666224493054f2f62cdbf746df65027fd729",
+  "testEntry": "npm test -> node --test test/*.test.mjs"
+}

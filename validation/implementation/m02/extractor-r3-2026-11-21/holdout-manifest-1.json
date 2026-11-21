@@ -1,0 +1,545 @@
+{
+  "algorithm": "SHA256(mdxSha256 + decimal sourceOrdinal), first30 per r2 group excluding known300 and fixed57; freeze before body inspection",
+  "samples": [
+    {
+      "group": "boundary",
+      "sourceOrdinal": 27257,
+      "indexKey": "Darwinian",
+      "rank": "007b0a32f0e3977403583eae13cb015d264502710ad52cb1e68cd9a62a2e964c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 81970,
+      "indexKey": "pollard",
+      "rank": "007b3ff5b9c3ea121fafa6ea9b11672719d1cfd009a26e647f498e00ca9769fd"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 81592,
+      "indexKey": "PM",
+      "rank": "007beb1948de8de7d5db0bb0c33921755e74d6f766f7c6a48ca79bfa0e45a674"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 69313,
+      "indexKey": "motorbus",
+      "rank": "007ca09f901a1099a92343bc0c3ac075ca3055e4f040c5528877017e73ecedb8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 120646,
+      "indexKey": "xantippe",
+      "rank": "007d198cea8eda2177919809740a1cbaa477ac9351b890da0a91675125b378a6"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 98761,
+      "indexKey": "skydive",
+      "rank": "007f6f534cc389ebddfc5fccd5763283b03e32ee815b543230a06312b69a029d"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 45118,
+      "indexKey": "gillion",
+      "rank": "007f88dad4537d4d11c9034a92571e78895eb7792c841c00e00ab5d537ee99f3"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 4843,
+      "indexKey": "Apollyon",
+      "rank": "00810deddbb4ee4fd56777ede0a9f734323e649f74594ee67ca142e463b6971f"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 104595,
+      "indexKey": "subdeacon",
+      "rank": "0081750d82357fcbaa4c9395fe2041e6a619a1ed12ac558ece32368be6a0f188"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 36605,
+      "indexKey": "erotema",
+      "rank": "0081e5caeeb9b45c95dd817d91f3fc7ed11fce5a23d89bd28f77efc2b73601c8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 103285,
+      "indexKey": "stge",
+      "rank": "008288d7f2bc25122f0aab62392fd3c07b3831ac4d33eed3ba3ee73b61f61d70"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 61702,
+      "indexKey": "lignicolous",
+      "rank": "008404280d891ce136bd357e3d70413af2b27c37957bb6b6ab7fa33c2f66f414"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 89036,
+      "indexKey": "reify",
+      "rank": "008471fa5ed83f4c263bb39da2386c38fb09df430d4f08c9f3ea2786ac0c45b6"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 92061,
+      "indexKey": "roux",
+      "rank": "0084ba4263681b40cfbfcb7076bea5703e48b1d8d9aa5fa6fc7b83a2dc27ed9c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 13175,
+      "indexKey": "braziers",
+      "rank": "008722137e17b0b3a5178ccb94588bf2b852ed3713b71aff9d1e9d3b4c2898b4"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 110285,
+      "indexKey": "toning",
+      "rank": "00875675401114ea26942d199d05d6593b98875510ec97307f90bab866ab823a"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 49699,
+      "indexKey": "hekate",
+      "rank": "0088ec12dfe697b05c85e589a197332fc564e1f6c03b4069859fcad24107fecc"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 74192,
+      "indexKey": "oneirocritic",
+      "rank": "0089b0711184ceeaef6f5e5c33b2eee8e5b8ebbd93cffbe42100bdb575b2f67d"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 69777,
+      "indexKey": "mullioned",
+      "rank": "008a85da6dca5446ee96a8e736c2c616afb294af8bf31c30e58724aa8e52fe2e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 44,
+      "indexKey": "abactinal",
+      "rank": "008b12a982b688541e57d51d2d8014f7b9b93ab31a345b63ae0c966a77a25496"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 13055,
+      "indexKey": "brakes",
+      "rank": "008ceafddc1e7b378e29fb30ec4bb457bf97414be0408c5e236075b63529732c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 101921,
+      "indexKey": "sporule",
+      "rank": "008dd63c8afcdf6cd8a81c02ab5ca8a5b1efe254ad980587034737d502da4362"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 3390,
+      "indexKey": "amitriptyline",
+      "rank": "0091b8f03c636b44315acae24bbc5bf92fc8180768363d72df15ce69d938ee27"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 22345,
+      "indexKey": "coms",
+      "rank": "00931745e1e52d88d24de5dd4cc781fcc926a2aef8ba508916718a767b8ff727"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 79707,
+      "indexKey": "phonometer",
+      "rank": "00932d33bb075df981af2f3edd403c5906aeb1a66d002c4e843693ec81341bad"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 61274,
+      "indexKey": "levee",
+      "rank": "0093e1541f138e2731e33de421db9777fe1cdf1704dc5b81eaafa3208c5ae7bf"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 29499,
+      "indexKey": "deutero-",
+      "rank": "00945d841e760f42280f333adf4b5dcc8b35164874db37528a1930c34b6ce168"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 77522,
+      "indexKey": "pas",
+      "rank": "0095e3d27058db6b873448480e15ef4a3db131c530a059424d6b533b03a2eaa9"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 93437,
+      "indexKey": "sappanwood",
+      "rank": "009732cdf71947f480f5340cc20bf5823607c17533b2a6a14d8a57952e85a90d"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 7577,
+      "indexKey": "backsheesh",
+      "rank": "00991443b4d88f270acd12325f83b1a777ac487f7b055846c01af8e37cadf340"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 75734,
+      "indexKey": "overflown",
+      "rank": "00b404b51d58ff6526b1bdb3fa8fa492d3d527884b150c35b9429b7278449057"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 32988,
+      "indexKey": "dropper",
+      "rank": "00b6e07f9f72a35770ed18c15c46e79c8e64d1e0ad3a825e34ec951aa6a63aaa"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 62985,
+      "indexKey": "loss",
+      "rank": "00b7bb65d3dc3f21542bd212fea0d9a3d5887ba57dac961ad8a195858baca5fe"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 52966,
+      "indexKey": "ice-box",
+      "rank": "00b7c48722de707211fc4db9106cdc7176732613cbf4a6f802bfdd8b2c146fa4"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 110380,
+      "indexKey": "topcoat",
+      "rank": "00bc016aa9ebe985d198352d34889402a788d347fbad3d265bc39c4b450c1fbd"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 34080,
+      "indexKey": "ecologies",
+      "rank": "00c0768d3468c829e7d24eb0dbf478bc692a222697dca082c68cfaa98882ceaa"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 106222,
+      "indexKey": "swimmer",
+      "rank": "00c1426aa3d52dcdc0e8b94d0f3458f0ec9b43f93fc1cb638821664f8288999f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 21211,
+      "indexKey": "coke",
+      "rank": "00c1b42ac2b621998b0466dac1f4734fee61ae85ee328c399aa1ece2453baf0f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 44409,
+      "indexKey": "gearboxes",
+      "rank": "00c5fba49fbd3b2d0de217fe4f69f9832c8b9d5e2fc47b2a44f07e44eeca3398"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 91370,
+      "indexKey": "robbed",
+      "rank": "00c5fe8bbd76cba6597fc3290a26b7c8a925dda0ef5941787b964580ead5c726"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 90277,
+      "indexKey": "retouches",
+      "rank": "00cb01a54a7bb2cc995472f967c1d0b591806ddf23378a800c1e7fc35e4f5e6c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 53915,
+      "indexKey": "improvised",
+      "rank": "00cc710060d4af2402f57dfe6b358d28c09df38f072492047bc3325d8370f33c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 113119,
+      "indexKey": "tyrannized",
+      "rank": "00d0c3b916ab59b007c51b828bae9c1a6226bbfcb8bd112e2cc4b1fc9537fd49"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 102057,
+      "indexKey": "sprinted",
+      "rank": "00d35f9dd1d603eaaa4a5d3a065809dc0e298f9ba811580bcdee88aa4fefb011"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 19084,
+      "indexKey": "choke",
+      "rank": "00d43232e94185224e81e3ac8d80603c50d884b6d68ce2b93ce2cf2ef4488c0d"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 83403,
+      "indexKey": "preferred",
+      "rank": "00d6fa4946d2d6541d6842247a1b7eaa4dad8bcbfd22f6604fa40f2239d4c863"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 30611,
+      "indexKey": "disaster",
+      "rank": "00d8e645730e9edde78255aeeefacae34cb81c214105907a85d06d421fb2412a"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 7369,
+      "indexKey": "baboon",
+      "rank": "00d8fad459f562cc7a91135c7b7f50b206bc7d6400d1f897f5a7087a92390e50"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 97661,
+      "indexKey": "sic",
+      "rank": "00dab5cd811239f5244069b06df91cc599eb282b00c8c4fa373f50ffadfc347c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 74881,
+      "indexKey": "orgy",
+      "rank": "00db0fbd41890c3d5d72bd83e71bbde81f4c69e3d97dc6bcbd2bdb4abf757a06"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 100942,
+      "indexKey": "spaghetti",
+      "rank": "00dc61395fde2985d5b90f1c656b056ab032def11c08e28ad92a355c48a3a85b"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 72644,
+      "indexKey": "nosy",
+      "rank": "00dcc35b32551b892cf801334c491c35a2a14573f899f69ed3c838d7539e3b16"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 19227,
+      "indexKey": "chortles",
+      "rank": "00df8a885cdccde7f937a08001540b796fc8dbb8d6ffe9aa604800b8e632225b"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 37341,
+      "indexKey": "evolution",
+      "rank": "00e154a92ec5693dd2cd6c8644989aeb1069b3ffd8efd4105262142bbce5ed9c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 90398,
+      "indexKey": "rev",
+      "rank": "00e1e57e9db35f6f6d18538cbfd700d170916e5e995ab51f92d482a12ede64a5"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 114290,
+      "indexKey": "unison",
+      "rank": "00e25f0ef31c9f0268ec9972833ce59425cc83762b6106c00e2289a7121546c7"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 7141,
+      "indexKey": "avocations",
+      "rank": "00e62d3b7f8cbb6d472604fa1ed102a1c1e5642e4a7883f6f40e0bdaa1498aca"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 32822,
+      "indexKey": "dribbled",
+      "rank": "00e838483e9108660907a85ce145e574374f015d1af820047f8281255035edfa"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 77074,
+      "indexKey": "paraphrase",
+      "rank": "00ecaea72e3a213734d8f2ee2f8b2256c3c66f67583f8a50db37ca000d81c9d2"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 88846,
+      "indexKey": "refund",
+      "rank": "00ed925b0ee762987202321b7495c292081b7f3935573d6e0c2e7b18d7ccef7e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 17539,
+      "indexKey": "Central India Agency",
+      "rank": "0108d6c74ea08413e0e94b9d8931134db7f9f0a57d14e67b39c31e03f4862a03"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 104650,
+      "indexKey": "subject catalogue",
+      "rank": "010e08b327367ab8c0a85d108209198fcb35589ecdf1ec9cf4566135e1e1c48e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 66701,
+      "indexKey": "methane series",
+      "rank": "010ed837711dd43152d4fb96e357dede7a0e2dfbc4a7292f8fc34016aec6c0e8"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 74767,
+      "indexKey": "Order of the Thistle",
+      "rank": "0112022c8b70d0c2705416d33dd2f97a83e982b872ef17526220b96a8f1a7cd3"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 44844,
+      "indexKey": "German sixth",
+      "rank": "011f686eae632396d8684a3e03458b4e4b52b1b87e5b1cb30d685d377ff8567b"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 48663,
+      "indexKey": "hang up",
+      "rank": "012326f93d89d088d445b9b774de0aceb092b8fed54e18110d696f5063d94659"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 41077,
+      "indexKey": "flood control",
+      "rank": "0125638e286baffc814e64d4fced2db49a8fdee095a125e1e1b8cf48edf8ee8e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 37158,
+      "indexKey": "European plan",
+      "rank": "0126b1d8ffb15659413f7d1acf84930bde431960aff1c1436f18bfa22285098b"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 45561,
+      "indexKey": "glove puppet",
+      "rank": "012bc8956a14429a500e219f091ab958a5889735f9bbbf5cae67c7ffa49bdea0"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 95742,
+      "indexKey": "semidetached binary",
+      "rank": "012f95aae285a2021bae53f19dcc11317e8745f40648441e8bcda5cb341d0ac7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 64711,
+      "indexKey": "manor house",
+      "rank": "0135a2c019483330e02613e27a66813c983e2f032478d9b1403c9ccaf3a1ed6f"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 116268,
+      "indexKey": "very large-scale integration",
+      "rank": "01384faac423b6c9d6ee34a576bf5c00a21c3ecf3c1be4a2eceaf48e520fa013"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 40083,
+      "indexKey": "financial year",
+      "rank": "013881f2d3a3e84192a189f4641b47f6078c24793671dbc3a4065fee7b0cc9c9"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 886,
+      "indexKey": "acquaintance violence",
+      "rank": "0139ccd4ef797e4b000a175a4efd9aaecaa318ffad3ffd9d13b813bcb7297bc3"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 60446,
+      "indexKey": "launch pad",
+      "rank": "013bb4ee0a8575a3c86a8300c0b0ad7a35df526f4d2af29aee0ea52dcfaeead1"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 47512,
+      "indexKey": "guest of honour",
+      "rank": "013bd34a4aba02dced4ac5911815710ae11dbc12f0aa19c84c9f7c734abc1ee5"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 84140,
+      "indexKey": "prix fixe",
+      "rank": "013be1529b34d6348144e1c4619e2d1e3af1b4e97d3152346cb21f410ffe3f30"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 81893,
+      "indexKey": "pole vault",
+      "rank": "01414efaa4058899f4e89b5a37fd1d120db140d13fb52d4c66f2f00cb62c22e9"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 100804,
+      "indexKey": "Southern British English",
+      "rank": "014a86c072fdf474aac61dc333930ee3df1a58f6583a7b1dce4a10664c998b65"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 27115,
+      "indexKey": "dance hall",
+      "rank": "014cea6209b27270ad6cfea68a4e2531cf744ad5e6c1c85b2761077fb63efca4"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 78864,
+      "indexKey": "periodic table",
+      "rank": "0152e273bd0781bfc05a7415c68618fb6c9cd6565838aa75242ed2e8ea3d5ff3"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 64532,
+      "indexKey": "Mandelbrot set",
+      "rank": "015447b4d4a05052cdc062618c62e74c2a298336e3e45f6a1a4139b3722710ac"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 29107,
+      "indexKey": "derived unit",
+      "rank": "01579eb0cedf39dbd091a020dbc1eea0af71ff1366aaf7efa31492786c1aaea4"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 46575,
+      "indexKey": "granulation tissue",
+      "rank": "01586c246b86106d6ae7a153c77624095358faff7b12c9bd9d41fc3d0c6b2cdc"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 18873,
+      "indexKey": "Chinese medicine",
+      "rank": "0160e54a973da8a0c69a7af4d9e223a713e3e82296f980b803e40fe7fb9cfe70"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 92775,
+      "indexKey": "saddle soap",
+      "rank": "01642eb31148c6b11319ce429e26daa4d7448d063fe113386a9f697d60440b41"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 71802,
+      "indexKey": "night-blooming cereus",
+      "rank": "0164c504d15ba2f4c84df5ac98bc5f6fa43438a7d47f566a19672e318d72c857"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 18261,
+      "indexKey": "chartered engineer",
+      "rank": "016796b8952aa4bdc7051ae3e694f6114cfaa47f5ee160dbe22f99a3bd4ec4d7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 55278,
+      "indexKey": "insectivorous bat",
+      "rank": "0167e9e1dd19776ada2d91e189b20f660d53c01587e30783a4660e1d967fb4a6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 95043,
+      "indexKey": "sea spider",
+      "rank": "016895aa8e36cdbfff088c7991792377171f936fd7b7216fb6d4dfcb79ebdb0d"
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "algorithm": "Same SHA256 ordering excluding known300 + retired180 + fixed57",
+  "samples": [
+    {
+      "group": "boundary",
+      "sourceOrdinal": 90343,
+      "indexKey": "retrolental",
+      "rank": "00beada90ca9a0923b99afd574c049902acbf68b46f8f48648b46411f08b79d0"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 60122,
+      "indexKey": "lanthanum",
+      "rank": "00bed87d82603ae75214272cc61ccb51c3058faa1deb283742984297b63e1963"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 82103,
+      "indexKey": "polymerous",
+      "rank": "00c12308ff4e9b5f13d00e7bbacec03d645bef0a99338d8a2703739b96162b72"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 100237,
+      "indexKey": "soils",
+      "rank": "00c12390384e07440a14eb68ae9b69aa36c7fe395f22bb987fc4b1c74be0beb5"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 4874,
+      "indexKey": "aport",
+      "rank": "00c12395fdd5f96a598f54187e18dec664efecbe09769b3279a4385557c40b4a"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 10093,
+      "indexKey": "Biblicist",
+      "rank": "00c38828ad298c8e6fcf116711e47442e30c2e2c85fde356690dbfdf78a6a8f8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 29818,
+      "indexKey": "diarise",
+      "rank": "00c5ef053dede4d766b9fdb397839c8f08e4eaa59417eec54f974f62131a418e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 46557,
+      "indexKey": "granolith",
+      "rank": "00c7c97d238198009b98fa4488bc2ea44d69e823fe2c42b1443e74c637bcf56d"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 114038,
+      "indexKey": "unfailing",
+      "rank": "00c828617048cbb5691667ab185b94050285dd5c6d214be7889822946b7b8a2b"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 97144,
+      "indexKey": "shivering",
+      "rank": "00c89dceaae93ae06fba2607f41b115179fa1f7d6cdfa498da6b32ba532a58f9"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 7869,
+      "indexKey": "bales",
+      "rank": "00c98b23b832821404ef170726eb6f482d264bc67f11a29368dd829e89722d99"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 108850,
+      "indexKey": "thermoperiodism",
+      "rank": "00c9c30b11bd4018650efe367878dc6558facbdbb2afc28b3b99c24db3753824"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 61142,
+      "indexKey": "leptocephalic",
+      "rank": "00ca453371c138eb317e4cf932dc079ed5da41378f41054ae4fa26e96ced6de5"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 105280,
+      "indexKey": "sunbow",
+      "rank": "00caac6aeab3734251841a9d5ac1b7daac7cf6ae17ca61c5c7433454de10f4c5"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 112854,
+      "indexKey": "tweedy",
+      "rank": "00cb5eae61316e77aad3a80567fa63af2f8e8f56e1179c2c0a3ac6525981e39b"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 11277,
+      "indexKey": "blet",
+      "rank": "00cb8cf5a19a27c480daff59111e3442b7552ce222f4ca6f3738d2a5cdcd9e49"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 63929,
+      "indexKey": "magistracies",
+      "rank": "00cc06846cfde79f0118c57b35c9f56da03ced92fd64a956eec0b463e2a6a6d3"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 67441,
+      "indexKey": "mimsy",
+      "rank": "00cda887ef26466a1db1b45e6ee43d365d7303aef14dc7ca1dfe0b1928ce6dba"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 60455,
+      "indexKey": "laundress",
+      "rank": "00ce081737c9fc9210a8e7c001fe1326cd506522e7ac8e4e0362615b87f9cc49"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 28507,
+      "indexKey": "Delphinus",
+      "rank": "00cf94de3fbebc73836d402bfa2905c26e53230f7f6d84819aae52cf3e8f71c6"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 20348,
+      "indexKey": "clinked",
+      "rank": "00cfbc99255b36c611e901716cb5cd04e3030d2b759110dfd28c945c1d012d7d"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 99575,
+      "indexKey": "SMV",
+      "rank": "00d00f7499f6b860f5a87119a55c6d5c79b02467fe3b032c0bfabd073c2a58a2"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 71664,
+      "indexKey": "NFA",
+      "rank": "00d4d9258b9a7197fb2dc7a1537e7b94e7b02e91741752a517b4722e2457a332"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 11598,
+      "indexKey": "blubbery",
+      "rank": "00d7be79a613ca8ec90d23f27326bea6f4ada7bc43966561055c934dbd34b1e1"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 61911,
+      "indexKey": "linga",
+      "rank": "00d8e28f46ff371fc659fa2c4a6fb42af64ef56a53216ca2ba106b1c1ebc7819"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 76385,
+      "indexKey": "paillasse",
+      "rank": "00dab8edd17319dcecc2393f031e8532f1e8945c3e39cd8aa1030cae7c910eb4"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 66891,
+      "indexKey": "microarray",
+      "rank": "00dc22c59e0fdd3f2101a912120ba28935f62a07780a202e53004045134a0287"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 70383,
+      "indexKey": "mythopoesis",
+      "rank": "00dcd44bb134eeddc421b051f90fab62142df1a09cd93503d38e0451e393736a"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 52487,
+      "indexKey": "hydrokinetics",
+      "rank": "00dce43a0f3a2e44f0ff1da415b4c25ec2b5cd61a446926c105895f6bd1077be"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 32022,
+      "indexKey": "donny",
+      "rank": "00e0bb21b8ac57945bc30e432167ce3292ebb568c33821e307cc59d5d5da7313"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 22482,
+      "indexKey": "concludes",
+      "rank": "011c852b4820b87fe918cdc1c20dc3633454f0a31a5fa9c09f803ece67f56fd6"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 406,
+      "indexKey": "abutting",
+      "rank": "011dc3e2da633b96d5a7de3e1dad42d036b54de389735e3db61fd37fad0af69c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 64945,
+      "indexKey": "marinades",
+      "rank": "011e0542a498db5db55e10d2dd19f920374ecb09b9cb55b2fd5426672b3222cb"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 93874,
+      "indexKey": "scallywags",
+      "rank": "0126343130d8258c247a1462e68cff0c2d6716d5a4f5ae25ab6b78cf17c00d7d"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 87456,
+      "indexKey": "raspy",
+      "rank": "012795710393fd092c005472ec7260a8bd55902ce129cf5ba9f31922a8434c85"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 56168,
+      "indexKey": "intuited",
+      "rank": "0128463d7f3110194df1c7666d3e9a22b5d282f56d4f0c28a268f6d814559617"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 39847,
+      "indexKey": "fife",
+      "rank": "012edf10d6f7256cbc3a83c4c96e8d01543e7b588ddfc1a9c0c76a2911c1590e"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 49775,
+      "indexKey": "Hellenic",
+      "rank": "012fa3a258e31f8d5c2f75b5e2b26c4e388e46917cc795115d5c8b70ca386554"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 75825,
+      "indexKey": "overpasses",
+      "rank": "0136f7c51ef903a55ec45611939c894f5abad85ec000d71734ce97f764e26b9e"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 93326,
+      "indexKey": "sandwich",
+      "rank": "0138add44ee6691f80a52055be4310dc489b30d59f4cc27f0717683d47277c70"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 92058,
+      "indexKey": "routinizes",
+      "rank": "013c99875797f48dd3c670dc6e9893bff63465e9d00070000aeaed3d74108721"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 107680,
+      "indexKey": "teamsters",
+      "rank": "013cac86e023530f1ba7799e61672e467a6a5dc74770d8443d76769a278533e7"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 75987,
+      "indexKey": "overturn",
+      "rank": "013eac615cc82df437f17c13d8f0446cbbaf45a623364c4434482487253cfd53"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 61376,
+      "indexKey": "liability",
+      "rank": "013f60d740ffefa249521234893f7d74ab65c61505af585887340f83c099eeb4"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 75874,
+      "indexKey": "overrules",
+      "rank": "01408fca51959d01e12906d0f16408b3e1f6fde62fd3c653f0554366d869b3a1"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 9955,
+      "indexKey": "betoken",
+      "rank": "0141fb47835341a6a16ad2b4ab6a2dba3e6b4f69e935667872850a5433a89c53"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 57551,
+      "indexKey": "jittery",
+      "rank": "0141fcfb0c0cb405af2c34f52ee72ed13ba1a5c841a4c7df539ed631594c81d1"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 69445,
+      "indexKey": "mousetraps",
+      "rank": "0145e55cc380e4b616b248405f33d656a0c59b15a1a362b6b8d1db4159a4d6cb"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 27001,
+      "indexKey": "dais",
+      "rank": "0147b958cc8f32e8a84c89887fe815a0374989e3c9324fc7bb60a8a498a70175"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 78775,
+      "indexKey": "perforations",
+      "rank": "0148b250545dba058f870215a7106beafc2b55ab5d7e9f58b2d35a5d6f318beb"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 116395,
+      "indexKey": "vicar",
+      "rank": "014954578656d5e627b799171d2458c9cd094f19423e14a1fe61428b0d76a74f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 9038,
+      "indexKey": "beakers",
+      "rank": "014d1670820a707f82f5d6a5fee57cba7a36a65005a87a1b3d298b1fabfa35e9"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 27923,
+      "indexKey": "decodes",
+      "rank": "0150b488d5ed6d08d1259314fce017bb20d8c02075e1c7f4e066d77a9b66ce85"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 66282,
+      "indexKey": "mentors",
+      "rank": "01510808708a9e7d43006351125e81afac52669867118f00c5ad7c0bb07e3c6b"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 85278,
+      "indexKey": "psychotherapy",
+      "rank": "01515ce86120fd023bac7fa1511a87064d69b7b2e2095ba627e8e2460a4a9137"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 35014,
+      "indexKey": "ember",
+      "rank": "01528e8b5ee16e8df35b65b338f211090b01e12a0e483e1ef10e813cf4fdfc0f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 92040,
+      "indexKey": "rousting",
+      "rank": "0153b7a703b039706e06e2fb375caa3181e7a773fbdde5f72603fac1cca2fd87"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 343,
+      "indexKey": "absolve",
+      "rank": "0153e034042c0bb91738604dd8baaa546da32195de4a9b8fb06a3a21621b240a"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 88573,
+      "indexKey": "reduce",
+      "rank": "01574557967e88ec21ccc26b51157694b41d66b188a2679af259fc4e514cbd1d"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 5072,
+      "indexKey": "appraising",
+      "rank": "01590230a886110eb79cef69f9091f3c8e5259e118d542f566829ceadcebf884"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 4188,
+      "indexKey": "annual parallax",
+      "rank": "01b3e393320368eae67e78e7237917ca6ded84a8f5b0f30e6b2e779b2c10ea4a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 8158,
+      "indexKey": "bank draft",
+      "rank": "01b6e87e12730a56d448365779d65ec2e568404bd859787afc69a4d3b062af32"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 97263,
+      "indexKey": "shopping list",
+      "rank": "01bdad970582ddb052a9ad25b67e0c79546ffaa0db222f944d6df450045cb038"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 94711,
+      "indexKey": "scrub fowl",
+      "rank": "01c610fd602c70ab63c0c0ff7dbf4609a4cfe190ed098d6e56ae6f00a85a427d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 107290,
+      "indexKey": "tape transport",
+      "rank": "01c7105a62d9041681dab1fa4021e9c7cfb987a31c05def0a34ff21ba8e788e5"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 117893,
+      "indexKey": "water boatmen",
+      "rank": "01c8dff5fdbcc5f3f3a956d8f47f110fc4f663947d2a4474f7139cb5655ac859"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 74325,
+      "indexKey": "ooze leather",
+      "rank": "01d2e1ec5774620984aacb79620c116df214a506e10afeb2924d591542065c6b"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 27364,
+      "indexKey": "dawn on",
+      "rank": "01d3b68b26d041ca2b1d7b1d47acd3d119f251e20253e6c6a568d4e5172afce6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 78595,
+      "indexKey": "People's Party",
+      "rank": "01d49479d225ee1fb5efea096f287f894b2eb37a20c56c5ed93600e72502feee"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 51915,
+      "indexKey": "house of God",
+      "rank": "01d549d5ef8bab974331fbf9f83d55dffb002feea62f480e1467b19ad01200fa"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 102629,
+      "indexKey": "stand still",
+      "rank": "01d60d5d5c2ee8a699e45318bd7989ad2babfde22fcbb2f3d365e67f8106d95d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 34721,
+      "indexKey": "electronic mail",
+      "rank": "01d92a13753025c6f3007b461d3b4d979ea9978a88ef62d01ebe643a9315a0c7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 91328,
+      "indexKey": "road rage",
+      "rank": "01da09bf2718e9dcbb8e6144d3574151e2176ee75c4814dd7b2735a0e71b10e6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 25715,
+      "indexKey": "cross out",
+      "rank": "01de42c8b6190fcc66279e26702898b67a28f4f78ee9e228365cd31c7bf459f4"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 99961,
+      "indexKey": "sob story",
+      "rank": "01e0277f140ce5cf9123b0ec320df52c1b9bce1a86e5186237b0a030186a4e7a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 8625,
+      "indexKey": "base period",
+      "rank": "01e54cfa732a8e6e07e181a108325329e54b2281bda368fa4bcd12344c4b148c"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 47052,
+      "indexKey": "grid variation",
+      "rank": "01e65519d8caac478370e426179d95dc6adf3d22d153f39dab01dde98e32b76c"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 15550,
+      "indexKey": "camera tube",
+      "rank": "01e7587150aab57fd4134b25b8296d35d6868648bf1edad4a599931c67f1ce9d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 12626,
+      "indexKey": "bottle gas",
+      "rank": "01e7fdbb0a53c2a0b156bf18c3160caecedb7a0f1f8e74ba4ffb6da125dfdaa6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 57581,
+      "indexKey": "job enlargement",
+      "rank": "01e8cdd7e6fcdd319d668944c45ac4ea6c23ed8c88478f53a40b0861b23792ec"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 32974,
+      "indexKey": "drop-in centre",
+      "rank": "01f20eae0051e69eec394e07507e3c0358aa365919c6e4f8b6c2907fa3b9c418"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 16798,
+      "indexKey": "cast down",
+      "rank": "01f22b8aa5282da442119322c8afce927a24b722e588f82bfa63fdd1bee81cd0"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 28978,
+      "indexKey": "deposit account",
+      "rank": "01f75fa2845d263be04d21101f81aba0476a824d60fe986c42e7409043de5269"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 80499,
+      "indexKey": "pineapple tree",
+      "rank": "01fa58f86b92613eddc7d18f8e45109e957896c57ab1cfe74e5b4977ebe879f2"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 66876,
+      "indexKey": "Michelson-Morley experiment",
+      "rank": "02005b9cb41193aae11b9f7bb6d0259acc42e363e83571aa2fa219219b25f027"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 40398,
+      "indexKey": "fiscal year",
+      "rank": "02081f49bb0d0b7993aa341c261e829635efa98097fe72eddd1fbcb8bbeadde4"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 121299,
+      "indexKey": "Ziegler catalyst",
+      "rank": "020a08d881b5b8947bc0c08d28b00e97e6b4b79cd553d891a7c237b0f04dd58e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 95675,
+      "indexKey": "seller's market",
+      "rank": "020a81036c4ced5eda969dc395a8e2e206c6a754faf76fed3ab0a1230fa47851"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 10774,
+      "indexKey": "Bismarck herring",
+      "rank": "020b65a22278cb8557c4b621a52d631a73703c3599634104ed6f1da92cb609da"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 13267,
+      "indexKey": "break up",
+      "rank": "020ff01abb1aaa1526d596abe907806f88e6150846ae8838fb3b6be0ef8683d8"
+    }
+  ]
+}

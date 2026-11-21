@@ -1,0 +1,95 @@
+{
+  "checks": {
+    ".artifacts/m02-extraction-r2-a/dispositions.jsonl": true,
+    ".artifacts/m02-extraction-r2-a/issues.jsonl": true,
+    ".artifacts/m02-extraction-r2-a/quality-report.json": true,
+    "col.mdx": true,
+    "col.mdd": true,
+    "queryNormalizationUnchanged": true,
+    "candidateStillFrozen": true,
+    "oneDispositionPerSource": true,
+    "uniqueEntryKeys": true,
+    "senseCountsMatch": true,
+    "providerOrderSequential": true,
+    "outputBudgets": true
+  },
+  "deterministicFiles": {
+    "candidates.jsonl": {
+      "a": "93aa43e29a3d15055888a620c17e0e42dec4cfb36882c2edc4ac40d8af63d6c9",
+      "b": "93aa43e29a3d15055888a620c17e0e42dec4cfb36882c2edc4ac40d8af63d6c9"
+    },
+    "dispositions.jsonl": {
+      "a": "71af560f700d4f49c60d93bf48d166d111d6408fd4fdc598f96cfd1a94f3811a",
+      "b": "71af560f700d4f49c60d93bf48d166d111d6408fd4fdc598f96cfd1a94f3811a"
+    },
+    "issues.jsonl": {
+      "a": "57af657a979153986a3896f9417c5668880ea9adee89fd2e8ebfd35d4e3a0d3d",
+      "b": "57af657a979153986a3896f9417c5668880ea9adee89fd2e8ebfd35d4e3a0d3d"
+    },
+    "quality-report.json": {
+      "a": "6fc7e8b46a7fe593846fd5a83497791530826145448922784b5de9b36b79a781",
+      "b": "6fc7e8b46a7fe593846fd5a83497791530826145448922784b5de9b36b79a781"
+    },
+    "quarantine.jsonl": {
+      "a": "f428627f189ec294e91d6dcb5aaba4cecce49d4e3f009833b5dbaf64e4f513f4",
+      "b": "f428627f189ec294e91d6dcb5aaba4cecce49d4e3f009833b5dbaf64e4f513f4"
+    },
+    "references.jsonl": {
+      "a": "204b62812392963605fddc9f31539ade4004c7cb8caf98ebabab36612d9c84a0",
+      "b": "204b62812392963605fddc9f31539ade4004c7cb8caf98ebabab36612d9c84a0"
+    },
+    "representative-review.jsonl": {
+      "a": "ab6e0e7fd3f70dbe1fe029a9ea4cd33bb1c6c8bf36d7cfb8bf9f8f1b769f28cc",
+      "b": "ab6e0e7fd3f70dbe1fe029a9ea4cd33bb1c6c8bf36d7cfb8bf9f8f1b769f28cc"
+    }
+  },
+  "runs": [
+    {
+      "peakRssBytes": 347619328,
+      "durationMs": 115218,
+      "parserVersion": "js-mdict@6.0.6",
+      "nodeVersion": "v24.14.0"
+    },
+    {
+      "peakRssBytes": 351465472,
+      "durationMs": 100964,
+      "parserVersion": "js-mdict@6.0.6",
+      "nodeVersion": "v24.14.0"
+    }
+  ],
+  "fileStats": {
+    "candidates.jsonl": {
+      "bytes": 104457696,
+      "maxLineBytes": 14690
+    },
+    "dispositions.jsonl": {
+      "bytes": 28476825,
+      "maxLineBytes": 305
+    },
+    "issues.jsonl": {
+      "bytes": 2108675,
+      "maxLineBytes": 373
+    },
+    "quality-report.json": {
+      "bytes": 1455,
+      "maxLineBytes": 1455
+    },
+    "quarantine.jsonl": {
+      "bytes": 11928908,
+      "maxLineBytes": 37227
+    },
+    "references.jsonl": {
+      "bytes": 6302211,
+      "maxLineBytes": 3347
+    },
+    "representative-review.jsonl": {
+      "bytes": 790348,
+      "maxLineBytes": 30084
+    },
+    "run.json": {
+      "bytes": 105,
+      "maxLineBytes": 105
+    }
+  },
+  "rssMeasurement": "Node process.memoryUsage().rss sampled after records, not OS peak sampling"
+}

@@ -1,0 +1,70 @@
+{
+  "known": {
+    "records": 300,
+    "paragraphs": 461,
+    "emittedSensesCompared": 333,
+    "emittedLabelsCompared": 134,
+    "differences": {},
+    "historicalSuccessLabels": 85,
+    "localR2SensePreservation": {
+      "same": 175,
+      "quarantinedOldSenses": 7,
+      "reason": "Four source-gap records and one bound-form record; original valid fragments retained only in quarantine"
+    },
+    "additionalFieldChecks": {
+      "sourceHeadChecks": 193,
+      "ipaChecks": 193,
+      "rawPosChecks": 333,
+      "sourceOrderChecks": 208,
+      "errors": []
+    },
+    "semanticScope": "In-scope source paragraph text reviewed; out-of-scope phrases scored only for headword/scope; no publisher correctness certification"
+  },
+  "finalHoldout": {
+    "records": 90,
+    "boundaryOriginal": 30,
+    "boundarySourceGap": 1,
+    "boundaryEligible": 29,
+    "boundaryComplete": 27,
+    "coverage": 0.9310344827586207,
+    "notComplete": [
+      "throve",
+      "we'd"
+    ],
+    "sourceGapDiagnosticIncomplete": [
+      "bldg"
+    ],
+    "allEmittedMeaningMismatches": 0,
+    "retiredHoldouts": 360,
+    "reviewer": "Codex",
+    "userApprovalCount": 0
+  },
+  "annotationCorrections": [
+    {
+      "sourceOrdinal": 66412,
+      "majorOrder": 2,
+      "reason": "Assisted annotation retained a trailing label; raw HTML checked, label is separate"
+    },
+    {
+      "sourceOrdinal": 69024,
+      "majorOrder": 0,
+      "reason": "Assisted annotation retained a trailing label; raw HTML checked, label is separate"
+    },
+    {
+      "sourceOrdinal": 75878,
+      "majorOrder": 2,
+      "reason": "Assisted annotation retained a trailing label; raw HTML checked, label is separate"
+    },
+    {
+      "sourceOrdinal": 84628,
+      "majorOrder": 0,
+      "reason": "Assisted annotation retained a trailing label; raw HTML checked, label is separate"
+    },
+    {
+      "sourceOrdinal": 112701,
+      "majorOrder": 1,
+      "reason": "Assisted annotation retained a trailing label; raw HTML checked, label is separate"
+    }
+  ],
+  "technicalQualityPassed": false
+}

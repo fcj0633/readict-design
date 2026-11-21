@@ -1,0 +1,545 @@
+{
+  "algorithm": "Same SHA256 ordering excluding known300 + retired270 + fixed57",
+  "samples": [
+    {
+      "group": "boundary",
+      "sourceOrdinal": 94301,
+      "indexKey": "sciurine",
+      "rank": "00e1936ff356bfa5f58adde61e4e0450871929f25c6703b49aaeca0e43a700a4"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 6365,
+      "indexKey": "asynergia",
+      "rank": "00e26cf3dea985077cddeec638fcefa774117f936601e09bd63bea3d17c70beb"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 43393,
+      "indexKey": "furca",
+      "rank": "00e2ede7329857e39833b8bdea9e2c9bcfaea34a5b1e4e6461b6c2a8a2d63c2a"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 43627,
+      "indexKey": "gaff-topsail",
+      "rank": "00e31148985a23b99bbf4788e5b700ad80b3cc9be60494b5c226eb1fd63afba6"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 40305,
+      "indexKey": "fireweed",
+      "rank": "00e528d1b07310f7ee8848daf14104dbb38a041e7fe13a9df20b8cdba995e1a3"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 25307,
+      "indexKey": "creel",
+      "rank": "00e5ad9908573c0267227dc4ea1c11c71e2b55ca963b9141ff5abf80df21cd4b"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 11106,
+      "indexKey": "blamed",
+      "rank": "00e635947ef782a0585b6aae31198246802b58a9565251ecd76a69d0c15fef60"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 19434,
+      "indexKey": "chuff",
+      "rank": "00e648cb72241266fcfb9f5335e9e6e84a092689ed16fdb875e13c4314bdd189"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 82925,
+      "indexKey": "pounces",
+      "rank": "00e6d41c978026b0a0ced2d81e8a82394f38324a227025422183e592daf66179"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 34808,
+      "indexKey": "elenchus",
+      "rank": "00e741a4a1401b6c253a23ec3b15548be1fdb3bf20c974b5182e61b1195414a4"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 17297,
+      "indexKey": "CDC",
+      "rank": "00e7b8f3e44db8f1769645e8be341f3c70dab4a866861c28b5276e77e4b58d94"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 98906,
+      "indexKey": "slaughterman",
+      "rank": "00e84db02a658df34bb2947748a332feab4959bcfa593534f811645c01607ef9"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 59290,
+      "indexKey": "koneke",
+      "rank": "00e86b15964812f062714454a25ca148b2e57ebb55dfd38c4676bbd8c16ea6f8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 21381,
+      "indexKey": "collenchyma",
+      "rank": "00e9d8f3c6979d0733744968d8db460145ed01fe1421a3bba38c4908e1f7b382"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 93027,
+      "indexKey": "salify",
+      "rank": "00ed31d38caf60b5f3c33e603d24e78d2a401aa50d6bed234cf33170851de731"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 74865,
+      "indexKey": "organotherapy",
+      "rank": "00edd34b86d78330a2fcfc3b84d72908bbbb22008729649231da7af1ce9795db"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 47618,
+      "indexKey": "gulosity",
+      "rank": "00f024126ae5e4b189712d8689f237d80f477c891b9b6bb1a0ab2be67357fb02"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 29892,
+      "indexKey": "dicho-",
+      "rank": "00f283442d4eac00e24dd88ff0c84c01779b8bb2159568bf81e522aa4f065361"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 43427,
+      "indexKey": "furphy",
+      "rank": "00f33a0605d23f3c6a719711e0967c43330b039b98ae09a46491218c3aaf3711"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 26350,
+      "indexKey": "cupulate",
+      "rank": "00f61c9fc10133da8327303b80e40c5e58b145d6b4b3493bba3e04b7a2e3bbff"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 81557,
+      "indexKey": "pluri-",
+      "rank": "00f66bf3f153e0e8f180cf980f4cf53a852b76a3aad34afefc65909df0380707"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 95656,
+      "indexKey": "self-tanning",
+      "rank": "00f757f912849839a97b744e311a1006155274d098e6196c9d887f34fdca6b5f"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 24204,
+      "indexKey": "correspond",
+      "rank": "00f824a140e8d00382a1d5a20232fbfe9791abaaa03afb7576b43864d0cefa57"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 44437,
+      "indexKey": "geelbek",
+      "rank": "00f91482f4c25e4c110c2859423ba4affc2618a3c2e98f73138f32e83b9532a3"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 43914,
+      "indexKey": "gamic",
+      "rank": "00f997b8fc59871d9bd6ea850828335e75741b61a6c9bb1d7eed32f148f0e929"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 121742,
+      "indexKey": "\u02c8Talmudist",
+      "rank": "00fa5337e7843d210752b6edeb6452282be09dbd0032b9d5e86532c891cbf8eb"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 103123,
+      "indexKey": "stenophagous",
+      "rank": "00fab2f5c711409a8ac65d49e19dc43f3f9996b6e945b88ea7356b8e8cdf9be1"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 74861,
+      "indexKey": "organometallic",
+      "rank": "00fab32a024ad5c739be052d58bc461eecf16dd161c4f86836493077f6e55871"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 8555,
+      "indexKey": "bars",
+      "rank": "00fda91d749d4a42706d254cc4f1bb846f5a70692735797053b17f05c379d86c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 16957,
+      "indexKey": "catchpoll",
+      "rank": "00fe640fe1d56c6e5e15cddb88e9716d1ca62883e65118c8f73fb5872a69d946"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 62864,
+      "indexKey": "loopholes",
+      "rank": "015d02a0d8dabd80b08f5a389eb799a4129c4d3b0f7ab1695e6b8ce1026ef874"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 110349,
+      "indexKey": "toothpaste",
+      "rank": "015d57c07cf8598030d86100456d0fb070da5c22908c41570b847a6e561df5d3"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 35231,
+      "indexKey": "emplacements",
+      "rank": "015e1e960831edd05b79da6c4e3a569744dd46a2ecf60c6ae665d1f212978742"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 58906,
+      "indexKey": "kiosks",
+      "rank": "015e60be5873e95cd48c6f7f14ecaf45f7c97ea0bb0411a5c2d45fe3e841a5ff"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 46524,
+      "indexKey": "grandsons",
+      "rank": "015eff5f7d3b605c9583b67b5b90af53ad84b4c3401879db495a37ce4ecc5057"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 25624,
+      "indexKey": "crooning",
+      "rank": "015f110ef6d588033791179eda3b8b3acb7189a76b9c4fc55d2e83d2003fc3b7"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 28490,
+      "indexKey": "delivering",
+      "rank": "01632813926e1fee66e2b2ede8df1ae155082845e02c339fa1fdecb8a80137fd"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 45329,
+      "indexKey": "glasnost",
+      "rank": "0169e4937fa5419b5d2f82378f740d35ee7257c670c6289bbca7c06aecba7460"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 83142,
+      "indexKey": "prattling",
+      "rank": "016cd18201cb0d9acdd9dc4bf009263284c0bd00343c6dc1946037802d16974e"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 23046,
+      "indexKey": "consistencies",
+      "rank": "016ed49bd2509421adf6d091da88fd96433bebfcad969784e0e1d46cc507b83d"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 21198,
+      "indexKey": "coining",
+      "rank": "016f73c32aa375129a07a2db02e3b6951db04a1410dbdd3ed0fe43c156c7439a"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 43514,
+      "indexKey": "futurists",
+      "rank": "016f7db4906b8915f2205c05418e224d7a9e4ac94e7fe4a9a4aca0747fcdfc89"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 47550,
+      "indexKey": "guilds",
+      "rank": "01711c33d6dabca18940cc684cd32ced1c07428f25b80dd0920fd987559ca527"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 32893,
+      "indexKey": "drive-by",
+      "rank": "0175c933a0019329cd33862ac22f7a711d76e854dd29240b1fa7da0657df77a4"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 17962,
+      "indexKey": "chamberlain",
+      "rank": "01765d3dfa0683e4322e99c8104f1a9a731040e0be577ee570f226d208e341cc"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 105837,
+      "indexKey": "surveillance",
+      "rank": "0177587ed98ca766de490115c8e675e705bbfbd7946219da2818225965e9be0f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 69125,
+      "indexKey": "morsel",
+      "rank": "01782d0dc8abcfa86b58027f76f0d44d64f83523a974dc48ffd15fcda8f033bd"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 82726,
+      "indexKey": "postmortems",
+      "rank": "017858108ceaca7d201011b78a5f41a7c869c22c884c82d442b17e94e8e28db9"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 95158,
+      "indexKey": "second-rate",
+      "rank": "0178c70db4ec4bf7890671db98e2fa8dbcc7864834b7c7fbaa89ed55dd61c283"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 95290,
+      "indexKey": "seductress",
+      "rank": "0179b66a3ed5e0f3969325932215a7f4b1e7fad85b6cc4b1299b462fd9ec22e9"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 23588,
+      "indexKey": "conveying",
+      "rank": "017b7baab42c145504f0f45d16b715b91257c6556ab5a2d2ff3bc5e505f891ca"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 106388,
+      "indexKey": "sybaritic",
+      "rank": "017bac156945c2c11d7e207daf0acf98b850d2614639688bee20de63c4b55c0a"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 65250,
+      "indexKey": "masquerading",
+      "rank": "017bede06ad826ce3b96b7e25c473135b42d1ecc9afb75730180a56656c89e95"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 53724,
+      "indexKey": "imperialist",
+      "rank": "017bf8eae8b9915743aced64ce63e1454a2f3a8b29ea4e31d1a7c2ec4e8814af"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 81590,
+      "indexKey": "plywood",
+      "rank": "017c13e42a62d9a492e4685e7b0ca03532935466378394a7df0dd5f3e99ac770"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 8128,
+      "indexKey": "Bangladeshi",
+      "rank": "017fde91352ae7a253aaf8761a16c9d774a7a75c64a128b3f8252a88b27e01bd"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 116824,
+      "indexKey": "visitor",
+      "rank": "0180d8e0b6dd9ac10365f4107700d454cda2dce0a74d700e74acc9948bcaffe4"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 40127,
+      "indexKey": "finger",
+      "rank": "0181214b2a56a3fb85ee9c00259c60c6f94ba7bed3049f4b2aee9dea8931fd6c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 50801,
+      "indexKey": "hitch",
+      "rank": "01876d33010ab4a408cb68e0bb380ed92b05b99438ed3ca79dfddf9da662ca62"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 83098,
+      "indexKey": "prairie",
+      "rank": "0188003f3bf379d8cd9d1e6107d593f865dbd8d5f251d6d8155cdc934cacda93"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 98996,
+      "indexKey": "sleep with",
+      "rank": "02140d7b064a137745388d3c9fac10228581708259d53b4e87e1677b5cad04c7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 45917,
+      "indexKey": "golden aster",
+      "rank": "02143ef48fae2ba3e823925cdcf457f0c9b5fa5012390630f2982b6cbb0d9475"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 106114,
+      "indexKey": "sweet alyssum",
+      "rank": "021b9fc5f91647ba4e7c33c3364779ab7e36890ac8b99cced0de954338e550aa"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 78716,
+      "indexKey": "percussion tool",
+      "rank": "0221cca294c601e6c8462bd36e1e0663d7af06063affa4f51c9aa82fb34884b7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 65280,
+      "indexKey": "mass in",
+      "rank": "022246340f4943450d0e12d738beccbbff1248cee4bf3237c0f401830975174e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 21235,
+      "indexKey": "cold chisel",
+      "rank": "0224eb5d7eb83d809501f21cdc188ad572e65ab25c0757b4cc2c835bbeec9794"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 82976,
+      "indexKey": "powder keg",
+      "rank": "0225630568a5ce7192eb51ecdea1fa718db5c6bb8626627617c6c576a7fa5f26"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 45348,
+      "indexKey": "glass string",
+      "rank": "0225f0351d60730782ce6160feefbf2f4d269f0b36df1cc1c04b5c3fda2b4f60"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 19692,
+      "indexKey": "circulating decimal",
+      "rank": "0229244b3facbba0d9aebba76f08343440e0ed21c6fba824827c5f373e0c15ef"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 16210,
+      "indexKey": "carbonium ion",
+      "rank": "0234fe95db37d94b87530cf3ceb601793ad852718824bab206472b320d8205f6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 111567,
+      "indexKey": "trench mortar",
+      "rank": "023a034a071d5d6184bba1d5edda56195293b0f48a59765375d26069ad992efe"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 47211,
+      "indexKey": "gross weight",
+      "rank": "023b66c5c011ee9108cdf8aae79edf4570c7c7379a7cfda183231c818b650ab6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 20203,
+      "indexKey": "cleft lip",
+      "rank": "0242605b0003c359ec123f333413f5a97412bb836b7c12978827b6a4aa85ca57"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 87479,
+      "indexKey": "ratbite fever",
+      "rank": "0243f344c494f874dd9bf796eb7a3664e8dca5617b072de26260e5c21499c0f7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 118330,
+      "indexKey": "wedge-tailed eagle",
+      "rank": "02482a4284b1632531f67c104b7ca80949ac838ec4e26e0389c714dbc12f7fd9"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 42590,
+      "indexKey": "freedom rider",
+      "rank": "024aa4c67c7f45cea10e7862da243652ee8765a686dbecb2f63e698b9dbdf714"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 76270,
+      "indexKey": "packing crate",
+      "rank": "024b9e5c9de2f0aa89cb4397452c1473c380d0107f0aa951ae6d912d1df0c86f"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 109664,
+      "indexKey": "time and a half",
+      "rank": "024ca8f88cecef5cd9fd80f394eb4e9d5763b4cd734f771de443322b61d6e2fe"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 51903,
+      "indexKey": "house martin",
+      "rank": "024e32d1fe994cbd5fadeec87d2cd4e78cf73813ee7b3208844dff917d3f04a3"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 54162,
+      "indexKey": "income group",
+      "rank": "02520caa460324680fb279bfaa0fe31bb1002d64c72cae15d829bfbca982a237"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 82328,
+      "indexKey": "poor White",
+      "rank": "02520ed0f3433905205d818a0cedf481faf6ff828ad182a3c62c89c38d94e339"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 46519,
+      "indexKey": "grand seigneur",
+      "rank": "025473033e6487e03837ae302f05224e6b3830c61afb6b2e5acad5dac701b9e5"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 102110,
+      "indexKey": "spun silk",
+      "rank": "02548ab0c86d8e2010028e66e63f83d7b0ba182ceecb4cbdcf036f469868146e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 92823,
+      "indexKey": "safe surfing",
+      "rank": "025c6524c4df1c131d6cc041de77f38b4059774e515f6c2abd66a9cd134e1d92"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 14969,
+      "indexKey": "B\u00e1r\u00e1ny test",
+      "rank": "026008a97a4291960cede6c136a07a01ec05885380b8006aee4ac703f0faad3e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 88377,
+      "indexKey": "red cent",
+      "rank": "0260298865ede14329688e998c2c4546aa98461f9df7d21c94aeee316cd244af"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 73867,
+      "indexKey": "oil field",
+      "rank": "0260c17d817fbe1a2c13b7211fc42e8f5586c9c6a77ed987a6c4f115d4cc5e5b"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 88331,
+      "indexKey": "recurring decimal",
+      "rank": "026255187e9e4664ab888f9a26d0a04c3e70ea2d8adb1554f409dad93b3d2694"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 43680,
+      "indexKey": "galactic equator",
+      "rank": "026477912a0cec4b9584df4f2f21bfd39746f1ae70eabed6da59efe7504acb17"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 40393,
+      "indexKey": "fir tree",
+      "rank": "0266885ebba51cde85053975b3a7269df8abcdf818df963b54575000e1286770"
+    }
+  ]
+}

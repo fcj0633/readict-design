@@ -1,0 +1,545 @@
+{
+  "algorithm": "Same SHA256 sorting, exclude known300 + retired90 + fixed57",
+  "samples": [
+    {
+      "group": "boundary",
+      "sourceOrdinal": 109452,
+      "indexKey": "tibiotarsus",
+      "rank": "00999531c4b4d5766441ce5096da143e32f79e3cf5d96c571161cfa86f5b926d"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 111607,
+      "indexKey": "triable",
+      "rank": "00999a63f493debdae6aa7abf8c0a77ff451830f98cf4e1b7ac38ed8af9b8de8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 43475,
+      "indexKey": "fusilli",
+      "rank": "0099d78b568e5ef72fd45b72175f788ad7fb7540c54ee7f31667f1b0787b00a4"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 84057,
+      "indexKey": "prisage",
+      "rank": "009b8d73c0f8b111570a7017e1da1476dfe2f39f1e9aed6eab05dc58dc6f206e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 89436,
+      "indexKey": "rencounter",
+      "rank": "009c3070f20e7568054217a4c3d45ef7911c21fdc10e0125ca52b1ae4555a88b"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 71783,
+      "indexKey": "nifedipine",
+      "rank": "00a0753adfd4acb1849083c885f2dca7c4b855339b51a2d39e061fd2dc4dd4e8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 46195,
+      "indexKey": "Gorgio",
+      "rank": "00a0e3cae2f6dc2140c3574edc2f5f4df9e21f991f500bc04895d0a0e2ee3175"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 110969,
+      "indexKey": "trafficator",
+      "rank": "00a1a62b6317844b569dacbbe16dcaa88910a368c29705e827d56dc20963f773"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 83374,
+      "indexKey": "preening",
+      "rank": "00a3ef5b000a29ebc70b7843ca3c945863f30e465ac0b157250852594e6318ca"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 107845,
+      "indexKey": "tegular",
+      "rank": "00a5b6f952985da6004f8b83fb290b48e8efe3d47299b7e92f0556b38bc2262f"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 121786,
+      "indexKey": "\u02cccachin\u02c8nation",
+      "rank": "00a727b3c6b91879c84cee9aac4de8dd6e2b7a211356557f267d9fb8dd9af728"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 21333,
+      "indexKey": "collecting",
+      "rank": "00a8b60c8a6f41635611041f6aaa74f8a41b5d734f096aca63202f2adf2e1a5c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 82293,
+      "indexKey": "poofter",
+      "rank": "00a9814bc1e374cd7ae6fc749a2955759668cbca50b68ba955e7e90841c1cc19"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 117701,
+      "indexKey": "warms",
+      "rank": "00a9963ce7a62a17e2ef5cea794b5846ab22d919ecf6c50510b9645a564087bc"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 79696,
+      "indexKey": "phoning",
+      "rank": "00aa3a9d4b55de1df775bcdca51f898789a918037f7146f94ae52552d34788b2"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 108810,
+      "indexKey": "thermistor",
+      "rank": "00ab8f72964312d88338337f887acc8c7bbee4f1b4c608ccbe8aa3b892104490"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 101348,
+      "indexKey": "spelter",
+      "rank": "00ae8278833556d79c5a8e239552fdd91fab30a69b7aafed730828105e59b885"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 73857,
+      "indexKey": "oilcan",
+      "rank": "00af103ec49ff0c75e331175a3bd399bfee4c5ee06a08ef5b7c570ad20142b71"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 70432,
+      "indexKey": "Nabataean",
+      "rank": "00af9e43786e3f068ed802c88cdf6d830cf76fa1affc0662442fe9b16ce94114"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 85257,
+      "indexKey": "psychoneurosis",
+      "rank": "00b08a0ed019c3eb191e8a98bc88cc84de9e9884f73614ce608eef1ab9c88fc9"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 75349,
+      "indexKey": "outgeneral",
+      "rank": "00b11bde33d3933b7bfedebb5d25b090535b6f5804a2cd405d47bd1c6e1fdf30"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 56387,
+      "indexKey": "ionise",
+      "rank": "00b18161bbe42cd78a6ba109f22ce3ee7a7b4a99b8d0ab1a51f03127c17a921e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 73318,
+      "indexKey": "obovate",
+      "rank": "00b6beb707491ab6057fb76f935092b96c4953fbe9adbfa8434dc3b7ab23c004"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 66902,
+      "indexKey": "microbubbles",
+      "rank": "00b8de398a0bf5647f46d0b6aab673d6f135b39dd3d2a1338a4cbb321b5051dd"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 16635,
+      "indexKey": "cartouche",
+      "rank": "00b90455b7d8e547852c30d71f8a484e3aadffffe5769703316e16609b6d8803"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 67228,
+      "indexKey": "milage",
+      "rank": "00ba129db6f595d8864ccface7f2e240152f922c6a5f2e7def7e35fbfcf1ed1e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 48332,
+      "indexKey": "half-starved",
+      "rank": "00bae4ba0456793067280945835a3d8d319682c6da848d2e7cdf946ab8d0496c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 58304,
+      "indexKey": "karri",
+      "rank": "00bc0fec6a6e4fbfd4a733be41ac368d2edbbf94652fc9e95832346dc2c15aed"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 27969,
+      "indexKey": "decorated",
+      "rank": "00bd07aa953856c8dff5efa81ae2be41ac42228fba1bf5093fc34defc3a06006"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 41029,
+      "indexKey": "flivver",
+      "rank": "00be143260acef0553a11fd06e4b724d86e496a86f22b2492ae61d591ed1fb25"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 17578,
+      "indexKey": "centrepiece",
+      "rank": "00ef6698136b40e28412b72c75d5f25ec76fb63195f403f8dc7d50579d0200c0"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 97905,
+      "indexKey": "signified",
+      "rank": "00f1f878e8603076eb53695fefc3923af6b38c29f63e33292344f0c0d66df89c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 74258,
+      "indexKey": "on-ramp",
+      "rank": "00f4e9b335474d905b6e9ff2410ed0837ed85a1070618a7515e938377e4c7988"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 42494,
+      "indexKey": "frankfurter",
+      "rank": "00f59f49b7f5b9050b9ae87d626bf2e6b5d920c4dda3243b848b8b1bb0270057"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 57973,
+      "indexKey": "jumpy",
+      "rank": "00f68050c25d6a472f67790f5989db3d527e126c8471c7b451580a2746ae6ae3"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 59460,
+      "indexKey": "kuwaitis",
+      "rank": "00f7fa0c659107180b87218b3c6581ee2d84d0a513f11a477afb95e39c28b750"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 9573,
+      "indexKey": "bellicose",
+      "rank": "00fa32ba66b95014ed4ea4f209c45c54f64912705e98be8d75d8d9961fba8eaf"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 31535,
+      "indexKey": "divest",
+      "rank": "00fb2f085b9114501d6c0db6f8715392278f422cbe76162ce2eb268de6f4442b"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 88176,
+      "indexKey": "reconditioning",
+      "rank": "00fc7569c3347a96fa710f9515192c4e0b98167681d17259af9368c962e806af"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 53744,
+      "indexKey": "impersonator",
+      "rank": "00ff614ea9374710a301d321373b3a8a0104ffb2ff87855f9ccedd0d4d1fcdbe"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 39398,
+      "indexKey": "feminist",
+      "rank": "0101865d772d4b985e46ab87d4c4e296461af92c55ed69b1d07cd6d30472e959"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 24318,
+      "indexKey": "cosmetic",
+      "rank": "01022093680a7d6c032a633cfdd9d9da6ced8dba0a3ad06de1bc988bf9de5ef0"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 12093,
+      "indexKey": "bollards",
+      "rank": "0103b288862630d98d56933e84699b5ebbc70a21d397c8593272d7477b14e9ef"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 83070,
+      "indexKey": "practically",
+      "rank": "0105945688adf07981fb349ef8732f494dc4f39ffaac751f1ff601fd7e8952e2"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 6909,
+      "indexKey": "autocrat",
+      "rank": "0105986108cd51c6c296ac41fabf6359423dc5cd83b098ca45107392f501b19c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 6895,
+      "indexKey": "autobiographical",
+      "rank": "01075519d42bf0f42d9245bac67feb65caa6d0ed5cc2a8415480745e148fe243"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 72988,
+      "indexKey": "numerous",
+      "rank": "010767605f8d15ac133aed0c74a7f45fa14c5c047753dac8ce0da21969dd5655"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 39182,
+      "indexKey": "fearful",
+      "rank": "0108028a04fc1769b354cc793d75e80f16a56fdc06b03372e65686f74b47d8b0"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 74112,
+      "indexKey": "ombudsman",
+      "rank": "010961a355682b53ded98988d86318fe43d1b2ae9b3cf9a48ad32e8fc5ce46a7"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 17182,
+      "indexKey": "cauterized",
+      "rank": "010963b1867a674d3da1fa53a3668a985332620981efec2e68a1d89387b39882"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 4627,
+      "indexKey": "antitrust",
+      "rank": "0109ab9fa5a92905a497420b28acaae831bcdb7624c55e2c4a23228890d0e4b5"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 95618,
+      "indexKey": "self-referential",
+      "rank": "010e1616df55f6860dc25789f9112e1c84611511336c7550d3ffea911eb2c55b"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 88905,
+      "indexKey": "regent",
+      "rank": "01110c76010bf904fb8fda13d6394337e81bab742b155f23579c052b10844055"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 41441,
+      "indexKey": "foaled",
+      "rank": "011271b16e74fb49b9ed6cc8f8eb89ea1d09aff742f8844252acd6767e1a392a"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 92027,
+      "indexKey": "roundworm",
+      "rank": "0113389005e77bd3f73ae956215f06cf9a76a3b60065c14498940046ac9381f8"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 24104,
+      "indexKey": "coronary",
+      "rank": "0113da8754bee8c391c0823d8ceb34764794679036146d24221cc86d3c5b2415"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 17236,
+      "indexKey": "cavils",
+      "rank": "01168939ca46288fc05192dc282470bd975cf66fc3ba63930313beb316553397"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 38519,
+      "indexKey": "failed",
+      "rank": "0116c1a24c0c866d8216b7518786723e534dcf9a8ab39f55cf56c94023482c76"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 50900,
+      "indexKey": "hobbyists",
+      "rank": "0119987c19499db9a3c8b0cb5ad0461b3ded87b9186bd7ae9e07689d1ace682c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 53265,
+      "indexKey": "igloo",
+      "rank": "011a251f45c2911515abcd2c9f5a0568d0cd4ce54bc12d04cc9457b4ca4e1808"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 74825,
+      "indexKey": "organic psychosis",
+      "rank": "0168bd07ac1e33245a485b3868c8feebca125e73b9e7c093061ba41403ec4e4a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 93423,
+      "indexKey": "Sapir-Whorf hypothesis",
+      "rank": "016a8a3bb95c34a80f2f16992eaa5c0d49ee5f0cc0963184d5d0a454d0d3ad89"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 92296,
+      "indexKey": "ruddy duck",
+      "rank": "016af3d55f7dfb80063ef4929de81914723d2cde20fa4288a9ab593c76a2baa6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 82042,
+      "indexKey": "polycarboxylic acid",
+      "rank": "016c0a2327af9ce3d894ee13d172b6b3ee8bea150d09f2157f16fbded02bf39e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 47022,
+      "indexKey": "grey sedge",
+      "rank": "016c790b758347b1b03f8e0d271e65b61f9c1c4930cba7e41f7536830199fa4b"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 6562,
+      "indexKey": "attainment target",
+      "rank": "01702048f2892e968ee4298e178957a2c6f1d8bf2d5e4fa40ae5118423315c8d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 13589,
+      "indexKey": "British Standards Institution",
+      "rank": "0172a705f7e3d45c3d33cdd35e598a2cd0b927c5448e442ed55fdace3379c59e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 72066,
+      "indexKey": "Nobel Prize",
+      "rank": "0172b28c4f2cf81066e22ae63b2a4f47e313f0a6cfa51e0950352e109c8f56ba"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 51166,
+      "indexKey": "home farm",
+      "rank": "01783b57687b5f1d2d415883cfc0c67908b7473a47ddc9921c482397d0f65c6c"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 39884,
+      "indexKey": "fight off",
+      "rank": "017a96fe24d08a0e4aff4559f5498947baf7b1f5d933ae88f734237ce9ccf3d6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 53021,
+      "indexKey": "ice water",
+      "rank": "017a9e9107a5b3c94ce9af18b506a5761d3ce3ea81c24815735118a1245fcaff"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 23099,
+      "indexKey": "con spirito",
+      "rank": "0181f873d5b3c6a0fa0ae7ac19bd97108829282928cdeadfca2a83d302e69263"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 44563,
+      "indexKey": "general knowledge",
+      "rank": "0185efa5fc93acf85a85f4961d9623e7527f67e55484a842ba9a41df12e686f9"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 41177,
+      "indexKey": "flour moth",
+      "rank": "018ad11bbbb267999a7a0ffb1826f06b725ecc30b650fbfc83c326a06ae4e20e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 98423,
+      "indexKey": "sit under",
+      "rank": "018b97482b503e4535656a3d068bde228d7a04182b62171352432b74d743fdac"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 90617,
+      "indexKey": "reworked fossil",
+      "rank": "019117aa80dc0d8c2051000446fe7489fa7ce4e766a9f1f0c3cf122c987ee195"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 42648,
+      "indexKey": "free running",
+      "rank": "0195fa6f3e5aeec0c16a73fa833f66db622f4a7dd50ad6e4dbc93df82809b2c7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 73166,
+      "indexKey": "oak-leaf cluster",
+      "rank": "019806741e98d5b4a409d840d36fce178b4ea1f5d6340546ab9eea5e9dcde423"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 21934,
+      "indexKey": "communal antenna",
+      "rank": "0198e0803e217063cf0b539f9959a28731e11613dc06acbcb6d3c6a50bc633df"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 61292,
+      "indexKey": "leveraged buyout",
+      "rank": "0199520a55f7111f4b265fa64afce1afbbc8f52d8ee87cf658b90001eb36f83a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 85388,
+      "indexKey": "public property",
+      "rank": "019b916533efe6845441322dd2567bd8a78e93fa1bf70d0ec78aab84abe4254d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 51844,
+      "indexKey": "hour glass",
+      "rank": "019ee2a53be9e8274a12ad789a5b43c75bf4df0b7aea3dadd8b3b77bf278ba15"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 99615,
+      "indexKey": "snakes and ladders",
+      "rank": "01a0e6bdbe67af74c7b66be81e8a0d9e6524afcfa145c43d40325d39b67cc2e5"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 117984,
+      "indexKey": "water pepper",
+      "rank": "01a103c99865cad69e2cd71af211f240ba2b7a6a3816dafd83e2a4cdf55404ef"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 106652,
+      "indexKey": "synthetic biology",
+      "rank": "01a9761d5805bbd3cd2da64684d069fd22960599e4276db2cf7aea4bdda6a6a8"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 115487,
+      "indexKey": "vade mecum",
+      "rank": "01ad48f22827ff46e7f051a09c5922bff6dc213df3c84d0a73f55cc9c5387ff4"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 47679,
+      "indexKey": "gun for",
+      "rank": "01af344766b7cb29052a2c478e9d0138ec8737ba27f376d7baffdbbbef33930d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 30801,
+      "indexKey": "discretionary trust",
+      "rank": "01af477b020fb5b774ddb250525e84f7e5fd5b8b5d0e9a02ab73a0d01175a9c8"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 65093,
+      "indexKey": "marry off",
+      "rank": "01b16cd39c2285e790fd4d23e44f654e8bd97fbcae615b2d507e468d42675ca5"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 100155,
+      "indexKey": "soft coal",
+      "rank": "01b2b3752f41779b0de5eb9eb6de7ab578b97f391298bb84672e2973c391f4f3"
+    }
+  ]
+}

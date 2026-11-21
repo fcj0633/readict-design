@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "readict-col-extraction-diagnostic-2",
+  "diagnosticOnly": true,
+  "rulesVersion": "col-extract-r3",
+  "source": {
+    "sizeBytes": 24594337,
+    "sha256": "60045536048014fa8f137ef2d1f1e85f31f0329715bb5749a4b1fb1b5f49f611"
+  },
+  "counts": {
+    "sourceTotal": 121872,
+    "sourceSucceeded": 91060,
+    "sourceSkipped": 25293,
+    "sourceFailed": 5519,
+    "candidateEntryCount": 92644,
+    "candidateSenseCount": 147883,
+    "sourceAliased": 3858,
+    "referenceCount": 10880,
+    "derivationNoteCount": 1005
+  },
+  "errors": {
+    "HEADWORD_UNSUPPORTED": 2146,
+    "REFERENCE_TARGET_QUARANTINED": 740,
+    "MEANING_BOUNDARY_UNKNOWN": 1140,
+    "SOURCE_TEXT_DEFECT": 1779,
+    "REFERENCE_DISPLAY_CONFLICT": 26,
+    "REFERENCE_CYCLE": 17,
+    "SUBENTRY_STRUCTURE_UNKNOWN": 59,
+    "REFERENCE_STRUCTURE_UNKNOWN": 2,
+    "SENSE_MISSING": 45,
+    "REFERENCE_DANGLING": 4,
+    "REGION_STRUCTURE_UNKNOWN": 13
+  },
+  "skipReasons": {
+    "OUT_OF_SCOPE_PHRASE": 25293
+  },
+  "referenceStatuses": {
+    "TARGET_QUARANTINED": 1785,
+    "TARGET_PRESENT": 15441,
+    "OUT_OF_SCOPE_PHRASE": 2307,
+    "CYCLE": 31,
+    "DANGLING": 4
+  },
+  "representativeReview": {
+    "required": 50,
+    "present": 50,
+    "missing": [],
+    "usableExactHeadwords": [
+      "an",
+      "bank",
+      "beautiful",
+      "book",
+      "child",
+      "colour",
+      "fast",
+      "foot",
+      "hard",
+      "lay",
+      "lead",
+      "mother-in-law",
+      "mouse",
+      "present",
+      "reading",
+      "record",
+      "run",
+      "running",
+      "set",
+      "the",
+      "well",
+      "wind"
+    ],
+    "coverageMeaning": "present includes index keys and quarantined subentries; usableExactHeadwords is separate; aliases need reference review",
+    "reviewed": 0
+  },
+  "approvedExclusions": [],
+  "releaseEligible": false,
+  "nextStage": "BLOCKED_PENDING_QUALITY_AND_SOURCE_REVIEW",
+  "additionalMetrics": {
+    "candidateSubentries": 4383,
+    "regionsWithUsableEntries": 88262,
+    "candidateLabelCount": 48336,
+    "quarantinedComponents": 2463,
+    "quarantinedSenses": 11057,
+    "sourceHeadObservationsHistoricalSameInput": 123412
+  },
+  "transitionMatrix": [
+    {
+      "before": "ENTRY",
+      "after": "ENTRY",
+      "records": 38682
+    },
+    {
+      "before": "ENTRY",
+      "after": "FAIL",
+      "records": 1511
+    },
+    {
+      "before": "FAIL",
+      "after": "ALIAS",
+      "records": 3831
+    },
+    {
+      "before": "FAIL",
+      "after": "ENTRY",
+      "records": 48053
+    },
+    {
+      "before": "FAIL",
+      "after": "FAIL",
+      "records": 3987
+    },
+    {
+      "before": "FAIL",
+      "after": "SKIP",
+      "records": 331
+    },
+    {
+      "before": "SKIP",
+      "after": "ALIAS",
+      "records": 27
+    },
+    {
+      "before": "SKIP",
+      "after": "ENTRY",
+      "records": 467
+    },
+    {
+      "before": "SKIP",
+      "after": "FAIL",
+      "records": 21
+    },
+    {
+      "before": "SKIP",
+      "after": "SKIP",
+      "records": 24962
+    }
+  ],
+  "issueUniqueRecords": {
+    "HEADWORD_UNSUPPORTED": 2113,
+    "REFERENCE_TARGET_QUARANTINED": 712,
+    "MEANING_BOUNDARY_UNKNOWN": 1075,
+    "SOURCE_TEXT_DEFECT": 1632,
+    "REFERENCE_DISPLAY_CONFLICT": 26,
+    "REFERENCE_CYCLE": 17,
+    "SUBENTRY_STRUCTURE_UNKNOWN": 51,
+    "REFERENCE_STRUCTURE_UNKNOWN": 2,
+    "SENSE_MISSING": 45,
+    "REFERENCE_DANGLING": 4,
+    "REGION_STRUCTURE_UNKNOWN": 13
+  }
+}

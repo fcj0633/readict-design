@@ -1,10 +1,26 @@
 # M02 COL 词典数据底座技术设计与执行文档
 
-版本：0.2；日期：2026-11-21。状态：**部分实施：M02-01 输入与兼容性通过，M02-02 全量提取质量未通过；后续阶段未实施**。实际结果见 [M02 实施与质量阻断记录](../../../validation/implementation/m02/README.md)。
+版本：0.3；日期：2026-11-21。状态：**部分实施：M02-01 输入与兼容性通过，M02-02 r3修复及复验已交付、整体技术质量仍未通过；后续阶段未实施**。实际结果见 [M02 实施与质量阻断记录](../../../validation/implementation/m02/README.md)。
 
 需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)。总体设计：[系统技术设计](../architecture/Readict-V1.1-系统技术设计.md)。任务来源：[模块化开发计划](Readict-V1.1-模块化开发计划.md)。既定决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)。前置实现：[M01 验收记录](../../../validation/implementation/m01/README.md)。
 
 阅读顺序：现状与范围 → 流水线和数据契约 → 词形与查询 → 数据库与导入 → 六项任务 → 验收与排障。本文保留完整目标契约；当前只有 inspect 和诊断 diagnose 已实现，正式 convert／validate、词形关系、V5、Java 导入及 Provider 尚未交付。下文未来命令不能据此假定可执行，真实通过范围以实施记录为准。
+
+
+### 0.1 2026-11-21 r3 修订与本轮实施边界
+
+本轮执行提取器修复与质量复验，不生成正式包、不执行V5或数据库操作。历史r2基线和质量归因报告不覆盖。决策见[ADR-0004](../decisions/ADR-0004-COL结构提取与子词条身份.md)。
+
+- 提取规则为`col-extract-r3`；诊断schema为`readict-col-extraction-diagnostic-2`，固定`diagnosticOnly=true`、`releaseEligible=false`。
+- 未来包升级`readict-col-bundle-2`，旧格式拒绝混读。主组件componentOrder=0；每个显式子词条结构组按首次出现取递增编号。同一major内延续的段归同组件；跨major仅因同名不合并。子词条不继承主词IPA、lemma或收藏身份。
+- entryKey为`s{sourceOrdinal}:r{sectionOrder}:c{componentOrder}`；entry-v2元组为`["entry-v2",datasetId,sourceOrdinal,sectionOrder,componentOrder,indexKey]`。parentEntryKey仅表示源区域归属，不保证主组件有可发布义项，不作为归并或外键。
+- 义项新增labels有序数组，元素为`{raw,kind,sourceRange}`；kind为REGION、REGISTER、GRAMMAR、SUPPLEMENTARY_POS、UNCLASSIFIED。无法确定时保存原文，不猜标签类别。sourceRange使用原HTML UTF-16字符偏移，boundaryEvidence中的局部偏移明确以解码压缩后的body为基准，不能混作字节偏移。
+- 引用单独保存`{kind,targets,conflict,region,componentOrder,root,sourceRange,ruleId}`；targets保存目标、显示文字、证据类型及位置；图结果区分目标存在、目标隔离、短语范围、循环、悬空、超跳和分支预算。仅派生说明保存DERIVATION_NOTE，不生成假sense。未来正式包承载方式须在实现emit前补齐，不能丢弃到zh。
+- 源词头分类和查询规范分离；本轮不改col-normalize-v1。词缀和符号形式明确不支持，不能剥外围标点冒充普通词。
+- 同一源任一必要区域有错误仍整体FAIL；局部结果只写隔离诊断。None、无解释空正文保持ERROR；已确认只是派生元信息的段不按必须有释义处理，此分类不豁免真实缺字。
+- 保留集从r2另取三类各30条，排除已知300及固定回归词；源内容完整、范围内的边界保留样本完整提取率至少90%，已输出字段不能有严重误提取。未达标按部分修复提交，不降低门槛。
+
+未来V5示例尚未执行，以下DDL并未作为r3字段持久化的完整交付；在实施V5前必须补齐component、labels和relations的持久化映射及Java校验。此轮仅实现Node诊断和身份向量。
 
 ## 1. 目标、范围和已有证据
 
@@ -20,7 +36,7 @@ M02 将 COL 文件变为可追溯、可重复生成、可版本切换的英汉�
 | 工程设计 | 本次确定供正式实现使用的契约与规则 | 转换、导入、身份、查询和一致性 |
 | 待验证 | 缺少真实执行或质量证据 | 6.0.6 兼容性、全量提取、实际预算、数据权利 |
 
-**已有事实**：应用提交 `876b5d786ede4dc83864a508c79141c4cd218022` 已实现 M01 核心与本地模拟，M00／M01 记录见归档。源码使用 Java 21、Boot 4.1.2、MP Boot 4 Starter 3.5.18；存在 V1～V4，没有 lexical 模块或 tools/dictionary-import 工程。未来编号从 V5 接续；执行前如已有新迁移，先协调编号，不能覆盖已执行版本。
+**历史工程基线**：应用提交 `876b5d786ede4dc83864a508c79141c4cd218022` 已实现 M01 核心与本地模拟，M00／M01 记录见归档。源码使用 Java 21、Boot 4.1.2、MP Boot 4 Starter 3.5.18；存在 V1～V4，没有 lexical 模块或 tools/dictionary-import 工程。未来编号从 V5 接续；执行前如已有新迁移，先协调编号，不能覆盖已执行版本。
 
 **已有事实**：系统设计第 9.4 节记载 2026-11-19 的 COL 抽查：121872 个 MDX 索引项、251 条分散记录可读取，包含中文和 Unicode 音标；running 有独立义项，children 的词形说明有缺字。临时解析器为 js-mdict 7.0.0；MDD 仅发现 result-min.css、yd_col.js。该历史结论不证明 6.0.6 兼容、全量语义正确或数据授权完成。
 
@@ -191,7 +207,7 @@ bundle/
 
 原始隔离 HTML 在 bundle 外的忽略目录，不能成为导入必须执行的内容。manifest 内文件名必须是上述白名单相对名，不接受绝对路径、`..`、URL、符号链接或重解析点越界；导入程序以真实路径校验输入根目录，并限制文件大小／行长。
 
-统一 `UTF-8 无BOM、LF、每行一个对象、最后一行LF`。对象固定 schema 字段顺序，null 显式输出，数字使用整数，禁止 NaN；除规则规定的空白外不随机改写字符串。entries 按 sourceOrdinal、sectionOrder；senses 按对应 entry 顺序、providerOrder；forms 按 surfaceKey 的 UTF-8字节序、entryKey、relation；不使用机器 locale 排序。
+统一 `UTF-8 无BOM、LF、每行一个对象、最后一行LF`。对象固定 schema 字段顺序，null 显式输出，数字使用整数，禁止 NaN；除规则规定的空白外不随机改写字符串。entries 按 sourceOrdinal、sectionOrder、componentOrder；senses 按对应 entry 顺序、providerOrder；forms 按 surfaceKey 的 UTF-8字节序、entryKey、relation；不使用机器 locale 排序。
 
 manifest和quality-report的JSON文件也各写成一个紧凑对象加尾LF，文中多行缩进仅供阅读。JSONL按各记录schema固定字段顺序；evidence对象／数组先按来源序号、区域、ruleId固定排序，不接受运行时Map插入顺序决定摘要。字符串转义固定为标准JSON必要转义，不额外转义非ASCII字符。
 
@@ -199,7 +215,7 @@ manifest和quality-report的JSON文件也各写成一个紧凑对象加尾LF，�
 
 | 字段 | 契约 |
 |---|---|
-| schemaVersion | `readict-col-bundle-1`，不兼容格式变更必须升级 |
+| schemaVersion | `readict-col-bundle-2`，不兼容格式变更必须升级 |
 | diagnosticOnly | 必填布尔值；采样true、完整包false；Java正式导入拒绝true |
 | source | mdxSha256、mddSha256、sourceHash；小写64位hex；MDD未提供必须显式null |
 | datasetVersion | 人工标记的数据发布版本，如col-local-r1；不等于记录数或当前日期 |
@@ -213,7 +229,7 @@ manifest和quality-report的JSON文件也各写成一个紧凑对象加尾LF，�
 
 sourceHash 为规范化数组 `["readict-col-source-1",mdxSha256,mddSha256]` 的SHA256。identityHash 为规范化数组 `[schemaVersion,sourceHash,datasetVersion,converterVersion,parserVersion,normalizationVersion,rulesVersion]` 的SHA256。固定紧凑JSON、不转义非ASCII、无尾换行；Node和Java各有黄金向量测试。不把生成时间放入确定性内容或身份；执行时间、耗时和机器信息放运行记录。
 
-datasetId 由 identityHash 前16字节设置 UUID version=8、RFC variant 得到；entryId 由SHA256规范化数组 `["entry-v1",datasetId,sourceOrdinal,sectionOrder,indexKey]` 同法生成；senseId 由 `["sense-v1",entryId,providerOrder]` 生成。entryKey 固定 `s{sourceOrdinal}:r{sectionOrder}`，senseKey固定 `p{providerOrder}`。这里采用自定义确定性UUID，不误用 Java `UUID.nameUUIDFromBytes` 充当SHA256算法；完整hash和源键核对冲突，截断碰撞视为硬失败。
+datasetId 由 identityHash 前16字节设置 UUID version=8、RFC variant 得到；entryId 由SHA256规范化数组 `["entry-v2",datasetId,sourceOrdinal,sectionOrder,componentOrder,indexKey]` 同法生成；senseId 由 `["sense-v1",entryId,providerOrder]` 生成。entryKey 固定 `s{sourceOrdinal}:r{sectionOrder}:c{componentOrder}`，senseKey固定 `p{providerOrder}`。这里采用自定义确定性UUID，不误用 Java `UUID.nameUUIDFromBytes` 充当SHA256算法；完整hash和源键核对冲突，截断碰撞视为硬失败。
 
 字节算法：取摘要前16字节，`bytes[6]=(bytes[6]&0x0f)|0x80`，`bytes[8]=(bytes[8]&0x3f)|0x80`，按网络字节序输出标准UUID字符串。version／variant布局依据[RFC 9562第5.8节](https://www.rfc-editor.org/rfc/rfc9562.html#section-5.8)；具体SHA256身份元组是本工程设计，并非RFC提供了本词典算法。
 
@@ -226,10 +242,12 @@ datasetId 由 identityHash 前16字节设置 UUID version=8、RFC variant 得到
 ```json
 {
   "entryId":"00000000-0000-8000-8000-000000000001",
-  "entryKey":"s0:r0",
+  "entryKey":"s0:r0:c0",
   "sourceOrdinal":0,
   "indexKey":"sampleword",
   "sectionOrder":0,
+  "componentOrder":0,
+  "parentEntryKey":null,
   "headword":"sampleword",
   "lemmaKey":"sampleword",
   "lemmaMethod":"EXACT_HEADWORD",
@@ -238,12 +256,12 @@ datasetId 由 identityHash 前16字节设置 UUID version=8、RFC variant 得到
 }
 ```
 
-senses.jsonl 每条为 `{senseId,entryId,senseKey,pos,rawPos,zh,providerOrder,sourceLabel}`；forms.jsonl 每条为 `{surfaceKey,entryId,relation,evidence,priority}`，evidence包含 sourceOrdinal、region、sourceLabel、ruleId，不复制整段例句。每条entry须至少一个合法sense；别名只生成映射，不伪造无义项实体。priority为确定性关系排序值，不是概率。
+senses.jsonl 每条为 `{senseId,entryId,senseKey,pos,rawPos,zh,providerOrder,sourceLabel,labels,sourceRange,boundaryEvidence}`；forms.jsonl 每条为 `{surfaceKey,entryId,relation,evidence,priority}`，evidence包含 sourceOrdinal、region、sourceLabel、ruleId，不复制整段例句。每条entry须至少一个合法sense；别名只生成映射，不伪造无义项实体。priority为确定性关系排序值，不是概率。
 
 对应的单行记录示例依次属于senses、forms和dispositions三个文件；仍为合成占位ID，不能据此宣称实际提取通过：
 
 ```jsonl
-{"senseId":"00000000-0000-8000-8000-000000000002","entryId":"00000000-0000-8000-8000-000000000001","senseKey":"p0","pos":"noun","rawPos":"n.","zh":"用于测试的示意释义","providerOrder":0,"sourceLabel":"1"}
+{"senseId":"00000000-0000-8000-8000-000000000002","entryId":"00000000-0000-8000-8000-000000000001","senseKey":"p0","pos":"noun","rawPos":"n.","zh":"用于测试的示意释义","providerOrder":0,"sourceLabel":"1","labels":[],"sourceRange":null,"boundaryEvidence":null}
 ```
 
 ```jsonl
@@ -286,7 +304,7 @@ formCount = 去重后全局forms行数
 
 ```json
 {
-  "schemaVersion":"readict-col-bundle-1",
+  "schemaVersion":"readict-col-bundle-2",
   "diagnosticOnly":false,
   "source":{"mdxSha256":"0000000000000000000000000000000000000000000000000000000000000000","mddSha256":null,"sourceHash":"0000000000000000000000000000000000000000000000000000000000000000"},
   "datasetVersion":"synthetic-example",
@@ -710,4 +728,8 @@ java -jar $readictDictionaryJar inspect --dataset $readictDatasetId --spring.pro
 
 M02完成需满足文字质量、转换可复现、计数、导入一致性和查询退出条件；音频保持待材料，数据权利独立登记。它不表示M05查词卡片、M06收藏或整个词典产品已完成。
 
-本次只交付本文和配套技术说明，执行资料／链接／示例／状态一致性检查后中文本地提交，不修改应用源码、不执行转换或迁移、不生成M02通过记录、不自动推送。
+历史0.1设计阶段交付说明：当时只交付本文和配套技术说明，未修改应用源码、未执行转换或迁移、未生成M02通过记录；当时不自动推送的安排已由后续用户规则更新。当前实施与推送范围见下方r3补记和协作规则。
+
+## 2026-11-21 r3实际交付补记
+
+[r3复验报告](../../../validation/implementation/m02/extractor-r3-2026-11-21/README.md)记录57项测试及两次121872源诊断，确定性输出一致；sourceFailed=5519，整体质量仍阻断。col-normalize-v1未变，源修正／排除均未批准。字段和身份契约修订不代表正式包或V5已实现。

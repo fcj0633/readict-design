@@ -1,0 +1,15 @@
+{
+  "hashes": {
+    "cli.mjs": "d6255256574e3ba88250ecda4b9de0a06124ddda18d50cccc2ab998430ad64ea",
+    "diagnose.mjs": "226e4e7fa8c6035f6851779aed59d11ebe464043a800c91b60d41b090208daf8",
+    "evidence.mjs": "4bbee5717253728ae61627cc133ddd11f554b3fad1e5ec0bf2b592c535db6d6a",
+    "extract.mjs": "9e73dec99f9f4ae355d58a89171acf6bc28915fee8a2bfb1e2e103fc8e3265f7",
+    "identity.mjs": "e537e98c13f8cb8c46e645de68efb2071a8f399698274bd8ad39c58900ee5ef0",
+    "normalize.mjs": "92ab13742be8da4a08ec576a3a764dd22bef895ca7508e90c811eb422459147e",
+    "parser-adapter.mjs": "46d98c11db2644b331f324cb9ef32dc1ee4b2f6d48f67ff868d52f3fc62b2abc",
+    "references.mjs": "4a1f69339a4a9544bf646d6a528085215832f93f1b37918c59342b9c5844e9f8",
+    "segment.mjs": "cd12fb4a06f742532512c723be8fc7ca552a1afe0d0019bbf764373974a13709"
+  },
+  "holdoutOpened": false,
+  "note": "Frozen before source-only classification; no retuning on holdout"
+}

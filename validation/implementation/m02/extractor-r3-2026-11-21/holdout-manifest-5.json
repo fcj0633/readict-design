@@ -1,0 +1,545 @@
+{
+  "algorithm": "Same SHA256 ordering excluding known300 + retired360 + fixed57",
+  "samples": [
+    {
+      "group": "boundary",
+      "sourceOrdinal": 101503,
+      "indexKey": "spiffing",
+      "rank": "0102e8de9653874aea109dc3932260f5a2cfc0cee755110e4f070260b5ea2ecb"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 15301,
+      "indexKey": "calcsinter",
+      "rank": "01042a82a87ce20e7471986acc213a9fd713795828ddc922e443072df2a0e976"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 37237,
+      "indexKey": "evaporates",
+      "rank": "0104340201430d642ad66a1b82241ae84cb0a9ffb9ff93d8e28c2c738c0a965e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 81771,
+      "indexKey": "pointillism",
+      "rank": "010530604cd6d3aaaa55e9f8c7de73e7a94594f3b804206285635e20e9b03760"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 107802,
+      "indexKey": "tee-joint",
+      "rank": "010654f1c15d4c641ef7d305b759f50a51c744b1df9d10412c86c2c9a517132f"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 6494,
+      "indexKey": "atomizer",
+      "rank": "01068f2dcd9a866fa9ed0460fa817943587de870a54c2500d68094b99c5029de"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 60617,
+      "indexKey": "LBV",
+      "rank": "0107a3e6d89b12ed5f964bf8986c20c6e50a8f4d3d34248a759ad18274354f01"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 2844,
+      "indexKey": "allophane",
+      "rank": "010ab425fd95de5435c7ec522ead207705931fbfede6b470d26054b9ea062112"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 51312,
+      "indexKey": "Homoousian",
+      "rank": "01109ada145a050c8945cdb18141636ef3186aecb8b842ac033e07ddaa184e17"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 8861,
+      "indexKey": "battered",
+      "rank": "011103e498ae25aa69906845e1fbd32e48df2da80574e95a6613fae681ae56a0"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 118313,
+      "indexKey": "we'd",
+      "rank": "0116507024a891bac91dd41c683a2e4e955974e4404d10dde39195c939fcbd9e"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 119710,
+      "indexKey": "wins",
+      "rank": "01169684ed298b3ba8e3e65096b7941bb4155bca1587d1ccc2567c300a5f0bbb"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 106026,
+      "indexKey": "swarms",
+      "rank": "0118293488479e197e4f20cb23b6ca953115c0ad5d814b8d8f0940e94e00ce8b"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 93861,
+      "indexKey": "Scales",
+      "rank": "011b2b5604a67d2f45e8dae0b055e3742104b7c2ce987fe8991967d76b828be3"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 47886,
+      "indexKey": "gyrodyne",
+      "rank": "011b9c465fcabaecda470ed4d3b8e8d84ac2c1e8a48030ee1cc800e159a105fe"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 57307,
+      "indexKey": "jehadi",
+      "rank": "011cb4146daba132b3ae7d79189fde518c814d4c7b115020dd6d393462e203cf"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 8298,
+      "indexKey": "barbette",
+      "rank": "011f31e4aba4202e4a3f9a2a3fac35e0e1b2332892249c259aebfe387c82ed73"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 15048,
+      "indexKey": "cabmen",
+      "rank": "0122030432a10570ce1a9326e4f9d196d9d2187e62040d707598464270502784"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 81165,
+      "indexKey": "platina",
+      "rank": "0123aedc5cefae2adda19df2e4752646c2f0ec2d8f0a0c2dbfd86faa7461fff0"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 101453,
+      "indexKey": "sphinxlike",
+      "rank": "01245ceee79969cf0bf523c4fec81c9129a94b74e6be9d3b0d7727fae610893c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 52562,
+      "indexKey": "hyetograph",
+      "rank": "01249601a4277abd77dc8155e291d76e0cf00d1a2dea2dd7b0742f60ac222dce"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 74031,
+      "indexKey": "olfaction",
+      "rank": "01254c78a2c41de714fd427efe3ea61cd3af8ad2d5c568381e7a434ca4bf7768"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 52440,
+      "indexKey": "hydrocephalus",
+      "rank": "0126186cf40f7d36d510cebc2cf4a9aaa257247640312f538d131d506977e2d8"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 109285,
+      "indexKey": "throve",
+      "rank": "0127de18aa99f9f5476ddb7d567160002a39774a3ac68bb105af5e0fdf533283"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 11203,
+      "indexKey": "bldg",
+      "rank": "01280662d8c7c3f7b53f9cd9170aa14f1646eea0a4bbe859022598577d12cabc"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 66778,
+      "indexKey": "metritis",
+      "rank": "012a365e9ba7d5fe17d78e83cef369bd040a77b2c829a9a978ea4a22cb0a4db0"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 74265,
+      "indexKey": "onshoring",
+      "rank": "012a90428931e11d89efeda5b0e317bf94ee7df6522392bdb98388e54a812954"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 97448,
+      "indexKey": "showd",
+      "rank": "012c670aa4a75d30d2638e310fa6eb474e7288fccae307072077d331036778dd"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 112582,
+      "indexKey": "Tupi",
+      "rank": "012c717d9a51c25ad3107661fbdb2a4ce817b36c00cdc0e605e36e67754b3f4c"
+    },
+    {
+      "group": "boundary",
+      "sourceOrdinal": 36458,
+      "indexKey": "equimolecular",
+      "rank": "012c962b283afe7904b539fb199dfb8ae8ce4c24026771e0481bba857cd6a38f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 93333,
+      "indexKey": "sandwiches",
+      "rank": "018850cb0306300bae184582f4973dc7a784c63d15ebc5c044d58d5548aecb20"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 108305,
+      "indexKey": "tern",
+      "rank": "0189058fc760b720b3e887d29c133f4ce26c3c706d46eb534bf6ddde8820186c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 94243,
+      "indexKey": "schwa",
+      "rank": "018af33a39a2238ba23cd46a2919e01f984c90f167d54ac84ef9251bf1cf2de4"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 31405,
+      "indexKey": "distributing",
+      "rank": "018b0cd0bee4e437655696c2e8591dedd8c1e5bc59d59cd1a4d247d25ff199bf"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 18763,
+      "indexKey": "childlike",
+      "rank": "018bf8924330ea72b933965ca6d09fa17b2979ac2b4dfe098fbc2fea5f361ce7"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 30390,
+      "indexKey": "diplomacies",
+      "rank": "018e7d5f132954726ce55403b0b6408162c99f4216b90db70c0d7480baf1efb4"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 4968,
+      "indexKey": "appended",
+      "rank": "018fe59ffc09c23acee2abc446bdb7710afd25922e708a5e063343236cf6bf84"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 102309,
+      "indexKey": "squirts",
+      "rank": "0190e0838c82ea7b018b799fb2cbe04d817bba28dffc932844990a48cf1700ec"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 83161,
+      "indexKey": "praying",
+      "rank": "0194b5d763b788c368768361898588943d2cd0fd09e2115a09007221de49e06a"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 105615,
+      "indexKey": "supplementing",
+      "rank": "0195fdec1b2844464bf93680e6f3de557641e192efec4a529b7825e84881b7dd"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 117068,
+      "indexKey": "volcanoes",
+      "rank": "0197513b68952abbc504e21c4b3ef911c8ddf8a19436107faffba2c9f28980ef"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 55178,
+      "indexKey": "innovates",
+      "rank": "01976efe693d1d2d06a4a4eff7bb7621cb2d9bf213929ec557e238744755b7e0"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 104455,
+      "indexKey": "stupefies",
+      "rank": "0199eb88a37f9c9c7f5853be8d4dd5ac5ca10354b7df80e6f83bc5c5a9112f2f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 109399,
+      "indexKey": "thwarts",
+      "rank": "019bbf68ed2e8be42ea8d3c5b90724a3107ba27c32c30ce0d7701c6e3ac0bb7f"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 21864,
+      "indexKey": "committing",
+      "rank": "019bdf9af17c296a4df8c58ca2f9bab3eacfed92c79564501fbb0e64735ef434"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 113908,
+      "indexKey": "underwear",
+      "rank": "019cfa735d0a530b636c70a68e723b4a1ebf88ab37cc614c0ec2a8a151cc447c"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 46383,
+      "indexKey": "graduation",
+      "rank": "019ec76ee31c21f2ecf8a24fcd7648b58e4079bd17d8530daf9c2bc353616acc"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 118135,
+      "indexKey": "way",
+      "rank": "01a0bf9d24ac746979b919a9a6137f8da861ce1fe869e8d851543974ec2d4f86"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 88105,
+      "indexKey": "reclaiming",
+      "rank": "01a329faa726977d08e76bf96a0386e4daacae49e5c52139a5ab371019535cf6"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 82435,
+      "indexKey": "poring",
+      "rank": "01a33459ab24231bad1b1e9ac3f337def61dc1ba6c7a136165a484125d0882db"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 27285,
+      "indexKey": "database",
+      "rank": "01a39e4f804f96bacd23dc3d64cc7fb947f6ed6fda298fa20bb8dd5401f6a3b5"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 59315,
+      "indexKey": "koreans",
+      "rank": "01a6638ee6926eb7f9fbc5a79d58ae3f73e01e1965ff9d56b9f35c1e807fb098"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 53203,
+      "indexKey": "idlers",
+      "rank": "01a6d1187cf695591df79905a0e420074f534fca9da81a772636cb093e1567e1"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 80977,
+      "indexKey": "plan",
+      "rank": "01a7a6dec87a611a15d3444c2ed8f454c55f20f33c32bbf7393683e61ab85c80"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 118636,
+      "indexKey": "welts",
+      "rank": "01ac9004485504c2727ed9b111fcc6fa9d3bf0dae3dc5ff826cbe57758a1409b"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 70238,
+      "indexKey": "muzzle",
+      "rank": "01ad2f05671cc474a3e43e1b16b067067b832f16066bd2cdb16475980f2c8cb6"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 38787,
+      "indexKey": "fang",
+      "rank": "01ae0022d8d8665bcf9febec152d1aa001f8777c50379376ff3a8781c8118ff7"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 97848,
+      "indexKey": "sight-reading",
+      "rank": "01afd790998abcd2e1e19819a3a3496d9c3824e8a8978b11a2d98fc74644365e"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 7375,
+      "indexKey": "baby",
+      "rank": "01aff9af116d4c33f95e3bf69de3dcf2908cf2470f6ebde2ef0b945033245221"
+    },
+    {
+      "group": "success",
+      "sourceOrdinal": 37807,
+      "indexKey": "expectation",
+      "rank": "01b043f1c49f63ad2c9463a23e08d481791d9d7671d3d0d6b5e173d35b0d3e83"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 31561,
+      "indexKey": "diving bell",
+      "rank": "0266b1a644b2da0f437987781fdf57a0656bfc59635d848e96cbba48cd1e28a0"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 9643,
+      "indexKey": "belt man",
+      "rank": "0266fcb6d3f440093bc1796e6fae9ce950110d3cc175e9908a2bd9328ec931ad"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 15036,
+      "indexKey": "cable car",
+      "rank": "026de83fad09052c1bc592919cf28c5ee87557aa5a4afcb31405f7c8e2157c5a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 7548,
+      "indexKey": "back out",
+      "rank": "027447cec03179b9262703e4fe2cc330e352c11f7beae10a5582aeb9f85c8191"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 33993,
+      "indexKey": "Eccles cake",
+      "rank": "0277c1f5ef06a9ad5510318eb99492fa80f2005f4b1d7023ab1b91a44279ac36"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 37561,
+      "indexKey": "ex div.",
+      "rank": "027d702dbc08cf78c6ff2a319e11a3240ac7082e867d58ada512be59284ad906"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 48647,
+      "indexKey": "hanging pawn",
+      "rank": "027f12cce022f1d30ce5907ca55d708dc4891cdbe0b8ea1dcc1f7bfe2d7cfd68"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 91078,
+      "indexKey": "ring around",
+      "rank": "027fc1e3860be09b6ab557ed5d6f14f4322933514c3b4711f22c7a259bcd593c"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 68210,
+      "indexKey": "mobile library",
+      "rank": "02878c77207028519b65e44e6488c18662c982da825e06f6ae57932fe486a9fb"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 37462,
+      "indexKey": "excess demand",
+      "rank": "028994271575d1f30c2229c1d7ac49c9839ed4ca965d23a117cbddca738b2f0e"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 95702,
+      "indexKey": "semantic memory",
+      "rank": "028bf4f6168e76c436bdcab8b0b35738048dfd0eebc1ef1ddea70ebecc77d2cd"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 3024,
+      "indexKey": "altar boy",
+      "rank": "028c3173914b280083b44108f92b311cfdf60e092dd43b6c94f51c0ad91ab1fe"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 16499,
+      "indexKey": "carpet bug",
+      "rank": "028f299866dc6707cda324cf90b8f617d086486a59739640e007c25bacc82d6c"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 76814,
+      "indexKey": "pantothenic acid",
+      "rank": "02944cf272c1e24e02489ed08509066e1a744895bc04640ca324d10c292f99b8"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 1045,
+      "indexKey": "act on",
+      "rank": "029e7f1f59617d18ce9c4f1007623dd84034803a64b73cadcacb8ca53d760fc7"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 61932,
+      "indexKey": "linguistic philosophy",
+      "rank": "02a15f0f1777ada6a746a9b046b0e8f81b3d7f35cb921de92418623b4fba51c4"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 15298,
+      "indexKey": "calcium oxide",
+      "rank": "02a8bca0f2967d9a6fe4f657e159e2352b866b9e43ef6dd8ea60548d738c5401"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 16224,
+      "indexKey": "carbon tetrachloride",
+      "rank": "02a9e58bd8d57b8aab8b33622fe3cafc3b3d054bf0dd712c0d8b569dd7fad549"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 79668,
+      "indexKey": "phone box",
+      "rank": "02b2977e45fd9c31bb4230c32717ff92d032ebb2aa67a90bfc7172057153eca6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 55601,
+      "indexKey": "interactive engineering",
+      "rank": "02b37359a6d521b36c97456b2348cb5193a182a9acdeb125c0c4d316b550178d"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 86997,
+      "indexKey": "radio source",
+      "rank": "02b439d9550c6beb6064f9254d7f62abbb9277134063d0b76804bd00fd8c1b77"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 60937,
+      "indexKey": "leg bye",
+      "rank": "02b567d8c926a3de98d20591ab0f73028ddc465c9a029c5aec8bd7d23ce578dd"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 41099,
+      "indexKey": "floor manager",
+      "rank": "02b680016451f28ac00f2422f85bd0ad6cdbbb97f7140ae99a8bd9f6ffe63c68"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 24659,
+      "indexKey": "count out",
+      "rank": "02bcd8e84624ff7526ad3ce42732f71ce68107e627d37a80d81875f79b26922f"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 964,
+      "indexKey": "acrylic fibre",
+      "rank": "02bd323536a38dcefdcdfee68db7e6ba068555c97eb1b11397793f5e1613544a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 119799,
+      "indexKey": "Wisdom of Solomon",
+      "rank": "02bd3361991d5b8e10b0b3c561ddcffe4c4e4aa4d9c376e56cf3713943ab227a"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 57025,
+      "indexKey": "jack rafter",
+      "rank": "02c031554e2fe1e9b43f2b051477a80c4e2b1da728b4b57f7da0a1f99a35d6b6"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 7434,
+      "indexKey": "Bachelor of Arts",
+      "rank": "02c0ce3180ec2e08cb3f18b4231d995b071a18c2a3dd0680b3766e5f4d223fda"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 57426,
+      "indexKey": "Jet Ski",
+      "rank": "02c4dde783b2687cd6a58a45a2735223ce7c80f6c0f8e5e4b0b1d13d7ee89331"
+    },
+    {
+      "group": "skipped",
+      "sourceOrdinal": 97699,
+      "indexKey": "sickness benefit",
+      "rank": "02c5c40c4466504c2ce19b6d78f97dc322c72c85aed366514d5f5f254fba621d"
+    }
+  ]
+}
