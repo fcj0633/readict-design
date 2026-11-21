@@ -1,6 +1,6 @@
 # Readict V1.1 系统技术设计文档
 
-文档版本：0.5（2026-11-20 M01 实施与固定 +86 修订，正式开发设计草案）
+文档版本：0.6（2026-11-21 M02 词典数据底座细化，正式开发设计草案）
 编写日期：2026-11-18  
 唯一功能需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)  
 适用仓库：本设计保存在 readict-design；后续正式实现位于独立的 readict-app。  
@@ -17,6 +17,10 @@
 ### 2026-11-19 M01 执行指导补充
 
 新增[M01 执行文档](../implementation/M01-用户认证与个人设置执行文档.md)和[ADR-0003](../decisions/ADR-0003-M01会话认证与分阶段验证.md)，细化真实 M00 起点、V2～V4、显式认证持久化、CSRF、恢复和模拟／真实通道边界。M00 当前结果见[实施与验收记录](../../../validation/implementation/m00/README.md)；上面的持久层修订说明保留其编写时语境，不覆盖后续实施事实。本轮只写文档，M01 不标完成。
+
+### 2026-11-21 M02 词典底座细化
+
+新增[M02 技术设计与执行文档](../implementation/M02-COL词典数据底座技术设计与执行文档.md)，细化转换、词形证据、JSONL／manifest、V5五表、Java独立导入入口、断点租约、活动切换与缓存隔离。正式应用已有V1～V4，后续迁移接续；本次仅写文档，不执行转换或数据库操作，M02仍未开始。121872索引／251抽查保持历史适用边界，音频继续待材料，数据权利单独登记。
 
 ## 阅读导航
 
@@ -423,7 +427,13 @@ Provider 原始响应在适配器内部解析并校验，不透传到 UI。POS �
 
 提取 .title、.phonetic、.collinsMajorTrans、.collinsOrder 与词性标签；去除 .exampleLists、脚本、样式和原始交互。中英解释同一段时建立专用提取规则，不能无条件按第一个汉字截断。无法可靠提取的记录写问题清单，不编造中文或词性。源 key、实际 headword、多区域和顺序分别保存；runs 可映射 run，running 不能无条件归为 run。词形提示需证据确认，未知回退规则不变。
 
-产物 manifest 包括 sourceHash、datasetVersion、converterVersion、parserVersion、总数／成功／失败／跳过数与内容摘要。新数据集先完整导入并校验，再事务切换活动指针；重复导入幂等，失败保留旧活动版本。查询缓存按数据集隔离，历史收藏保存其数据集和义项身份及首次释义，不随切换更新。完整任务见模块计划 M02。
+产物 manifest 包括 sourceHash、datasetVersion、converterVersion、parserVersion、总数／成功／失败／跳过数与内容摘要。新数据集先完整导入并校验，再事务切换活动指针；重复导入幂等，失败保留旧活动版本。查询缓存按数据集隔离，历史收藏保存其数据集和义项身份及首次释义，不随切换更新。完整任务见模块计划 M02，逐步实施见[M02 独立文档](../implementation/M02-COL词典数据底座技术设计与执行文档.md)。
+
+**【工程设计细化，尚未实现】** 原始词形／索引key／headword保持可追溯；比较键复用第9.1节并记录normalizationVersion，不把POS提示当作已完成词义消歧。精确词条和有证据的屈折关系共同构成候选，running、saw等不能无条件归并。多区域同lemma保留区域，多lemma无法唯一确认返回AMBIGUOUS和候选，resolvedLemmaKey为空；后续M05可在明确义项选择后按既有surfaceFallback规则处理，不按猜测原型自动建立首次收藏。
+
+源记录最终处置严格满足总数=成功+跳过+失败，索引数与区域／义项／映射数分开。输出固定JSONL、manifest和质量报告，身份由版本化规范化元组摘要生成确定性UUID，Node／Java通过黄金向量保持一致；不靠生成时间、随机ID或机器locale排序。数据集源摘要与产物内容摘要分开。
+
+Java离线入口仅加载导入所需持久层和数据库保护，不直接以非Web模式启动现有整个ReadictApplication；Node不接触数据库凭据。分批提交与checkpoint同事务，owner租约防并发接管，完整核验才READY。import不自动激活；activate锁定单一col指针并比较版本。一次查询固定DatasetRef，词典内容缓存按datasetId隔离，活动指针首版每次从库读取；不缓存用户原句／收藏状态，旧READY默认保留。
 
 ## 10. 主动异步翻译
 
@@ -595,11 +605,11 @@ book.active_artifact_id 引用自身产物，是可空 FK；先插 book，再插
 
 | 表 | 关键字段 | 约束与生命周期 |
 |---|---|---|
-| dictionary_entry（首版本地数据，使用须有授权） | id；dataset_id；entry_key VARCHAR(128)；section_order INT；provider VARCHAR(64)；provider_version VARCHAR(64)；source_lang VARCHAR(16)；target_lang VARCHAR(16)；lemma_key VARCHAR(128)；headword VARCHAR(128)；phonetics_json JSON；attribution TEXT；license_policy_version VARCHAR(64)；created_at | FK dataset；UNIQUE(dataset_id,entry_key,section_order)；INDEX(dataset_id,lemma_key)；同 headword 可有多个区域，不以 lemma 唯一约束丢掉同形记录；使用须有授权 |
-| dictionary_sense | id；entry_id；provider_sense_key VARCHAR(128)；pos VARCHAR(24)；meaning_zh TEXT；provider_order INT | FK entry ON DELETE CASCADE；UNIQUE(entry_id,provider_order)；ID 不能由客户端臆造 |
+| dictionary_entry（首版本地数据，使用须有授权） | id；dataset_id；entry_key VARCHAR(128)；section_order INT；source_ordinal／source_index_key／source_record_hash；lemma_method；provider VARCHAR(64)；provider_version VARCHAR(64)；source_lang VARCHAR(16)；target_lang VARCHAR(16)；lemma_key VARCHAR(128)；headword VARCHAR(128)；phonetics_json JSON；attribution TEXT；license_policy_version VARCHAR(64)；created_at | FK dataset；UNIQUE(dataset_id,entry_key,section_order)；INDEX(dataset_id,lemma_key)；同 headword 可有多个区域，不以 lemma 唯一约束丢掉同形记录；使用须有授权 |
+| dictionary_sense | id；entry_id；provider_sense_key VARCHAR(128)；pos VARCHAR(24)；meaning_zh TEXT；provider_order INT；raw_pos／source_label | FK entry ON DELETE CASCADE；UNIQUE(entry_id,provider_order)；ID 不能由客户端臆造 |
 | sentence_translation | id；user_id；cache_key；provider；provider_version；source_lang；target_lang；source_text TEXT；translated_text TEXT；translated_at；expires_at | FK user；UNIQUE(user_id,cache_key)；INDEX(expires_at)；同摘要命中仍比较全文；失败不写成功行 |
 
-新增 dictionary_dataset：id、source_hash、dataset_version、converter_version、parser_version、status（IMPORTING／READY／FAILED）、counts_json、content_hash、created_at；UNIQUE(source_hash,dataset_version,converter_version)。dictionary_active 只有单个受控 slot，FK 指向 READY 数据集，在导入校验后事务切换。新增 dictionary_form_mapping：dataset_id、surface_key、entry_id、relation、evidence、priority，UNIQUE(dataset_id,surface_key,entry_id,relation)，支持一词多候选，不能用一对一映射损失 running/saw 多词性。
+V5新增 dictionary_dataset：id、identity_hash、source_hash、dataset_version、converter_version、parser_version、normalization_version、rules_version、status（IMPORTING／READY／FAILED）、counts_json、content_hash、manifest_json、权利政策、import_owner／lease_until、import_phase／checkpoint_line、created_at／ready_at。UNIQUE(identity_hash)及UNIQUE(source_hash,dataset_version,converter_version)；同发布身份异内容拒绝，不覆盖。dictionary_active只有slot=col一行，dataset_id可空、version递增；激活事务保证目标READY，FK本身不保证状态。dictionary_form_mapping以(dataset_id,surface_key,entry_id,relation)为主键，entry复合外键保证同dataset归属；支持一词多候选。字段级DDL、长度、稳定ID、索引和生命周期以[M02第6节](../implementation/M02-COL词典数据底座技术设计与执行文档.md#6-v5-数据库设计)为细化契约，不在本次执行。
 
 本地 entryId／senseId 为数据集内稳定身份；请求仍使用绑定用户和 source 的 lookupId（10 分钟）选择义项，过期 410 LOOKUP_EXPIRED。收藏事务校验 datasetId、entryId、senseId 和 lemma，禁止客户端臆造。主体快照增加 dictionary_dataset_id（可空历史引用）及 dataset_version、entry_key；不使用级联删除数据集来删除收藏。历史数据集保留引用期，切换不改写首次快照。未命中不是合法首次收藏词条；无授权不得绕过许可导入或公开分发。
 
@@ -958,7 +968,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 
 ### 18.2 模块实施基线
 
-细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。M01 的六项任务、V2～V4、前后端文件和验收矩阵见[M01 执行文档](../implementation/M01-用户认证与个人设置执行文档.md)。M00 逐步实施见[独立执行文档](../implementation/M00-工程基础与本机环境执行文档.md)，任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
+细化顺序为 M00 工程 → M01 用户与设置 → M02 COL 数据底座 → M03 EPUB／书架 → M04 阅读／进度 → M05 定位／词典卡片 → M06 收藏 → M07 TMT → M08 一致性 → M09 本机阶段验收。M02的转换／导入／查询详细步骤见[M02执行文档](../implementation/M02-COL词典数据底座技术设计与执行文档.md)。M01 的六项任务、V2～V4、前后端文件和验收矩阵见[M01 执行文档](../implementation/M01-用户认证与个人设置执行文档.md)。M00 逐步实施见[独立执行文档](../implementation/M00-工程基础与本机环境执行文档.md)，任务及状态集中在[模块化开发计划](../implementation/Readict-V1.1-模块化开发计划.md)。模块可先交付已完成子任务，但账号恢复和音频等未完成事项不得被整体“完成”状态掩盖。
 
 ### 18.3 设计交付约束
 

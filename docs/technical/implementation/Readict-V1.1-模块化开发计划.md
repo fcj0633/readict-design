@@ -1,12 +1,12 @@
 # Readict V1.1 模块化开发计划
 
-版本：0.5；日期：2026-11-20（M01 阶段验收与 CR-0003 固定 +86）。
+版本：0.6；日期：2026-11-21（M02 词典数据底座详细设计与执行指导）。
 状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 部分完成：核心账号与本地模拟流程验收通过，真实通道待材料；M02～M09 未开发。本文件保留任务基线，真实结果见 [M00 验收记录](../../../validation/implementation/m00/README.md) 和 [M01 实施验收记录](../../../validation/implementation/m01/README.md)。
 
 当前仓库约定：源码、迁移和正式测试在 readict-app；详细文档、实施记录及截图在 readict-design。应用不建 docs/，单次环境准备和验收脚本不提交，个人便利工具放在忽略的 .local/。以下环境与选型表中的“未验证”等描述保留原始计划编写时的基线，M00 当前结果以验收记录为准。
 
 需求：[PRD V1.1（2026-11-19 修订）](../../requirements/prd/PRD-v1.1.md)。  
-设计：[系统技术设计 0.4](../architecture/Readict-V1.1-系统技术设计.md)。  
+设计：[系统技术设计 0.6](../architecture/Readict-V1.1-系统技术设计.md)。  
 变更：[CR-0002](../../requirements/changes/CR-0002-密码规则与本地词典及音频阶段安排.md)。  
 决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002（持久层）](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)和[ADR-0003（M01认证）](../decisions/ADR-0003-M01会话认证与分阶段验证.md)。
 
@@ -129,18 +129,18 @@ M00-01～M00-05 已完成本机阶段验收；其余任务状态仍为**未开�
 
 ### M02 COL 数据底座与离线工具
 
-前置：M00；按用户调用的接口依赖 M01 登录隔离。数据：dataset、active 指针、entry、sense、form_mapping；无逐句查询记录全量表。
+前置：M00；正式应用M01核心隔离已可复用，真实通道继续待接入。独立[M02技术设计与执行文档](M02-COL词典数据底座技术设计与执行文档.md)集中定义六项任务的目录、转换规则、数据契约、DDL、导入／查询、命令和排障。V5接续已有V1～V4，五表为dictionary_dataset、dictionary_active、dictionary_entry、dictionary_sense、dictionary_form_mapping；无逐句查询记录全量表。M02当前仍未开始，本次文档不是实现或验收。
 
 | 任务 | 工作与完成证据 |
 |---|---|
 | M02-01 | 在独立 tools 环境锁 MDX 解析器并验证实际 col.mdx／col.mdd；记录输入摘要、条目数、版本、许可和错误，不能将 7.0.0 抽查等同 6.0.6 通过 |
 | M02-02 | 按标题、Unicode 音标、区域／义项、词性、原顺序提取；去掉脚本、样式、例句，不执行 MDD JS；中英混合需专用规则，异常入清单 |
 | M02-03 | 保留索引 key／实际 headword／区域、词形关系和证据；处理 runs/run、running 独立义项、ran、children 缺字、saw 同形词，不无条件合并 |
-| M02-04 | 生成 JSONL＋manifest；固定序列化与排序，校对总／成功／跳过／失败数和摘要；工具中断可重跑，不静默丢数据 |
-| M02-05 | 分批导入本机数据库新数据集、核对与事务切换活动版本，失败保留旧版；Java LocalDictionaryProvider 经 Repository／Mapper 查询及有界缓存 |
+| M02-04 | 生成JSONL／manifest／质量报告，固定字节及Node／Java身份向量；源处置与区域／义项／映射分别对账，采样包不可正式导入；转换中断可从头重跑 |
+| M02-05 | Java独立离线入口复用保护与MP/XML；V5／分批checkpoint同事务／owner租约，核对后READY、显式版本条件激活；Provider固定DatasetRef与有界版本缓存 |
 | M02-06 | 人工核对至少 50 代表词，建立转换回归样本；检查中文／IPA／POS／顺序、重复导入、无结果和未知词形 |
 
-接口：离线 CLI 和 Java DictionaryProvider，正式查询 API 由 M05 使用；不新增词典上传管理产品页面。错误：DATASET_NOT_READY／CONVERSION_FAILED／DICTIONARY_NOT_CONFIGURED；质量无法确认时保留未提取标记，不能生成假中文。退出：固定词表质量、计数对账、幂等和数据集切换通过；正式分发仍需核实词典数据权利。音频只记录 A01，不纳入退出条件。
+接口：离线 CLI 和 Java DictionaryProvider，正式查询 API 由 M05 使用；M02只交付内部Provider和离线CLI，不提前增加需EPUB来源的HTTP查询接口或词典上传管理产品页面。错误：DATASET_NOT_READY／CONVERSION_FAILED／DICTIONARY_NOT_CONFIGURED；质量无法确认时保留未提取标记，不能生成假中文。退出：固定词表质量、计数对账、幂等和数据集切换通过；正式分发／快照仍需核实词典数据权利，技术可读性不代替许可；未来验收归档validation/implementation/m02/，本次不建通过记录。音频只记录 A01，不纳入文字退出条件。
 
 ### M03 文件、EPUB 导入与书架
 
