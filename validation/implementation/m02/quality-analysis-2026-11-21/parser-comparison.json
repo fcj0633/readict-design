@@ -1,0 +1,42 @@
+{
+  "mdx": {
+    "records": 121872,
+    "headerRecords": 121872,
+    "sameKeyAtOrdinal": 121872,
+    "sameOffsetAtOrdinal": 121872,
+    "exactApiOutputHashEqual": 0,
+    "controlledOnlyEdgeNulHashEqual": 121872,
+    "controlledMultisetEqual": true,
+    "extraDuplicatePositions": 1,
+    "edgeNulDistribution": [
+      {
+        "leading": 0,
+        "trailing": 1,
+        "records": 121872
+      }
+    ],
+    "rawApiDifferenceCount": 121872,
+    "implementationEncoding": "UTF-8",
+    "checksumChecksEnabled": true
+  },
+  "mdd": {
+    "records": 2,
+    "headerRecords": 2,
+    "sameKeyAtOrdinal": 2,
+    "sameOffsetAtOrdinal": 2,
+    "exactApiOutputHashEqual": 2,
+    "controlledOnlyEdgeNulHashEqual": 2,
+    "controlledMultisetEqual": true,
+    "extraDuplicatePositions": 0,
+    "edgeNulDistribution": [
+      {
+        "leading": null,
+        "trailing": null,
+        "records": 2
+      }
+    ],
+    "rawApiDifferenceCount": 0,
+    "implementationEncoding": "UTF-16",
+    "checksumChecksEnabled": true
+  }
+}

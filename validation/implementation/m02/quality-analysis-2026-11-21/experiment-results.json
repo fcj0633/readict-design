@@ -1,0 +1,220 @@
+{
+  "sampleBreakdown": {
+    "boundary-analysis": {
+      "records": 70,
+      "allParagraphsAccountedFor": 6,
+      "withSubentries": 6,
+      "withReferences": 1,
+      "withUnresolvedParagraphs": 64,
+      "missingUsageLabelRecords": 0,
+      "missingUsageLabels": 0,
+      "kindCounts": {
+        "UNDETERMINED": 69,
+        "EXPLICIT_SENTENCE_SEPARATOR": 27,
+        "REFERENCE": 1,
+        "DERIVED_SUBENTRY": 7
+      }
+    },
+    "boundary-holdout": {
+      "records": 30,
+      "allParagraphsAccountedFor": 6,
+      "withSubentries": 6,
+      "withReferences": 0,
+      "withUnresolvedParagraphs": 24,
+      "missingUsageLabelRecords": 0,
+      "missingUsageLabels": 0,
+      "kindCounts": {
+        "UNDETERMINED": 25,
+        "EXPLICIT_SENTENCE_SEPARATOR": 27,
+        "DERIVED_SUBENTRY": 8
+      }
+    },
+    "success-analysis": {
+      "records": 70,
+      "allParagraphsAccountedFor": 70,
+      "withSubentries": 0,
+      "withReferences": 3,
+      "withUnresolvedParagraphs": 0,
+      "missingUsageLabelRecords": 39,
+      "missingUsageLabels": 63,
+      "kindCounts": {
+        "EXPLICIT_SENTENCE_SEPARATOR": 142,
+        "REFERENCE": 3
+      }
+    },
+    "success-holdout": {
+      "records": 30,
+      "allParagraphsAccountedFor": 30,
+      "withSubentries": 0,
+      "withReferences": 1,
+      "withUnresolvedParagraphs": 0,
+      "missingUsageLabelRecords": 16,
+      "missingUsageLabels": 22,
+      "kindCounts": {
+        "EXPLICIT_SENTENCE_SEPARATOR": 40,
+        "REFERENCE": 1
+      }
+    },
+    "skipped-analysis": {
+      "records": 70,
+      "allParagraphsAccountedFor": 26,
+      "withSubentries": 0,
+      "withReferences": 1,
+      "withUnresolvedParagraphs": 44,
+      "missingUsageLabelRecords": 0,
+      "missingUsageLabels": 0,
+      "kindCounts": {
+        "EXPLICIT_SENTENCE_SEPARATOR": 34,
+        "UNDETERMINED": 44,
+        "REFERENCE": 1,
+        "LOCALIZED_AFTER_POS": 1
+      }
+    },
+    "skipped-holdout": {
+      "records": 30,
+      "allParagraphsAccountedFor": 8,
+      "withSubentries": 0,
+      "withReferences": 0,
+      "withUnresolvedParagraphs": 22,
+      "missingUsageLabelRecords": 0,
+      "missingUsageLabels": 0,
+      "kindCounts": {
+        "UNDETERMINED": 22,
+        "EXPLICIT_SENTENCE_SEPARATOR": 9
+      }
+    }
+  },
+  "recovery": {
+    "records": 268,
+    "withExplicitChineseTarget": 245,
+    "withSingleWordReversePattern": 236,
+    "oneCandidate": 244,
+    "multipleCandidates": 23,
+    "noCandidate": 1
+  },
+  "refsSummary": {
+    "records": 709,
+    "withExistingInScopeTarget": 639,
+    "recordsWithCycle": 11,
+    "recordsWithHopLimit": 0,
+    "recordsWithDangling": 2,
+    "targetsFoundOnlyAsSubentry": 0
+  },
+  "skippedHeads": {
+    "records": 515,
+    "withCanonicalHeadMissingExactIndex": 0
+  },
+  "semanticsAccuracy": {
+    "status": "NOT_ESTIMATED_FROM_MACHINE_FLAGS",
+    "reason": "structure coverage is not correctness; gold review and field-specific metrics reported separately"
+  },
+  "fixedSubentryGold": {
+    "scope": "five diagnostic subentry units, not dictionary-wide precision",
+    "units": [
+      {
+        "sourceOrdinal": 9162,
+        "region": 0,
+        "majorOrder": 2,
+        "host": "beautiful",
+        "surface": "beautifully",
+        "pos": "ADV",
+        "translationMatchesAgentGold": true,
+        "identityNotCollapsedToHost": true,
+        "sourceRangePresent": true,
+        "reviewer": "Codex execution agent",
+        "humanReviewed": false
+      },
+      {
+        "sourceOrdinal": 9162,
+        "region": 0,
+        "majorOrder": 4,
+        "host": "beautiful",
+        "surface": "beautifully",
+        "pos": "ADV",
+        "translationMatchesAgentGold": true,
+        "identityNotCollapsedToHost": true,
+        "sourceRangePresent": true,
+        "reviewer": "Codex execution agent",
+        "humanReviewed": false
+      },
+      {
+        "sourceOrdinal": 86564,
+        "region": 0,
+        "majorOrder": 1,
+        "host": "quick",
+        "surface": "quickly",
+        "pos": "ADV",
+        "translationMatchesAgentGold": true,
+        "identityNotCollapsedToHost": true,
+        "sourceRangePresent": true,
+        "reviewer": "Codex execution agent",
+        "humanReviewed": false
+      },
+      {
+        "sourceOrdinal": 86564,
+        "region": 0,
+        "majorOrder": 4,
+        "host": "quick",
+        "surface": "quickly",
+        "pos": "ADV",
+        "translationMatchesAgentGold": true,
+        "identityNotCollapsedToHost": true,
+        "sourceRangePresent": true,
+        "reviewer": "Codex execution agent",
+        "humanReviewed": false
+      },
+      {
+        "sourceOrdinal": 86564,
+        "region": 0,
+        "majorOrder": 6,
+        "host": "quick",
+        "surface": "quickly",
+        "pos": "ADV",
+        "translationMatchesAgentGold": true,
+        "identityNotCollapsedToHost": true,
+        "sourceRangePresent": true,
+        "reviewer": "Codex execution agent",
+        "humanReviewed": false
+      }
+    ],
+    "correct": 5,
+    "total": 5
+  },
+  "tests": {
+    "existingNode": {
+      "passed": 31,
+      "failed": 0
+    },
+    "isolatedDiagnosticExperiments": {
+      "passed": 15,
+      "failed": 0
+    }
+  },
+  "metadataPreservation": {
+    "sampleSuccessRecords": 100,
+    "affectedRecords": 55,
+    "sourceLabels": 85,
+    "baselinePreserved": 0,
+    "diagnosticCandidatePreserved": 85,
+    "metricScope": "usage/supplementary POS label retention only, not full dictionary accuracy"
+  },
+  "targetedAcceptedGlossRiskReview": {
+    "riskSelectedRecords": 10,
+    "crossReferenceTextMixedIntoGloss": 3,
+    "legitimateEmbeddedLatinOrUsageContent": 7,
+    "reviewer": "Codex execution agent",
+    "unbiasedPopulationEstimate": false
+  },
+  "uncertainty": {
+    "failedSampleRecords": 100,
+    "prototypeFullyStructurallyAccounted": 12,
+    "stillUnresolvedRecords": 88,
+    "unresolvedParagraphs": 94,
+    "semanticPrecisionNotClaimed": true
+  },
+  "candidateFreeze": {
+    "experimentVersion": "diagnostic-structure-v1",
+    "sha256": "d5abb1e1cd868c4371132897d8d3ac0c2a9a7794ebeb775ed41bd2eb3eb4fbea",
+    "policy": "frozen before holdout assessment; not production code"
+  }
+}

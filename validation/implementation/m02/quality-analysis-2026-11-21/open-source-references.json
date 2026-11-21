@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "https://github.com/goldendict/goldendict",
+    "commit": "b4f3fcdc4861975ec49ae2bb894f907c072fc8f6",
+    "path": "mdx.cc",
+    "sha256": "75d555d76eb93ee9ebb1cf3d0316368f5e434fb40d6f6472794f62ad2872a0c0",
+    "url": "https://github.com/goldendict/goldendict/blob/b4f3fcdc4861975ec49ae2bb894f907c072fc8f6/mdx.cc"
+  },
+  {
+    "repository": "https://github.com/ilius/pyglossary",
+    "commit": "ece677005b6e1bd2e9f4d3f02f9bc50f0fefee1e",
+    "path": "README.md",
+    "sha256": "b3cfeaaf82de886b823493bd9ae1cc495f1c3e0fdf4a206baf0c6da4f853929a",
+    "url": "https://github.com/ilius/pyglossary/blob/ece677005b6e1bd2e9f4d3f02f9bc50f0fefee1e/README.md"
+  },
+  {
+    "repository": "https://github.com/ffreemt/readmdict",
+    "commit": "d9c53dc1515f99ae5a2d6b1d89212c9b680e0c59",
+    "path": "readmdict/readmdict.py",
+    "sha256": "a69d58d43d48f273a466850096d3d6a2915f1028bde222075a805843c11da99d",
+    "url": "https://github.com/ffreemt/readmdict/blob/d9c53dc1515f99ae5a2d6b1d89212c9b680e0c59/readmdict/readmdict.py"
+  }
+]

@@ -1,0 +1,487 @@
+sourceOrdinal,indexKey,sourceHeads,structuralCategory,classificationApproved
+0,"2,4-D","2,4-D",INTERNAL_PUNCTUATION,false
+3,3.5G,3.5G,INTERNAL_PUNCTUATION,false
+422,a/c,a/c,INTERNAL_PUNCTUATION,false
+424,a.c.,a.c.,INTERNAL_PUNCTUATION,false
+544,accident-prone,accident prone,MULTIWORD_HEADWORD,false
+683,AC/DC,AC/DC,INTERNAL_PUNCTUATION,false
+1712,a.f.,a.f.,INTERNAL_PUNCTUATION,false
+1713,A/F,A/F,INTERNAL_PUNCTUATION,false
+2270,air-drop,air drop,MULTIWORD_HEADWORD,false
+2408,a.k.a.,a.k.a.,INTERNAL_PUNCTUATION,false
+2579,aleuron,aleurone layer,MULTIWORD_HEADWORD,false
+3031,alt.country,alt.country,INTERNAL_PUNCTUATION,false
+3131,alzheimer's,Alzheimer's disease,MULTIWORD_HEADWORD,false
+3133,a.m.,a.m.,INTERNAL_PUNCTUATION,false
+3135,A/M,A/M,INTERNAL_PUNCTUATION,false
+3854,and/or,and/or,INTERNAL_PUNCTUATION,false
+4691,A/O,A/O,INTERNAL_PUNCTUATION,false
+4708,a.p.,a.p.,INTERNAL_PUNCTUATION,false
+5207,a.r.,a.r.,INTERNAL_PUNCTUATION,false
+5882,ASA/BS,ASA/BS,INTERNAL_PUNCTUATION,false
+6385,at-bat,at bat,MULTIWORD_HEADWORD,false
+7053,a/v,a.v.,INTERNAL_PUNCTUATION,false
+7056,a.v.,a.v.,INTERNAL_PUNCTUATION,false
+7364,babies'-breath,babies'-breath,OTHER,false
+7380,baby-boomer,baby boomer,MULTIWORD_HEADWORD,false
+7401,baby-talk,baby talk,MULTIWORD_HEADWORD,false
+7612,back-up,back up,MULTIWORD_HEADWORD,false
+7900,ball-bearing,ball bearing,MULTIWORD_HEADWORD,false
+7952,ballot-rigging,ballot rigging,MULTIWORD_HEADWORD,false
+8310,barbour,Barbour jacket,MULTIWORD_HEADWORD,false
+8356,bargain-basement,bargain basement,MULTIWORD_HEADWORD,false
+8361,bargain-hunter,bargain hunter,MULTIWORD_HEADWORD,false
+8866,battering-ram,battering ram,MULTIWORD_HEADWORD,false
+8879,battle-cry,battle cry,MULTIWORD_HEADWORD,false
+8987,B.C.S.,B.C.S.,INTERNAL_PUNCTUATION,false
+8988,B/D,B/D,INTERNAL_PUNCTUATION,false
+8995,B/E,B/E,INTERNAL_PUNCTUATION,false
+9060,bean-counter,bean counter,MULTIWORD_HEADWORD,false
+9210,bed-and-breakfast,bed and breakfast,MULTIWORD_HEADWORD,false
+9344,beer-gut,beer gut,MULTIWORD_HEADWORD,false
+10030,B/F,B/F,INTERNAL_PUNCTUATION,false
+10032,B.F.A.,B.F.A.,INTERNAL_PUNCTUATION,false
+10153,b.i.d.,b.i.d.,INTERNAL_PUNCTUATION,false
+10278,big-time,big time,MULTIWORD_HEADWORD,false
+10738,birth-rate,birth rate,MULTIWORD_HEADWORD,false
+10822,bit-part,bit part,MULTIWORD_HEADWORD,false
+10871,B.J.,B.J.,INTERNAL_PUNCTUATION,false
+10878,B/L,B/L,INTERNAL_PUNCTUATION,false
+10893,black-and-white,black and white,MULTIWORD_HEADWORD,false
+10922,blackboy,black boy,MULTIWORD_HEADWORD,false
+11019,black-out,black out,MULTIWORD_HEADWORD,false
+11055,black-tie,black tie,MULTIWORD_HEADWORD,false
+11230,bleeding-heart,bleeding heart,MULTIWORD_HEADWORD,false
+11442,blood-and-thunder,blood and thunder,MULTIWORD_HEADWORD,false
+11447,blood-brother,blood brother,MULTIWORD_HEADWORD,false
+11769,B/O,B/O,INTERNAL_PUNCTUATION,false
+11770,b.o.,b.o.,INTERNAL_PUNCTUATION,false
+11794,boarding-school,boarding school,MULTIWORD_HEADWORD,false
+11934,body-blow,body blow,MULTIWORD_HEADWORD,false
+11963,body-search,body search,MULTIWORD_HEADWORD,false
+12196,bone-dry,bone dry,MULTIWORD_HEADWORD,false
+12819,bow-tie,bow tie,MULTIWORD_HEADWORD,false
+12861,box-office,box office,MULTIWORD_HEADWORD,false
+12901,B.P.E.,B.P.E.,INTERNAL_PUNCTUATION,false
+12907,b.pt.,b.pt.,INTERNAL_PUNCTUATION,false
+12909,B/R,B/R,INTERNAL_PUNCTUATION,false
+13026,brain-teaser,brain teaser,MULTIWORD_HEADWORD,false
+13193,bread-and-butter,bread and butter,MULTIWORD_HEADWORD,false
+13244,breakfast-time,breakfast time,MULTIWORD_HEADWORD,false
+13280,breast-milk,breast milk,MULTIWORD_HEADWORD,false
+13467,brigadier-general,brigadier general,MULTIWORD_HEADWORD,false
+13599,britlit,Brit Lit,MULTIWORD_HEADWORD,false
+13650,broadly-based,broadly based,MULTIWORD_HEADWORD,false
+13716,brome,brome grass,MULTIWORD_HEADWORD,false
+13817,brown-bagging,brown bagging,MULTIWORD_HEADWORD,false
+13950,B/S,B/S,INTERNAL_PUNCTUATION,false
+13964,Bs/L,Bs/L,INTERNAL_PUNCTUATION,false
+13975,B.Th.,B.Th.,INTERNAL_PUNCTUATION,false
+14567,burn-out,burn out,MULTIWORD_HEADWORD,false
+14828,buttoned-up,buttoned up,MULTIWORD_HEADWORD,false
+14904,B/W,B/W,INTERNAL_PUNCTUATION,false
+14987,C/A,C/A,INTERNAL_PUNCTUATION,false
+15384,call-box,call box,MULTIWORD_HEADWORD,false
+15777,cannel,cannel coal,MULTIWORD_HEADWORD,false
+16053,capris,Capri pants,MULTIWORD_HEADWORD,false
+16731,cash-flow,cash flow,MULTIWORD_HEADWORD,false
+17075,cat-o'-mountain,cat-o'-mountain,OTHER,false
+17076,cat-o'-nine-tails,cat-o'-nine-tails,OTHER,false
+17282,c.c.c.,c.c.c.,INTERNAL_PUNCTUATION,false
+17293,c/d,c/d,INTERNAL_PUNCTUATION,false
+17300,C.diff,C.diff,INTERNAL_PUNCTUATION,false
+17301,C.difficile,C.difficile,INTERNAL_PUNCTUATION,false
+17584,centre-stage,centre stage,MULTIWORD_HEADWORD,false
+17805,c/f,c/f,INTERNAL_PUNCTUATION,false
+18640,chew-'n'-spew,chew-'n'-spew,OTHER,false
+19558,cif,c.i.f.,INTERNAL_PUNCTUATION,false
+19559,c.i.f.,c.i.f.,INTERNAL_PUNCTUATION,false
+19560,c.i.f.c.i.,c.i.f.c.i.,INTERNAL_PUNCTUATION,false
+20258,cleverdick,clever Dick,MULTIWORD_HEADWORD,false
+20669,C/N,C/N,INTERNAL_PUNCTUATION,false
+20682,c/o,c/o,INTERNAL_PUNCTUATION,false
+20684,C.O.,C.O.,INTERNAL_PUNCTUATION,false
+20745,coal-tar,coal tar,MULTIWORD_HEADWORD,false
+20775,coat-check,coat check,MULTIWORD_HEADWORD,false
+20957,C.O.D.,C.O.D.,INTERNAL_PUNCTUATION,false
+20974,code-name,code name,MULTIWORD_HEADWORD,false
+21144,cogway,cog railway,MULTIWORD_HEADWORD,false
+21916,common-room,common room,MULTIWORD_HEADWORD,false
+23647,cookie-cutter,cookie cutter,MULTIWORD_HEADWORD,false
+24064,corn-on-the-cob,corn on the cob,MULTIWORD_HEADWORD,false
+24665,country-and-western,country and western,MULTIWORD_HEADWORD,false
+24760,court-martial,court martial,MULTIWORD_HEADWORD,false
+24961,CP/M,CP/M,INTERNAL_PUNCTUATION,false
+24999,crack-cocaine,crack cocaine,MULTIWORD_HEADWORD,false
+25167,c-rations,C rations,MULTIWORD_HEADWORD,false
+25628,crop-dusting,crop dusting,MULTIWORD_HEADWORD,false
+26490,curtain-call,curtain call,MULTIWORD_HEADWORD,false
+26608,cut-glass,cut glass,MULTIWORD_HEADWORD,false
+26632,cut-out,cut out,MULTIWORD_HEADWORD,false
+26679,cwo,c.w.o.,INTERNAL_PUNCTUATION,false
+26680,c.w.o.,c.w.o.,INTERNAL_PUNCTUATION,false
+26914,d.a.,D/A,INTERNAL_PUNCTUATION,false
+26915,D/A,D/A,INTERNAL_PUNCTUATION,false
+27430,day-trip,day trip,MULTIWORD_HEADWORD,false
+27444,D.C.,D.C.,INTERNAL_PUNCTUATION,false
+27587,death-blow,death blow,MULTIWORD_HEADWORD,false
+27596,death-knell,death knell,MULTIWORD_HEADWORD,false
+27600,death-mask,death mask,MULTIWORD_HEADWORD,false
+27605,death-rattle,death rattle,MULTIWORD_HEADWORD,false
+27617,death-throes,death throes,MULTIWORD_HEADWORD,false
+27618,death-toll,death toll,MULTIWORD_HEADWORD,false
+27626,death-wish,death wish,MULTIWORD_HEADWORD,false
+29657,D/F,D/F,INTERNAL_PUNCTUATION,false
+30291,dining-table,dining table,MULTIWORD_HEADWORD,false
+30305,dinner-jacket,dinner jacket,MULTIWORD_HEADWORD,false
+31652,d.o.,D/O,INTERNAL_PUNCTUATION,false
+31654,D/O,D/O,INTERNAL_PUNCTUATION,false
+32217,double-act,double act,MULTIWORD_HEADWORD,false
+32226,double-bass,double bass,MULTIWORD_HEADWORD,false
+32229,double-bill,double bill,MULTIWORD_HEADWORD,false
+32264,double-dip,double dip,MULTIWORD_HEADWORD,false
+32528,D/P,D/P,INTERNAL_PUNCTUATION,false
+32577,drag-and-drop,drag and drop,MULTIWORD_HEADWORD,false
+32703,drawing-pin,drawing pin,MULTIWORD_HEADWORD,false
+32798,dressing-gown,dressing gown,MULTIWORD_HEADWORD,false
+32801,dressing-room,dressing room,MULTIWORD_HEADWORD,false
+32983,drop-out,drop out,MULTIWORD_HEADWORD,false
+33162,dual-carriageway,dual carriageway,MULTIWORD_HEADWORD,false
+33486,dust-jacket,dust jacket,MULTIWORD_HEADWORD,false
+33558,D/W,D/W,INTERNAL_PUNCTUATION,false
+33699,dáil,Dáil Éireann,MULTIWORD_HEADWORD,false
+33774,early-warning,early warning,MULTIWORD_HEADWORD,false
+34265,e.e.,e.e.,INTERNAL_PUNCTUATION,false
+34344,e.g.,e.g.,INTERNAL_PUNCTUATION,false
+34381,egg-timer,egg timer,MULTIWORD_HEADWORD,false
+34588,electric-blue,electric blue,MULTIWORD_HEADWORD,false
+35279,e.m.u.,e.m.u.,INTERNAL_PUNCTUATION,false
+36148,e.o.,e.o.,INTERNAL_PUNCTUATION,false
+36161,e.o.m.,e.o.m.,INTERNAL_PUNCTUATION,false
+36899,esu,e.s.u.,INTERNAL_PUNCTUATION,false
+36900,e.s.u.,e.s.u.,INTERNAL_PUNCTUATION,false
+38250,eye-candy,eye candy,MULTIWORD_HEADWORD,false
+38329,f.a.,f.a.,INTERNAL_PUNCTUATION,false
+38331,F.A.B.,F.A.B.,INTERNAL_PUNCTUATION,false
+38502,fag-end,fag end,MULTIWORD_HEADWORD,false
+38587,faith-healing,faith healing,MULTIWORD_HEADWORD,false
+38838,f.a.q.,f.a.q.,INTERNAL_PUNCTUATION,false
+38911,far-out,far out,MULTIWORD_HEADWORD,false
+38984,fast-forward,fast forward,MULTIWORD_HEADWORD,false
+38999,fast-track,fast track,MULTIWORD_HEADWORD,false
+39029,father-figure,father figure,MULTIWORD_HEADWORD,false
+39359,fellow-feeling,fellow feeling,MULTIWORD_HEADWORD,false
+39807,field-marshal,field marshal,MULTIWORD_HEADWORD,false
+40094,fin-de-siècle,fin de siècle,MULTIWORD_HEADWORD,false
+40249,fire-escape,fire escape,MULTIWORD_HEADWORD,false
+40251,fire-extinguisher,fire extinguisher,MULTIWORD_HEADWORD,false
+40344,first-ever,first ever,MULTIWORD_HEADWORD,false
+40440,fish-slice,fish slice,MULTIWORD_HEADWORD,false
+41449,f.o.b.,f.o.b.,INTERNAL_PUNCTUATION,false
+41643,food-mixer,food mixer,MULTIWORD_HEADWORD,false
+41757,f.o.r.,f.o.r.,INTERNAL_PUNCTUATION,false
+41992,forevermore,for evermore,MULTIWORD_HEADWORD,false
+42231,fossil-fuel,fossil fuel,MULTIWORD_HEADWORD,false
+42491,frankenfood,Frankenstein food,MULTIWORD_HEADWORD,false
+42560,free-and-easy,free and easy,MULTIWORD_HEADWORD,false
+42595,free-fall,free fall,MULTIWORD_HEADWORD,false
+42602,free-form,free form,MULTIWORD_HEADWORD,false
+42702,freezing-point,freezing point,MULTIWORD_HEADWORD,false
+42917,frock-coat,frock coat,MULTIWORD_HEADWORD,false
+42986,front-line,front line,MULTIWORD_HEADWORD,false
+43103,f.s.,f.s.,INTERNAL_PUNCTUATION,false
+43247,full-up,full up,MULTIWORD_HEADWORD,false
+43462,fusel,fusel oil,MULTIWORD_HEADWORD,false
+43528,f.w.d.,f.w.d.,INTERNAL_PUNCTUATION,false
+44164,gas-guzzler,gas guzzler,MULTIWORD_HEADWORD,false
+44378,G.B.,G.B.,INTERNAL_PUNCTUATION,false
+45234,give-away,give away,MULTIWORD_HEADWORD,false
+45908,goldbug,gold beetle,MULTIWORD_HEADWORD,false
+46179,gorblimey,cor blimey,MULTIWORD_HEADWORD,false
+47425,g.u.,g.u.,INTERNAL_PUNCTUATION,false
+47665,gumweed,gum plant,MULTIWORD_HEADWORD,false
+47681,gung-ho,gung ho,MULTIWORD_HEADWORD,false
+47913,h.a.,h.a.,INTERNAL_PUNCTUATION,false
+48296,half-measure,half measure,MULTIWORD_HEADWORD,false
+48639,hang-glider,hang glider,MULTIWORD_HEADWORD,false
+48794,hard-core,hard core,MULTIWORD_HEADWORD,false
+48803,hard-drive,hard drive,MULTIWORD_HEADWORD,false
+48840,hard-luck,hard luck,MULTIWORD_HEADWORD,false
+48875,hard-up,hard up,MULTIWORD_HEADWORD,false
+49076,hate-mail,hate mail,MULTIWORD_HEADWORD,false
+49094,hat-trick,hat trick,MULTIWORD_HEADWORD,false
+49175,hawksbill,hawksbill turtle,MULTIWORD_HEADWORD,false
+50060,Hercules'-club,Hercules'-club,OTHER,false
+50485,high-fidelity,high fidelity,MULTIWORD_HEADWORD,false
+50486,high-five,high five,MULTIWORD_HEADWORD,false
+50554,high-roller,high roller,MULTIWORD_HEADWORD,false
+50596,high-wire,high wire,MULTIWORD_HEADWORD,false
+50855,H.M.S.,H.M.S.,INTERNAL_PUNCTUATION,false
+50856,hms,H.M.S.,INTERNAL_PUNCTUATION,false
+50968,ho-hum,ho hum,MULTIWORD_HEADWORD,false
+51020,hold-up,hold up,MULTIWORD_HEADWORD,false
+51214,home-schooling,home schooling,MULTIWORD_HEADWORD,false
+51474,hook-up,hook up,MULTIWORD_HEADWORD,false
+51635,horse-chestnut,horse chestnut,MULTIWORD_HEADWORD,false
+51666,horse-riding,horse riding,MULTIWORD_HEADWORD,false
+51924,house-owner,house owner,MULTIWORD_HEADWORD,false
+52622,hyped-up,hyped up,MULTIWORD_HEADWORD,false
+52944,i/c,i/c,INTERNAL_PUNCTUATION,false
+52975,ice-cream,ice cream,MULTIWORD_HEADWORD,false
+53026,I.Chem.E.,I.Chem.E.,INTERNAL_PUNCTUATION,false
+53238,i.e.,i.e.,INTERNAL_PUNCTUATION,false
+53340,ill-at-ease,ill at ease,MULTIWORD_HEADWORD,false
+53350,ill-effects,ill effects,MULTIWORD_HEADWORD,false
+53434,ill-will,ill will,MULTIWORD_HEADWORD,false
+53539,immelmann,Immelmann turn,MULTIWORD_HEADWORD,false
+53611,immunocomplex,immune complex,MULTIWORD_HEADWORD,false
+55224,input/output,input/output,INTERNAL_PUNCTUATION,false
+56114,in-tray,in tray,MULTIWORD_HEADWORD,false
+56359,I/O,I/O,INTERNAL_PUNCTUATION,false
+56433,i.q.,i.q.,INTERNAL_PUNCTUATION,false
+56691,iso-8859-1,ISO Latin-1,MULTIWORD_HEADWORD,false
+56845,i.t.a.,i.t.a.,INTERNAL_PUNCTUATION,false
+57016,jack-o'-lantern,jack-o'-lantern,OTHER,false
+57406,jet-black,jet black,MULTIWORD_HEADWORD,false
+57427,jet-ski,Jet Ski,MULTIWORD_HEADWORD,false
+57649,johnny-cake,johnny cake,MULTIWORD_HEADWORD,false
+58158,kaffeeklatsch,coffee klatch,MULTIWORD_HEADWORD,false
+59051,km/h,km/h,INTERNAL_PUNCTUATION,false
+59169,knock-down,knock down,MULTIWORD_HEADWORD,false
+59187,knock-out,knock out,MULTIWORD_HEADWORD,false
+59246,kodiak,Kodiak bear,MULTIWORD_HEADWORD,false
+59702,ladies'-tresses,ladies'-tresses,OTHER,false
+60429,laughing-stock,laughing stock,MULTIWORD_HEADWORD,false
+60619,L/C,L/C,INTERNAL_PUNCTUATION,false
+60628,L/Cpl,L/Cpl,INTERNAL_PUNCTUATION,false
+60663,leading-edge,leading edge,MULTIWORD_HEADWORD,false
+61043,lemon-yellow,lemon yellow,MULTIWORD_HEADWORD,false
+61558,life-force,life force,MULTIWORD_HEADWORD,false
+61584,life-raft,life raft,MULTIWORD_HEADWORD,false
+61776,lime-green,lime green,MULTIWORD_HEADWORD,false
+62307,liverwurst,liver sausage,MULTIWORD_HEADWORD,false
+62332,living-room,living room,MULTIWORD_HEADWORD,false
+62715,long-drawn-out,long drawn out,MULTIWORD_HEADWORD,false
+62827,looking-glass,looking glass,MULTIWORD_HEADWORD,false
+62989,loss-leader,loss leader,MULTIWORD_HEADWORD,false
+63140,lower-class,lower class,MULTIWORD_HEADWORD,false
+63225,L/P,L/P,INTERNAL_PUNCTUATION,false
+63239,L.S.D.,L.S.D.,INTERNAL_PUNCTUATION,false
+63847,made-to-order,made to order,MULTIWORD_HEADWORD,false
+64067,mah-jongg,mah jong,MULTIWORD_HEADWORD,false
+64083,maidenhair,maidenhair fern,MULTIWORD_HEADWORD,false
+65139,martello,Martello tower,MULTIWORD_HEADWORD,false
+65669,M.B.A.,M.B.A.,INTERNAL_PUNCTUATION,false
+65697,M.C.S.,M.C.S.,INTERNAL_PUNCTUATION,false
+65698,M.D.,M.D.,INTERNAL_PUNCTUATION,false
+66644,metatag,meta tag,MULTIWORD_HEADWORD,false
+66832,M.F.A.,M.F.A.,INTERNAL_PUNCTUATION,false
+68183,m.o.,m.o.,INTERNAL_PUNCTUATION,false
+69474,mouth-to-mouth,mouth-to-mouth resuscitation,MULTIWORD_HEADWORD,false
+69554,MP/M,MP/M,INTERNAL_PUNCTUATION,false
+69578,M.S.,M.S.,INTERNAL_PUNCTUATION,false
+69583,M.Sc.,M.Sc.,INTERNAL_PUNCTUATION,false
+69910,mumbo-jumbo,mumbo jumbo,MULTIWORD_HEADWORD,false
+70698,NAS/UWT,NAS/UWT,INTERNAL_PUNCTUATION,false
+70971,near-miss,near miss,MULTIWORD_HEADWORD,false
+71077,needle-exchange,needle exchange,MULTIWORD_HEADWORD,false
+71308,neroli,neroli oil,MULTIWORD_HEADWORD,false
+71345,nest-egg,nest egg,MULTIWORD_HEADWORD,false
+71663,N/F,N/F,INTERNAL_PUNCTUATION,false
+71907,nine-eleven,9/11,INTERNAL_PUNCTUATION,false
+72053,n.o.,n.o.,INTERNAL_PUNCTUATION,false
+72818,N/S,N/S,INTERNAL_PUNCTUATION,false
+73233,ob/gyn,ob/gyn,INTERNAL_PUNCTUATION,false
+73417,o/c,o/c,INTERNAL_PUNCTUATION,false
+73526,octal,octal notation,MULTIWORD_HEADWORD,false
+73638,o.e.,o.e.,INTERNAL_PUNCTUATION,false
+73689,off-day,off day,MULTIWORD_HEADWORD,false
+73754,off-limits,off limits,MULTIWORD_HEADWORD,false
+73776,off-season,off season,MULTIWORD_HEADWORD,false
+73800,off-topic,off topic,MULTIWORD_HEADWORD,false
+73816,o.g.,o.g.,INTERNAL_PUNCTUATION,false
+74003,old-world,old world,MULTIWORD_HEADWORD,false
+74166,on-board,on board,MULTIWORD_HEADWORD,false
+74250,o.n.o.,o.n.o.,INTERNAL_PUNCTUATION,false
+74330,o.p.,o.p.,INTERNAL_PUNCTUATION,false
+74424,open-source,open source,MULTIWORD_HEADWORD,false
+74819,organ-grinder,organ grinder,MULTIWORD_HEADWORD,false
+75066,o.s.,o.s.,INTERNAL_PUNCTUATION,false
+75426,out-of-date,out of date,MULTIWORD_HEADWORD,false
+75429,out-of-doors,out of doors,MULTIWORD_HEADWORD,false
+75545,out-tray,out tray,MULTIWORD_HEADWORD,false
+75704,over-easy,over easy,MULTIWORD_HEADWORD,false
+76200,p.a.,p.a.,INTERNAL_PUNCTUATION,false
+76261,packet-switching,packet switching,MULTIWORD_HEADWORD,false
+77491,part-way,part way,MULTIWORD_HEADWORD,false
+77838,pattypan,pattypan squash,MULTIWORD_HEADWORD,false
+77951,pay-off,pay off,MULTIWORD_HEADWORD,false
+77972,pay-television,pay television,MULTIWORD_HEADWORD,false
+77982,P/C,P/C,INTERNAL_PUNCTUATION,false
+78495,pen-pal,pen pal,MULTIWORD_HEADWORD,false
+78635,pep-talk,pep talk,MULTIWORD_HEADWORD,false
+79019,perpetual-motion,perpetual motion,MULTIWORD_HEADWORD,false
+79037,perrier,Perrier water,MULTIWORD_HEADWORD,false
+79499,Ph.D.,Ph.D.,INTERNAL_PUNCTUATION,false
+79878,photo-shoot,photo shoot,MULTIWORD_HEADWORD,false
+80253,piezoelectricity,piezoelectric effect,MULTIWORD_HEADWORD,false
+80255,piezomagnetism,piezomagnetic effect,MULTIWORD_HEADWORD,false
+80373,pilgrims,Pilgrim Fathers,MULTIWORD_HEADWORD,false
+80664,piping-hot,piping hot,MULTIWORD_HEADWORD,false
+80880,PL/1,PL/1,INTERNAL_PUNCTUATION,false
+81146,plate-glass,plate glass,MULTIWORD_HEADWORD,false
+81479,plug'n'play,plug and play,MULTIWORD_HEADWORD,false
+81593,p.m.,p.m.,INTERNAL_PUNCTUATION,false
+81875,pole-dancing,pole dancing,MULTIWORD_HEADWORD,false
+82018,polo-neck,polo neck,MULTIWORD_HEADWORD,false
+82438,pork-barrel,pork barrel,MULTIWORD_HEADWORD,false
+82902,potty-trained,potty trained,MULTIWORD_HEADWORD,false
+82904,potty-training,potty training,MULTIWORD_HEADWORD,false
+82970,powder-blue,powder blue,MULTIWORD_HEADWORD,false
+83030,power-walking,power walking,MULTIWORD_HEADWORD,false
+84034,print-out,print out,MULTIWORD_HEADWORD,false
+86139,q.e.,q.e.,INTERNAL_PUNCTUATION,false
+86153,q.l.,q.l.,INTERNAL_PUNCTUATION,false
+86154,q.m.,q.m.,INTERNAL_PUNCTUATION,false
+86177,q.t.,q.t.,INTERNAL_PUNCTUATION,false
+87203,r.a.m.,r.a.m.,INTERNAL_PUNCTUATION,false
+87388,rappe,rappé pie,MULTIWORD_HEADWORD,false
+87666,R&B,R&B;,OTHER,false
+91150,R.I.P.,R.I.P.,INTERNAL_PUNCTUATION,false
+91284,r.m.m.,r.m.m.,INTERNAL_PUNCTUATION,false
+91340,road-test,road test,MULTIWORD_HEADWORD,false
+91425,rock-bottom,rock bottom,MULTIWORD_HEADWORD,false
+91485,rock-steady,rock steady,MULTIWORD_HEADWORD,false
+91605,roll-on/roll-off,roll-on/roll-off,INTERNAL_PUNCTUATION,false
+91713,roof-rack,roof rack,MULTIWORD_HEADWORD,false
+92209,rubber-stamp,rubber stamp,MULTIWORD_HEADWORD,false
+92631,s.a.,s.a.,INTERNAL_PUNCTUATION,false
+92795,s.a.e.,s.a.e.,INTERNAL_PUNCTUATION,false
+92806,safe-conduct,safe conduct,MULTIWORD_HEADWORD,false
+92814,safe-house,safe house,MULTIWORD_HEADWORD,false
+92826,safety-belt,safety belt,MULTIWORD_HEADWORD,false
+92896,sailing-boat,sailing boat,MULTIWORD_HEADWORD,false
+93203,sammarinese,San Marinese,MULTIWORD_HEADWORD,false
+93394,sanserif,sans serif,MULTIWORD_HEADWORD,false
+94942,sea-level,sea level,MULTIWORD_HEADWORD,false
+94948,sea-lion,sea lion,MULTIWORD_HEADWORD,false
+94964,seamer,seam bowler,MULTIWORD_HEADWORD,false
+94994,search-and-rescue,search and rescue,MULTIWORD_HEADWORD,false
+95116,second-best,second best,MULTIWORD_HEADWORD,false
+95138,second-hand,second hand,MULTIWORD_HEADWORD,false
+95166,second-string,second string,MULTIWORD_HEADWORD,false
+95304,seedcase,seed capsule,MULTIWORD_HEADWORD,false
+96098,sergeant-major,sergeant major,MULTIWORD_HEADWORD,false
+96322,set-up,set up,MULTIWORD_HEADWORD,false
+96758,s/he,s/he,INTERNAL_PUNCTUATION,false
+96880,shell-shock,shell shock,MULTIWORD_HEADWORD,false
+97369,short-wave,short wave,MULTIWORD_HEADWORD,false
+97437,show-and-tell,show and tell,MULTIWORD_HEADWORD,false
+97611,shut-out,shut out,MULTIWORD_HEADWORD,false
+98197,sing-along,sing along,MULTIWORD_HEADWORD,false
+98409,sitting-room,sitting room,MULTIWORD_HEADWORD,false
+98466,sixth-form,sixth form,MULTIWORD_HEADWORD,false
+98611,ski-lift,ski lift,MULTIWORD_HEADWORD,false
+98645,skin-deep,skin deep,MULTIWORD_HEADWORD,false
+98799,S/L,S/L,INTERNAL_PUNCTUATION,false
+98834,slam-dunk,slam dunk,MULTIWORD_HEADWORD,false
+98858,slap-bang,slap bang,MULTIWORD_HEADWORD,false
+98875,slash-and-burn,slash and burn,MULTIWORD_HEADWORD,false
+98988,sleep-over,sleep over,MULTIWORD_HEADWORD,false
+99233,slow-motion,slow motion,MULTIWORD_HEADWORD,false
+99375,smart-ass,smart ass,MULTIWORD_HEADWORD,false
+99908,S.O.,S.O.,INTERNAL_PUNCTUATION,false
+99943,s.o.b.,s.o.b.,INTERNAL_PUNCTUATION,false
+100096,soda-water,soda water,MULTIWORD_HEADWORD,false
+100137,sofa-bed,sofa bed,MULTIWORD_HEADWORD,false
+100198,soft-sell,soft sell,MULTIWORD_HEADWORD,false
+100336,solicitor-general,Solicitor General,MULTIWORD_HEADWORD,false
+100535,son-of-a-bitch,son of a bitch,MULTIWORD_HEADWORD,false
+100739,soup-kitchen,soup kitchen,MULTIWORD_HEADWORD,false
+100880,space-age,space age,MULTIWORD_HEADWORD,false
+101412,S.P.F.,S.P.F.,INTERNAL_PUNCTUATION,false
+101581,spinning-wheel,spinning wheel,MULTIWORD_HEADWORD,false
+101673,spittlebug,spittle insect,MULTIWORD_HEADWORD,false
+101755,split-second,split second,MULTIWORD_HEADWORD,false
+101924,spot-check,spot check,MULTIWORD_HEADWORD,false
+101977,spray-can,spray can,MULTIWORD_HEADWORD,false
+101981,spray-gun,spray gun,MULTIWORD_HEADWORD,false
+101984,spray-paint,spray paint,MULTIWORD_HEADWORD,false
+102248,squeaky-clean,squeaky clean,MULTIWORD_HEADWORD,false
+102437,stage-whisper,stage whisper,MULTIWORD_HEADWORD,false
+102449,staghorn,stag's horn,MULTIWORD_HEADWORD,false
+102469,stained-glass,stained glass,MULTIWORD_HEADWORD,false
+102592,stand-by,stand by,MULTIWORD_HEADWORD,false
+102744,starting-point,starting point,MULTIWORD_HEADWORD,false
+102927,staying-power,staying power,MULTIWORD_HEADWORD,false
+103523,stocking-filler,stocking filler,MULTIWORD_HEADWORD,false
+103641,stone-dead,stone dead,MULTIWORD_HEADWORD,false
+103643,stone-deaf,stone deaf,MULTIWORD_HEADWORD,false
+104030,stream-of-consciousness,stream of consciousness,MULTIWORD_HEADWORD,false
+104041,street-cred,street cred,MULTIWORD_HEADWORD,false
+104059,street-smart,street smart,MULTIWORD_HEADWORD,false
+104207,strip-mining,strip mining,MULTIWORD_HEADWORD,false
+104665,sub-judice,sub judice,MULTIWORD_HEADWORD,false
+105075,sugar-daddy,sugar daddy,MULTIWORD_HEADWORD,false
+105084,sugar-lump,sugar lump,MULTIWORD_HEADWORD,false
+106008,swan-song,swan song,MULTIWORD_HEADWORD,false
+106115,sweet-and-sour,sweet and sour,MULTIWORD_HEADWORD,false
+106170,sweet-talk,sweet talk,MULTIWORD_HEADWORD,false
+106296,swiss-roll,swiss roll,MULTIWORD_HEADWORD,false
+106769,table-tennis,table tennis,MULTIWORD_HEADWORD,false
+106892,tag-line,tag line,MULTIWORD_HEADWORD,false
+106924,tail-end,tail end,MULTIWORD_HEADWORD,false
+106992,take-off,take off,MULTIWORD_HEADWORD,false
+107064,talk-show,talk show,MULTIWORD_HEADWORD,false
+107137,tam-o'-shanter,tam-o'-shanter,OTHER,false
+107263,tape-deck,tape deck,MULTIWORD_HEADWORD,false
+107274,tape-recorder,tape recorder,MULTIWORD_HEADWORD,false
+107620,TCP/IP,TCP/IP,INTERNAL_PUNCTUATION,false
+107622,t.d.c.,t.d.c.,INTERNAL_PUNCTUATION,false
+107653,tea-cosy,tea cosy,MULTIWORD_HEADWORD,false
+107666,tea-leaf,tea leaf,MULTIWORD_HEADWORD,false
+107684,tea-party,tea party,MULTIWORD_HEADWORD,false
+107791,teddy-bear,teddy bear,MULTIWORD_HEADWORD,false
+108426,test-drive,test drive,MULTIWORD_HEADWORD,false
+108458,test-tube,test tube,MULTIWORD_HEADWORD,false
+109352,thumbs-down,thumbs down,MULTIWORD_HEADWORD,false
+109492,t.i.d.,t.i.d.,INTERNAL_PUNCTUATION,false
+109667,time-bomb,time bomb,MULTIWORD_HEADWORD,false
+109688,time-lag,time lag,MULTIWORD_HEADWORD,false
+109699,time-out,time out,MULTIWORD_HEADWORD,false
+109731,time-waster,time waster,MULTIWORD_HEADWORD,false
+109743,timothy,timothy grass,MULTIWORD_HEADWORD,false
+111381,trash-talk,trash talk,MULTIWORD_HEADWORD,false
+112162,trouble-spot,trouble spot,MULTIWORD_HEADWORD,false
+112193,troy,troy weight,MULTIWORD_HEADWORD,false
+112440,tuckered,tuckered out,MULTIWORD_HEADWORD,false
+113175,u.c.,u.c.,INTERNAL_PUNCTUATION,false
+113217,uh-huh,uh huh,MULTIWORD_HEADWORD,false
+113227,U.K.,U.K.,INTERNAL_PUNCTUATION,false
+113369,U.N.,U.N.,INTERNAL_PUNCTUATION,false
+114980,up-front,up front,MULTIWORD_HEADWORD,false
+115034,upper-class,upper class,MULTIWORD_HEADWORD,false
+115041,upper-crust,upper crust,MULTIWORD_HEADWORD,false
+115089,upside-down,upside down,MULTIWORD_HEADWORD,false
+115280,U/S,U/S,INTERNAL_PUNCTUATION,false
+115282,U.S.,U.S.,INTERNAL_PUNCTUATION,false
+115283,u.s.,u.s.,INTERNAL_PUNCTUATION,false
+115284,U.S.A.,U.S.A.,INTERNAL_PUNCTUATION,false
+115430,v.a.,v.a.,INTERNAL_PUNCTUATION,false
+116085,venturer,Venture Scout,MULTIWORD_HEADWORD,false
+116868,vitals,vital signs,MULTIWORD_HEADWORD,false
+117234,v.s.,v.s.,INTERNAL_PUNCTUATION,false
+118380,w.e.f.,w.e.f.,INTERNAL_PUNCTUATION,false
+118444,well-advised,well advised,MULTIWORD_HEADWORD,false
+118734,wet-nurse,wet nurse,MULTIWORD_HEADWORD,false
+119473,will-o'-the-wisp,will-o'-the-wisp,OTHER,false
+119576,window-dressing,window dressing,MULTIWORD_HEADWORD,false
+119586,window-shopping,window shopping,MULTIWORD_HEADWORD,false
+119839,witch-doctor,witch doctor,MULTIWORD_HEADWORD,false
+119844,witches'-broom,witches'-broom,OTHER,false
+119884,with-it,with it,MULTIWORD_HEADWORD,false
+119931,w/o,w/o,INTERNAL_PUNCTUATION,false
+120201,word-processing,word processing,MULTIWORD_HEADWORD,false
+120333,world-view,world view,MULTIWORD_HEADWORD,false
+120361,worn-out,worn out,MULTIWORD_HEADWORD,false
+120580,wrought-iron,wrought iron,MULTIWORD_HEADWORD,false

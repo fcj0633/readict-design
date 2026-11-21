@@ -1,0 +1,323 @@
+{
+  "summary": {
+    "referenceRecords": 711,
+    "previousTextOnlyReferenceRecords": 709,
+    "newSpellingAliases": 2,
+    "recordsWithPhraseTarget": 68,
+    "recordsWithMissingExactTarget": 1,
+    "recordsWithConfirmedTargetMissingFromIndexHeadsAndSubentries": 1,
+    "cycles": 11,
+    "hopLimit": 0,
+    "cycleRootKeys": [
+      "anesthetic",
+      "appall",
+      "disorient",
+      "diss",
+      "fulfill",
+      "skeptic",
+      "tidbit"
+    ],
+    "correctedOwnDiagnosticFalsePositive": "ib. targets raw href entry://ibid.; punctuation stripping in text-only experiment created a false dangling target. Production code unchanged."
+  },
+  "problemRecords": [
+    {
+      "sourceOrdinal": 3919,
+      "indexKey": "anesthetic",
+      "refs": [
+        {
+          "target": "anesthetic",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://anesthetic",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "anesthetic",
+            "anesthetic"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 4914,
+      "indexKey": "appall",
+      "refs": [
+        {
+          "target": "appall",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://appall",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "appall",
+            "appall"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 31076,
+      "indexKey": "disorient",
+      "refs": [
+        {
+          "target": "disorient",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://disorient",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "disorient",
+            "disorient"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 31081,
+      "indexKey": "disoriented",
+      "refs": [
+        {
+          "target": "disorient",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://disorient",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "disoriented",
+            "disorient",
+            "disorient"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 31082,
+      "indexKey": "disorienting",
+      "refs": [
+        {
+          "target": "disorient",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://disorient",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "disorienting",
+            "disorient",
+            "disorient"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 31083,
+      "indexKey": "disorients",
+      "refs": [
+        {
+          "target": "disorient",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://disorient",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "disorients",
+            "disorient",
+            "disorient"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 31243,
+      "indexKey": "diss",
+      "refs": [
+        {
+          "target": "diss",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://diss",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "diss",
+            "diss"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 43183,
+      "indexKey": "fulfill",
+      "refs": [
+        {
+          "target": "fulfill",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://fulfill",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "fulfill",
+            "fulfill"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 98556,
+      "indexKey": "skeptic",
+      "refs": [
+        {
+          "target": "skeptic",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://skeptic",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "skeptic",
+            "skeptic"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 98618,
+      "indexKey": "skillful",
+      "refs": [
+        {
+          "target": "skilful",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://skilful",
+          "targetExactExists": false,
+          "targetHeadExists": false,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "DANGLING",
+          "path": [
+            "skillful",
+            "skilful"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 109500,
+      "indexKey": "tidbit",
+      "refs": [
+        {
+          "target": "tidbit",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://tidbit",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "tidbit",
+            "tidbit"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceOrdinal": 109501,
+      "indexKey": "tidbits",
+      "refs": [
+        {
+          "target": "tidbit",
+          "method": "EXPLICIT_ENTRY_HREF",
+          "rawHref": "entry://tidbit",
+          "targetExactExists": true,
+          "targetHeadExists": true,
+          "targetSubentryExists": false,
+          "phrase": false
+        }
+      ],
+      "paths": [
+        {
+          "outcome": "CYCLE",
+          "path": [
+            "tidbits",
+            "tidbit",
+            "tidbit"
+          ]
+        }
+      ]
+    }
+  ],
+  "verifiedOwnExperimentFalsePositive": {
+    "sourceKey": "ib.",
+    "literalTarget": "ibid.",
+    "rawHref": "entry://ibid.",
+    "actualTargetSourceOrdinal": 52932,
+    "conclusion": "text-only trimming created false dangling target; raw href resolves"
+  }
+}

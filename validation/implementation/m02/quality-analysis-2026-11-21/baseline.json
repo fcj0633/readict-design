@@ -1,0 +1,17 @@
+{
+  "appCommit": "b6994efd5d25ce1338838894aed9496f0203abc0",
+  "referenceCommit": "d9c53dc1515f99ae5a2d6b1d89212c9b680e0c59",
+  "files": {
+    "tools/dictionary-import/src/extract.mjs": "cd43aa93ab67ceeeda8ae5b07794356f6e142730f97b9d8340b3c71e8e81e287",
+    "tools/dictionary-import/src/parser-adapter.mjs": "46d98c11db2644b331f324cb9ef32dc1ee4b2f6d48f67ff868d52f3fc62b2abc",
+    "tools/dictionary-import/src/normalize.mjs": "92ab13742be8da4a08ec576a3a764dd22bef895ca7508e90c811eb422459147e",
+    "tools/dictionary-import/package-lock.json": "69e1a74be3f15781059ff7dd17defc82ca5a6da68795db791b8b081db2fa041d",
+    ".artifacts/m02-extraction-r2-a/dispositions.jsonl": "129143554f77a0e181ef7161b36867dbd14208ec4682f23d50f032148ccfed98",
+    ".artifacts/m02-extraction-r2-a/issues.jsonl": "10b85d18cdb0c3c0fbbe25a80bb20f551e2132e824ac3f33a399b232f354b31e",
+    ".artifacts/m02-extraction-r2-a/quality-report.json": "1e12f355bb5766af0a98461d20ebeaf500ae0ffddaed0945c01cfdce5868f01e"
+  },
+  "source": {
+    "col.mdx": "60045536048014fa8f137ef2d1f1e85f31f0329715bb5749a4b1fb1b5f49f611",
+    "col.mdd": "3fc9d9e79e09dc1766880c7755291893d9b1b3e723e1a61a34fef5829ffeaaa3"
+  }
+}

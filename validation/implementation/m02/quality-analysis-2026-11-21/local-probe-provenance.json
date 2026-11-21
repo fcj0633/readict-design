@@ -1,0 +1,29 @@
+{
+  "localDirectory": ".artifacts/m02-quality-audit-20261121",
+  "scriptsNotDistributed": true,
+  "scriptSha256": {
+    "audit-expanded.mjs": "452ac4eefa250e552e25996fc8a275d5d02a89bd2069822139b10272f6128976",
+    "audit.mjs": "46e1a11b5e88f8ae0562489ff3c73c6b41ad3aef723546d421911d293fc04675",
+    "check-labels.mjs": "f9bbdc03f6614bd5ec332ed033e915e3f8d91ff9d6c5d51b77b834de950a7b5d",
+    "compare.py": "df7beef7ba988be2511ad6fc3411960052948a2d42e9af69267126a3db62dd2d",
+    "evaluate.mjs": "000fd27ef841b2a663d67d4a3e97cec68ac620f91990ec75aff7f125477bbf4c",
+    "experiment.mjs": "d5abb1e1cd868c4371132897d8d3ac0c2a9a7794ebeb775ed41bd2eb3eb4fbea",
+    "experiment.test.mjs": "e90bbee860df1d687b8ae2dcfa7148b1faa4e577d9cb6062782b8840630e9f91",
+    "export.mjs": "88ced9361392f2de00ca20babd9979aa0c9cd07a8ebffef5af7bb773479ada2e",
+    "finalize-data.py": "65a395527f7305362ea725a1f3065c71eef14b79826291aa9cc80706095103aa",
+    "fixed-gold.mjs": "5bb02e9c690cf7f2eeffa245767cd3324b0d65cc1362773646c69c2d6781461d",
+    "metadata-audit.mjs": "027a97a857edf2df5266e0b7d409d0ae51fa4041fd38edfbbd5baf7ab0f516cf",
+    "reference-evidence.mjs": "dca8980d07fa1af714eed246aa1e6ab9bc5383a87108a7c1ee704cfc5737d71f",
+    "reference-evidence.test.mjs": "4c18e2ba19b207f6088bf285635e017545796e40d0de59f614a4c5cc393dfa71",
+    "reference-verify.mjs": "bbe11f1e3297c01508f904a3397aa3ef7094ec8d67a88e96b8ba66a7f2d73a99"
+  },
+  "pythonVersion": "3.10.8",
+  "nodeVersion": "24.14.0",
+  "productionBehaviorChanged": false,
+  "databaseUsed": false,
+  "humanReviewApprovalProvided": false,
+  "testLogSha256": {
+    "baseline-tests.log": "7b43fd1f8b2393473f87ddf58e3544928439ff42d43822a391b3128c59ea67cb",
+    "all-experiment-tests.log": "e8ffd3609d9470d3b45d784b6b5d4db09b4a86255dc0d182a3dd8c2e1022c9c1"
+  }
+}

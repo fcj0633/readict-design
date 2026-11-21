@@ -1,0 +1,11 @@
+sourceOrdinal,indexKey,riskSelection,agentFinding,reviewer,populationPrecisionEstimate
+2213,ain't,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+38364,-faced,more than8 Latin tokens in baseline zh,REFERENCE_TEXT_MIXED_IN_ZH,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+45776,goatsucker,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+74393,open-line,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+97840,sighted,more than8 Latin tokens in baseline zh,REFERENCE_TEXT_MIXED_IN_ZH,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+118135,way,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+118152,ways,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+118349,week,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+118360,weeks,more than8 Latin tokens in baseline zh,LEGITIMATE_EMBEDDED_LATIN_OR_USAGE,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT
+120395,-worthy,more than8 Latin tokens in baseline zh,REFERENCE_TEXT_MIXED_IN_ZH,Codex execution agent,NOT_APPLICABLE_BIASED_COHORT

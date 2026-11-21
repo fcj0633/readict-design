@@ -1,0 +1,4919 @@
+[
+  {
+    "surface": "absolutist",
+    "sourcePositions": 1,
+    "hosts": [
+      "absolutism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "abstractedly",
+    "sourcePositions": 1,
+    "hosts": [
+      "abstracted"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "accreditation",
+    "sourcePositions": 4,
+    "hosts": [
+      "accredit"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "accusingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "accusing"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "adjudication",
+    "sourcePositions": 4,
+    "hosts": [
+      "adjudicate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "admonishment",
+    "sourcePositions": 4,
+    "hosts": [
+      "admonish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "adoringly",
+    "sourcePositions": 1,
+    "hosts": [
+      "adoring"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "airsickness",
+    "sourcePositions": 2,
+    "hosts": [
+      "airsick"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "airworthiness",
+    "sourcePositions": 1,
+    "hosts": [
+      "airworthy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "alkalinity",
+    "sourcePositions": 1,
+    "hosts": [
+      "alkaline"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "anglicized",
+    "sourcePositions": 4,
+    "hosts": [
+      "anglicize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "asexually",
+    "sourcePositions": 1,
+    "hosts": [
+      "asexual"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "asphyxiation",
+    "sourcePositions": 4,
+    "hosts": [
+      "asphyxiate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "back-pedaling",
+    "sourcePositions": 3,
+    "hosts": [
+      "back-pedal"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "backtracking",
+    "sourcePositions": 5,
+    "hosts": [
+      "backtrack"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bacteriological",
+    "sourcePositions": 1,
+    "hosts": [
+      "bacteriology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "balefully",
+    "sourcePositions": 1,
+    "hosts": [
+      "baleful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bashfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "bashful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "beatification",
+    "sourcePositions": 4,
+    "hosts": [
+      "beatify"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "becomingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "becoming"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "befuddled",
+    "sourcePositions": 4,
+    "hosts": [
+      "befuddle"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "beguilingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "beguiling"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "behaviourist",
+    "sourcePositions": 1,
+    "hosts": [
+      "behaviourism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "beseechingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "beseeching"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bifurcation",
+    "sourcePositions": 4,
+    "hosts": [
+      "bifurcate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bioterrorist",
+    "sourcePositions": 2,
+    "hosts": [
+      "bioterrorism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bitchiness",
+    "sourcePositions": 1,
+    "hosts": [
+      "bitchy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "blasphemer",
+    "sourcePositions": 4,
+    "hosts": [
+      "blaspheme"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "blogger",
+    "sourcePositions": 1,
+    "hosts": [
+      "blog"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bloodlessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "bloodless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "bootlegger",
+    "sourcePositions": 2,
+    "hosts": [
+      "bootleg"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "breast-feeding",
+    "sourcePositions": 3,
+    "hosts": [
+      "breast-feed"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "browbeaten",
+    "sourcePositions": 3,
+    "hosts": [
+      "browbeat"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cacophonous",
+    "sourcePositions": 2,
+    "hosts": [
+      "cacophony"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "carping",
+    "sourcePositions": 4,
+    "hosts": [
+      "carp"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "caterwauling",
+    "sourcePositions": 4,
+    "hosts": [
+      "caterwaul"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "caulking",
+    "sourcePositions": 4,
+    "hosts": [
+      "caulk"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ceaselessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "ceaseless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "charring",
+    "sourcePositions": 3,
+    "hosts": [
+      "char"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "chastened",
+    "sourcePositions": 3,
+    "hosts": [
+      "chasten"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "chirping",
+    "sourcePositions": 4,
+    "hosts": [
+      "chirp"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "circumspectly",
+    "sourcePositions": 1,
+    "hosts": [
+      "circumspect"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "coagulation",
+    "sourcePositions": 4,
+    "hosts": [
+      "coagulate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "codependency",
+    "sourcePositions": 2,
+    "hosts": [
+      "codependent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "codification",
+    "sourcePositions": 4,
+    "hosts": [
+      "codify"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cogency",
+    "sourcePositions": 1,
+    "hosts": [
+      "cogent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cogitation",
+    "sourcePositions": 4,
+    "hosts": [
+      "cogitate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cohabitation",
+    "sourcePositions": 4,
+    "hosts": [
+      "cohabit"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "collectivization",
+    "sourcePositions": 4,
+    "hosts": [
+      "collectivize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "colour-blindness",
+    "sourcePositions": 1,
+    "hosts": [
+      "colour-blind"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "companionably",
+    "sourcePositions": 1,
+    "hosts": [
+      "companionable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "compartmentalized",
+    "sourcePositions": 4,
+    "hosts": [
+      "compartmentalize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "conceptually",
+    "sourcePositions": 1,
+    "hosts": [
+      "conceptual"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "conductivity",
+    "sourcePositions": 1,
+    "hosts": [
+      "conductive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "congenitally",
+    "sourcePositions": 2,
+    "hosts": [
+      "congenital"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "copulation",
+    "sourcePositions": 4,
+    "hosts": [
+      "copulate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cosmologist",
+    "sourcePositions": 2,
+    "hosts": [
+      "cosmology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "crash-landing",
+    "sourcePositions": 4,
+    "hosts": [
+      "crash-land"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "criminologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "criminology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cross-dresser",
+    "sourcePositions": 4,
+    "hosts": [
+      "cross-dress"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "culpability",
+    "sourcePositions": 1,
+    "hosts": [
+      "culpable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "cybersquatter",
+    "sourcePositions": 1,
+    "hosts": [
+      "cybersquatting"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "damnably",
+    "sourcePositions": 1,
+    "hosts": [
+      "damnable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "dealmaking",
+    "sourcePositions": 1,
+    "hosts": [
+      "dealmaker"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "debased",
+    "sourcePositions": 4,
+    "hosts": [
+      "debase"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "debilitating",
+    "sourcePositions": 8,
+    "hosts": [
+      "debilitate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "deceleration",
+    "sourcePositions": 8,
+    "hosts": [
+      "decelerate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "deconstruction",
+    "sourcePositions": 3,
+    "hosts": [
+      "deconstruct"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "decontamination",
+    "sourcePositions": 4,
+    "hosts": [
+      "decontaminate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "decorously",
+    "sourcePositions": 1,
+    "hosts": [
+      "decorous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "decriminalization",
+    "sourcePositions": 4,
+    "hosts": [
+      "decriminalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "defecation",
+    "sourcePositions": 4,
+    "hosts": [
+      "defecate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "deferentially",
+    "sourcePositions": 1,
+    "hosts": [
+      "deferential"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "defoliation",
+    "sourcePositions": 4,
+    "hosts": [
+      "defoliate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "dejectedly",
+    "sourcePositions": 1,
+    "hosts": [
+      "dejected"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "democratization",
+    "sourcePositions": 4,
+    "hosts": [
+      "democratize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "demographer",
+    "sourcePositions": 1,
+    "hosts": [
+      "demography"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "demonstrably",
+    "sourcePositions": 1,
+    "hosts": [
+      "demonstrable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "demonstratively",
+    "sourcePositions": 2,
+    "hosts": [
+      "demonstrative"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "demurely",
+    "sourcePositions": 2,
+    "hosts": [
+      "demure"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "denationalization",
+    "sourcePositions": 4,
+    "hosts": [
+      "denationalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "denigration",
+    "sourcePositions": 4,
+    "hosts": [
+      "denigrate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "depopulated",
+    "sourcePositions": 4,
+    "hosts": [
+      "depopulate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "deprecatingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "deprecating"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "dermatology",
+    "sourcePositions": 2,
+    "hosts": [
+      "dermatologist"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "desegregation",
+    "sourcePositions": 4,
+    "hosts": [
+      "desegregate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "devilishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "devilish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "diabolically",
+    "sourcePositions": 1,
+    "hosts": [
+      "diabolical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "digression",
+    "sourcePositions": 4,
+    "hosts": [
+      "digress"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disagreeably",
+    "sourcePositions": 2,
+    "hosts": [
+      "disagreeable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "discoloured",
+    "sourcePositions": 4,
+    "hosts": [
+      "discolour"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "discomfited",
+    "sourcePositions": 4,
+    "hosts": [
+      "discomfit"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disconcerted",
+    "sourcePositions": 3,
+    "hosts": [
+      "disconcert"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disconsolately",
+    "sourcePositions": 1,
+    "hosts": [
+      "disconsolate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disdainfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "disdainful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disembarkation",
+    "sourcePositions": 4,
+    "hosts": [
+      "disembark"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disestablishment",
+    "sourcePositions": 4,
+    "hosts": [
+      "disestablish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "dishonourably",
+    "sourcePositions": 1,
+    "hosts": [
+      "dishonourable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disingenuously",
+    "sourcePositions": 1,
+    "hosts": [
+      "disingenuous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "dispassionately",
+    "sourcePositions": 1,
+    "hosts": [
+      "dispassionate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "disrespectfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "disrespectful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "distended",
+    "sourcePositions": 4,
+    "hosts": [
+      "distend"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "docility",
+    "sourcePositions": 1,
+    "hosts": [
+      "docile"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "dolefully",
+    "sourcePositions": 1,
+    "hosts": [
+      "doleful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "double-spaced",
+    "sourcePositions": 4,
+    "hosts": [
+      "double-space"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "effervescence",
+    "sourcePositions": 1,
+    "hosts": [
+      "effervescent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "effusively",
+    "sourcePositions": 1,
+    "hosts": [
+      "effusive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ejaculation",
+    "sourcePositions": 4,
+    "hosts": [
+      "ejaculate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "elliptically",
+    "sourcePositions": 1,
+    "hosts": [
+      "elliptical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "elucidation",
+    "sourcePositions": 4,
+    "hosts": [
+      "elucidate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "emasculation",
+    "sourcePositions": 4,
+    "hosts": [
+      "emasculate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "embryologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "embryology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "empiricist",
+    "sourcePositions": 1,
+    "hosts": [
+      "empiricism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "encryption",
+    "sourcePositions": 4,
+    "hosts": [
+      "encrypt"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "encumbered",
+    "sourcePositions": 4,
+    "hosts": [
+      "encumber"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "energizing",
+    "sourcePositions": 4,
+    "hosts": [
+      "energize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ennobling",
+    "sourcePositions": 4,
+    "hosts": [
+      "ennoble"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "entomologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "entomology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "entwined",
+    "sourcePositions": 4,
+    "hosts": [
+      "entwine"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "enunciation",
+    "sourcePositions": 4,
+    "hosts": [
+      "enunciate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "equably",
+    "sourcePositions": 1,
+    "hosts": [
+      "equable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "equivocation",
+    "sourcePositions": 4,
+    "hosts": [
+      "equivocate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "evangelistic",
+    "sourcePositions": 2,
+    "hosts": [
+      "evangelist"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "excommunication",
+    "sourcePositions": 4,
+    "hosts": [
+      "excommunicate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exfoliating",
+    "sourcePositions": 4,
+    "hosts": [
+      "exfoliate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exhortation",
+    "sourcePositions": 4,
+    "hosts": [
+      "exhort"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exhumation",
+    "sourcePositions": 4,
+    "hosts": [
+      "exhume"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exoneration",
+    "sourcePositions": 4,
+    "hosts": [
+      "exonerate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "expeditiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "expeditious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "expiation",
+    "sourcePositions": 4,
+    "hosts": [
+      "expiate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "explication",
+    "sourcePositions": 4,
+    "hosts": [
+      "explicate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exponentially",
+    "sourcePositions": 1,
+    "hosts": [
+      "exponential"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "expropriation",
+    "sourcePositions": 4,
+    "hosts": [
+      "expropriate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "expurgated",
+    "sourcePositions": 4,
+    "hosts": [
+      "expurgate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exultantly",
+    "sourcePositions": 1,
+    "hosts": [
+      "exultant"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "exultation",
+    "sourcePositions": 4,
+    "hosts": [
+      "exult"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "fallibility",
+    "sourcePositions": 1,
+    "hosts": [
+      "fallible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "fiendishly",
+    "sourcePositions": 2,
+    "hosts": [
+      "fiendish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "firebombing",
+    "sourcePositions": 4,
+    "hosts": [
+      "firebomb"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "flummoxed",
+    "sourcePositions": 4,
+    "hosts": [
+      "flummox"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "formalist",
+    "sourcePositions": 1,
+    "hosts": [
+      "formalism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "fornication",
+    "sourcePositions": 4,
+    "hosts": [
+      "fornicate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "fossilized",
+    "sourcePositions": 4,
+    "hosts": [
+      "fossilize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "fractionally",
+    "sourcePositions": 1,
+    "hosts": [
+      "fractional"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "frigidity",
+    "sourcePositions": 1,
+    "hosts": [
+      "frigid"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "fumigation",
+    "sourcePositions": 4,
+    "hosts": [
+      "fumigate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "futurologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "futurology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gainfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "gainful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gatecrasher",
+    "sourcePositions": 4,
+    "hosts": [
+      "gatecrash"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gender-bending",
+    "sourcePositions": 1,
+    "hosts": [
+      "gender bender"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gentrification",
+    "sourcePositions": 4,
+    "hosts": [
+      "gentrify"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gesticulation",
+    "sourcePositions": 4,
+    "hosts": [
+      "gesticulate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "globe-trotting",
+    "sourcePositions": 1,
+    "hosts": [
+      "globe-trot"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "godlessness",
+    "sourcePositions": 1,
+    "hosts": [
+      "godless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gracelessly",
+    "sourcePositions": 2,
+    "hosts": [
+      "graceless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "grindingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "grinding"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gruffly",
+    "sourcePositions": 1,
+    "hosts": [
+      "gruff"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "grungy",
+    "sourcePositions": 1,
+    "hosts": [
+      "grunge"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gunfighter",
+    "sourcePositions": 2,
+    "hosts": [
+      "gunfight"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "gyration",
+    "sourcePositions": 8,
+    "hosts": [
+      "gyrate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "haltingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "halting"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "harried",
+    "sourcePositions": 4,
+    "hosts": [
+      "harry"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "haughtily",
+    "sourcePositions": 1,
+    "hosts": [
+      "haughty"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "hectoring",
+    "sourcePositions": 4,
+    "hosts": [
+      "hector"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "hermetically",
+    "sourcePositions": 2,
+    "hosts": [
+      "hermetic"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "high-handedness",
+    "sourcePositions": 1,
+    "hosts": [
+      "high-handed"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "hot-desking",
+    "sourcePositions": 1,
+    "hosts": [
+      "hot-desk"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "huffily",
+    "sourcePositions": 1,
+    "hosts": [
+      "huffy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "huskily",
+    "sourcePositions": 2,
+    "hosts": [
+      "husky"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "hydroponic",
+    "sourcePositions": 1,
+    "hosts": [
+      "hydroponics"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "hyperventilation",
+    "sourcePositions": 4,
+    "hosts": [
+      "hyperventilate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "idiotically",
+    "sourcePositions": 1,
+    "hosts": [
+      "idiotic"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ignominiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "ignominious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "immobility",
+    "sourcePositions": 2,
+    "hosts": [
+      "immobile"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "imperceptibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "imperceptible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "imperiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "imperious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "impermanence",
+    "sourcePositions": 1,
+    "hosts": [
+      "impermanent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "impishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "impish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "implausibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "implausible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "imploringly",
+    "sourcePositions": 1,
+    "hosts": [
+      "imploring"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inanely",
+    "sourcePositions": 1,
+    "hosts": [
+      "inane"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "incandescence",
+    "sourcePositions": 1,
+    "hosts": [
+      "incandescent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "incapacitated",
+    "sourcePositions": 4,
+    "hosts": [
+      "incapacitate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "incautiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "incautious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inconspicuously",
+    "sourcePositions": 1,
+    "hosts": [
+      "inconspicuous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "incontrovertibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "incontrovertible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "indefatigably",
+    "sourcePositions": 1,
+    "hosts": [
+      "indefatigable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "indelibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "indelible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "indescribably",
+    "sourcePositions": 1,
+    "hosts": [
+      "indescribable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "indistinctly",
+    "sourcePositions": 1,
+    "hosts": [
+      "indistinct"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "indoctrination",
+    "sourcePositions": 4,
+    "hosts": [
+      "indoctrinate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "indubitably",
+    "sourcePositions": 1,
+    "hosts": [
+      "indubitable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "industriously",
+    "sourcePositions": 1,
+    "hosts": [
+      "industrious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ineffably",
+    "sourcePositions": 1,
+    "hosts": [
+      "ineffable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inexcusably",
+    "sourcePositions": 1,
+    "hosts": [
+      "inexcusable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "infallibility",
+    "sourcePositions": 1,
+    "hosts": [
+      "infallible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inflected",
+    "sourcePositions": 4,
+    "hosts": [
+      "inflect"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "infrequently",
+    "sourcePositions": 1,
+    "hosts": [
+      "infrequent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ingenuously",
+    "sourcePositions": 1,
+    "hosts": [
+      "ingenuous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ingestion",
+    "sourcePositions": 4,
+    "hosts": [
+      "ingest"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ingloriously",
+    "sourcePositions": 1,
+    "hosts": [
+      "inglorious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inoculation",
+    "sourcePositions": 4,
+    "hosts": [
+      "inoculate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "insemination",
+    "sourcePositions": 4,
+    "hosts": [
+      "inseminate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "insinuation",
+    "sourcePositions": 3,
+    "hosts": [
+      "insinuate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "insufferably",
+    "sourcePositions": 1,
+    "hosts": [
+      "insufferable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "intermingled",
+    "sourcePositions": 4,
+    "hosts": [
+      "intermingle"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "internalization",
+    "sourcePositions": 4,
+    "hosts": [
+      "internalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "internationalization",
+    "sourcePositions": 4,
+    "hosts": [
+      "internationalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inversely",
+    "sourcePositions": 1,
+    "hosts": [
+      "inverse"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "invigorated",
+    "sourcePositions": 3,
+    "hosts": [
+      "invigorate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "inviolability",
+    "sourcePositions": 1,
+    "hosts": [
+      "inviolable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "invulnerability",
+    "sourcePositions": 1,
+    "hosts": [
+      "invulnerable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "irked",
+    "sourcePositions": 4,
+    "hosts": [
+      "irk"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "irradiation",
+    "sourcePositions": 4,
+    "hosts": [
+      "irradiate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "irredeemably",
+    "sourcePositions": 2,
+    "hosts": [
+      "irredeemable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "irreparably",
+    "sourcePositions": 1,
+    "hosts": [
+      "irreparable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "irrepressibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "irrepressible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "irretrievably",
+    "sourcePositions": 1,
+    "hosts": [
+      "irretrievable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "isolationist",
+    "sourcePositions": 1,
+    "hosts": [
+      "isolationism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "jousting",
+    "sourcePositions": 4,
+    "hosts": [
+      "joust"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "joviality",
+    "sourcePositions": 1,
+    "hosts": [
+      "jovial"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lacerated",
+    "sourcePositions": 4,
+    "hosts": [
+      "lacerate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lamentably",
+    "sourcePositions": 1,
+    "hosts": [
+      "lamentable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lauded",
+    "sourcePositions": 3,
+    "hosts": [
+      "laud"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "levitation",
+    "sourcePositions": 4,
+    "hosts": [
+      "levitate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lewdness",
+    "sourcePositions": 1,
+    "hosts": [
+      "lewd"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lexicographer",
+    "sourcePositions": 1,
+    "hosts": [
+      "lexicography"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "licentiousness",
+    "sourcePositions": 1,
+    "hosts": [
+      "licentious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lithographic",
+    "sourcePositions": 1,
+    "hosts": [
+      "lithography"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "loping",
+    "sourcePositions": 4,
+    "hosts": [
+      "lope"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lugubriously",
+    "sourcePositions": 1,
+    "hosts": [
+      "lugubrious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "lustily",
+    "sourcePositions": 1,
+    "hosts": [
+      "lusty"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "magnanimously",
+    "sourcePositions": 1,
+    "hosts": [
+      "magnanimous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "malevolence",
+    "sourcePositions": 1,
+    "hosts": [
+      "malevolent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "maniacally",
+    "sourcePositions": 1,
+    "hosts": [
+      "maniacal"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "mastication",
+    "sourcePositions": 4,
+    "hosts": [
+      "masticate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "matriculation",
+    "sourcePositions": 4,
+    "hosts": [
+      "matriculate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "meditatively",
+    "sourcePositions": 1,
+    "hosts": [
+      "meditative"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "melodically",
+    "sourcePositions": 2,
+    "hosts": [
+      "melodic"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "microbiologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "microbiology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "microeconomic",
+    "sourcePositions": 2,
+    "hosts": [
+      "microeconomics"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "mind-numbingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "mind-numbing"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "miniaturization",
+    "sourcePositions": 4,
+    "hosts": [
+      "miniaturize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "misappropriation",
+    "sourcePositions": 4,
+    "hosts": [
+      "misappropriate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "misdirected",
+    "sourcePositions": 4,
+    "hosts": [
+      "misdirect"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "mismatched",
+    "sourcePositions": 4,
+    "hosts": [
+      "mismatch"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "mispronunciation",
+    "sourcePositions": 4,
+    "hosts": [
+      "mispronounce"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "misspelling",
+    "sourcePositions": 4,
+    "hosts": [
+      "misspell"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "modulation",
+    "sourcePositions": 4,
+    "hosts": [
+      "modulate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "moralizing",
+    "sourcePositions": 4,
+    "hosts": [
+      "moralize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "name-dropping",
+    "sourcePositions": 2,
+    "hosts": [
+      "name-drop"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "naturalization",
+    "sourcePositions": 3,
+    "hosts": [
+      "naturalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "netsurfer",
+    "sourcePositions": 1,
+    "hosts": [
+      "netsurfing"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "neurologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "neurology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "nihilist",
+    "sourcePositions": 1,
+    "hosts": [
+      "nihilism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "noiselessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "noiseless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "noncommittally",
+    "sourcePositions": 1,
+    "hosts": [
+      "noncommittal"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "nonviolence",
+    "sourcePositions": 1,
+    "hosts": [
+      "nonviolent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "notionally",
+    "sourcePositions": 1,
+    "hosts": [
+      "notional"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "nudist",
+    "sourcePositions": 1,
+    "hosts": [
+      "nudism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "obsequiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "obsequious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "obtrusively",
+    "sourcePositions": 1,
+    "hosts": [
+      "obtrusive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "oceanographer",
+    "sourcePositions": 1,
+    "hosts": [
+      "oceanography"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "officiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "officious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "omniscience",
+    "sourcePositions": 1,
+    "hosts": [
+      "omniscient"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ontological",
+    "sourcePositions": 1,
+    "hosts": [
+      "ontology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "opalescence",
+    "sourcePositions": 1,
+    "hosts": [
+      "opalescent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ornithological",
+    "sourcePositions": 1,
+    "hosts": [
+      "ornithology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "oscillation",
+    "sourcePositions": 12,
+    "hosts": [
+      "oscillate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ostensibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "ostensible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "overachiever",
+    "sourcePositions": 4,
+    "hosts": [
+      "overachieve"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "overused",
+    "sourcePositions": 4,
+    "hosts": [
+      "overuse"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "overvaluation",
+    "sourcePositions": 4,
+    "hosts": [
+      "overvalue"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pacification",
+    "sourcePositions": 4,
+    "hosts": [
+      "pacify"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "palaeontologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "palaeontology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "panhandling",
+    "sourcePositions": 4,
+    "hosts": [
+      "panhandle"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "paragliding",
+    "sourcePositions": 4,
+    "hosts": [
+      "paraglide"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "parenthetically",
+    "sourcePositions": 1,
+    "hosts": [
+      "parenthetical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "passably",
+    "sourcePositions": 1,
+    "hosts": [
+      "passable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "peevishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "peevish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "penitently",
+    "sourcePositions": 1,
+    "hosts": [
+      "penitent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pensively",
+    "sourcePositions": 1,
+    "hosts": [
+      "pensive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "perceptibly",
+    "sourcePositions": 1,
+    "hosts": [
+      "perceptible"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "peremptorily",
+    "sourcePositions": 1,
+    "hosts": [
+      "peremptory"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "perforated",
+    "sourcePositions": 4,
+    "hosts": [
+      "perforate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "perfunctorily",
+    "sourcePositions": 1,
+    "hosts": [
+      "perfunctory"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "personalized",
+    "sourcePositions": 4,
+    "hosts": [
+      "personalize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "perspicacity",
+    "sourcePositions": 1,
+    "hosts": [
+      "perspicacious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "petrifying",
+    "sourcePositions": 3,
+    "hosts": [
+      "petrify"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pharmacological",
+    "sourcePositions": 1,
+    "hosts": [
+      "pharmacology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "phenomenological",
+    "sourcePositions": 1,
+    "hosts": [
+      "phenomenology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "philologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "philology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "philosophizing",
+    "sourcePositions": 4,
+    "hosts": [
+      "philosophize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "phonetically",
+    "sourcePositions": 1,
+    "hosts": [
+      "phonetics"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "photojournalist",
+    "sourcePositions": 1,
+    "hosts": [
+      "photojournalism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pigheadedness",
+    "sourcePositions": 1,
+    "hosts": [
+      "pigheaded"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pilfering",
+    "sourcePositions": 4,
+    "hosts": [
+      "pilfer"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pillaging",
+    "sourcePositions": 4,
+    "hosts": [
+      "pillage"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pinch-hitter",
+    "sourcePositions": 2,
+    "hosts": [
+      "pinch-hit"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "piquancy",
+    "sourcePositions": 2,
+    "hosts": [
+      "piquant"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pithily",
+    "sourcePositions": 1,
+    "hosts": [
+      "pithy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pitiably",
+    "sourcePositions": 1,
+    "hosts": [
+      "pitiable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pitilessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "pitiless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pityingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "pitying"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "politicized",
+    "sourcePositions": 4,
+    "hosts": [
+      "politicize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "pollination",
+    "sourcePositions": 4,
+    "hosts": [
+      "pollinate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "portentously",
+    "sourcePositions": 1,
+    "hosts": [
+      "portentous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "positivist",
+    "sourcePositions": 1,
+    "hosts": [
+      "positivism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "posthumously",
+    "sourcePositions": 1,
+    "hosts": [
+      "posthumous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "precipitously",
+    "sourcePositions": 3,
+    "hosts": [
+      "precipitous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "prescience",
+    "sourcePositions": 1,
+    "hosts": [
+      "prescient"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "preternaturally",
+    "sourcePositions": 1,
+    "hosts": [
+      "preternatural"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "prevarication",
+    "sourcePositions": 4,
+    "hosts": [
+      "prevaricate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "procrastination",
+    "sourcePositions": 4,
+    "hosts": [
+      "procrastinate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "procreation",
+    "sourcePositions": 4,
+    "hosts": [
+      "procreate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "professionalization",
+    "sourcePositions": 4,
+    "hosts": [
+      "professionalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "promulgation",
+    "sourcePositions": 4,
+    "hosts": [
+      "promulgate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "proofreader",
+    "sourcePositions": 3,
+    "hosts": [
+      "proofread"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "providentially",
+    "sourcePositions": 1,
+    "hosts": [
+      "providential"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "prudishness",
+    "sourcePositions": 1,
+    "hosts": [
+      "prudish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "puckered",
+    "sourcePositions": 4,
+    "hosts": [
+      "pucker"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "puffiness",
+    "sourcePositions": 1,
+    "hosts": [
+      "puffy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "punctiliously",
+    "sourcePositions": 1,
+    "hosts": [
+      "punctilious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "queasiness",
+    "sourcePositions": 1,
+    "hosts": [
+      "queasy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "quiescence",
+    "sourcePositions": 1,
+    "hosts": [
+      "quiescent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "quintessentially",
+    "sourcePositions": 1,
+    "hosts": [
+      "quintessential"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "quizzically",
+    "sourcePositions": 1,
+    "hosts": [
+      "quizzical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "rabidly",
+    "sourcePositions": 1,
+    "hosts": [
+      "rabid"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "radicalization",
+    "sourcePositions": 4,
+    "hosts": [
+      "radicalize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "rakishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "rakish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "raptly",
+    "sourcePositions": 1,
+    "hosts": [
+      "rapt"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "rascally",
+    "sourcePositions": 2,
+    "hosts": [
+      "rascal"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ravenously",
+    "sourcePositions": 1,
+    "hosts": [
+      "ravenous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reawakening",
+    "sourcePositions": 4,
+    "hosts": [
+      "reawaken"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "recalcitrance",
+    "sourcePositions": 1,
+    "hosts": [
+      "recalcitrant"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "recasting",
+    "sourcePositions": 3,
+    "hosts": [
+      "recast"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "recidivism",
+    "sourcePositions": 2,
+    "hosts": [
+      "recidivist"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "redecoration",
+    "sourcePositions": 4,
+    "hosts": [
+      "redecorate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reeducation",
+    "sourcePositions": 5,
+    "hosts": [
+      "reeducate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reevaluation",
+    "sourcePositions": 4,
+    "hosts": [
+      "reevaluate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reflation",
+    "sourcePositions": 4,
+    "hosts": [
+      "reflate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reflexively",
+    "sourcePositions": 1,
+    "hosts": [
+      "reflexive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reflexologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "reflexology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "refraction",
+    "sourcePositions": 4,
+    "hosts": [
+      "refract"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "regretfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "regretful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reinvention",
+    "sourcePositions": 4,
+    "hosts": [
+      "reinvent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "remorsefully",
+    "sourcePositions": 1,
+    "hosts": [
+      "remorseful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "remorselessly",
+    "sourcePositions": 2,
+    "hosts": [
+      "remorseless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reproachfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "reproachful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reprovingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "reproving"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "repugnance",
+    "sourcePositions": 1,
+    "hosts": [
+      "repugnant"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reshaping",
+    "sourcePositions": 4,
+    "hosts": [
+      "reshape"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "restiveness",
+    "sourcePositions": 1,
+    "hosts": [
+      "restive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "retooling",
+    "sourcePositions": 4,
+    "hosts": [
+      "retool"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "retroactively",
+    "sourcePositions": 1,
+    "hosts": [
+      "retroactive"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reverentially",
+    "sourcePositions": 1,
+    "hosts": [
+      "reverential"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reverently",
+    "sourcePositions": 1,
+    "hosts": [
+      "reverent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "reviled",
+    "sourcePositions": 4,
+    "hosts": [
+      "revile"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "rewiring",
+    "sourcePositions": 4,
+    "hosts": [
+      "rewire"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "rheumatologist",
+    "sourcePositions": 1,
+    "hosts": [
+      "rheumatology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "riled",
+    "sourcePositions": 4,
+    "hosts": [
+      "rile"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "riotously",
+    "sourcePositions": 1,
+    "hosts": [
+      "riotous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "role-playing",
+    "sourcePositions": 4,
+    "hosts": [
+      "role-play"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "romanticized",
+    "sourcePositions": 4,
+    "hosts": [
+      "romanticize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "rubbernecker",
+    "sourcePositions": 4,
+    "hosts": [
+      "rubberneck"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ruefully",
+    "sourcePositions": 1,
+    "hosts": [
+      "rueful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ruinously",
+    "sourcePositions": 2,
+    "hosts": [
+      "ruinous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ruminatively",
+    "sourcePositions": 1,
+    "hosts": [
+      "ruminative"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "sadomasochist",
+    "sourcePositions": 2,
+    "hosts": [
+      "sadomasochism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "satanist",
+    "sourcePositions": 1,
+    "hosts": [
+      "Satanism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "scantily",
+    "sourcePositions": 2,
+    "hosts": [
+      "scanty"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "scuffed",
+    "sourcePositions": 4,
+    "hosts": [
+      "scuff"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "seaworthiness",
+    "sourcePositions": 1,
+    "hosts": [
+      "seaworthy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "secularist",
+    "sourcePositions": 1,
+    "hosts": [
+      "secularism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "seismological",
+    "sourcePositions": 1,
+    "hosts": [
+      "seismology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "self-awareness",
+    "sourcePositions": 1,
+    "hosts": [
+      "self-aware"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "sequentially",
+    "sourcePositions": 1,
+    "hosts": [
+      "sequential"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "sequestration",
+    "sourcePositions": 4,
+    "hosts": [
+      "sequestrate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "servility",
+    "sourcePositions": 1,
+    "hosts": [
+      "servile"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "slavishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "slavish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "snappishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "snappish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "solicitously",
+    "sourcePositions": 1,
+    "hosts": [
+      "solicitous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "soulfully",
+    "sourcePositions": 1,
+    "hosts": [
+      "soulful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "soundlessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "soundless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "spiritualist",
+    "sourcePositions": 1,
+    "hosts": [
+      "spiritualism"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "spitefully",
+    "sourcePositions": 1,
+    "hosts": [
+      "spiteful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "spooked",
+    "sourcePositions": 4,
+    "hosts": [
+      "spook"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "stealthily",
+    "sourcePositions": 1,
+    "hosts": [
+      "stealthy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "stoically",
+    "sourcePositions": 1,
+    "hosts": [
+      "stoical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "stonewalling",
+    "sourcePositions": 4,
+    "hosts": [
+      "stonewall"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "stultifying",
+    "sourcePositions": 4,
+    "hosts": [
+      "stultify"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "subjugation",
+    "sourcePositions": 4,
+    "hosts": [
+      "subjugate"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "surreptitiously",
+    "sourcePositions": 1,
+    "hosts": [
+      "surreptitious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "systematization",
+    "sourcePositions": 4,
+    "hosts": [
+      "systematize"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "tardiness",
+    "sourcePositions": 1,
+    "hosts": [
+      "tardy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "testily",
+    "sourcePositions": 1,
+    "hosts": [
+      "testy"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "thematically",
+    "sourcePositions": 1,
+    "hosts": [
+      "thematic"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "theorizing",
+    "sourcePositions": 4,
+    "hosts": [
+      "theorize"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "tittering",
+    "sourcePositions": 4,
+    "hosts": [
+      "titter"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "tonelessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "toneless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "toxicological",
+    "sourcePositions": 1,
+    "hosts": [
+      "toxicology"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "transfixed",
+    "sourcePositions": 4,
+    "hosts": [
+      "transfix"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "transgression",
+    "sourcePositions": 4,
+    "hosts": [
+      "transgress"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "transmutation",
+    "sourcePositions": 4,
+    "hosts": [
+      "transmute"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "transposition",
+    "sourcePositions": 8,
+    "hosts": [
+      "transpose"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "tremulously",
+    "sourcePositions": 1,
+    "hosts": [
+      "tremulous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "truculence",
+    "sourcePositions": 1,
+    "hosts": [
+      "truculent"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "tunelessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "tuneless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unambiguously",
+    "sourcePositions": 1,
+    "hosts": [
+      "unambiguous"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unarguably",
+    "sourcePositions": 1,
+    "hosts": [
+      "unarguable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unblinkingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unblinking"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unceasingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unceasing"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "uncritically",
+    "sourcePositions": 1,
+    "hosts": [
+      "uncritical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "underachiever",
+    "sourcePositions": 4,
+    "hosts": [
+      "underachieve"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "underperformer",
+    "sourcePositions": 5,
+    "hosts": [
+      "underperform"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "underpinning",
+    "sourcePositions": 4,
+    "hosts": [
+      "underpin"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "undiplomatically",
+    "sourcePositions": 1,
+    "hosts": [
+      "undiplomatic"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "undulating",
+    "sourcePositions": 4,
+    "hosts": [
+      "undulate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unemotionally",
+    "sourcePositions": 1,
+    "hosts": [
+      "unemotional"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unequally",
+    "sourcePositions": 1,
+    "hosts": [
+      "unequal"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unerringly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unerring"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unfailingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unfailing"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unflinchingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unflinching"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "ungrammatically",
+    "sourcePositions": 1,
+    "hosts": [
+      "ungrammatical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unionist",
+    "sourcePositions": 1,
+    "hosts": [
+      "unionism"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": true,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unjustifiably",
+    "sourcePositions": 1,
+    "hosts": [
+      "unjustifiable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unquestioningly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unquestioning"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unremittingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unremitting"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unreservedly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unreserved"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unselfishly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unselfish"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unsurprisingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unsurprising"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unthinkingly",
+    "sourcePositions": 1,
+    "hosts": [
+      "unthinking"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "untypically",
+    "sourcePositions": 1,
+    "hosts": [
+      "untypical"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "unutterably",
+    "sourcePositions": 1,
+    "hosts": [
+      "unutterable"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "uproariously",
+    "sourcePositions": 1,
+    "hosts": [
+      "uproarious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "urbanity",
+    "sourcePositions": 1,
+    "hosts": [
+      "urbane"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "venerated",
+    "sourcePositions": 4,
+    "hosts": [
+      "venerate"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "vicariously",
+    "sourcePositions": 1,
+    "hosts": [
+      "vicarious"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "vilification",
+    "sourcePositions": 4,
+    "hosts": [
+      "vilify"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "volubly",
+    "sourcePositions": 1,
+    "hosts": [
+      "voluble"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "wakefulness",
+    "sourcePositions": 1,
+    "hosts": [
+      "wakeful"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "water-skiing",
+    "sourcePositions": 4,
+    "hosts": [
+      "water-ski"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "weblogger",
+    "sourcePositions": 1,
+    "hosts": [
+      "weblog"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "wiretapping",
+    "sourcePositions": 2,
+    "hosts": [
+      "wiretap"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "wordlessly",
+    "sourcePositions": 1,
+    "hosts": [
+      "wordless"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "yodelling",
+    "sourcePositions": 4,
+    "hosts": [
+      "yodel"
+    ],
+    "exactIndexExists": false,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  },
+  {
+    "surface": "yowling",
+    "sourcePositions": 4,
+    "hosts": [
+      "yowl"
+    ],
+    "exactIndexExists": true,
+    "rootHeadExists": false,
+    "translatedSubentryExistsElsewhere": false,
+    "approvedRecovery": false
+  }
+]

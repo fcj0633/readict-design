@@ -1,0 +1,98 @@
+{
+  "global": {
+    "records": 121872,
+    "derivativeParagraphs": 4655,
+    "recordsWithDerivatives": 3342,
+    "recordsWithReferences": 3668,
+    "recordsWithEntryLinks": 13899,
+    "skippedWithSingleWordHead": 515,
+    "successfulWithUsageLabels": 18537,
+    "successfulWithAsciiGlossRisk": 10,
+    "noneRecords": 12
+  },
+  "defectSummary": {
+    "records": 268,
+    "missingTargetParagraphs": 272,
+    "withChineseTarget": 194,
+    "withExistingChineseTarget": 194,
+    "withReversePatternEvidence": 236,
+    "withAnyExplicitRecoveryEvidence": 258
+  },
+  "noSense": {
+    "records": 726,
+    "withRootReference": 709,
+    "withExistingTarget": 693,
+    "withPhraseTarget": 68,
+    "withoutReference": 17
+  },
+  "unsupportedHeads": {
+    "INTERNAL_PUNCTUATION": 144,
+    "MULTIWORD_HEADWORD": 331,
+    "LENGTH": 0,
+    "OTHER": 11
+  },
+  "unknown": {
+    "records": 13,
+    "noneBody": 12
+  },
+  "subentries": {
+    "paragraphs": 4655,
+    "uniqueSurfaces": 1650,
+    "surfacesWithoutExactIndex": 1216
+  },
+  "samples": {
+    "count": 300,
+    "analysis": 210,
+    "holdout": 90
+  },
+  "metadataAudit": {
+    "untranslatedSubentryParagraphs": 1006,
+    "affectedSourcePositions": 971,
+    "distinctSurfaceForms": 447,
+    "uniqueHostSurfaceRegionMajorUnits": 464,
+    "surfacesWithExactIndex": 78,
+    "surfacesWithOwnRootHead": 1,
+    "surfacesWithTranslatedSubentryElsewhere": 0,
+    "surfacesWithoutAnyOfTheseLocationCandidates": 369
+  },
+  "baselineMetricQualification": {
+    "totalSourcePositions": 121872,
+    "distinctDecodedPayloadHashes": 113453,
+    "extraPositionsWithDuplicatePayload": 8419,
+    "headwordRegionObservations": 123412,
+    "distinctLowercaseHeadwords": 92753,
+    "gapPositions": 268,
+    "distinctGapPayloadHashes": 257
+  },
+  "sourceGapRecoveryAfterAgentSupplement": {
+    "positions": 268,
+    "oneCandidate": 245,
+    "multipleCandidates": 23,
+    "noCandidate": 0,
+    "notApprovedOrAutomaticallyApplied": true
+  },
+  "verifiedReferences": {
+    "referenceRecords": 711,
+    "previousTextOnlyReferenceRecords": 709,
+    "newSpellingAliases": 2,
+    "recordsWithPhraseTarget": 68,
+    "recordsWithMissingExactTarget": 1,
+    "recordsWithConfirmedTargetMissingFromIndexHeadsAndSubentries": 1,
+    "cycles": 11,
+    "hopLimit": 0,
+    "cycleRootKeys": [
+      "anesthetic",
+      "appall",
+      "disorient",
+      "diss",
+      "fulfill",
+      "skeptic",
+      "tidbit"
+    ],
+    "correctedOwnDiagnosticFalsePositive": "ib. targets raw href entry://ibid.; punctuation stripping in text-only experiment created a false dangling target. Production code unchanged."
+  },
+  "skippedHeadsAudit": {
+    "records": 515,
+    "withCanonicalHeadMissingExactIndex": 0
+  }
+}

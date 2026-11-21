@@ -1,0 +1,31 @@
+{
+  "unchangedChecks": {
+    "tools/dictionary-import/src/extract.mjs": true,
+    "tools/dictionary-import/src/parser-adapter.mjs": true,
+    "tools/dictionary-import/src/normalize.mjs": true,
+    "tools/dictionary-import/package-lock.json": true,
+    ".artifacts/m02-extraction-r2-a/dispositions.jsonl": true,
+    ".artifacts/m02-extraction-r2-a/issues.jsonl": true,
+    ".artifacts/m02-extraction-r2-a/quality-report.json": true,
+    "col.mdx": true,
+    "col.mdd": true
+  },
+  "repeatedAuditComparison": {
+    "summary.json": {
+      "initialSha256": "37c285a0bd18fdf795a4e29abb16bd6e4fee97a2725420a5f949451ecbd296af",
+      "expandedSha256": "37c285a0bd18fdf795a4e29abb16bd6e4fee97a2725420a5f949451ecbd296af",
+      "equal": true
+    },
+    "sample-manifest.json": {
+      "initialSha256": "9165e56cb066d79f5bb0341d8fc289d4ed501169d397d26a1d2b4baa4a23f03c",
+      "expandedSha256": "9165e56cb066d79f5bb0341d8fc289d4ed501169d397d26a1d2b4baa4a23f03c",
+      "equal": true
+    },
+    "selected-evidence.jsonl": {
+      "initialSha256": "ebb9506637c9065f93685182e4e078383723b97312e9ec9ffcbbbd4f36507d70",
+      "expandedSha256": "ebb9506637c9065f93685182e4e078383723b97312e9ec9ffcbbbd4f36507d70",
+      "equal": true
+    }
+  },
+  "appWorktreeClean": true
+}

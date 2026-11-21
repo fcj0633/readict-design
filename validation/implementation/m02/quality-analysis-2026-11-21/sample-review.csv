@@ -1,0 +1,301 @@
+group,split,sourceOrdinal,indexKey,baselineOutcome,prototypeUnresolvedParagraphs,omittedMetadataLabels,reviewScope,reviewer,humanReviewed,fullSenseSemanticAccuracy
+boundary,analysis,86929,radicel,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,93463,sapsucker,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,85320,Ptolemaic,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,114530,unpinned,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,77958,PayPass,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,115736,varicosis,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,42545,FRCVS,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,112945,twist,FAIL,2,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,34849,elfland,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,107660,teahouse,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,52876,hyssop,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,70425,'n',FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,41357,flybook,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,39064,fat-soluble,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,47399,grunter,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,114520,unpeople,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,80062,piaffe,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,76953,parados,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,59970,landau,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,53415,ill-use,FAIL,2,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,120791,yamen,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,117782,washerwoman,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,118664,werris,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,83231,preciosities,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,96272,Seth,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,5107,approbate,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,4871,apoprotein,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,43537,fynbos,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,56585,irreparable,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,56621,irruptive,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,50742,hirudin,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,115766,varistor,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,79510,phenacite,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,104905,suburbanite,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,111497,tree-and-branch,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,26312,cupbearer,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,2473,albescent,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,78464,pennate,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,101073,spatchcock,FAIL,2,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,93490,sard,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,74673,orangemen,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,41322,flustering,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,9235,bedew,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,59165,knock,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,89761,repudiates,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,37734,exogenous,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,6958,autolyze,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,9987,betweenwhiles,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,21282,colicroot,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,52688,hyperosmia,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,44791,geostrophic,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,109942,titmice,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,119903,witter,FAIL,2,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,84800,prosimian,FAIL,2,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,66412,merry,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,58639,Khalkha,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,62969,loris,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,87472,rataplan,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,40942,flexure,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,29070,deration,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,74122,omer,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,54502,indium,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,73088,nutwood,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,108364,territorialize,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,5376,archimage,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,107780,tectibranch,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,73381,obstinate,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,7581,backsight,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,2794,Allhallows,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,analysis,29512,devalued,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,16956,catchpole,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,45809,goby,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,79651,phocine,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,84351,professoriate,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,52847,hypothec,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,70998,nebulizer,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,91920,rots,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,4783,apian,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,100825,south-southeast,FAIL,2,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,120748,Y2K,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,110061,toebie,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,100145,soft,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,94260,sciential,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,36514,eradicate,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,113841,undersheriff,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,86093,pyrrhuloxia,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,47203,grossed,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,97254,shoplift,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,16691,case-harden,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,121463,Zoroastrianism,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,112683,turko-,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,70023,musaceous,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,30850,disencumber,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,112647,turgent,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,3542,amplifies,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,104799,subsidize,FAIL,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,35128,emersion,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,120021,wommit,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,18601,chessel,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+boundary,holdout,87675,RCH,FAIL,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,59186,knockout,ENTRY,0,5,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,100063,socket,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,32671,drapery,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,114627,unrepresented,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,50038,herbal,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,86296,qualms,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,57349,jeopardizes,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,7907,ballet,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,114973,updating,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,61926,linguini,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,24597,countermove,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,61906,lineup,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,26897,czarinas,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,32135,dorm,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,56966,jabbering,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,22515,concreting,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,59797,laid-back,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,22019,companied,ENTRY,0,3,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,51044,holiness,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,112817,tux,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,46583,grape,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,111675,trice,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,75878,overrunning,ENTRY,0,3,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,26633,cutout,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,44642,genitive,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,97673,sick,ENTRY,0,7,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,79451,pharmaceuticals,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,105581,supervision,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,54061,incarnates,ENTRY,0,3,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,34168,eczema,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,4371,anthrax,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,108677,theme,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,29295,desperado,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,12777,bowed,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,33662,dyslexia,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,23632,cooed,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,104486,styling,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,102069,sprocket,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,89277,remainder,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,84392,profundity,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,115114,upswings,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,23219,contacted,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,68720,monogamous,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,105613,supplementation,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,89364,remnants,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,35888,ensnaring,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,24981,crabby,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,84778,proscription,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,2224,airbed,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,81881,polemic,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,119665,wingers,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,109849,tiptoeing,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,87891,rearward,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,97594,shunts,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,57748,jots,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,99663,snazzy,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,52339,hussy,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,73384,obstruct,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,87859,reappraise,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,11992,bog,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,6744,auguries,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,7989,balmy,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,82936,poundings,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,4740,aperitif,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,30153,dignitary,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,2501,alchemist,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,91207,risk,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,65240,masons,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,26290,cumulative,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,analysis,107001,-taker,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,49635,heeding,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,113922,underwritten,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,75441,outpacing,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,32365,doughty,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,31523,diversity,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,74928,oriole,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,100147,softback,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,82182,polyurethanes,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,1378,adolescent,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,15251,calamitous,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,84628,propagandizing,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,77372,parsnip,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,110691,tourist,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,25587,crocuses,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,1967,agency,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,39374,felony,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,102526,stamen,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,45832,God-fearing,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,1694,aesthete,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,30536,disabling,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,65035,marmalades,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,45430,glinting,ENTRY,0,3,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,30806,discriminating,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,84938,proton,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,38655,fallout,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,48595,handset,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,77287,parlour,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,115047,uppermost,ENTRY,0,2,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,18454,cheeseburger,ENTRY,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+success,holdout,45890,going-over,ENTRY,0,1,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,81807,poison oak,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,34367,egg nog,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,108252,terbium metal,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,42452,frame of reference,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,50996,hold down,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,120317,World Court,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,103960,strata title,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,22299,Compton effect,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,120279,work out,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,25812,Crown corporation,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,62816,look around,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,98394,sit in on,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,117209,vox pop,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,8005,balsam of Tolu,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,82727,postnasal drip,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,63126,low-carbon steel,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,47831,gym shoe,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,112272,trundle bed,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,6226,assumed name,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,31753,do down,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,27533,Dead White European Male,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,65930,medium-range ballistic missile,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,109762,tin foil,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,58871,King's Bench,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,84942,proton number,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,36550,eretz israel,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,93912,scandal sheet,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,71074,needle bearing,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,75015,Orthodox Church,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,65089,marrow squash,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,120012,Women's Liberation,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,69024,moral majority,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,91755,root beer,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,18044,change purse,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,95271,sedge fly,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,7436,bachelor party,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,104357,stud book,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,98450,six o'clock swill,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,62153,literacy hour,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,46681,grave clothes,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,111471,treasury bond,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,12512,Bornholm disease,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,112660,Turkey carpet,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,14697,business cycle,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,46303,go without,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,52257,hunt down,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,51136,Holy Thursday,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,62295,liver fluke,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,104042,street credibility,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,17583,centre stage,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,79306,Petri dish,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,71643,New Year,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,10477,binomial nomenclature,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,105316,sundry shop,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,65104,marshalling yard,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,101267,speculative fiction,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,98735,"skop, skiet en donder",SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,48334,half term,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,47490,gudgeon pin,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,33756,earless seal,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,94893,sea-floor spreading,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,27313,date stamp,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,33113,dry hole,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,38889,farm hand,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,100124,sodium sulphate,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,30058,diffraction grating,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,84184,probation officer,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,92469,run over,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,80183,picture window,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,analysis,8704,Bas Mitzvah,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,45957,gold farming,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,81507,plume moth,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,27497,dead letter,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,109679,time dilation,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,16992,Category A,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,68446,molecular volume,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,59715,lad mag,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,1478,advance ratio,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,32259,double decomposition,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,4160,anniversary day,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,44883,Gestalt psychology,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,49339,head sea,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,89409,removal men,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,69159,mortise lock,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,57193,Japanese umbrella pine,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,73440,occluded front,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,119709,win over,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,48295,half measure,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,96313,settle with,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,46828,Great White Way,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,63751,machine screw,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,81179,platinum black,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,62834,look out for,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,47963,hack hammer,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,112701,turn back,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,62048,lipstick lesbian,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,77608,passive safety,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,9099,bearing rein,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,76173,oyster plant,SKIP,1,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
+skipped,holdout,95696,seltzer water,SKIP,0,0,scope/head/first-two-fragments/metadata mechanisms; not exhaustive semantic gold,Codex execution agent,false,NOT_ESTIMATED
