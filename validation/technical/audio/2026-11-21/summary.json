@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "sample decoding, transcoding and browser media-engine playback; no production integration",
+  "applicationCommit": "dd6bb6b13a374bedd6b27e9132384b35d8534585",
+  "parserVersion": "js-mdict@6.0.6",
+  "nodeVersion": "v24.14.0",
+  "ffmpegVersion": "9.1-essentials_build-www.gyan.dev",
+  "ffmpegSource": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.1-essentials_build.zip",
+  "ffmpegArchiveSha256": "b9bbbb3acece000cbeec994f856649354e52c773807841e78908374b24d658fd",
+  "ffmpegArchiveBytes": 119467219,
+  "sourceFiles": {
+    "Sound.mdx": {
+      "sizeBytes": 2757739,
+      "sha256": "404c9ef72a049fd8fa90dbf9b1681796ae261614cae2a07dd7ff6b67eea6beaa"
+    },
+    "sound.mdd": {
+      "sizeBytes": 4989,
+      "sha256": "a680de2ea88f47936dd79b2ecb0b973d6d7ee10b540f14c2ad518b1764c0fc00"
+    },
+    "Sound_us_uk.mdd": {
+      "sizeBytes": 747895389,
+      "sha256": "22759501b28d688c7264dbf4416e3780ba19eeb7b30eca4b79f663da27c6eac9"
+    }
+  },
+  "indexEntries": 154737,
+  "resourceEntries": 248363,
+  "wordCount": 50,
+  "matchedWords": 47,
+  "missingWords": [
+    "books",
+    "reads",
+    "runs"
+  ],
+  "sampleCount": 94,
+  "extractionFailed": 0,
+  "sourceHeaderRates": {
+    "11025": 46,
+    "16000": 48
+  },
+  "conversion": {
+    "passed": 94,
+    "failed": 0,
+    "settings": {
+      "codec": "libmp3lame",
+      "sampleRate": 22050,
+      "channels": 1,
+      "bitRate": 48000
+    },
+    "elapsedSeconds": 28.23,
+    "pcmDurationMinSeconds": 0.40634920634920635,
+    "pcmDurationMaxSeconds": 1.56,
+    "maxDecodedDurationDifferenceSeconds": 0.023990929705215436,
+    "sourceRmsDbfsMin": -27.22008947353579,
+    "sourceRmsDbfsMax": -10.98282554636431,
+    "sourceClippedRatioMax": 0.002734375,
+    "mp3ClippedRatioMax": 0.0015297399442094845,
+    "sourceBytes": 198475,
+    "mp3Bytes": 473805,
+    "mp3SizeRatio": 2.3872276105302936,
+    "warning": "94 samples reported Guessed Channel Layout: mono during source decode/encode; headers and ffprobe report mono; no command failures"
+  },
+  "browsers": [
+    {
+      "channel": "chrome",
+      "version": "157.0.8103.80",
+      "headless": true,
+      "launchDefaultMuteAudio": true,
+      "sampleCount": 94,
+      "passed": 94,
+      "replayCount": 3,
+      "accentSwitchPassed": true,
+      "pausePassed": true,
+      "rawSpeexErrorCode": 4
+    },
+    {
+      "channel": "msedge",
+      "version": "157.0.4341.60",
+      "headless": true,
+      "launchDefaultMuteAudio": true,
+      "sampleCount": 94,
+      "passed": 94,
+      "replayCount": 3,
+      "accentSwitchPassed": true,
+      "pausePassed": true,
+      "rawSpeexErrorCode": 4
+    }
+  ],
+  "humanListening": "NOT_PERFORMED",
+  "speakerOutput": "NOT_VERIFIED",
+  "fullLibraryDecode": "NOT_PERFORMED",
+  "productionIntegration": "NOT_IMPLEMENTED",
+  "developmentDocumentsChanged": false,
+  "databaseAccess": false
+}
