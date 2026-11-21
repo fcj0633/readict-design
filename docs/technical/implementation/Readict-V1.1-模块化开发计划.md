@@ -1,7 +1,7 @@
 # Readict V1.1 模块化开发计划
 
 版本：0.6；日期：2026-11-21（M02 词典数据底座详细设计与执行指导）。
-状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 部分完成：核心账号与本地模拟流程验收通过，真实通道待材料；M02～M09 未开发。本文件保留任务基线，真实结果见 [M00 验收记录](../../../validation/implementation/m00/README.md) 和 [M01 实施验收记录](../../../validation/implementation/m01/README.md)。
+状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 部分完成：核心账号与本地模拟流程验收通过，真实通道待材料；M02 部分实施、提取质量未通过，M03～M09 未开发。本文件保留任务基线，真实结果见 [M00 验收记录](../../../validation/implementation/m00/README.md) 和 [M01 实施验收记录](../../../validation/implementation/m01/README.md)。
 
 当前仓库约定：源码、迁移和正式测试在 readict-app；详细文档、实施记录及截图在 readict-design。应用不建 docs/，单次环境准备和验收脚本不提交，个人便利工具放在忽略的 .local/。以下环境与选型表中的“未验证”等描述保留原始计划编写时的基线，M00 当前结果以验收记录为准。
 
@@ -129,7 +129,7 @@ M00-01～M00-05 已完成本机阶段验收；其余任务状态仍为**未开�
 
 ### M02 COL 数据底座与离线工具
 
-前置：M00；正式应用M01核心隔离已可复用，真实通道继续待接入。独立[M02技术设计与执行文档](M02-COL词典数据底座技术设计与执行文档.md)集中定义六项任务的目录、转换规则、数据契约、DDL、导入／查询、命令和排障。V5接续已有V1～V4，五表为dictionary_dataset、dictionary_active、dictionary_entry、dictionary_sense、dictionary_form_mapping；无逐句查询记录全量表。M02当前仍未开始，本次文档不是实现或验收。
+前置：M00；正式应用M01核心隔离已可复用，真实通道继续待接入。独立[M02技术设计与执行文档](M02-COL词典数据底座技术设计与执行文档.md)集中定义六项任务的目录、转换规则、数据契约、DDL、导入／查询、命令和排障。V5接续已有V1～V4，五表为dictionary_dataset、dictionary_active、dictionary_entry、dictionary_sense、dictionary_form_mapping；无逐句查询记录全量表。M02-01 实际兼容性通过，M02-02 全量诊断未过质量门槛，后续阶段未实施；见 [M02 阻断记录](../../../validation/implementation/m02/README.md)。
 
 | 任务 | 工作与完成证据 |
 |---|---|
@@ -312,7 +312,7 @@ flowchart LR
 |---|---|---|
 | M00 | 已完成本机阶段验收 | 应用提交 ced5f6e；[验收记录](../../../validation/implementation/m00/README.md) |
 | M01 | 部分完成：核心与本地模拟已验收，真实通道待材料 | [M01 记录](../../../validation/implementation/m01/README.md)；应用提交见记录 |
-| M02 | 未开始，已有快速抽查可复用 | 待正式开发及结构化转换验证 |
+| M02 | 部分实施；输入兼容性通过，提取质量未通过 | [M02 实施与阻断记录](../../../validation/implementation/m02/README.md)；未交付正式导入／查询 |
 | M03 | 未开始 | 待正式开发 |
 | M04 | 未开始，已有 EPUB 实验 | 待正式适配器验证 |
 | M05 | 未开始，已有原型／实验 | 待正式联调 |

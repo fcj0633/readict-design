@@ -1,0 +1,18 @@
+{
+  "dispositions.jsonl": {
+    "sha256": "129143554f77a0e181ef7161b36867dbd14208ec4682f23d50f032148ccfed98",
+    "repeatEqual": true
+  },
+  "issues.jsonl": {
+    "sha256": "10b85d18cdb0c3c0fbbe25a80bb20f551e2132e824ac3f33a399b232f354b31e",
+    "repeatEqual": true
+  },
+  "representative-review.jsonl": {
+    "sha256": "9172091e0ee0d108e3b127d9301f82f1ef470369309e74ffca2ca842c3f2d496",
+    "repeatEqual": true
+  },
+  "quality-report.json": {
+    "sha256": "1e12f355bb5766af0a98461d20ebeaf500ae0ffddaed0945c01cfdce5868f01e",
+    "repeatEqual": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "parserVersion": "js-mdict@6.0.6",
+  "nodeVersion": "v24.14.0",
+  "rights": {
+    "status": "UNVERIFIED",
+    "snapshotAllowed": false,
+    "distributionAllowed": false
+  },
+  "sources": {
+    "mdx": {
+      "sizeBytes": 24594337,
+      "sha256": "60045536048014fa8f137ef2d1f1e85f31f0329715bb5749a4b1fb1b5f49f611",
+      "sourceTotal": 121872,
+      "duplicates": 1,
+      "duplicateEvidence": [
+        {
+          "firstOrdinal": 93683,
+          "duplicateOrdinal": 93684,
+          "firstOffset": 243054730,
+          "duplicateOffset": 243057440,
+          "firstHash": "3c8188bc8c638e17d18b959303af9e06f6415c7778936f4e7f62c54bccf6f8f7",
+          "duplicateHash": "3c8188bc8c638e17d18b959303af9e06f6415c7778936f4e7f62c54bccf6f8f7"
+        }
+      ],
+      "crossBlockRecords": 0,
+      "maxRecordBytes": 96733,
+      "decodedRecordHashesSha256": "9c9ae2ccf0c63282cda8ac6daefca0288cdbd8469be4c6e54edf5c236a9d1839"
+    },
+    "mdd": {
+      "sizeBytes": 1853,
+      "sha256": "3fc9d9e79e09dc1766880c7755291893d9b1b3e723e1a61a34fef5829ffeaaa3",
+      "sourceTotal": 2,
+      "duplicates": 0,
+      "duplicateEvidence": [],
+      "crossBlockRecords": 0,
+      "maxRecordBytes": 3375,
+      "decodedRecordHashesSha256": "bb8428988b1500e79a22666e2f604e3b3f8108fc7620e50d03e2aa5a88503230",
+      "resources": [
+        "\\result-min.css",
+        "\\yd_col.js"
+      ]
+    }
+  },
+  "sourceHash": "97338c3885dd6babe864402e6e40435293881758f41c6d176d3b4c9ca705c895",
+  "durationMs": 7377,
+  "peakRssBytes": 282378240
+}

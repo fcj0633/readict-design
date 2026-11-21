@@ -7,7 +7,7 @@
 - [M00 工程基础与本机环境执行文档](implementation/M00-工程基础与本机环境执行文档.md)：目标目录、依赖、账号、YAML、Mapper／XML、类型处理、事务、API、命令和排障；是实施指导，不是已通过报告。
 - [M01 用户认证与个人设置执行文档](implementation/M01-用户认证与个人设置执行文档.md)：基于真实 M00 的六项执行指导、V2～V4、Session／CSRF、账号设置和本地／真实验证阶段；核心与本地模拟已验收，真实通道待接入，见 [验收记录](../../validation/implementation/m01/README.md)。
 - [M01 用户认证与个人设置流程图解](implementation/M01-用户认证与个人设置流程图解.md)：11 张 Mermaid 架构／ER／流程／时序／状态图，解释 M01 各业务链路与安全边界；仅为实施辅助，不代表已完成。
-- [M02 COL词典数据底座技术设计与执行文档](implementation/M02-COL词典数据底座技术设计与执行文档.md)：六项任务、转换规则、JSONL／manifest、V5五表、独立导入、版本切换与查询验收；M02尚未实施。
+- [M02 COL词典数据底座技术设计与执行文档](implementation/M02-COL词典数据底座技术设计与执行文档.md)：六项任务、转换规则、JSONL／manifest、V5五表、独立导入、版本切换与查询验收；输入兼容性已验证，真实提取质量未过，后续未实施，见 [M02 阻断记录](../../validation/implementation/m02/README.md)。
 - [ADR-0003](decisions/ADR-0003-M01会话认证与分阶段验证.md)：显式认证持久化、authVersion 和分阶段所有权验证。
 
 - [ADR-0001](decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)：已采纳的本机环境、本地 COL、TMT 等方向及验证边界。

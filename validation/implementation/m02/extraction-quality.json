@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "readict-col-extraction-diagnostic-1",
+  "diagnosticOnly": true,
+  "rulesVersion": "col-extract-r2",
+  "source": {
+    "sizeBytes": 24594337,
+    "sha256": "60045536048014fa8f137ef2d1f1e85f31f0329715bb5749a4b1fb1b5f49f611"
+  },
+  "counts": {
+    "sourceTotal": 121872,
+    "sourceSucceeded": 40193,
+    "sourceSkipped": 25477,
+    "sourceFailed": 56202,
+    "candidateEntryCount": 40272,
+    "candidateSenseCount": 75554
+  },
+  "errors": {
+    "HEADWORD_UNSUPPORTED": 486,
+    "MEANING_BOUNDARY_UNKNOWN": 64617,
+    "SENSE_MISSING": 726,
+    "SOURCE_TEXT_DEFECT": 272,
+    "REGION_STRUCTURE_UNKNOWN": 13
+  },
+  "skipReasons": {
+    "OUT_OF_SCOPE_PHRASE": 25477
+  },
+  "representativeReview": {
+    "required": 50,
+    "present": 49,
+    "missing": [
+      "quickly"
+    ],
+    "reviewed": 0
+  },
+  "approvedExclusions": [],
+  "releaseEligible": false,
+  "nextStage": "BLOCKED_PENDING_EXTRACTION_AND_REVIEW"
+}
