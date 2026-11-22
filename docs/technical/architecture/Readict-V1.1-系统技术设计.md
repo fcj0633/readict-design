@@ -1,6 +1,6 @@
 # Readict V1.1 系统技术设计文档
 
-文档版本：0.6（2026-11-21 M02 词典数据底座细化，正式开发设计草案）
+文档版本：0.7（2026-11-22 独立A02发音链路，正式开发设计草案）
 编写日期：2026-11-18  
 唯一功能需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)  
 适用仓库：本设计保存在 readict-design；后续正式实现位于独立的 readict-app。  
@@ -21,6 +21,10 @@
 ### 2026-11-21 M02 词典底座细化
 
 新增[M02 技术设计与执行文档](../implementation/M02-COL词典数据底座技术设计与执行文档.md)，细化转换、词形证据、JSONL／manifest、V5五表、Java独立导入入口、断点租约、活动切换与缓存隔离。正式应用已有V1～V4，后续迁移接续；本次仅写文档，不执行转换或数据库操作，M02仍未开始。121872索引／251抽查保持历史适用边界，音频继续待材料，数据权利单独登记。
+
+### 2026-11-22 独立A02发音任务修订
+
+材料已提供，[音频样本验证](../../../validation/technical/audio/2026-11-21/README.md)支持离线MP3＋Java文件服务＋浏览器原生播放路线，见[ADR-0005](../decisions/ADR-0005-独立发音库与离线MP3播放.md)及[A02执行文档](../implementation/A02-本地发音库处理与播放接入执行文档.md)。人工试听、全库与正式接入尚未验收。此前修订中的“等待材料”为当时状态，当前以本节及9.3为准。M02现为部分实施、质量阻断，正式包／V5／Java查询未交付，见[M02真实记录](../../../validation/implementation/m02/README.md)；本次不改变其任务、完成条件或entry-v2身份，不开发代码或操作数据库。
 
 ## 阅读导航
 
@@ -417,7 +421,13 @@ Provider 原始响应在适配器内部解析并校验，不透传到 UI。POS �
 
 首版本地词典由版本化数据库数据集提供，内存缓存只加速读取。缓存键包括 datasetId、datasetVersion、lemmaKey；POS 排序在读出后做，不为每句复制词条。内存最多 5000 项、TTL 最多 24h，切换活动数据集即失效；未命中最多负缓存 5 分钟。数据集本身是持久数据，不是受 TTL 淘汰的在线缓存；导入和快照使用仍受数据授权约束。
 
-音频需求保留，当前状态为“等待用户后续提供文件分析”。已读 COL MDD 只有 result-min.css 和 yd_col.js，没有发现音频；MDX 抽查有 Unicode 音标，不能由此推断口音或录音可用。audioId 可空，当前显示“音频待补充”，本轮不验收真实录音，不阻塞其他模块。来源、编码、文件组织、词条／口音映射、鉴权、播放和缓存方案待文件分析后决定；如将来使用远程资源仍须白名单和防 SSRF。设备朗读不自动代替录音；若后续采用需独立标注，音频失败不清空词条。
+**【已验证事实】** 独立Sound发音材料已提供：6.0.6实际读取94条，Speex解码、转MP3和再解码均通过，Chrome／Edge共188次基础播放检查通过，详见[历史报告](../../../validation/technical/audio/2026-11-21/README.md)。headless带mute-audio，人工试听和物理输出未确认；未全量解码248359条候选，授权未核实。COL自身MDD只有CSS／JS的事实保留，不能据此否认独立发音包，也不能把该包称为COL原配录音。
+
+**【工程设计决策】** 新增独立[A02执行文档](../implementation/A02-本地发音库处理与播放接入执行文档.md)：离线MP3（单声道22050Hz／48kbps）＋独立音频数据集／资源／映射／活动指针＋私有文件＋Session鉴权Java流接口＋浏览器原生Audio。FFmpeg不在线转码；音频迁移在M02文字V5之后追加，实际编号执行前核对。具体字段、导入／回退、GET／HEAD与Range契约以A02第4～6章为准，不改变M02文字包或entry-v2。
+
+正式lookup由A02-05在M02文字输出之外装配独立pronunciations对象，包含status（available／missing／ambiguous／notConfigured）、word、source=local-sound、audioDatasetId、audioDatasetVersion及items（audioId、accent、mime、durationMs）。音频固定一次查询的数据集版本；COL phonetics继续表达原音标，旧audioId可空，不无证据绑定IPA与录音。关联当前展示组件词头／确认lemma；若原词ran显示为run释义，播放按钮明确标run，不能无提示地换词或换口音。未知／歧义不给虚假可用资源，不用TTS替代。
+
+底座可独立推进，正式查询及卡片接入等待M02／M05；全量、权限、Range、卡片停止生命周期和人工试听独立验收。音频缺失或播放错误不影响文字、翻译、收藏；切词／关闭／翻页／退出统一停止并过滤迟到回调。当前A02尚未实现，不能据样本验证宣称正式发音功能完成。
 
 ### 9.4 COL 离线转换与版本化数据
 
@@ -693,8 +703,8 @@ StoragePort 最小方法：`writeStaging(stream,limits)`、`publish(stagingKey,a
 | GET `/books/{id}/artifacts/{artifactId}/epub` | 无 | 200 application/epub+zip，Content-Length，private/no-store，禁止内容嗅探；artifact 必须属于该书 |
 | GET `/books/{id}/progress` | 无 | 200 `{progress:null}` 或 `{progress:ReadingProgress}` |
 | PUT `/books/{id}/progress` | 第 14.4 节 | 200 新 version；409 PROGRESS_CONFLICT；422 ANCHOR_INVALID |
-| POST `/dictionary/lookups` | `{bookId,source,posHint,lemmaCandidate}` | 200 `{lookupId,entry,source,favoriteState}`；词条无结果 200 `{entry:null,source,...}`；502/504 不抹原文 |
-| GET `/dictionary/audio/{audioId}`（预留） | audioId 可空；实际来源与播放契约待文件分析 | 本轮不实现真实播放；未配置 503 AUDIO_NOT_READY，不返回虚构音频 URL；不得标为已验收 |
+| POST `/dictionary/lookups` | `{bookId,source,posHint,lemmaCandidate}` | 200 `{lookupId,entry,source,favoriteState}`；A02-05接入后追加独立pronunciations（见9.3）；词条无结果 200 `{entry:null,source,...}`；502/504 不抹原文 |
+| GET／HEAD `/dictionary/audio/{audioId}`（A02待实现） | Session保护的全局录音，UUID；音频版本独立，私有文件不公开 | 200 MP3、206单Range、304、416；private,no-cache及ETag；401／404／503。HEAD无媒体正文且忽略Range；详见A02，当前未验收 |
 | POST `/translations` | `{bookId,source,sourceLang:en,targetLang:zh-CN}` + Idempotency-Key | 200 第 14.5 节，cacheHit 标识；429／504／422 长度限制 |
 | POST `/favorites` | 第 14.6 节 + Idempotency-Key | 201 新主体／语境，200 已存在；410 LOOKUP_EXPIRED；409 SOURCE_CHANGED |
 | GET `/favorites/state` | `lemmaKey,bookId,artifactId,spineHref,blockId,sentenceStart,sentenceEnd` | 200 `{favoriteId?,contextId?,state}`；键必须服务端规范化和源位置验证 |
@@ -798,18 +808,18 @@ hash、UUID 和 CFI 示例是契约占位，非实际书籍证据。下载 URL �
 
 | 威胁 | 正式防护 | 仍需证明的边界 |
 |---|---|---|
-| 跨用户访问／IDOR | 所有书籍、产物、进度、收藏、翻译和音频引用从当前用户校验；跨用户 ID 返回 404 | 列表、JOIN、下载及批量查询都要负向测试，UUID 不能替代鉴权 |
+| 跨用户访问／IDOR | 书籍、产物、进度、收藏和翻译从当前用户校验，跨用户ID返回404；全局音频需有效Session／authVersion，不假设用户私有归属，认证先于Range／304 | 列表、JOIN、下载及批量查询都要负向测试，UUID 不能替代鉴权 |
 | XSS／恶意 EPUB | 发布前白名单清洗，禁脚本 iframe，发布前 CSP，纯文本展示词典／译文／书名，不使用任意 innerHTML | Java 流水线与历史 DOMPurify 不等价，必须重建恶意样本门槛 |
 | CSS／SVG 资源攻击 | 只允许包内受支持资源和生成的 Blob；CSS 语法白名单；SVG 禁 script、foreignObject、事件、外链及动画 | SVG、XML、字体和复杂图片解码仍可能存在浏览器漏洞；不能只看 tracker 未请求 |
 | ZIP bomb／路径穿越 | 实际流式解压累计、单项／总额／条目／深度／时间预算，规范化路径，禁 symlink、重复别名 | 压缩比和声明大小只能辅助；嵌套资源不能绕预算；解析 OOM／CPU 超限要可中止 |
-| SSRF | 导入完全不访问外部 URI；Provider 固定基地址，音频白名单并验证 DNS/IP／重定向，拒绝私网和回环 | 不能开放“传 URL 下载词典音频／EPUB”的通用接口 |
+| SSRF | 导入完全不访问外部 URI；Provider 固定基地址，首版音频只按数据库storage_key读取私有本地文件；未来远程音频需白名单及DNS/IP／重定向校验，拒绝私网和回环 | 不能开放“传 URL 下载词典音频／EPUB”的通用接口 |
 | CSRF／会话盗用 | CSRF token、SameSite、Secure、HttpOnly、会话轮换和版本失效 | 同源 XSS 仍可代用户发请求，因此 EPUB 安全是认证安全的一部分 |
 | SQL 注入／存储路径注入 | 全参数 SQL，排序字段枚举，文件 key 服务端生成且验证根目录 | LIKE 通配转义、日志和错误输出也不能拼入敏感输入 |
 | 供应链与凭据 | 锁定版本、审核传递依赖、最小运行权限；密钥由环境或受控配置注入，不提交 Git | 历史 epub.js 风险未排除；不能仅以开发依赖可忽略结案 |
 
 阅读产物在进入 iframe 之前就必须包含 CSP；建议基线为 `default-src 'none'; script-src 'none'; connect-src 'none'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'none'; img-src blob: data:; font-src blob: data:; style-src 'unsafe-inline' blob:`。仅当资源经过 MIME／内容验证才允许 data/blob 对应类型，不能认为 Blob 天生安全。出版物 CSS、引擎注入主题和资源重写的兼容性需验证；CSP 不能替代清洗。
 
-主应用 CSP 与 EPUB iframe CSP 分开配置：主应用仅允许构建脚本／必要样式，frame-src 限 blob，禁止任意外部 frame；外部音频域按实际配置白名单。应用源无上传 HTML 公共路由；API 内容 `X-Content-Type-Options:nosniff`，文件下载设正确 MIME 和 Content-Disposition。反向代理不缓存私有 API／EPUB；日志隐藏 Cookie、密码、Authorization、Provider key、原文和译文。
+主应用 CSP 与 EPUB iframe CSP 分开配置：主应用仅允许构建脚本／必要样式，frame-src 限 blob，禁止任意外部 frame；首版音频media-src为self，不开放外部音频域。应用源无上传 HTML 公共路由；API 内容 `X-Content-Type-Options:nosniff`，文件下载设正确 MIME 和 Content-Disposition。反向代理不缓存私有 API／EPUB；日志隐藏 Cookie、密码、Authorization、Provider key、原文和译文。
 
 运行 Java 进程使用无管理权限账号、专用文件目录；预算可以限制正常大文件，但进程内线程无法安全硬终止所有恶意解析。若安全测试发现 CPU／内存耗尽不能被预算控制，必须把导入移入受 OS 限制的子进程／容器，由同一单体应用调度并关闭公网访问；这是必要隔离备选，不是微服务拆分。该方案未在本机验证，失败门槛触发后完成验证才上线。
 
@@ -905,7 +915,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 | 文件／导入集成 | 断流、越界、重复路径、XML 实体、SVG/CSS 外链、真实超预算、崩溃与重启 | 不执行代码、不对外请求、不超配置预算，READY 与真实文件一致 |
 | 阅读器端到端 | 三桌面＋390px、左右底部取词、长释义／原句、字体变化／窗口变化／刷新 | 卡片不越界、不遮目标、不改正文宽度，锚点解析原文且可见 |
 | 调用竞态端到端 | 连点／关闭／翻页期间迟到词典和翻译，收藏响应丢失 | 不串词、不重新打开、不自动翻译、不虚假保存 |
-| 词典数据与翻译验收 | COL 固定词表、中文义项、IPA、词形；TMT 超限／额度／错误 | 数据转换与真实外呼分别留证；音频等待文件分析，不计入本轮通过项；不得用 Mock 代替真实验证 |
+| 词典数据与翻译验收 | COL 固定词表、中文义项、IPA、词形；TMT 超限／额度／错误 | 数据转换与真实外呼分别留证；音频样本技术验证已通过，正式链路由A02独立验收，人工试听未确认；不得用 Mock 代替真实验证 |
 | 用户／安全 | 两用户互访所有资源、CSRF、密码变更、会话过期、日志脱敏 | 所有私有入口隔离、旧会话失效、日志无凭据／全文 |
 
 分页完整性验证比较章节在不同版式的可读文本覆盖和位置序列，检查首尾和跨章，不要求不同字号页数相同；保存锚点需要往返解析到同一内容。收藏回原文必须核对目标词／句，不只检查路由变化。
@@ -930,7 +940,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 | V12 后续增强，条件可升级 | Firefox／Safari／移动触屏 | 真实 Firefox、macOS Safari/iOS、390px 触屏；排查历史 WebKit 坐标失败，不能只运行 Chromium 模拟 UA | 保持明确支持矩阵；若要求同时首发则升级为上线阻断 |
 | V13 后续增强，安全失败则阻断 | 独立阅读域桥 | 搭建最小隔离页面验证消息来源、结构化 source／矩形、焦点、下载授权及 CSP；不传 Session 给非可信正文 | 保留当前有限支持或暂停上线，不绕过 same-origin 限制 |
 | V14 账号完整验收前必须完成 | 手机号／邮箱验证与密码恢复 | 选择验证服务，验证所有权证明、挑战过期／次数、一次消费、限流和重置后会话失效；注册／改密／重置统一数字＋字母密码规则 | 账号模块保持部分完成；不得仅凭标识重置或标为全量验收通过 |
-| V15 待用户补充材料 | 音频文件分析 | 文件到位后检查格式、编码、索引、词条映射、口音、可读性、播放、授权和存储；未到位保持未开始 | 不阻塞其他模块；不得将设备朗读或 CSS/JS 当词典录音 |
+| V15 阻断完整发音交付 | A02独立发音链路 | 材料已到位，94条转码／188次播放证据复用；全量、映射、人工试听、权利、鉴权／Range与正式卡片另验 | 离线底座与完整链路分开；不扩张M02文字条件，不用TTS替代 |
 
 ### 17.4 需求覆盖矩阵
 
@@ -939,7 +949,7 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 | 手机／邮箱注册登录、改密／重置／退出、用户隔离 | 6、12、13、14、15 | 数字＋字母密码规则、所有权验证、CSRF、authVersion、跨用户负向测试 |
 | 导入 EPUB、书架、元数据、资源保存、删除 | 7、11、13、14、16 | 真实有界解析、READY 原子发布、文件最终删除 |
 | 单页、目录、翻页、偏好、进度恢复 | 5、7、12、14 | 实际排版、CFI 内容验证、重排／多窗口冲突 |
-| 单词原型、词性优先、释义、音标；发音保留 | 8、9、14 | 本地 COL 结构数据与许可、原词形回退；音频待文件分析，不标记本轮已完成 |
+| 单词原型、词性优先、释义、音标；发音保留 | 8、9、14 | 本地 COL 结构数据与许可、原词形回退；音频交A02独立处理，样本验证不标记正式发音完成 |
 | 非模态查词卡片与真实原文 | 5、8、14 | 不改 DOM／分页、坐标边界、原文独立、键盘与焦点 |
 | 主动异步翻译 | 10、14、16 | 默认零请求、结果绑定、限流、原句与译文分别保存 |
 | lemma 主体、多语境收藏及回看 | 11、13、14、16 | 唯一约束、首次快照、重复句位置、取消与重放 |
@@ -962,7 +972,8 @@ EPUB、NLP 和收藏页面按路由懒加载，词法模块第一次按需加载
 | M06 | 收藏去重、快照、列表／回原文、取消与源书删除 | 本机事务并发与权限通过，取消重放不复活 |
 | M07 | TMT 适配、主动请求、缓存／配额、译文与收藏 | V06 真实调用，默认零请求，译文不串词 |
 | M08 | 导入／清理恢复、幂等、一致性与故障补偿 | V07 故障和竞争通过，无假成功／丢快照 |
-| M09 | 本机阶段验收、兼容／性能／安全／恢复和运行交付 | 数据库全在本机测试库；V02／V10／V11／V14；音频 V15 明确未验收 |
+| M09 | 本机阶段验收、兼容／性能／安全／恢复和运行交付 | 数据库全在本机测试库；V02／V10／V11／V14；音频V15的正式链路尚未验收 |
+| A02（独立新增） | 发音映射、离线MP3、独立数据集／存储、鉴权流与卡片播放 | A02-01～06独立验收；离线可先开展，卡片等M02／M05；不改M02原退出条件 |
 
 基础工程和数据契约可在供应商验证并行时开发，但不能在 Provider 未通过时把对应功能标为完成。若 EPUB 安全方案不能通过，不继续堆叠依赖其上的正式功能，先关闭内核风险。补充实验只针对明确未决项建立最小验证，不重做已有完整实验。
 

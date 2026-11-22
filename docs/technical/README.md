@@ -3,7 +3,7 @@
 技术设计与实施指导集中在本目录。正式应用 M00 已完成本机阶段验收，详见 [M00 实施与验收记录](../../validation/implementation/m00/README.md)；该结果不代表后续业务模块或生产部署已完成。
 
 - [Readict V1.1 系统技术设计文档](architecture/Readict-V1.1-系统技术设计.md)：整体架构、模块、阅读器、数据库与 API、关键一致性规则及待验证任务；区分已有证据、工程设计和候选方案。
-- [Readict V1.1 模块化开发计划](implementation/Readict-V1.1-模块化开发计划.md)：本机 MySQL 开发验收、M00～M09 详细任务／依赖／退出条件和音频待材料安排；M00 已通过本机验收，其余模块按计划推进。
+- [Readict V1.1 模块化开发计划](implementation/Readict-V1.1-模块化开发计划.md)：本机 MySQL 开发验收、M00～M09 详细任务／依赖／退出条件和独立A02发音安排；M00 已通过本机验收，其余模块按计划推进。
 - [M00 工程基础与本机环境执行文档](implementation/M00-工程基础与本机环境执行文档.md)：目标目录、依赖、账号、YAML、Mapper／XML、类型处理、事务、API、命令和排障；是实施指导，不是已通过报告。
 - [M01 用户认证与个人设置执行文档](implementation/M01-用户认证与个人设置执行文档.md)：基于真实 M00 的六项执行指导、V2～V4、Session／CSRF、账号设置和本地／真实验证阶段；核心与本地模拟已验收，真实通道待接入，见 [验收记录](../../validation/implementation/m01/README.md)。
 - [M01 用户认证与个人设置流程图解](implementation/M01-用户认证与个人设置流程图解.md)：11 张 Mermaid 架构／ER／流程／时序／状态图，解释 M01 各业务链路与安全边界；仅为实施辅助，不代表已完成。
@@ -18,4 +18,7 @@
 - [阅读器核心实验报告](../../validation/technical/reader-core/REPORT.md)：EPUB、CFI、选词、在线词典/翻译的实验结果。
 - [实验运行说明](../../validation/technical/reader-core/README.md)：复现方法、样本和外部输入。
 
-当前选择 React + TypeScript、Java 模块化单体、MyBatis-Plus＋XML、本机 MySQL80 开发验收、本地 COL 数据和 TMT 目标；epub.js 经适配器封装。密码按数字＋字母规则，恢复服务待定；音频待用户后续文件。方向已采纳不等于实现已通过，质量、授权、兼容、安全和依赖治理仍以实际验证门槛为准。
+当前选择 React + TypeScript、Java 模块化单体、MyBatis-Plus＋XML、本机 MySQL80 开发验收、本地 COL 数据和 TMT 目标；epub.js 经适配器封装。密码按数字＋字母规则，恢复服务待定；音频材料已提供，样本转码与浏览器播放通过，人工试听未确认；A02正式链路尚未开发／验收。方向已采纳不等于实现已通过，质量、授权、兼容、安全和依赖治理仍以实际验证门槛为准。
+
+- [A02 本地发音库处理与播放接入执行文档](implementation/A02-本地发音库处理与播放接入执行文档.md)：独立六项任务、离线MP3、数据集与私有文件、鉴权Range接口、卡片播放及独立验收；不扩张M02任务。
+- [ADR-0005](decisions/ADR-0005-独立发音库与离线MP3播放.md)：独立发音库、离线MP3和分阶段验收决定；样本证据不代表正式实现通过。
