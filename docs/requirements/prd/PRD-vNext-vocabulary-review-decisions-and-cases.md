@@ -33,25 +33,25 @@
 
 已有收藏模型：
 
-\`\`\`text
+```text
 UserFavoriteWord(user, lemma)  [V1.1，唯一]
     └── FavoriteWordContext[*] [V1.1，多个原句快照]
-\`\`\`
+```
 
 未来可能追加的业务概念（非数据库表建议）：
 
-\`\`\`text
+```text
 ReviewTarget(明确的词义/学习目标) [下一版本候选]
     ├── contexts: 一个或多个语境
     ├── question/answer: 该目标的有效题面及标准
     └── review state: 该目标的训练和间隔历史
-\`\`\`
+```
 
 **讨论例子**：
 
-- \`charge\` 在 “The shop will charge a fee.” 与 “They charge him with a crime.” 中属于不同含义；若同词一个全局已掌握标记，可能误判第二义。
-- \`reluctant\` 在多条句子中都表达“不情愿”，每条句子都创建一个长期到期卡片会形成不必要的任务量。
-- \`run\`／\`running\` 的 lemma 归并仍遵循 V1.1；词形变化不自动代表不同义项。
+- `charge` 在 “The shop will charge a fee.” 与 “They charge him with a crime.” 中属于不同含义；若同词一个全局已掌握标记，可能误判第二义。
+- `reluctant` 在多条句子中都表达“不情愿”，每条句子都创建一个长期到期卡片会形成不必要的任务量。
+- `run`／`running` 的 lemma 归并仍遵循 V1.1；词形变化不自动代表不同义项。
 - 同形不同词性有时需区分，不能仅靠词性一致就保证义项一致。
 
 **需批准的业务定义**：一个目标何时创建、何时共享状态、一个目标可挂接多少语境、如何在前端显示「单词数量」与「待复习目标数量」。
