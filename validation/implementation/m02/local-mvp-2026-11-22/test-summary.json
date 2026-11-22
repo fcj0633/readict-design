@@ -1,0 +1,65 @@
+{
+  "surefire-reports": {
+    "tests": 55,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failsafe-reports": {
+    "tests": 38,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "node": {
+    "tests": 63,
+    "passed": 63,
+    "failures": 0
+  },
+  "packaging": [
+    {
+      "name": "readict-backend-0.0.1-SNAPSHOT-dictionary-tool.jar",
+      "sizeBytes": 35658269,
+      "sha256": "f62638a7de0da5956eafee653c472caa31a0c0af757357d92c06e031158c59ee",
+      "manifest": [
+        "Manifest-Version: 1.0",
+        "Created-By: Maven JAR Plugin 3.5.1",
+        "Java-Version: 21",
+        "Build-Jdk-Spec: 21",
+        "Implementation-Title: readict-backend",
+        "Implementation-Version: 0.0.1-SNAPSHOT",
+        "Main-Class: org.springframework.boot.loader.launch.JarLauncher",
+        "Start-Class: com.readict.lexical.tool.DictionaryTool",
+        "Spring-Boot-Version: 4.1.2",
+        "Spring-Boot-Classes: BOOT-INF/classes/",
+        "Spring-Boot-Lib: BOOT-INF/lib/",
+        "Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx",
+        "Spring-Boot-Layers-Index: BOOT-INF/layers.idx",
+        ""
+      ],
+      "noLocalSecretsOrTestBundles": true
+    },
+    {
+      "name": "readict-backend-0.0.1-SNAPSHOT.jar",
+      "sizeBytes": 35442537,
+      "sha256": "7c924ce3e3de979f9056be0dc01e0b5f2ce1e5811e85c7a965b1c966081eb028",
+      "manifest": [
+        "Manifest-Version: 1.0",
+        "Created-By: Maven JAR Plugin 3.5.1",
+        "Java-Version: 21",
+        "Build-Jdk-Spec: 21",
+        "Implementation-Title: readict-backend",
+        "Implementation-Version: 0.0.1-SNAPSHOT",
+        "Main-Class: org.springframework.boot.loader.launch.JarLauncher",
+        "Start-Class: com.readict.ReadictApplication",
+        "Spring-Boot-Version: 4.1.2",
+        "Spring-Boot-Classes: BOOT-INF/classes/",
+        "Spring-Boot-Lib: BOOT-INF/lib/",
+        "Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx",
+        "Spring-Boot-Layers-Index: BOOT-INF/layers.idx",
+        ""
+      ],
+      "noLocalSecretsOrTestBundles": true
+    }
+  ]
+}

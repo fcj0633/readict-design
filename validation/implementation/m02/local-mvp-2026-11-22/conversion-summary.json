@@ -1,0 +1,155 @@
+{
+  "baselineAppCommit": "46e2e40f21e4c46dce550929ab914083d71c0e50",
+  "baselineDesignCommit": "049261a",
+  "rulesVersion": "col-extract-r4",
+  "converterVersion": "readict-col-converter-4",
+  "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+  "identityHash": "9ebe9056db268dac19c6f45713f0b6d993ab7a1a3e5e67a5bbec7c5fdec87cac",
+  "contentHash": "4a54069bf8870053879e632cd68b8dd83b20e3fbf0248390a1f1828c6d01a290",
+  "source": {
+    "mdxSha256": "60045536048014fa8f137ef2d1f1e85f31f0329715bb5749a4b1fb1b5f49f611",
+    "mddSha256": "3fc9d9e79e09dc1766880c7755291893d9b1b3e723e1a61a34fef5829ffeaaa3",
+    "sourceHash": "97338c3885dd6babe864402e6e40435293881758f41c6d176d3b4c9ca705c895"
+  },
+  "counts": {
+    "sourceTotal": 121872,
+    "sourceSucceeded": 91268,
+    "sourceSkipped": 25293,
+    "sourceFailed": 5311,
+    "entryCount": 92907,
+    "senseCount": 149337,
+    "formGenerated": 73700,
+    "formDeduplicated": 76,
+    "formCount": 73624
+  },
+  "bundleBytes": 194203437,
+  "files": [
+    {
+      "name": "entries.jsonl",
+      "sizeBytes": 65302279,
+      "sha256": "56b9677cf02147750bbb2271e8030a625658d29b611ee0b91d3b846f7eaaeef2",
+      "equal": true,
+      "maxLineBytes": 8580
+    },
+    {
+      "name": "senses.jsonl",
+      "sizeBytes": 79960371,
+      "sha256": "7b186201a90edbb7c5ee8c28eab1d7e8bd3a2320eea6229d1d4856efb569e8e4",
+      "equal": true,
+      "maxLineBytes": 919
+    },
+    {
+      "name": "forms.jsonl",
+      "sizeBytes": 21001415,
+      "sha256": "561e04686960cef9f96add5423336dc682db0f3d9bac7342feae048c1f181996",
+      "equal": true,
+      "maxLineBytes": 473
+    },
+    {
+      "name": "dispositions.jsonl",
+      "sizeBytes": 25851671,
+      "sha256": "b1bc9daca5a61d3b3b895a1f6849f5f02e932025160745d7becec6411aec1b81",
+      "equal": true,
+      "maxLineBytes": 282
+    },
+    {
+      "name": "issues.jsonl",
+      "sizeBytes": 2084777,
+      "sha256": "3a02892edeebb0384e180ddc84297143b668551a1b728cc44507ed6e34dcf5fb",
+      "equal": true,
+      "maxLineBytes": 372
+    },
+    {
+      "name": "quality-report.json",
+      "sizeBytes": 755,
+      "sha256": "3db107faa9b43bd47ebb54aded0001c84e690715f051f1a66ca66293cd7f7006",
+      "equal": true,
+      "maxLineBytes": 754
+    }
+  ],
+  "runs": [
+    {
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "counts": {
+        "sourceTotal": 121872,
+        "sourceSucceeded": 91268,
+        "sourceSkipped": 25293,
+        "sourceFailed": 5311,
+        "entryCount": 92907,
+        "senseCount": 149337,
+        "formGenerated": 73700,
+        "formDeduplicated": 76,
+        "formCount": 73624
+      },
+      "usageProfile": "LOCAL_MVP",
+      "durationMs": 253492,
+      "peakRssBytes": 727003136
+    },
+    {
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "counts": {
+        "sourceTotal": 121872,
+        "sourceSucceeded": 91268,
+        "sourceSkipped": 25293,
+        "sourceFailed": 5311,
+        "entryCount": 92907,
+        "senseCount": 149337,
+        "formGenerated": 73700,
+        "formDeduplicated": 76,
+        "formCount": 73624
+      },
+      "usageProfile": "LOCAL_MVP",
+      "durationMs": 268889,
+      "peakRssBytes": 514199552
+    }
+  ],
+  "issueSeverities": {
+    "ERROR": 5688,
+    "WARNING": 216
+  },
+  "issuesBySeverity": {
+    "ERROR": {
+      "HEADWORD_UNSUPPORTED": 2146,
+      "REFERENCE_TARGET_QUARANTINED": 448,
+      "MEANING_BOUNDARY_UNKNOWN": 1140,
+      "SOURCE_TEXT_DEFECT": 1779,
+      "REFERENCE_CYCLE": 17,
+      "SUBENTRY_STRUCTURE_UNKNOWN": 59,
+      "REFERENCE_DISPLAY_CONFLICT": 17,
+      "REFERENCE_STRUCTURE_UNKNOWN": 2,
+      "INFLECTION_TARGET_QUARANTINED": 18,
+      "SENSE_MISSING": 45,
+      "REFERENCE_DANGLING": 4,
+      "REGION_STRUCTURE_UNKNOWN": 13
+    },
+    "WARNING": {
+      "REFERENCE_DISPLAY_CONFLICT": 9,
+      "REFERENCE_TARGET_QUARANTINED": 207
+    }
+  },
+  "samples": {
+    "recovered": 100,
+    "remaining": 100,
+    "reviewer": "执行代理",
+    "senseCount": 861,
+    "components": 237,
+    "mechanicalZhSourceAlignmentFailures": 0,
+    "severeExtractionErrorsFound": 0,
+    "scope": "仅200条源记录，按来源逐字段核对；不外推整词典准确率",
+    "retiredSample": 9891,
+    "replacementSample": 16813,
+    "retirementReason": "明确词形关系检查后9891隔离，不在最终采用池；按原确定性排序补足100条恢复记录"
+  },
+  "strictReleaseEligible": false,
+  "localMvpEligible": true,
+  "distinctLemmaKeys": 62738,
+  "distinctFormKeys": 27078,
+  "distinctSearchableKeys": 88141,
+  "manifestSha256": "642b2a67db9ac8af1c362a043ab83465174381472fd4e337430166f82c8b5e5c",
+  "failedAttempt": {
+    "directory": "m02-mvp-20261122-v4-a.partial",
+    "reason": "RSS_BUDGET_EXCEEDED",
+    "published": false,
+    "resolution": "固定Node最大堆512MiB后重新执行B/C；RSS上限仍1GiB，未放宽"
+  }
+}

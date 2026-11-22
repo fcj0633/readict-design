@@ -1,0 +1,15 @@
+{
+  "app_user": 0,
+  "user_settings": 0,
+  "spring_session": 0,
+  "verification_challenge": 0,
+  "password_reset_credential": 0,
+  "rate_bucket": 0,
+  "flywayVersions": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ]
+}

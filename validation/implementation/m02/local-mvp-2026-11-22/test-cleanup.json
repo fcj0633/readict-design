@@ -1,0 +1,9 @@
+{
+  "database": "readict_test",
+  "removedDatasets": [
+    "a5ee67bd-5e4c-8379-b657-c3b188bf94b4",
+    "7e32b20b-3cbe-8ebc-9063-8009a59cc598"
+  ],
+  "activeRestored": true,
+  "resultingVersion": 46
+}

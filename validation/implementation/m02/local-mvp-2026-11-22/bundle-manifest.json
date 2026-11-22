@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "readict-col-bundle-2",
+  "diagnosticOnly": false,
+  "usageProfile": "LOCAL_MVP",
+  "adoptionPolicy": "col-local-mvp-v1",
+  "source": {
+    "mdxSha256": "60045536048014fa8f137ef2d1f1e85f31f0329715bb5749a4b1fb1b5f49f611",
+    "mddSha256": "3fc9d9e79e09dc1766880c7755291893d9b1b3e723e1a61a34fef5829ffeaaa3",
+    "sourceHash": "97338c3885dd6babe864402e6e40435293881758f41c6d176d3b4c9ca705c895"
+  },
+  "datasetVersion": "col-local-mvp-1",
+  "converterVersion": "readict-col-converter-4",
+  "parserVersion": "js-mdict@6.0.6",
+  "normalizationVersion": "col-normalize-v1",
+  "rulesVersion": "col-extract-r4",
+  "identityHash": "9ebe9056db268dac19c6f45713f0b6d993ab7a1a3e5e67a5bbec7c5fdec87cac",
+  "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+  "counts": {
+    "sourceTotal": 121872,
+    "sourceSucceeded": 91268,
+    "sourceSkipped": 25293,
+    "sourceFailed": 5311,
+    "entryCount": 92907,
+    "senseCount": 149337,
+    "formGenerated": 73700,
+    "formDeduplicated": 76,
+    "formCount": 73624
+  },
+  "files": [
+    {
+      "name": "entries.jsonl",
+      "sizeBytes": 65302279,
+      "lineCount": 92907,
+      "sha256": "56b9677cf02147750bbb2271e8030a625658d29b611ee0b91d3b846f7eaaeef2"
+    },
+    {
+      "name": "senses.jsonl",
+      "sizeBytes": 79960371,
+      "lineCount": 149337,
+      "sha256": "7b186201a90edbb7c5ee8c28eab1d7e8bd3a2320eea6229d1d4856efb569e8e4"
+    },
+    {
+      "name": "forms.jsonl",
+      "sizeBytes": 21001415,
+      "lineCount": 73624,
+      "sha256": "561e04686960cef9f96add5423336dc682db0f3d9bac7342feae048c1f181996"
+    },
+    {
+      "name": "dispositions.jsonl",
+      "sizeBytes": 25851671,
+      "lineCount": 121872,
+      "sha256": "b1bc9daca5a61d3b3b895a1f6849f5f02e932025160745d7becec6411aec1b81"
+    },
+    {
+      "name": "issues.jsonl",
+      "sizeBytes": 2084777,
+      "lineCount": 5904,
+      "sha256": "3a02892edeebb0384e180ddc84297143b668551a1b728cc44507ed6e34dcf5fb"
+    },
+    {
+      "name": "quality-report.json",
+      "sizeBytes": 755,
+      "lineCount": 1,
+      "sha256": "3db107faa9b43bd47ebb54aded0001c84e690715f051f1a66ca66293cd7f7006"
+    }
+  ],
+  "contentHash": "4a54069bf8870053879e632cd68b8dd83b20e3fbf0248390a1f1828c6d01a290",
+  "quality": {
+    "reportSha256": "3db107faa9b43bd47ebb54aded0001c84e690715f051f1a66ca66293cd7f7006",
+    "exclusionApprovalHash": null,
+    "releaseEligible": false,
+    "localMvpEligible": true
+  },
+  "rights": {
+    "status": "UNVERIFIED",
+    "policyVersion": "unverified",
+    "attribution": "本地 COL；来源及使用权利待核实",
+    "snapshotAllowed": false,
+    "distributionAllowed": false
+  }
+}

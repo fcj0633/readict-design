@@ -1,11 +1,22 @@
 # M02 COL 词典数据底座技术设计与执行文档
 
-版本：0.3；日期：2026-11-21。状态：**部分实施：M02-01 输入与兼容性通过，M02-02 r3修复及复验已交付、整体技术质量仍未通过；后续阶段未实施**。实际结果见 [M02 实施与质量阻断记录](../../../validation/implementation/m02/README.md)。
+版本：0.4；日期：2026-11-22。状态：**本机MVP词典底座完成，可用子集已导入并启用开发库，内部查询验收通过；完整词典质量仍未通过**。实际结果见 [M02 实施与质量阻断记录](../../../validation/implementation/m02/README.md)。
 
 需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)。总体设计：[系统技术设计](../architecture/Readict-V1.1-系统技术设计.md)。任务来源：[模块化开发计划](Readict-V1.1-模块化开发计划.md)。既定决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)。前置实现：[M01 验收记录](../../../validation/implementation/m01/README.md)。
 
-阅读顺序：现状与范围 → 流水线和数据契约 → 词形与查询 → 数据库与导入 → 六项任务 → 验收与排障。本文保留完整目标契约；当前只有 inspect 和诊断 diagnose 已实现，正式 convert／validate、词形关系、V5、Java 导入及 Provider 尚未交付。下文未来命令不能据此假定可执行，真实通过范围以实施记录为准。
+阅读顺序：现状与范围 → 流水线和数据契约 → 词形与查询 → 数据库与导入 → 六项任务 → 验收与排障。本文保留完整目标契约；现已实现 inspect／diagnose／convert／validate、证据词形映射、V5、Java独立工具及Provider；当前仅采用LOCAL_MVP范围，完整质量未通过。开发库经用户批准补执行原V2～V4，再执行V5、导入并启用。历史阶段“未来”描述按原计划保留，命令以本次LOCAL_MVP显式参数及实际运行README为准。
 
+
+### 0.2 2026-11-22 LOCAL_MVP 实施基线
+
+用户确认沿用当前 COL，不更换、不补词、不应用人工修正表，完成 M02 全部底座并在测试验收后启用开发库。本次以 LOCAL_MVP 有限覆盖验收替代“全部源记录错误清零”前置要求；历史 r3 全量质量未通过结论不变。
+
+- 全源扫描、一源一处置；必要区域失败仍整条隔离，不采用 FAIL 的局部内容。已明确 see also／compare 的附加引用不决定独立释义可用性；无效附加链接记 WARNING 并不输出可用链接。跳转、身份关系及未知引用仍严格处理。
+- 正式包 schema 为 readict-col-bundle-2，usageProfile=LOCAL_MVP，adoptionPolicy=col-local-mvp-v1；quality.releaseEligible=false，localMvpEligible 仅代表包内安全和闭合。Node／Java 默认拒绝，只有显式 --allow-local-mvp 才可校验、导入、激活。diagnosticOnly=true 永远拒绝。
+- FAIL 原因逐条保留；MVP 允许包外隔离，不等于批准源文修正或发布。纳入数据不得有阻断错误；每 entry 必须有 sense。完整源处置、摘要、身份、映射、预算均独立重算。
+- 来源元数据、componentOrder、labels、notes、references 保存在五表的结构字段／JSON 中；不增加用户关联。数据包质量与采用策略作为不可变身份的一部分版本化，不允许同身份变更策略。
+- READY 表示声明使用范围内导入完整；仍需显式激活。不改变权利 UNVERIFIED、snapshotAllowed=false、distributionAllowed=false。
+- 本轮不开发 HTTP／前端／音频。验收先 readict_test，再 readict_dev；不改 V1～V4，不清库。实施结果另行归档，未实际通过前不标完成。
 
 ### 0.1 2026-11-21 r3 修订与本轮实施边界
 
@@ -20,7 +31,7 @@
 - 同一源任一必要区域有错误仍整体FAIL；局部结果只写隔离诊断。None、无解释空正文保持ERROR；已确认只是派生元信息的段不按必须有释义处理，此分类不豁免真实缺字。
 - 保留集从r2另取三类各30条，排除已知300及固定回归词；源内容完整、范围内的边界保留样本完整提取率至少90%，已输出字段不能有严重误提取。未达标按部分修复提交，不降低门槛。
 
-未来V5示例尚未执行，以下DDL并未作为r3字段持久化的完整交付；在实施V5前必须补齐component、labels和relations的持久化映射及Java校验。此轮仅实现Node诊断和身份向量。
+r3历史实施仅交付诊断及身份向量；本次 LOCAL_MVP 将 V5 与字段映射落实为实际迁移：componentOrder 使用结构列，phonetics、labels、notes、references 和来源证据保存完整 metadata_json，发布身份、使用范围和权利保存在 manifest_json。下方 DDL 已同步实际 V5；旧阶段“未来”说明保留原计划语境，以本次验收记录为准。
 
 ## 1. 目标、范围和已有证据
 
@@ -207,7 +218,7 @@ bundle/
 
 原始隔离 HTML 在 bundle 外的忽略目录，不能成为导入必须执行的内容。manifest 内文件名必须是上述白名单相对名，不接受绝对路径、`..`、URL、符号链接或重解析点越界；导入程序以真实路径校验输入根目录，并限制文件大小／行长。
 
-统一 `UTF-8 无BOM、LF、每行一个对象、最后一行LF`。对象固定 schema 字段顺序，null 显式输出，数字使用整数，禁止 NaN；除规则规定的空白外不随机改写字符串。entries 按 sourceOrdinal、sectionOrder、componentOrder；senses 按对应 entry 顺序、providerOrder；forms 按 surfaceKey 的 UTF-8字节序、entryKey、relation；不使用机器 locale 排序。
+统一 `UTF-8 无BOM、LF、每行一个对象、最后一行LF`。对象固定 schema 字段顺序，null 显式输出，数字使用整数，禁止 NaN；除规则规定的空白外不随机改写字符串。entries 按 sourceOrdinal、sectionOrder、componentOrder；senses 按对应 entry 顺序、providerOrder；forms 按 surfaceKey、entryId、relation 的 UTF-8字节序；不使用机器 locale 排序。
 
 manifest和quality-report的JSON文件也各写成一个紧凑对象加尾LF，文中多行缩进仅供阅读。JSONL按各记录schema固定字段顺序；evidence对象／数组先按来源序号、区域、ruleId固定排序，不接受运行时Map插入顺序决定摘要。字符串转义固定为标准JSON必要转义，不额外转义非ASCII字符。
 
@@ -217,6 +228,7 @@ manifest和quality-report的JSON文件也各写成一个紧凑对象加尾LF，�
 |---|---|
 | schemaVersion | `readict-col-bundle-2`，不兼容格式变更必须升级 |
 | diagnosticOnly | 必填布尔值；采样true、完整包false；Java正式导入拒绝true |
+| usageProfile／adoptionPolicy | 当前LOCAL_MVP／col-local-mvp-v1，显式--allow-local-mvp才可采用 |
 | source | mdxSha256、mddSha256、sourceHash；小写64位hex；MDD未提供必须显式null |
 | datasetVersion | 人工标记的数据发布版本，如col-local-r1；不等于记录数或当前日期 |
 | converterVersion／parserVersion／normalizationVersion／rulesVersion | 精确版本，不能写latest；变更规则必须提升版本 |
@@ -224,7 +236,7 @@ manifest和quality-report的JSON文件也各写成一个紧凑对象加尾LF，�
 | counts | sourceTotal／sourceSucceeded／sourceSkipped／sourceFailed；entry／sense／form总数 |
 | files | 各文件name、sizeBytes、lineCount、sha256；不含manifest自身 |
 | contentHash | 按文件白名单顺序，对各name／sizeBytes／sha256的规范化元组求SHA256 |
-| quality | reportSha256、exclusionApprovalHash（无排除时null）、releaseEligible |
+| quality | reportSha256、exclusionApprovalHash（无人工修正时null）、releaseEligible=false、localMvpEligible；后者重算包内完整性，语义抽查另记 |
 | rights | status=UNVERIFIED或CONFIRMED、policyVersion、attribution、snapshotAllowed、distributionAllowed |
 
 sourceHash 为规范化数组 `["readict-col-source-1",mdxSha256,mddSha256]` 的SHA256。identityHash 为规范化数组 `[schemaVersion,sourceHash,datasetVersion,converterVersion,parserVersion,normalizationVersion,rulesVersion]` 的SHA256。固定紧凑JSON、不转义非ASCII、无尾换行；Node和Java各有黄金向量测试。不把生成时间放入确定性内容或身份；执行时间、耗时和机器信息放运行记录。
@@ -337,111 +349,76 @@ formCount = 去重后全局forms行数
 
 ```sql
 CREATE TABLE dictionary_dataset (
-  id BINARY(16) NOT NULL,
-  identity_hash BINARY(32) NOT NULL,
-  source_hash BINARY(32) NOT NULL,
-  dataset_version VARCHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
-  converter_version VARCHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
-  parser_version VARCHAR(64) CHARACTER SET ascii NOT NULL,
-  normalization_version VARCHAR(64) CHARACTER SET ascii NOT NULL,
-  rules_version VARCHAR(64) CHARACTER SET ascii NOT NULL,
-  status VARCHAR(16) CHARACTER SET ascii NOT NULL,
-  counts_json JSON NOT NULL,
-  content_hash BINARY(32) NOT NULL,
-  manifest_json JSON NOT NULL,
-  rights_status VARCHAR(16) CHARACTER SET ascii NOT NULL,
-  snapshot_allowed BOOLEAN NOT NULL DEFAULT FALSE,
-  distribution_allowed BOOLEAN NOT NULL DEFAULT FALSE,
-  import_owner BINARY(16) NULL,
-  lease_until DATETIME(3) NULL,
-  import_phase VARCHAR(16) CHARACTER SET ascii NOT NULL DEFAULT 'ENTRIES',
-  checkpoint_line BIGINT NOT NULL DEFAULT 0,
-  error_code VARCHAR(64) CHARACTER SET ascii NULL,
-  created_at DATETIME(3) NOT NULL,
-  ready_at DATETIME(3) NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY uk_dataset_identity (identity_hash),
-  UNIQUE KEY uk_dataset_release (source_hash,dataset_version,converter_version),
-  KEY ix_dataset_status (status,created_at),
-  CONSTRAINT ck_dataset_status CHECK (status IN ('IMPORTING','READY','FAILED')),
-  CONSTRAINT ck_dataset_phase CHECK (import_phase IN ('ENTRIES','SENSES','FORMS','VERIFY','DONE')),
-  CONSTRAINT ck_dataset_checkpoint CHECK (checkpoint_line >= 0),
-  CONSTRAINT ck_dataset_rights CHECK (rights_status IN ('UNVERIFIED','CONFIRMED')),
-  CONSTRAINT ck_dataset_ready CHECK (status <> 'READY' OR (ready_at IS NOT NULL AND import_phase = 'DONE'))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_bin;
-
+ id BINARY(16) PRIMARY KEY,
+ identity_hash CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL UNIQUE,
+ source_hash CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ dataset_version VARCHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ converter_version VARCHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ content_hash CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ status VARCHAR(16) CHARACTER SET ascii NOT NULL,
+ import_phase VARCHAR(16) CHARACTER SET ascii NOT NULL,
+ checkpoint_line BIGINT NOT NULL DEFAULT 0,
+ lease_owner BINARY(16) NULL,
+ lease_until DATETIME(3) NULL,
+ manifest_json JSON NOT NULL,
+ error_code VARCHAR(64) CHARACTER SET ascii NULL,
+ created_at DATETIME(3) NOT NULL,
+ ready_at DATETIME(3) NULL,
+ CONSTRAINT uk_dictionary_release UNIQUE(source_hash,dataset_version,converter_version),
+ CONSTRAINT ck_dictionary_status CHECK(status IN ('IMPORTING','READY','FAILED')),
+ CONSTRAINT ck_dictionary_phase CHECK(import_phase IN ('ENTRIES','SENSES','FORMS','VERIFY','DONE')),
+ CONSTRAINT ck_dictionary_checkpoint CHECK(checkpoint_line>=0),
+ CONSTRAINT ck_dictionary_ready CHECK(status<>'READY' OR (ready_at IS NOT NULL AND import_phase='DONE'))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 CREATE TABLE dictionary_active (
-  slot VARCHAR(16) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
-  dataset_id BINARY(16) NULL,
-  version BIGINT NOT NULL DEFAULT 0,
-  updated_at DATETIME(3) NOT NULL,
-  PRIMARY KEY (slot),
-  CONSTRAINT fk_active_dataset FOREIGN KEY (dataset_id) REFERENCES dictionary_dataset(id),
-  CONSTRAINT ck_active_slot CHECK (slot = 'col'),
-  CONSTRAINT ck_active_version CHECK (version >= 0)
+ slot TINYINT PRIMARY KEY,
+ dataset_id BINARY(16) NULL,
+ version BIGINT NOT NULL DEFAULT 0,
+ CONSTRAINT ck_dictionary_slot CHECK(slot=1),
+ CONSTRAINT fk_dictionary_active FOREIGN KEY(dataset_id) REFERENCES dictionary_dataset(id)
 ) ENGINE=InnoDB;
-INSERT INTO dictionary_active(slot,dataset_id,version,updated_at)
-VALUES ('col',NULL,0,UTC_TIMESTAMP(3));
-
+INSERT INTO dictionary_active(slot,dataset_id,version) VALUES(1,NULL,0);
 CREATE TABLE dictionary_entry (
-  id BINARY(16) NOT NULL,
-  dataset_id BINARY(16) NOT NULL,
-  entry_key VARCHAR(128) NOT NULL,
-  source_ordinal BIGINT NOT NULL,
-  source_index_key VARCHAR(512) NOT NULL,
-  section_order INT NOT NULL,
-  provider VARCHAR(64) NOT NULL,
-  provider_version VARCHAR(64) NOT NULL,
-  source_lang VARCHAR(16) NOT NULL DEFAULT 'en',
-  target_lang VARCHAR(16) NOT NULL DEFAULT 'zh-CN',
-  lemma_key VARCHAR(128) NOT NULL,
-  headword VARCHAR(128) NOT NULL,
-  lemma_method VARCHAR(32) NOT NULL,
-  phonetics_json JSON NOT NULL,
-  source_record_hash BINARY(32) NOT NULL,
-  attribution TEXT NOT NULL,
-  license_policy_version VARCHAR(64) NOT NULL,
-  created_at DATETIME(3) NOT NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY uk_entry_source (dataset_id,entry_key,section_order),
-  UNIQUE KEY uk_entry_dataset (id,dataset_id),
-  KEY ix_entry_lemma (dataset_id,lemma_key),
-  CONSTRAINT fk_entry_dataset FOREIGN KEY (dataset_id) REFERENCES dictionary_dataset(id),
-  CONSTRAINT ck_entry_order CHECK (source_ordinal >= 0 AND section_order >= 0)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_bin;
-
+ id BINARY(16) NOT NULL,
+ dataset_id BINARY(16) NOT NULL,
+ entry_key VARCHAR(80) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ source_ordinal BIGINT NOT NULL,
+ section_order INT NOT NULL,
+ component_order INT NOT NULL,
+ headword VARCHAR(128) NOT NULL,
+ lemma_key VARCHAR(128) NOT NULL,
+ metadata_json JSON NOT NULL,
+ PRIMARY KEY(dataset_id,id),
+ CONSTRAINT uk_dictionary_entry_key UNIQUE(dataset_id,entry_key),
+ KEY ix_dictionary_lemma(dataset_id,lemma_key),
+ CONSTRAINT fk_dictionary_entry_dataset FOREIGN KEY(dataset_id) REFERENCES dictionary_dataset(id),
+ CONSTRAINT ck_dictionary_entry_order CHECK(source_ordinal>=0 AND section_order>=0 AND component_order>=0)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 CREATE TABLE dictionary_sense (
-  id BINARY(16) NOT NULL,
-  entry_id BINARY(16) NOT NULL,
-  provider_sense_key VARCHAR(128) NOT NULL,
-  pos VARCHAR(24) CHARACTER SET ascii NOT NULL,
-  raw_pos VARCHAR(128) NULL,
-  meaning_zh TEXT NOT NULL,
-  provider_order INT NOT NULL,
-  source_label VARCHAR(128) NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY uk_sense_order (entry_id,provider_order),
-  CONSTRAINT fk_sense_entry FOREIGN KEY (entry_id) REFERENCES dictionary_entry(id) ON DELETE CASCADE,
-  CONSTRAINT ck_sense_order CHECK (provider_order >= 0),
-  CONSTRAINT ck_sense_pos CHECK (pos IN ('noun','verb','adjective','adverb','pronoun','preposition',
-    'conjunction','determiner','interjection','unknown'))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_bin;
-
+ id BINARY(16) NOT NULL,
+ dataset_id BINARY(16) NOT NULL,
+ entry_id BINARY(16) NOT NULL,
+ provider_order INT NOT NULL,
+ pos VARCHAR(32) CHARACTER SET ascii NOT NULL,
+ zh TEXT NOT NULL,
+ metadata_json JSON NOT NULL,
+ PRIMARY KEY(dataset_id,id),
+ CONSTRAINT uk_dictionary_sense_order UNIQUE(dataset_id,entry_id,provider_order),
+ CONSTRAINT fk_dictionary_sense_entry FOREIGN KEY(dataset_id,entry_id) REFERENCES dictionary_entry(dataset_id,id),
+ CONSTRAINT ck_dictionary_sense_order CHECK(provider_order>=0)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 CREATE TABLE dictionary_form_mapping (
-  dataset_id BINARY(16) NOT NULL,
-  surface_key VARCHAR(128) NOT NULL,
-  entry_id BINARY(16) NOT NULL,
-  relation VARCHAR(32) CHARACTER SET ascii NOT NULL,
-  evidence JSON NOT NULL,
-  priority SMALLINT NOT NULL,
-  PRIMARY KEY (dataset_id,surface_key,entry_id,relation),
-  KEY ix_form_entry (entry_id,dataset_id),
-  CONSTRAINT fk_form_dataset FOREIGN KEY (dataset_id) REFERENCES dictionary_dataset(id),
-  CONSTRAINT fk_form_same_dataset FOREIGN KEY (entry_id,dataset_id)
-    REFERENCES dictionary_entry(id,dataset_id),
-  CONSTRAINT ck_form_relation CHECK (relation IN ('INFLECTION','REDIRECT','CURATED_CORRECTION')),
-  CONSTRAINT ck_form_priority CHECK (priority >= 0)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_bin;
+ dataset_id BINARY(16) NOT NULL,
+ surface_key VARCHAR(128) NOT NULL,
+ entry_id BINARY(16) NOT NULL,
+ relation VARCHAR(32) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ priority INT NOT NULL,
+ metadata_json JSON NOT NULL,
+ PRIMARY KEY(dataset_id,surface_key,entry_id,relation),
+ KEY ix_dictionary_form_entry(dataset_id,entry_id),
+ CONSTRAINT fk_dictionary_form_entry FOREIGN KEY(dataset_id,entry_id) REFERENCES dictionary_entry(dataset_id,id),
+ CONSTRAINT ck_dictionary_form_relation CHECK(relation IN ('INFLECTION','REDIRECT'))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 ```
 
 form_mapping 的 entry 必须属于同一 dataset；上述entry的`(id,dataset_id)`唯一键与复合FK是V5必备约束，Repository／导入校验也复核归属。不能改为两个独立FK后声称同数据集归属已被数据库保证。
@@ -604,7 +581,7 @@ npm run inspect -- --mdx 'D:\Java-learning\Readict\readict-design\dict\col\col.m
 
 先按第3节拆分纯函数，输入一个SourceRecord，输出候选区域、义项和问题；禁止在提取函数内查询数据库／调用翻译。建立普通、混排、多区域、重复标题、unknown POS、缺IPA、恶意script、嵌套例句、HTML entity和缺字夹具。测试断言中文内容与顺序而非只断言“返回了数组”。真实代表词人工核对源HTML与输出，不执行源交互。
 
-未来在tools/dictionary-import执行 `npm test`；转换小型明确输入范围的诊断参数约定 `npm run convert -- --mdx <路径> --out <本地诊断目录> --sample-ordinals <逗号分隔序号>`。sample产物必须manifest标记 `diagnosticOnly=true`，正式校验／Java导入明确拒绝该字段为true；不能拿采样包覆盖全量数据集。参数中的尖括号为占位，必须替换，不可直接执行。
+在tools/dictionary-import执行 `npm test`。本轮convert仅提供全源转换，不提供--sample-ordinals参数；小型夹具由正式测试自建。采样包／诊断包必须diagnosticOnly=true，Node及Java始终拒绝其正式导入；不能拿样本覆盖数据集。
 
 预期：例句不进入senses，IPA保留，无法可靠提取的记录明确FAIL。若中文只剩半句，检查DOM边界而非继续追加正则；如果全体POS为unknown，核对源标签分支，不谎称“词性处理通过”。完成条件：关键夹具输出与人工期望一致，异常可定位到源记录／区域，未静默补字／删义项。
 
@@ -629,7 +606,7 @@ npm run inspect -- --mdx 'D:\Java-learning\Readict\readict-design\dict\col\col.m
 ```powershell
 $readictDictionaryOut = 'D:\Java-learning\Readict\readict-app\.artifacts\dictionary\col-r1'
 npm run convert -- --mdx 'D:\Java-learning\Readict\readict-design\dict\col\col.mdx' --mdd 'D:\Java-learning\Readict\readict-design\dict\col\col.mdd' --out $readictDictionaryOut --dataset-version col-local-r1
-npm run validate -- --bundle $readictDictionaryOut
+npm run validate -- --bundle $readictDictionaryOut --allow-local-mvp
 ```
 
 全量转换前先估算预算；输出目录必须未存在，重复运行用另一个目录，不能覆盖已供导入使用的包。两次全量转换比较manifest确定性字段和所有文件摘要；运行时间写bundle外报告。出现摘要不同，定位排序、随机ID、locale、生成时间或规则版本，不以“内容看着一样”验收。
@@ -644,7 +621,7 @@ npm run validate -- --bundle $readictDictionaryOut
 
 实施顺序：V5审阅→普通BundleValidator测试→独立CLI启动隔离→真实空增量迁移／重复启动→500行批次与租约恢复→READY校验→显式切换→查询与缓存→失败与竞争测试。保留V1～V4原字节，不删除旧测试；FoundationIT的预期表集合增补五表，M00／M01保护断言仍有效。
 
-Entity指定IdType.INPUT、autoResultMap与UUID／UTC处理器；form复合主键不强塞BaseMapper默认id，通过专用XML操作。对metadata、批次内容和checkpoint有业务含义的SQL必须显式书写，不依赖MP全局逻辑删除／乐观锁插件。
+当前实现五表通过专用XML Mapper批量写读，UUID复用共享UuidBinaryTypeHandler的网络字节序编码／解码；UTC通过隔离连接配置及UTC_TIMESTAMP(3)写入。metadata_json保留完整结构字段，manifest_json保留不可变采用范围与权利。批次、owner和checkpoint SQL显式编写，同事务提交，不依赖全局逻辑删除／乐观锁插件。原BaseMapper与UUID／UTC处理器回归继续执行。
 
 未来backend/，先普通测试 `mvn test`；再在已按应用README安全加载test账号的专用终端：
 
@@ -664,13 +641,13 @@ mvn package -DskipTests
 ```powershell
 $readictDictionaryJar = './target/readict-backend-0.0.1-SNAPSHOT-dictionary-tool.jar'
 $readictDictionaryBundle = '../.artifacts/dictionary/col-r1'
-java -jar $readictDictionaryJar validate --bundle $readictDictionaryBundle
-java -jar $readictDictionaryJar import --bundle $readictDictionaryBundle --spring.profiles.active=test
+java -jar $readictDictionaryJar validate --bundle $readictDictionaryBundle --allow-local-mvp
+java -jar $readictDictionaryJar import --bundle $readictDictionaryBundle --allow-local-mvp --spring.profiles.active=test
 $readictDatasetId = (Get-Content (Join-Path $readictDictionaryBundle 'manifest.json') -Raw | ConvertFrom-Json).datasetId
 java -jar $readictDictionaryJar inspect --dataset $readictDatasetId --spring.profiles.active=test
 ```
 
-先逐条确认退出码0，再进行下一条，不将失败的validate当作继续导入的许可。inspect应返回dataset状态／计数及当前active版本；激活命令为 `java -jar <工具JAR> activate --dataset <实际UUID> --expected-active-version <刚读取的版本> --spring.profiles.active=test`，人工核对后替换占位值执行。CLI显式允许并转交spring.profiles.active参数，其余业务参数严格白名单；数据库命令启动仍会按配置校验／执行增量Flyway，不能把inspect描述为完全不触发初始化的离线文件检查。只有validate保证不启动Spring／数据库。
+先逐条确认退出码0，再进行下一条，不将失败的validate当作继续导入的许可。inspect应返回dataset状态／计数及当前active版本；激活命令为 `java -jar <工具JAR> activate --dataset <实际UUID> --expected-active-version <刚读取的版本> --allow-local-mvp --spring.profiles.active=test`，人工核对后替换占位值执行。CLI显式允许并转交spring.profiles.active参数，其余业务参数严格白名单；数据库命令启动仍会按配置校验／执行增量Flyway，不能把inspect描述为完全不触发初始化的离线文件检查。只有validate保证不启动Spring／数据库。
 
 排障：Bean加载HttpSecurity说明离线入口扫描过宽；普通测试要求真实密码说明测试上下文错误；UUID转字节异常检查resultMap而非改DDL为字符串；续跑重复键检查checkpoint是否与批次同事务；切换后混数据检查缓存key和JOIN的dataset条件。完成条件：Java可查真实COL文字数据、导入幂等／中断／失败恢复、版本竞争和缓存隔离全部有实际结果；不是仅“建了五张表”。
 
@@ -733,3 +710,7 @@ M02完成需满足文字质量、转换可复现、计数、导入一致性和�
 ## 2026-11-21 r3实际交付补记
 
 [r3复验报告](../../../validation/implementation/m02/extractor-r3-2026-11-21/README.md)记录57项测试及两次121872源诊断，确定性输出一致；sourceFailed=5519，整体质量仍阻断。col-normalize-v1未变，源修正／排除均未批准。字段和身份契约修订不代表正式包或V5已实现。
+
+### 2026-11-22 本轮实际验收入口
+
+见[LOCAL_MVP报告](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)。两次正式包及独立校验、测试库导入／激活／内部查询、事务与并发、缓存及性能已验收。源缺陷不补写，5311条隔离不计有效内容。开发库原仅V1，经用户明确批准按原样补执行V2～V4后执行V5，已导入并激活同一验收包；两独立进程查询一致，未清理业务数据。

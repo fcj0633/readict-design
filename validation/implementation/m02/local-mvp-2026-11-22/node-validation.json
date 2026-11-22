@@ -1,0 +1,17 @@
+{
+  "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+  "usageProfile": "LOCAL_MVP",
+  "counts": {
+    "sourceTotal": 121872,
+    "sourceSucceeded": 91268,
+    "sourceSkipped": 25293,
+    "sourceFailed": 5311,
+    "entryCount": 92907,
+    "senseCount": 149337,
+    "formGenerated": 73700,
+    "formDeduplicated": 76,
+    "formCount": 73624
+  },
+  "status": "LOCAL_MVP_VALIDATED",
+  "releaseEligible": false
+}

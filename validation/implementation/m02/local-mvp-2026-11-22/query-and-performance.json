@@ -1,0 +1,515 @@
+{
+  "profile": "test",
+  "fixed50": [
+    {
+      "word": "book",
+      "status": "FOUND",
+      "resolvedLemmaKey": "book",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 3,
+      "senseCount": 24,
+      "resultHash": "cf10fbba153de13f83846dce5ef7a8c2d4ab3bd56c3761ce3bee2dd54c34a22c"
+    },
+    {
+      "word": "books",
+      "status": "FOUND",
+      "resolvedLemmaKey": "book",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 3,
+      "senseCount": 24,
+      "resultHash": "37e75aefb264d6dfd5ab9dd64d9c8ba5cf475f89d496b6e96f2678541f134172"
+    },
+    {
+      "word": "read",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "6e9f75a606cfce615694ba25172d4cd7836e35d55e11bdb834d5df15f5f1585c"
+    },
+    {
+      "word": "reads",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "747eb559b3b7c137c9f6f1ec753bd35544c785aad34fc1cccb6ee97a6ec73d6c"
+    },
+    {
+      "word": "reading",
+      "status": "FOUND",
+      "resolvedLemmaKey": "reading",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 2,
+      "senseCount": 8,
+      "resultHash": "f1a3a6a70bef089ebbc05e665a246cd6aa1cd7af037e39488af5abe071e47893"
+    },
+    {
+      "word": "run",
+      "status": "FOUND",
+      "resolvedLemmaKey": "run",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 6,
+      "senseCount": 106,
+      "resultHash": "2575d17b37119a10283cf1c55f77d4a7fd992ceb51b7c7348ae50661bd0e6351"
+    },
+    {
+      "word": "runs",
+      "status": "FOUND",
+      "resolvedLemmaKey": "run",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 6,
+      "senseCount": 106,
+      "resultHash": "a74b4ebf1a8d0b3e515a01d1c41d616caca9180c988294e757d57b44cd305378"
+    },
+    {
+      "word": "ran",
+      "status": "FOUND",
+      "resolvedLemmaKey": "run",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 4,
+      "senseCount": 84,
+      "resultHash": "40e3c31246da02dbb47670c59773fab2c36c7383bc78729726b7063883e005ea"
+    },
+    {
+      "word": "running",
+      "status": "AMBIGUOUS",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 5,
+      "senseCount": 93,
+      "resultHash": "fd19e1ddde3fd9d5f2d8fd3e6e191f861089a9e4fa0b798954bb62633ecdce03"
+    },
+    {
+      "word": "child",
+      "status": "FOUND",
+      "resolvedLemmaKey": "child",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 2,
+      "resultHash": "f0eacad6b88d4aa0dc19ba0822845c01b6d3481bdbffcd23af9b8a0f352e3eda"
+    },
+    {
+      "word": "children",
+      "status": "FOUND",
+      "resolvedLemmaKey": "child",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 2,
+      "resultHash": "efb3d066624aaa54ab17dd8673155d3154efb2248cf9dd32fb8c7ccc1e244f04"
+    },
+    {
+      "word": "saw",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "f34bb57d13a45460a852fb38bcd27c5d710c7b90ee54891d5c6feae15edcaa7c"
+    },
+    {
+      "word": "see",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "b7f21729bbf0fcc6975b720b8dd27b76cc7e3df5b80ab249a663b08dcde2843d"
+    },
+    {
+      "word": "seen",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "eb199cf7520585bdb1f900518e322bc35db1bb97e8f84354dcb71110d5ab1647"
+    },
+    {
+      "word": "went",
+      "status": "FOUND",
+      "resolvedLemmaKey": "go",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 6,
+      "senseCount": 72,
+      "resultHash": "aa8af0dc096236dcd269e82c922a23ddfab83ee7a4a44e9594e9b2534d32ee34"
+    },
+    {
+      "word": "go",
+      "status": "FOUND",
+      "resolvedLemmaKey": "go",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 6,
+      "senseCount": 72,
+      "resultHash": "b1c8db7328cc44669084ba194aace8500a3be4f3be4fe63be63071c2cb76f8ca"
+    },
+    {
+      "word": "better",
+      "status": "AMBIGUOUS",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 7,
+      "senseCount": 60,
+      "resultHash": "cb4b02b0967585b5e2ca349a0d024b716ad92e7fcc71a6bf4997e0c1c8fad836"
+    },
+    {
+      "word": "good",
+      "status": "FOUND",
+      "resolvedLemmaKey": "good",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 4,
+      "senseCount": 27,
+      "resultHash": "7afbe82a45e63490ef70344594682f1b5ee38ead5d0ac530de6a25eeeb50b6ca"
+    },
+    {
+      "word": "best",
+      "status": "AMBIGUOUS",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 7,
+      "senseCount": 60,
+      "resultHash": "7991d18dff8bd3e78c0455a0ee44ac6ce4fcd1955e5e6e51993f5a5080e25602"
+    },
+    {
+      "word": "feet",
+      "status": "FOUND",
+      "resolvedLemmaKey": "foot",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 3,
+      "senseCount": 22,
+      "resultHash": "e14108fe4982af49516c2fb893aada096248dfa512087e9823610db2354c561a"
+    },
+    {
+      "word": "foot",
+      "status": "FOUND",
+      "resolvedLemmaKey": "foot",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 3,
+      "senseCount": 22,
+      "resultHash": "8eb944ac1377fdb789c598be10e24429de03fea18525ef8d4d3d1c7b7e56dffc"
+    },
+    {
+      "word": "mice",
+      "status": "FOUND",
+      "resolvedLemmaKey": "mouse",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 2,
+      "resultHash": "9a516ea06b3557ba7ab5290e85dd2fbbadb4fac8b9f55feca9bc2b2651b0f546"
+    },
+    {
+      "word": "mouse",
+      "status": "FOUND",
+      "resolvedLemmaKey": "mouse",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 2,
+      "resultHash": "41e9337e5087779ad109436982feb5139d438082f7daa31ced043ba2d594fda8"
+    },
+    {
+      "word": "thought",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "4a6585ad1dfb543c143ac641eff41f4c63c1b7eff394246c51eb28a67f5251cf"
+    },
+    {
+      "word": "think",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "cb7ec7b11c65293dc7bbe7ba1054ec7cac97ec5fa8dd40ac1998cc75e154a40a"
+    },
+    {
+      "word": "left",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "00691040f2e9be54cd9dac66881a2fd165997b33b82e0f991777dc00ba9074c9"
+    },
+    {
+      "word": "leave",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "077dfb3aab840e92e8e61f58bfdd6c23e309148ac62427a4d923c7a72bfa58e7"
+    },
+    {
+      "word": "lie",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "840beb5939c3c20d50692758c2cdc4498066aea964b46660c112379dc0da9fc8"
+    },
+    {
+      "word": "lay",
+      "status": "FOUND",
+      "resolvedLemmaKey": "lay",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 6,
+      "senseCount": 27,
+      "resultHash": "473601187110ba4c77339d16f97176ccd6525bf8f4765fb61199e77c473b909a"
+    },
+    {
+      "word": "lying",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "74e54f9ffe5a6be10571d83b6c9de17872971e92d6d5c250329265fe29d4c624"
+    },
+    {
+      "word": "set",
+      "status": "FOUND",
+      "resolvedLemmaKey": "set",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 4,
+      "senseCount": 50,
+      "resultHash": "a83e934754620653081816898875e63f203b849a5793c38d531a83a0e3571128"
+    },
+    {
+      "word": "light",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "3d0e8dec674b2b51854c201cb81ebe511c84611e616df2457782326972c14438"
+    },
+    {
+      "word": "well",
+      "status": "FOUND",
+      "resolvedLemmaKey": "well",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 24,
+      "senseCount": 112,
+      "resultHash": "b2a9e37ac62d069799c6ce0ff77541ec243a6a5ef882eca9c4cda2de2f0027fc"
+    },
+    {
+      "word": "fast",
+      "status": "FOUND",
+      "resolvedLemmaKey": "fast",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 4,
+      "senseCount": 44,
+      "resultHash": "91855eb4a0870cb62d8292e09cb3158b5a0013e76a099b276f76c6558f8d9a8d"
+    },
+    {
+      "word": "hard",
+      "status": "FOUND",
+      "resolvedLemmaKey": "hard",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 20,
+      "resultHash": "9dfe7ea363d0e3d4cd505fdfa5c929164e0d6931d676fee12aa73818314157ce"
+    },
+    {
+      "word": "record",
+      "status": "FOUND",
+      "resolvedLemmaKey": "record",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 3,
+      "senseCount": 45,
+      "resultHash": "b63ac6986331b421d8f97dafce7c34d79bef163ca7356f8c650fc5d1b4327299"
+    },
+    {
+      "word": "present",
+      "status": "FOUND",
+      "resolvedLemmaKey": "present",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 12,
+      "senseCount": 57,
+      "resultHash": "00c9390e6f2d8851e1bbed03fc6189d31a7151e6cb5f4e099357c3b15dfc1708"
+    },
+    {
+      "word": "lead",
+      "status": "FOUND",
+      "resolvedLemmaKey": "lead",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 4,
+      "senseCount": 38,
+      "resultHash": "6044fa38e8ed5ee075c08119b8bf97878a0082f725051543ef145d74d1f4ebd2"
+    },
+    {
+      "word": "wind",
+      "status": "FOUND",
+      "resolvedLemmaKey": "wind",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 4,
+      "senseCount": 22,
+      "resultHash": "fbe4a1e8cf20dad873fa04685515af810b8af773ab2b90758bc7b56cf24a0efb"
+    },
+    {
+      "word": "bank",
+      "status": "FOUND",
+      "resolvedLemmaKey": "bank",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 6,
+      "senseCount": 24,
+      "resultHash": "cf42efaf7fc226765c1cd7d76b3ecc709148a5a2fc1c24bdbf269db5ebf49d04"
+    },
+    {
+      "word": "spring",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "f56e531e9c4da9251be534b84085c7b2161b2e124cedbf440797db8e3199c7b4"
+    },
+    {
+      "word": "close",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "86df6a505152100a9bc180099d6a1c887a50e89dfda1b7abeb799d706ce458b2"
+    },
+    {
+      "word": "open",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "0b68dd3bb7fcd7f7ff5c12b451f0dfb1afaa3e9e0eb02cf5c9f9e8be94995546"
+    },
+    {
+      "word": "beautiful",
+      "status": "FOUND",
+      "resolvedLemmaKey": "beautiful",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 3,
+      "resultHash": "5f71deafeee03ecacedf2e2ba85fb548414d4787dbb993f3de02b513f3dbfff0"
+    },
+    {
+      "word": "quickly",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "d6ecfb9b110f58554e1e1a6d50a1ee97b30c91dc3d0ca62b3a325da7a4774c2d"
+    },
+    {
+      "word": "the",
+      "status": "FOUND",
+      "resolvedLemmaKey": "the",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 19,
+      "resultHash": "84ff9494f2b8845ce9df5ba783de2db338afc92134c48f9d41d0c32ab01fb049"
+    },
+    {
+      "word": "an",
+      "status": "FOUND",
+      "resolvedLemmaKey": "an",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 2,
+      "resultHash": "9d2ecc68c1b185e508508e195a9a2aa4dd07e9a5879bd16658a7d55cab346f0c"
+    },
+    {
+      "word": "can't",
+      "status": "NOT_FOUND",
+      "resolvedLemmaKey": null,
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 0,
+      "senseCount": 0,
+      "resultHash": "c321e9543b5478b4d933094a9f5cb09d178ea41d88c40e5b07ab54ac7fa466ba"
+    },
+    {
+      "word": "mother-in-law",
+      "status": "FOUND",
+      "resolvedLemmaKey": "mother-in-law",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 1,
+      "senseCount": 1,
+      "resultHash": "ea9d99aed836c6723f3d74813cfa026aa3ce2083e8d508c82776091da70284e2"
+    },
+    {
+      "word": "colour",
+      "status": "FOUND",
+      "resolvedLemmaKey": "colour",
+      "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+      "regionCount": 2,
+      "senseCount": 26,
+      "resultHash": "3926f41fb19e4bb40b74cfadb49956288d2dc18a4d9bf2d6e8702a1e490e0d41"
+    }
+  ],
+  "warm5Concurrent": {
+    "hit": {
+      "maxMs": 14.9601,
+      "p95ms": 3.4765,
+      "count": 660
+    },
+    "miss": {
+      "maxMs": 8.1171,
+      "p95ms": 2.8441,
+      "count": 340
+    },
+    "errors": 0
+  },
+  "cold5Concurrent": {
+    "hit": {
+      "maxMs": 47.1155,
+      "p95ms": 17.6776,
+      "count": 660
+    },
+    "miss": {
+      "maxMs": 27.5312,
+      "p95ms": 7.7002,
+      "count": 340
+    },
+    "errors": 0
+  },
+  "coldSequential": {
+    "hit": {
+      "maxMs": 122.2234,
+      "p95ms": 16.354,
+      "count": 660
+    },
+    "miss": {
+      "maxMs": 53.5797,
+      "p95ms": 8.3086,
+      "count": 340
+    },
+    "errors": 0
+  },
+  "warmSequential": {
+    "hit": {
+      "maxMs": 35.8452,
+      "p95ms": 1.4753,
+      "count": 660
+    },
+    "miss": {
+      "maxMs": 3.3239,
+      "p95ms": 1.3804,
+      "count": 340
+    },
+    "errors": 0
+  },
+  "activeVersion": 53,
+  "coldMeaning": "fresh provider/JVM content cache, MySQL and OS caches not flushed",
+  "roundsPerWord": 20,
+  "beans": {
+    "sessions": 0,
+    "userVerificationJobs": 0,
+    "securityFilters": 0
+  }
+}

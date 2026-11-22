@@ -1,0 +1,11 @@
+{
+  "app_user": "NOT_CREATED",
+  "user_settings": "NOT_CREATED",
+  "spring_session": "NOT_CREATED",
+  "verification_challenge": "NOT_CREATED",
+  "password_reset_credential": "NOT_CREATED",
+  "rate_bucket": "NOT_CREATED",
+  "flywayVersions": [
+    "1"
+  ]
+}

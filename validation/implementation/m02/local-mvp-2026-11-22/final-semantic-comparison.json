@@ -1,0 +1,18 @@
+{
+  "compared": "converter3-a to converter4-b",
+  "ignored": "确定性ID改变及ID派生行排序、evidence数组排序；保留全部词义、来源和关系内容",
+  "results": {
+    "entries.jsonl": {
+      "rows": 92907,
+      "semanticDifferences": 0
+    },
+    "senses.jsonl": {
+      "rows": 149337,
+      "semanticDifferences": 0
+    },
+    "forms.jsonl": {
+      "rows": 73624,
+      "semanticDifferences": 0
+    }
+  }
+}
