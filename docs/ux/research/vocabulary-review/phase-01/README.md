@@ -6,9 +6,10 @@
 
 1. [不背单词功能报告](reports/bubeidanci.md)：USB 真机操作，新学、复习、拼写退出、收藏与词本。
 2. [Readlang 功能报告](reports/readlang.md)：真实登录会话，阅读积累、多语境、Blitz / Classic / Mastery、词表与付费边界。
-3. [对照矩阵、设计问题与候选机制](reports/comparison-and-questions.md)：覆盖用户提出的十个重点。
-4. [证据索引](evidence/index.md)、[证据清单与摘要](evidence/manifest.json)、两产品的会话记录。
-5. [研究方法与环境](research-protocol.md)、[人工评审记录](review-record.md)。
+3. [竞品深度分析：目标用户、功能逻辑、功能对比、产品现状、页面体验与结论](reports/competitive-experience-analysis.md)：以不背单词为主要参考，区分观察事实与设计推论；按要求不分析数据表现。
+4. [对照矩阵、设计问题与候选机制](reports/comparison-and-questions.md)：覆盖用户提出的十个重点。
+5. [证据索引](evidence/index.md)、[证据清单与摘要](evidence/manifest.json)、两产品的会话记录。
+6. [研究方法与环境](research-protocol.md)、[人工评审记录](review-record.md)。
 
 ## 本次完成与边界
 
