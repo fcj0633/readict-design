@@ -1,0 +1,53 @@
+{
+  "profile": "dev",
+  "tableCount": 18,
+  "state": {
+    "app_user": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "user_settings": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spring_session": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spring_session_attributes": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dictionary_active": {
+      "rows": 1,
+      "sha256": "5c0d3f4fe95eeb8190decbfa594d561f311a6224c99db1f850142df4e29ccf5d",
+      "active": [
+        {
+          "slot": "1",
+          "dataset_id": "9ebe9056db268dac99c6f45713f0b6d9",
+          "version": "1"
+        }
+      ]
+    },
+    "flyway_schema_history": {
+      "rows": 6,
+      "sha256": "8357a3e0db3439129f8fc50307da37347fa6818aa97d4531be57464e178e6f52"
+    },
+    "dictionary_audio_active": {
+      "rows": 1,
+      "sha256": "ee4dfe06336251eaacc16613a6fac766554e45a347f839213026b329fddb5a6a",
+      "active": [
+        {
+          "slot": "1",
+          "dataset_id": "f6c163ff131c89688b236a1f21db6d4c",
+          "version": "1",
+          "updated_at": "2026-11-22T17:38:32.610085"
+        }
+      ]
+    },
+    "dictionary_audio_dataset": {
+      "rows": 1,
+      "sha256": "7a2606dce89ee01689e5699555381acb84c33f12c339de31cf7bd04ebefd4eec"
+    }
+  }
+}

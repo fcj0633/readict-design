@@ -1,0 +1,128 @@
+{
+  "currentSuites": [
+    {
+      "type": "ordinary",
+      "suite": "com.readict.DatabaseEnvironmentGuardTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.IdentityRulesTest",
+      "tests": 26,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.audio.AudioBundleValidatorTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.audio.AudioCatalogTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.audio.AudioIoTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.audio.AudioRangeTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.audio.AudioStorageTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.core.BundleValidatorTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.lexical.core.LocalDictionaryProviderTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.LocalOutboxSenderTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.TypeHandlerTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "ordinary",
+      "suite": "com.readict.WebContractTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "mysql-audio",
+      "suite": "com.readict.lexical.audio.AudioHttpIT",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "type": "mysql-audio",
+      "suite": "com.readict.lexical.audio.AudioIT",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "priorFullRegression": {
+    "ordinary": 70,
+    "mysqlIT": 48,
+    "failures": 0,
+    "scope": "before later audio storage and bounded-file-work refactors; later relevant suites rerun"
+  },
+  "node": {
+    "passed": 76,
+    "scope": "existing completed run; no extra test expansion after user MVP instruction"
+  },
+  "fullAcceptance": "DEFERRED_BY_USER_MVP_SCOPE",
+  "suiteSnapshotNote": "Latest report per suite from multiple earlier runs, not a final whole-suite rerun. Final MVP simplification was packaged and checked through actual development activation and 8 browser plays; complete regression deferred."
+}

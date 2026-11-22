@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-23",
+  "scope": "LOCAL_MVP_BASIC_CHECKS",
+  "datasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+  "activeVersion": 1,
+  "import": {
+    "datasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+    "status": "READY",
+    "imported_assets": 248283,
+    "imported_mappings": 220844,
+    "error_code": null,
+    "assetCount": 248283,
+    "mappingCount": 220844,
+    "activeVersion": 0,
+    "activeDatasetId": null
+  },
+  "fixed50Status": {
+    "available": 47,
+    "missing": 3
+  },
+  "playableFixed50Recordings": 94,
+  "textDatasetHex": "9EBE9056DB268DAC99C6F45713F0B6D9",
+  "textBookStatus": "FOUND",
+  "tableCountBefore": 14,
+  "tableCountAfter": 18,
+  "businessAndTextUnchanged": {
+    "app_user": true,
+    "user_settings": true,
+    "spring_session": true,
+    "spring_session_attributes": true,
+    "dictionary_active": true
+  },
+  "probeCleanup": {
+    "ownedUserDeleted": true,
+    "textDatasetUnchanged": true
+  },
+  "browserChecks": [
+    {
+      "channel": "chrome",
+      "version": "157.0.8103.80",
+      "recordings": 4,
+      "http": {
+        "head": 200,
+        "etagPresent": true,
+        "range": 206,
+        "rangeBytes": 16,
+        "conditional": 304,
+        "logout": 204,
+        "afterLogout": 401
+      }
+    },
+    {
+      "channel": "msedge",
+      "version": "158.0.4370.33",
+      "recordings": 4,
+      "http": {
+        "head": 200,
+        "etagPresent": true,
+        "range": 206,
+        "rangeBytes": 16,
+        "conditional": 304,
+        "logout": 204,
+        "afterLogout": 401
+      }
+    }
+  ],
+  "fullAcceptance": "DEFERRED_BY_USER_MVP_SCOPE",
+  "humanReview": "NOT_PERFORMED",
+  "rightsReview": "UNVERIFIED",
+  "applicationCommit": "25e3310a4bddc94ae523318bbc4f4cabc84fc190",
+  "applicationPushed": true
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "profile": "dev",
+    "channel": "chrome",
+    "browserVersion": "157.0.8103.80",
+    "start": 0,
+    "count": 4,
+    "rows": [
+      {
+        "word": "book",
+        "accent": "en-GB",
+        "audioId": "0e6d3dd3-107c-80d7-aeec-0dd00314233f",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 0.503991
+      },
+      {
+        "word": "book",
+        "accent": "en-US",
+        "audioId": "e889ac13-e074-8ea1-b13b-847fc2c91095",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 0.473878
+      },
+      {
+        "word": "run",
+        "accent": "en-GB",
+        "audioId": "5e404016-a024-815c-995e-8965947f385b",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 1.083991
+      },
+      {
+        "word": "run",
+        "accent": "en-US",
+        "audioId": "8c90675f-b04f-8546-b928-7d4e9ea5b7d7",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 0.54644
+      }
+    ],
+    "http": {
+      "head": 200,
+      "etagPresent": true,
+      "range": 206,
+      "rangeBytes": 16,
+      "conditional": 304,
+      "logout": 204,
+      "afterLogout": 401
+    }
+  },
+  {
+    "profile": "dev",
+    "channel": "msedge",
+    "browserVersion": "158.0.4370.33",
+    "start": 0,
+    "count": 4,
+    "rows": [
+      {
+        "word": "book",
+        "accent": "en-GB",
+        "audioId": "0e6d3dd3-107c-80d7-aeec-0dd00314233f",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 0.503991
+      },
+      {
+        "word": "book",
+        "accent": "en-US",
+        "audioId": "e889ac13-e074-8ea1-b13b-847fc2c91095",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 0.473878
+      },
+      {
+        "word": "run",
+        "accent": "en-GB",
+        "audioId": "5e404016-a024-815c-995e-8965947f385b",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 1.083991
+      },
+      {
+        "word": "run",
+        "accent": "en-US",
+        "audioId": "8c90675f-b04f-8546-b928-7d4e9ea5b7d7",
+        "playing": true,
+        "timeAdvanced": true,
+        "ended": true,
+        "error": null,
+        "duration": 0.54644
+      }
+    ],
+    "http": {
+      "head": 200,
+      "etagPresent": true,
+      "range": 206,
+      "rangeBytes": 16,
+      "conditional": 304,
+      "logout": 204,
+      "afterLogout": 401
+    }
+  }
+]

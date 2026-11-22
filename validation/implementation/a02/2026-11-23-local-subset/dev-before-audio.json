@@ -1,0 +1,37 @@
+{
+  "profile": "dev",
+  "tableCount": 14,
+  "state": {
+    "app_user": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "user_settings": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spring_session": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spring_session_attributes": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dictionary_active": {
+      "rows": 1,
+      "sha256": "5c0d3f4fe95eeb8190decbfa594d561f311a6224c99db1f850142df4e29ccf5d",
+      "active": [
+        {
+          "slot": "1",
+          "dataset_id": "9ebe9056db268dac99c6f45713f0b6d9",
+          "version": "1"
+        }
+      ]
+    },
+    "flyway_schema_history": {
+      "rows": 5,
+      "sha256": "a5c4e22c6c4b9505aa3ef59d805c10f0c0473b92d62130cfc0f8ce997f27aea2"
+    }
+  }
+}

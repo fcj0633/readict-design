@@ -1,0 +1,10 @@
+{
+  "parser": "existing pinned readmdict checkout",
+  "counts": {
+    "mdd": 248363,
+    "icons": 2
+  },
+  "differenceCount": 0,
+  "elapsedSeconds": 23.67199999996228,
+  "checksumChecksEnabled": true
+}

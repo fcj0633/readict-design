@@ -1,0 +1,108 @@
+{
+  "reviewed": 76,
+  "digestMismatch": 0,
+  "formatChannels": {
+    "2": 53
+  },
+  "decode": [
+    {
+      "sourceOrdinal": 20706,
+      "resourceKey": "\\Bavaria.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 44811,
+      "resourceKey": "\\Coahuila.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 70970,
+      "resourceKey": "\\Eastwood.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 77604,
+      "resourceKey": "\\estivate.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 82124,
+      "resourceKey": "\\fashionable.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 119307,
+      "resourceKey": "\\Japanese andromeda.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 126094,
+      "resourceKey": "\\laky.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 164137,
+      "resourceKey": "\\Passiontide.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 180251,
+      "resourceKey": "\\puddle.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 189887,
+      "resourceKey": "\\Rimac.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    },
+    {
+      "sourceOrdinal": 194522,
+      "resourceKey": "\\sangfroid.spx",
+      "code": "AUDIO_SOURCE_DECODE",
+      "sourceDigestMatches": true,
+      "channels": 1,
+      "strictDecode": "AUDIO_PROCESS_FAILED",
+      "invalidPacket": true
+    }
+  ]
+}
