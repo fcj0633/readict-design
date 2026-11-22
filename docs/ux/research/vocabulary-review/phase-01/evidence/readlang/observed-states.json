@@ -1,0 +1,677 @@
+[
+  {
+    "observed_at": "2026-11-23T01:35:42.211000+08:00",
+    "question": "Which means \"勤勉的\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] fragile",
+      "[3] look after",
+      "[4] diligent",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:42.466000+08:00",
+    "question": "Which means \"勤勉的\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] fragile",
+      "[3] look after",
+      "[4] diligent",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:42.695000+08:00",
+    "question": "What does \"curious\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 港口",
+      "[2] 好奇的",
+      "[3] 易碎的",
+      "[4] 勤勉的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:42.942000+08:00",
+    "question": "What does \"curious\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 港口",
+      "[2] 好奇的",
+      "[3] 易碎的",
+      "[4] 勤勉的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:43.179000+08:00",
+    "question": "Which means \"推迟\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] postpone",
+      "[3] luminous",
+      "[4] look after",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:43.446000+08:00",
+    "question": "Which means \"推迟\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] postpone",
+      "[3] luminous",
+      "[4] look after",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:43.705000+08:00",
+    "question": "What does \"fragile\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 易碎的",
+      "[2] 照看",
+      "[3] 勤勉的",
+      "[4] 港口",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:35:43.956000+08:00",
+    "question": "What does \"fragile\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 易碎的",
+      "[2] 照看",
+      "[3] 勤勉的",
+      "[4] 港口",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:12.821000+08:00",
+    "question": "look after",
+    "feedback_or_stage": [
+      "NEW PHRASE"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:13.028000+08:00",
+    "question": "What does \"harbor\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 易碎的",
+      "[2] 发光的",
+      "[3] 港口",
+      "[4] 推迟",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:13.256000+08:00",
+    "question": "What does \"harbor\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 易碎的",
+      "[2] 发光的",
+      "[3] 港口",
+      "[4] 推迟",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:13.490000+08:00",
+    "question": "Which means \"推迟\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] fragile",
+      "[3] postpone",
+      "[4] luminous",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:29.715000+08:00",
+    "question": "Which means \"推迟\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] fragile",
+      "[3] postpone",
+      "[4] luminous",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:29.963000+08:00",
+    "question": "What does \"diligent\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 勤勉的",
+      "[2] 好奇的",
+      "[3] 港口",
+      "[4] 发光的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:30.207000+08:00",
+    "question": "What does \"diligent\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 勤勉的",
+      "[2] 好奇的",
+      "[3] 港口",
+      "[4] 发光的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:30.454000+08:00",
+    "question": "Which means \"易碎的\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] luminous",
+      "[2] curious",
+      "[3] postpone",
+      "[4] fragile",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:30.722000+08:00",
+    "question": "Which means \"易碎的\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] luminous",
+      "[2] curious",
+      "[3] postpone",
+      "[4] fragile",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:30.987000+08:00",
+    "question": "What does \"harbor\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 发光的",
+      "[2] 港口",
+      "[3] 照看",
+      "[4] 勤勉的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:31.195000+08:00",
+    "question": "What does \"harbor\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 发光的",
+      "[2] 港口",
+      "[3] 照看",
+      "[4] 勤勉的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:31.436000+08:00",
+    "question": "Which means \"好奇的\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] harbor",
+      "[2] luminous",
+      "[3] curious",
+      "[4] look after",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:52.734000+08:00",
+    "question": "Which means \"好奇的\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] harbor",
+      "[2] luminous",
+      "[3] curious",
+      "[4] look after",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:53.144000+08:00",
+    "question": "What does \"luminous\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 易碎的",
+      "[2] 勤勉的",
+      "[3] 发光的",
+      "[4] 照看",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:53.471000+08:00",
+    "question": "What does \"luminous\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 易碎的",
+      "[2] 勤勉的",
+      "[3] 发光的",
+      "[4] 照看",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:53.834000+08:00",
+    "question": "Which means \"照看\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] postpone",
+      "[2] harbor",
+      "[3] fragile",
+      "[4] look after",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:54.166000+08:00",
+    "question": "Which means \"照看\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] postpone",
+      "[2] harbor",
+      "[3] fragile",
+      "[4] look after",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:54.434000+08:00",
+    "question": "What does \"look after\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 照看",
+      "[2] 易碎的",
+      "[3] 港口",
+      "[4] 勤勉的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:54.655000+08:00",
+    "question": "What does \"look after\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 照看",
+      "[2] 易碎的",
+      "[3] 港口",
+      "[4] 勤勉的",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:36:55.275000+08:00",
+    "question": "🎉 Session complete! 🎉",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "中文",
+      "English",
+      "",
+      "1"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:42:59.659000+08:00",
+    "question": "What does \"the\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 格雷森",
+      "[2] 刺穿",
+      "[3] 这位",
+      "[4] 冲洗了",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:42:59.853000+08:00",
+    "question": "What does \"the\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 格雷森",
+      "[2] 刺穿",
+      "[3] 这位",
+      "[4] 冲洗了",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:43:00.033000+08:00",
+    "question": "Which means \"石头小路\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] cottage",
+      "[2] fragile",
+      "[3] planting",
+      "[4] stone walkway",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:43:00.222000+08:00",
+    "question": "Which means \"石头小路\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] cottage",
+      "[2] fragile",
+      "[3] planting",
+      "[4] stone walkway",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:43:00.406000+08:00",
+    "question": "What does \"and\" mean here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 发光的",
+      "[2] 英式的",
+      "[3] 庄园",
+      "[4] 并且",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:43:00.598000+08:00",
+    "question": "What does \"and\" mean here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] 发光的",
+      "[2] 英式的",
+      "[3] 庄园",
+      "[4] 并且",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:43:00.800000+08:00",
+    "question": "Which means \"他的\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] his",
+      "[2] filtered",
+      "[3] and",
+      "[4] garden",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:43:00.986000+08:00",
+    "question": "Which means \"他的\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] his",
+      "[2] filtered",
+      "[3] and",
+      "[4] garden",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:44:19.756000+08:00",
+    "question": "Which means \"石头小路\" here?",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] thirty",
+      "[3] brew",
+      "[4] stone walkway",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:44:19.915000+08:00",
+    "question": "Which means \"石头小路\" here?",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "[1] curious",
+      "[2] thirty",
+      "[3] brew",
+      "[4] stone walkway",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:44:20.080000+08:00",
+    "question": "Type the missing word",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "Show Hint",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:46:21.839000+08:00",
+    "question": "Type the missing word",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "Show Hint",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:46:22.525000+08:00",
+    "question": "Type the missing word",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "Show Hint",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:46:23.295000+08:00",
+    "question": "Type the missing word",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "",
+      "",
+      "Show Hint",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:46:23.882000+08:00",
+    "question": "Type the missing word",
+    "feedback_or_stage": [
+      "Correct!"
+    ],
+    "visible_button_texts": [
+      "",
+      "",
+      "Show Hint",
+      "Explain or edit",
+      "Continue"
+    ]
+  },
+  {
+    "observed_at": "2026-11-23T01:46:24.909000+08:00",
+    "question": "🎉 Session complete! 🎉",
+    "feedback_or_stage": [],
+    "visible_button_texts": [
+      "中文",
+      "English",
+      "",
+      "1"
+    ]
+  }
+]

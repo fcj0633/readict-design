@@ -1,0 +1,618 @@
+[
+  {
+    "observed_at": "2026-11-23T01:31:45.738824+08:00",
+    "word": "flavor",
+    "progress": "1/10",
+    "action": "味道，风味；特色；调味品",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:31:51.494960+08:00",
+    "word": "flavor",
+    "progress": "1/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:31:56.459878+08:00",
+    "word": "barber",
+    "progress": "1/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:02.337711+08:00",
+    "word": "barber",
+    "progress": "1/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:07.510649+08:00",
+    "word": "racial",
+    "progress": "1/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:12.789596+08:00",
+    "word": "racial",
+    "progress": "2/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:17.264024+08:00",
+    "word": "genetic",
+    "progress": "2/10",
+    "action": "遗传的，基因的",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:23.122743+08:00",
+    "word": "genetic",
+    "progress": "2/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:27.680463+08:00",
+    "word": "consultant",
+    "progress": "2/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:32.743894+08:00",
+    "word": "consultant",
+    "progress": "2/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:44.855566+08:00",
+    "word": "fix",
+    "progress": "2/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:49.062594+08:00",
+    "word": "fix",
+    "progress": "3/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:32:53.408977+08:00",
+    "word": "commercial",
+    "progress": "3/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:34:34.242158+08:00",
+    "word": "commercial",
+    "progress": "3/10",
+    "action": "商业的；营利的；商业化的",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:34:38.285521+08:00",
+    "word": "commercial",
+    "progress": "3/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:34:42.421155+08:00",
+    "word": "gradual",
+    "progress": "3/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:34:47.565573+08:00",
+    "word": "gradual",
+    "progress": "3/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:34:51.767713+08:00",
+    "word": "editorial",
+    "progress": "3/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:34:56.997229+08:00",
+    "word": "editorial",
+    "progress": "4/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:35:01.151410+08:00",
+    "word": "addict",
+    "progress": "4/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:35:38.276035+08:00",
+    "word": "addict",
+    "progress": "4/10",
+    "action": "成瘾者；对…入迷的人",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:35:42.827601+08:00",
+    "word": "addict",
+    "progress": "4/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:35:47.351694+08:00",
+    "word": "flavor",
+    "progress": "4/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:35:52.889277+08:00",
+    "word": "flavor",
+    "progress": "4/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:35:57.003480+08:00",
+    "word": "disrupt",
+    "progress": "4/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:36:02.054285+08:00",
+    "word": "disrupt",
+    "progress": "5/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:36:06.338817+08:00",
+    "word": "represent",
+    "progress": "5/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:36:46.980240+08:00",
+    "word": "represent",
+    "progress": "5/10",
+    "action": "代表；体现；表示；描绘",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:36:51.277114+08:00",
+    "word": "represent",
+    "progress": "5/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:36:55.813270+08:00",
+    "word": "genetic",
+    "progress": "5/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:01.263006+08:00",
+    "word": "genetic",
+    "progress": "5/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:05.520848+08:00",
+    "word": "barber",
+    "progress": "5/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:10.597823+08:00",
+    "word": "barber",
+    "progress": "6/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:14.726489+08:00",
+    "word": "scholar",
+    "progress": "6/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:28.040363+08:00",
+    "word": "scholar",
+    "progress": "6/10",
+    "action": "学者；奖学金获得者",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:32.306305+08:00",
+    "word": "scholar",
+    "progress": "6/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:36.735846+08:00",
+    "word": "commercial",
+    "progress": "6/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:42.490405+08:00",
+    "word": "commercial",
+    "progress": "6/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:47.234500+08:00",
+    "word": "consultant",
+    "progress": "6/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:52.560754+08:00",
+    "word": "consultant",
+    "progress": "7/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:37:56.890442+08:00",
+    "word": "insult",
+    "progress": "7/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:17.987517+08:00",
+    "word": "insult",
+    "progress": "7/10",
+    "action": "辱骂，侮辱",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:22.165427+08:00",
+    "word": "insult",
+    "progress": "7/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:26.818695+08:00",
+    "word": "addict",
+    "progress": "7/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:32.043412+08:00",
+    "word": "addict",
+    "progress": "7/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:36.123350+08:00",
+    "word": "gradual",
+    "progress": "7/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:41.252387+08:00",
+    "word": "gradual",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:38:45.453684+08:00",
+    "word": "instruct",
+    "progress": "8/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:39:35.117184+08:00",
+    "word": "pure",
+    "progress": "8/10",
+    "action": "纯的，纯净的；纯粹的；纯真的",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:39:39.053450+08:00",
+    "word": "pure",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:39:42.913811+08:00",
+    "word": "represent",
+    "progress": "8/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:39:48.010906+08:00",
+    "word": "represent",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:39:51.974000+08:00",
+    "word": "flavor",
+    "progress": "8/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:39:56.852555+08:00",
+    "word": "flavor",
+    "progress": "9/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:00.875333+08:00",
+    "word": "vanish",
+    "progress": "9/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:19.486061+08:00",
+    "word": "vanish",
+    "progress": "9/10",
+    "action": "突然消失；消亡，灭绝",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:23.395329+08:00",
+    "word": "vanish",
+    "progress": "9/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:27.421335+08:00",
+    "word": "scholar",
+    "progress": "9/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:32.348730+08:00",
+    "word": "scholar",
+    "progress": "9/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:36.295774+08:00",
+    "word": "genetic",
+    "progress": "9/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:40:41.335530+08:00",
+    "word": "genetic",
+    "progress": "10/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:43:56.738967+08:00",
+    "word": "filling",
+    "progress": "1/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:00.629324+08:00",
+    "word": "furthermore",
+    "progress": "1/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:05.516452+08:00",
+    "word": "furthermore",
+    "progress": "2/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:09.843202+08:00",
+    "word": "loyal",
+    "progress": "2/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:14.932017+08:00",
+    "word": "loyal",
+    "progress": "3/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:18.950333+08:00",
+    "word": "resign",
+    "progress": "3/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:24.011789+08:00",
+    "word": "resign",
+    "progress": "4/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:28.142138+08:00",
+    "word": "well-off",
+    "progress": "4/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:32.266913+08:00",
+    "word": "well-off",
+    "progress": "5/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:36.357348+08:00",
+    "word": "premier",
+    "progress": "5/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:41.411165+08:00",
+    "word": "premier",
+    "progress": "6/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:45.513218+08:00",
+    "word": "spin",
+    "progress": "6/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:49.482425+08:00",
+    "word": "spin",
+    "progress": "7/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:53.610984+08:00",
+    "word": "chemist",
+    "progress": "7/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:44:58.594358+08:00",
+    "word": "chemist",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:45:02.724790+08:00",
+    "word": "minister",
+    "progress": "8/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:45:07.868607+08:00",
+    "word": "minister",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:45:12.070703+08:00",
+    "word": "filling",
+    "progress": "8/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:45:29.390464+08:00",
+    "word": "filling",
+    "progress": "8/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:03.593003+08:00",
+    "word": "filling",
+    "progress": "8/10",
+    "action": "令人感到饱足的",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:10.294634+08:00",
+    "word": "filling",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:15.919122+08:00",
+    "word": "minister",
+    "progress": "8/10",
+    "action": "部长，大臣；牧师；公使",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:21.867810+08:00",
+    "word": "minister",
+    "progress": "8/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:26.623206+08:00",
+    "word": "词头隐藏/未显示",
+    "progress": "8/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:31.585240+08:00",
+    "word": "filling",
+    "progress": "9/10",
+    "action": "下一词",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:35.638516+08:00",
+    "word": "词头隐藏/未显示",
+    "progress": "9/10",
+    "action": "认识",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  },
+  {
+    "observed_at": "2026-11-23T01:46:40.493169+08:00",
+    "word": "minister",
+    "progress": "10/10",
+    "action": "STOP",
+    "note": "仅此片段的当次页面观察；STOP 表示未提交动作"
+  }
+]
