@@ -1,0 +1,326 @@
+{
+  "startedAt": "2026-11-23T12:33:43.239Z",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Permissions policy violation: unload is not allowed in this document."
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "01-default-1920.png",
+    "02-default-1440.png",
+    "03-contents-1440.png",
+    "04-settings-1440.png",
+    "05-dictionary-1440.png",
+    "06-save-error-1440.png",
+    "07-default-1366.png"
+  ],
+  "email": "ui_reader_1795436293111@readict.test",
+  "bookId": "8c044068-8b72-46ed-bf35-b5b61f124f34",
+  "importState": "SUCCEEDED",
+  "progressCalls": [
+    {
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "status": 304
+    },
+    {
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "metrics1920": {
+    "paper": {
+      "x": 410,
+      "y": 80,
+      "width": 1100,
+      "height": 976,
+      "right": 1510,
+      "bottom": 1056
+    },
+    "canvas": {
+      "x": 630,
+      "y": 117,
+      "width": 660,
+      "height": 874,
+      "right": 1290,
+      "bottom": 991
+    },
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 60,
+      "right": 1920,
+      "bottom": 60
+    },
+    "pagebar": {
+      "x": 545,
+      "y": 997,
+      "width": 829,
+      "height": 58,
+      "right": 1375,
+      "bottom": 1055
+    },
+    "rail": {
+      "x": 1522,
+      "y": 496,
+      "width": 44,
+      "height": 148,
+      "right": 1566,
+      "bottom": 644
+    },
+    "iframe": {
+      "x": 630,
+      "y": 117,
+      "width": 2640,
+      "height": 874,
+      "right": 3270,
+      "bottom": 991
+    },
+    "scrollWidth": 1920,
+    "innerWidth": 1920,
+    "body": {
+      "fontSize": "20px",
+      "lineHeight": "36px",
+      "fontFamily": "Georgia, \"Palatino Linotype\", Georgia, serif",
+      "textAlign": "left"
+    }
+  },
+  "chapterLabel": "CHAPTER ONE",
+  "metrics1440": {
+    "paper": {
+      "x": 173,
+      "y": 80,
+      "width": 1094,
+      "height": 796,
+      "right": 1267,
+      "bottom": 876
+    },
+    "canvas": {
+      "x": 390,
+      "y": 117,
+      "width": 660,
+      "height": 694,
+      "right": 1050,
+      "bottom": 811
+    },
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 60,
+      "right": 1440,
+      "bottom": 60
+    },
+    "pagebar": {
+      "x": 275,
+      "y": 817,
+      "width": 891,
+      "height": 58,
+      "right": 1165,
+      "bottom": 875
+    },
+    "rail": {
+      "x": 1279,
+      "y": 406,
+      "width": 44,
+      "height": 148,
+      "right": 1323,
+      "bottom": 554
+    },
+    "iframe": {
+      "x": 390,
+      "y": 117,
+      "width": 3300,
+      "height": 694,
+      "right": 3690,
+      "bottom": 811
+    },
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "body": {
+      "fontSize": "20px",
+      "lineHeight": "36px",
+      "fontFamily": "Georgia, \"Palatino Linotype\", Georgia, serif",
+      "textAlign": "left"
+    }
+  },
+  "toc": {
+    "active": "CHAPTER ONE",
+    "panel": {
+      "x": 1084,
+      "y": 68,
+      "width": 340,
+      "height": 816
+    },
+    "iframeBefore": {
+      "x": 390,
+      "y": 117,
+      "width": 3300,
+      "height": 694,
+      "right": 3690,
+      "bottom": 811
+    },
+    "iframeOpen": {
+      "x": 390,
+      "y": 117,
+      "width": 3300,
+      "height": 694,
+      "right": 3690,
+      "bottom": 811
+    },
+    "labels": [
+      "PART ONE",
+      "CHAPTER ONE",
+      "CHAPTER TWO",
+      "PART TWO",
+      "CHAPTER THREE"
+    ]
+  },
+  "settings": {
+    "status": "偏好自动保存 · 已同步",
+    "controls": [
+      "字体",
+      "字号",
+      "行间距",
+      "正文宽度",
+      "背景"
+    ]
+  },
+  "dictionary": {
+    "box": {
+      "x": 542.96875,
+      "y": 207.390625,
+      "width": 360,
+      "height": 378.375
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "retry": {
+    "status": "已保存",
+    "calls": [
+      {
+        "method": "GET",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "status": 304
+      },
+      {
+        "method": "GET",
+        "status": 200
+      },
+      {
+        "method": "PUT",
+        "status": 200
+      }
+    ]
+  },
+  "metrics1366": {
+    "paper": {
+      "x": 164,
+      "y": 80,
+      "width": 1038,
+      "height": 664,
+      "right": 1202,
+      "bottom": 744
+    },
+    "canvas": {
+      "x": 353,
+      "y": 109,
+      "width": 660,
+      "height": 576,
+      "right": 1013,
+      "bottom": 685
+    },
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "width": 1366,
+      "height": 60,
+      "right": 1366,
+      "bottom": 60
+    },
+    "pagebar": {
+      "x": 261,
+      "y": 691,
+      "width": 845,
+      "height": 52,
+      "right": 1105,
+      "bottom": 743
+    },
+    "rail": {
+      "x": 1214,
+      "y": 340,
+      "width": 44,
+      "height": 148,
+      "right": 1258,
+      "bottom": 488
+    },
+    "iframe": {
+      "x": 353,
+      "y": 109,
+      "width": 3960,
+      "height": 576,
+      "right": 4313,
+      "bottom": 685
+    },
+    "scrollWidth": 1366,
+    "innerWidth": 1366,
+    "body": {
+      "fontSize": "20px",
+      "lineHeight": "36px",
+      "fontFamily": "Georgia, \"Palatino Linotype\", Georgia, serif",
+      "textAlign": "left"
+    }
+  },
+  "horizontalOverflow": {
+    "1366": false,
+    "1440": false,
+    "1920": false
+  },
+  "finishedAt": "2026-11-23T12:34:13.059Z"
+}
