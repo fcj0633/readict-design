@@ -9,6 +9,7 @@
 - [M01 用户认证与个人设置流程图解](implementation/M01-用户认证与个人设置流程图解.md)：11 张 Mermaid 架构／ER／流程／时序／状态图，解释 M01 各业务链路与安全边界；仅为实施辅助，不代表已完成。
 - [M02 COL词典数据底座技术设计与执行文档](implementation/M02-COL词典数据底座技术设计与执行文档.md)：六项任务、转换规则、JSONL／manifest、V5五表、独立导入、版本切换与查询验收；输入兼容性已验证，真实提取质量未过，后续未实施，见 [M02 阻断记录](../../validation/implementation/m02/README.md)。
 - [M03 文件、EPUB导入与书架技术设计与执行文档](implementation/M03-文件、EPUB导入与书架技术设计与执行文档.md)：存储与有界上传、流式解压与预算、Java 安全清洗、确定性产物与文本索引、V7 四表、书籍／导入任务 API、书架前端、六项任务与验收矩阵；0.3 本机核心已实现，接口与恢复矩阵、浏览器自动检查通过；真实 EPUB、V03 全量矩阵待办（readict_dev 已于 2026-11-23 迁移 V7），未整体验收。
+- [M04 阅读内核、分页与进度技术设计与执行文档](implementation/M04-阅读内核、分页与进度技术设计与执行文档.md)：ReaderEngine 适配、单页分页与重排、CFI＋quote 恢复、进度保存与冲突、V8 reading_progress、GET／PUT progress、前端阅读页、六项任务与 R01～R20 矩阵；0.1 草案，未实现。
 - [ADR-0003](decisions/ADR-0003-M01会话认证与分阶段验证.md)：显式认证持久化、authVersion 和分阶段所有权验证。
 
 - [ADR-0001](decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)：已采纳的本机环境、本地 COL、TMT 等方向及验证边界。
