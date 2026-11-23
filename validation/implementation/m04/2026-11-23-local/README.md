@@ -11,7 +11,7 @@ M04 的后端 V8 与进度 API、前端阅读页、恢复与保存链路已在�
 - Java 21、Spring Boot 4.1.2、MySQL 8、Edge（Playwright `channel: msedge`，headless）。
 - 数据库 `readict_test`；应用账号 `readict_test_app`，迁移账号 `readict_test_migrate`。测试结束已删除本轮 `reader_*@readict.test` 用户、书籍与私有存储目录。
 - V8：首次启动 `Migrating schema readict_test to version "8 - reading progress"`，二次启动 `now at version v8` 且 0 迁移；`FoundationIT` 表集合断言更新为 23 表并保持 8 项通过。
-- `readict_dev` **未执行 V8**；既有 V7、词典 92,907、音频 248,283 未触碰。
+- `readict_dev` 于 2026-11-23 经用户批准执行 V8：首次 `Successfully applied 1 migration ... now at version v8`，二次 `Schema readict_dev is up to date. No migration necessary.`；表数 22→23，`app_user` 1、`book` 1、`dictionary_entry` 92,907、`dictionary_audio_asset` 248,283 均不变，`reading_progress` 0 行，未执行清理。证据见 [dev-migration.json](dev-migration.json)。
 
 ## 3. 自动检查
 
@@ -91,4 +91,4 @@ ReadingProgressIT 覆盖：创建版本 1 与比例投影、版本条件冲突�
 - 跨版式（宽度/窗口尺寸）精确恢复、跨章恢复、多候选 quote、R12/R20 失配注入。
 - 两窗口 409 UI 选择、断网重试、多标签同步（BroadcastChannel 未实现）。
 - Firefox/Safari 明确暂不支持；Range 下载、M08 物理回收、M05/M06/M07 仍未开发。
-- `readict_dev` V8 迁移待用户批准。
+- 开发库 V8 已迁移并二次启动验证。

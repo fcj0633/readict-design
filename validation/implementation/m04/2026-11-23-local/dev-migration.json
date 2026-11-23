@@ -1,0 +1,34 @@
+{
+  "schema": "readict-dev-v8-migration",
+  "date": "2026-11-23",
+  "approvedBy": "user",
+  "database": "readict_dev",
+  "before": { "flywayVersion": "V7", "appliedMigrations": 7, "tables": 22 },
+  "after": {
+    "flywayVersion": "V8",
+    "appliedMigrations": 8,
+    "tables": 23,
+    "newTables": ["reading_progress"],
+    "secondStartupMigrations": 0
+  },
+  "existingDataPreserved": {
+    "app_user": 1,
+    "book": 1,
+    "dictionary_entry": 92907,
+    "dictionary_audio_asset": 248283,
+    "reading_progress": 0
+  },
+  "checks": {
+    "flywayValidateOnMigrate": "passed",
+    "readiness": "UP",
+    "booksEndpointUnauthenticated": 401,
+    "firstStartup": "Successfully applied 1 migration to schema `readict_dev`, now at version v8",
+    "secondStartup": "Schema `readict_dev` is up to date. No migration necessary."
+  },
+  "notes": [
+    "V1-V7 were not modified; Flyway validated checksums on both startups.",
+    "No cleanup or destructive statement was executed on the development schema.",
+    "Storage root for dev is the ignored .local/books/readict_dev directory.",
+    "Migration approval was given in this session before execution."
+  ]
+}

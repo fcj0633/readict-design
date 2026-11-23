@@ -8,7 +8,15 @@
     "migration": "V8__reading_progress.sql",
     "firstStart": "1 migration",
     "secondStart": "0 migrations",
-    "devMigrated": false
+    "devMigrated": true,
+    "devMigration": {
+      "before": "V7 / 22 tables",
+      "after": "V8 / 23 tables",
+      "firstStartup": "1 migration",
+      "secondStartup": "0 migrations",
+      "dictionaryEntry": 92907,
+      "dictionaryAudioAsset": 248283
+    }
   },
   "backend": {
     "unit": { "run": 102, "failed": 0 },
@@ -55,7 +63,6 @@
     "cross-layout and cross-chapter restore",
     "quote fallback and multi-candidate",
     "two-window conflict UI",
-    "Firefox/Safari",
-    "readict_dev V8 migration"
+    "Firefox/Safari"
   ]
 }
