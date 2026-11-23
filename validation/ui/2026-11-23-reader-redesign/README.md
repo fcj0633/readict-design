@@ -49,6 +49,8 @@
 ## 浏览器证据
 
 输出目录：`readict-design/validation/ui/2026-11-23-reader-redesign/`。
+运行环境：本机已启动的 dev profile（`readict_dev`），使用一次性 `ui_reader_*` 用户与自建 EPUB；检查结束后已删除该用户、书籍、进度与私有存储目录，未修改既有 dev 用户/书籍，也未执行迁移。
+
 
 | 文件 | 内容 |
 |---|---|
