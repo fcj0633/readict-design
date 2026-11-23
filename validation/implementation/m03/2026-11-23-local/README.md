@@ -22,7 +22,7 @@
 | `npm run build` | 通过 |
 | Edge headless 书架检查 | 6 张截图，见下节 |
 
-迁移：`readict_test` 由 V6 增量执行 V7，二次启动 0 迁移；V1～V6 未修改。**`readict_dev` 未执行 V7。**
+迁移：`readict_test` 由 V6 增量执行 V7，二次启动 0 迁移；V1～V6 未修改。`readict_dev` 于 2026-11-23 经用户批准执行 V7：首次 1 个迁移、二次启动 0 个，表数 18→22；既有 `dictionary_entry` 92907、`dictionary_audio_asset` 248283 计数不变，未执行任何清理。证据见 [dev-migration.json](dev-migration.json)。
 
 ## 新增补测（158e37e）
 
@@ -90,7 +90,7 @@
 - 人工视觉确认（自动截图只能证明结构与文案）。
 - 真实 EPUB（公开 Moby-Dick、用户 EPUB2）未纳入；全部为自建夹具。
 - V03 全量恶意矩阵（压缩比极端、资源耗尽、CPU／内存观察）与 V04 浏览器 DOM 对照未执行。
-- `readict_dev` 未迁移 V7；开发库启用需用户批准后再执行。
+- 开发库 `readict_dev` 已迁移并二次启动验证；正式开发环境的浏览器验收仍建议人工确认。
 - M08 的物理清理、孤儿回收、巡检未执行；当前只登记 `cleanup_pending` 并验证孤儿目录存在。
 - 下载不支持 Range；阅读器与进度属 M04。
 

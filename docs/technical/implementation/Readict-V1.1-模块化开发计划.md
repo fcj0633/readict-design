@@ -329,7 +329,7 @@ flowchart LR
 | M00 | 已完成本机阶段验收 | 应用提交 ced5f6e；[验收记录](../../../validation/implementation/m00/README.md) |
 | M01 | 部分完成：核心与本地模拟已验收，真实通道待材料 | [M01 记录](../../../validation/implementation/m01/README.md)；应用提交见记录 |
 | M02 | 本机MVP词典底座完成；开发库已启用；完整质量未通过 | [当前验收](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)；保留r2／r3历史质量记录 |
-| M03 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵验收通过，浏览器自动检查完成；真实 EPUB、V03 全量矩阵、`readict_dev` 迁移待办 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 158e37e；待 M03-06 收尾 |
+| M03 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵验收通过，浏览器自动检查完成；真实 EPUB、V03 全量矩阵待办；`readict_dev` 已于 2026-11-23 执行 V7 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 158e37e；待 M03-06 收尾 |
 | M04 | 未开始，已有 EPUB 实验 | 待正式适配器验证 |
 | M05 | 未开始，已有原型／实验 | 待正式联调 |
 | M06 | 未开始 | 待正式事务验证 |
