@@ -1,0 +1,61 @@
+{
+  "module": "M04",
+  "date": "2026-11-23",
+  "environment": "local",
+  "applicationCommit": "afa5425",
+  "database": {
+    "schema": "readict_test",
+    "migration": "V8__reading_progress.sql",
+    "firstStart": "1 migration",
+    "secondStart": "0 migrations",
+    "devMigrated": false
+  },
+  "backend": {
+    "unit": { "run": 102, "failed": 0 },
+    "integration": { "run": 56, "failed": 0, "readingProgress": 4 },
+    "checks": ["version=1 first save", "conflict 409 with currentVersion", "idempotent replay", "anchor validation", "foreign book 404", "delete removes progress", "shelf ratio"]
+  },
+  "frontend": {
+    "lint": { "warnings": 0, "errors": 0 },
+    "test": { "run": 39, "failed": 0, "reader": 9 },
+    "build": "pass",
+    "bundleWarningKb": 680
+  },
+  "browser": {
+    "engine": "Edge headless via Playwright",
+    "viewports": ["1440x900", "390x900"],
+    "results": {
+      "openRendered": true,
+      "pageTurn": true,
+      "fontSize24": true,
+      "reloadRestored": true,
+      "progressVersionAfterReload": 1,
+      "progressRatio": 0.0768223,
+      "shelfPercent": 9,
+      "noHorizontalOverflow390": true,
+      "pageErrors": 0
+    },
+    "consoleNotes": ["favicon 404", "Permissions policy violation: unload (epub.js)"],
+    "screenshots": [
+      "browser/01-reader-1440.png",
+      "browser/02-reader-next.png",
+      "browser/03-reader-settings.png",
+      "browser/04-reader-reloaded.png",
+      "browser/05-reader-390.png"
+    ]
+  },
+  "matrix": {
+    "passed": ["R01", "R06", "R07", "R13", "R16", "R18"],
+    "partial": ["R02", "R03", "R05", "R08", "R14", "R15", "R17", "R19", "R20"],
+    "notCovered": ["R04", "R09", "R10", "R11", "R12"]
+  },
+  "notAccepted": [
+    "human visual confirmation",
+    "real large EPUB and performance/memory",
+    "cross-layout and cross-chapter restore",
+    "quote fallback and multi-candidate",
+    "two-window conflict UI",
+    "Firefox/Safari",
+    "readict_dev V8 migration"
+  ]
+}

@@ -159,7 +159,7 @@ M00-01～M00-05 已完成本机阶段验收；M01核心与本地模拟已验收�
 
 ### M04 阅读内核、分页与进度
 
-前置：M03 与 M01 偏好。接口：manifest、text-index、progress；数据：reading_progress，书架 lastReadAt 同事务更新。详细引擎契约、V8 DDL、Anchor 与恢复算法、进度保存并发、六项任务、命令和退出条件见[M04 独立执行文档](M04-阅读内核、分页与进度技术设计与执行文档.md)（0.1 草案，未实现、未验收）。
+前置：M03 与 M01 偏好。接口：manifest、text-index、progress；数据：reading_progress，书架 lastReadAt 同事务更新。详细引擎契约、V8 DDL、Anchor 与恢复算法、进度保存并发、六项任务、命令和退出条件见[M04 独立执行文档](M04-阅读内核、分页与进度技术设计与执行文档.md)（0.2；本机核心已实现，接口与恢复矩阵、Edge 自动检查通过；真实 EPUB、人工视觉与 readict_dev 迁移待办，未整体验收）。
 
 | 任务 | 工作与完成证据 |
 |---|---|
@@ -330,7 +330,7 @@ flowchart LR
 | M01 | 部分完成：核心与本地模拟已验收，真实通道待材料 | [M01 记录](../../../validation/implementation/m01/README.md)；应用提交见记录 |
 | M02 | 本机MVP词典底座完成；开发库已启用；完整质量未通过 | [当前验收](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)；保留r2／r3历史质量记录 |
 | M03 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵验收通过，浏览器自动检查完成；真实 EPUB、V03 全量矩阵待办；`readict_dev` 已于 2026-11-23 执行 V7 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 158e37e；待 M03-06 收尾 |
-| M04 | 未开始；执行文档 0.1 草案已建立 | 见 [M04 执行文档](M04-阅读内核、分页与进度技术设计与执行文档.md)；待正式适配器验证 |
+| M04 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵通过，Edge 自动检查完成；真实 EPUB、跨版式恢复、`readict_dev` 迁移待办 | [实施记录](../../../validation/implementation/m04/2026-11-23-local/README.md)；应用提交 afa5425；待 M04-06 收尾 |
 | M05 | 未开始，已有原型／实验 | 待正式联调 |
 | M06 | 未开始 | 待正式事务验证 |
 | M07 | 未开始，真实服务待配置 | 待 SDK 和真实调用 |

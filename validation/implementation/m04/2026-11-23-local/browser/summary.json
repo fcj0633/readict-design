@@ -1,0 +1,78 @@
+{
+  "startedAt": "2026-11-23T10:48:40.476Z",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Permissions policy violation: unload is not allowed in this document."
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "01-reader-1440.png",
+    "02-reader-next.png",
+    "03-reader-settings.png",
+    "04-reader-reloaded.png",
+    "05-reader-390.png"
+  ],
+  "email": "reader_1795430749298@readict.test",
+  "bookId": "67ffc755-3ad1-45a9-a071-bc1d02f7ba8b",
+  "importState": "SUCCEEDED",
+  "consoleAll": [
+    "debug: [vite] connecting...",
+    "debug: [vite] connected.",
+    "info: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Permissions policy violation: unload is not allowed in this document.",
+    "debug: [vite] connecting...",
+    "debug: [vite] connected.",
+    "info: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold",
+    "error: Permissions policy violation: unload is not allowed in this document.",
+    "debug: [vite] connecting...",
+    "debug: [vite] connected.",
+    "info: %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold",
+    "error: Permissions policy violation: unload is not allowed in this document."
+  ],
+  "firstParagraph": "Call me Ishmael. Run 184837",
+  "settings": {
+    "preferences": {
+      "font": "Georgia",
+      "fontSize": 24,
+      "lineHeight": 1.8,
+      "width": 660,
+      "theme": "warm",
+      "pronunciation": "en-GB"
+    },
+    "version": 4
+  },
+  "pageBeforeReload": "第 2 / 5 页 · 全书 —",
+  "progressStatus": 200,
+  "progress": {
+    "progress": {
+      "bookId": "67ffc755-3ad1-45a9-a071-bc1d02f7ba8b",
+      "anchor": {
+        "artifactId": "deebf9e5-f8e7-48f4-94f4-7385f0797f7e",
+        "artifactHash": "97864bae1336e33e35ee3a91a5c29014e9fbc1fe90c610a8cb7db58a98072587",
+        "pipelineVersion": "epub-safe-v1",
+        "spineHref": "OEBPS/Text/ch1.xhtml",
+        "cfi": "epubcfi(/6/2!/4/8/1:0)",
+        "blockId": "b-4",
+        "blockOffset": 0,
+        "quote": {
+          "exact": "The children are running toward the old house while the sun rose slowly over the quiet valley. The children are running toward t",
+          "prefix": "",
+          "suffix": "he old house while the sun rose slowly over the quiet valley. Th"
+        }
+      },
+      "progressRatio": 0.0880256,
+      "version": 1,
+      "updatedAt": "2026-11-23T10:48:47.090Z"
+    }
+  },
+  "restoredText": "Call me Ishmael. Run 184837",
+  "pageAfterReload": "全书 9%",
+  "shelfText": "阅阅读器验收样书Readict可阅读最近阅读 2026年11月23日已读 9%打开删除",
+  "text390": "Chapter 1\n\nCall me Ishmael. Run 184837\n\nThe children are running toward the old house while the sun rose slowly over the",
+  "banner": null,
+  "horizontalOverflow390": false,
+  "finishedAt": "2026-11-23T10:49:28.729Z"
+}
