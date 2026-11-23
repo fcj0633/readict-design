@@ -1,6 +1,6 @@
 # M03 文件、EPUB 导入与书架技术设计与执行文档
 
-版本：0.1（草案）；日期：2026-11-23。状态：**未开始；本文为实现前契约与执行指导，不表示已实现或已验收**。实现结果按实际执行另行归档到 `validation/implementation/m03/`，未通过前不建通过记录。
+版本：0.2；日期：2026-11-23。状态：**本机核心实现完成（后端＋前端代码，`readict_test` 已迁移并验收接口），前端浏览器人工检查与部分异常矩阵未完成；M03 未整体验收通过**。实际结果见 [M03 实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)。
 
 需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)。总体设计：[系统技术设计](../architecture/Readict-V1.1-系统技术设计.md)。任务来源：[模块化开发计划](Readict-V1.1-模块化开发计划.md)。既定决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)、[ADR-0008](../decisions/ADR-0008-EPUB安全流水线与确定性产物.md)（提议）。前置实现：[M00 记录](../../../validation/implementation/m00/README.md)、[M01 记录](../../../validation/implementation/m01/README.md)、[M02 记录](../../../validation/implementation/m02/README.md)、[A02 记录](../../../validation/implementation/a02/README.md)。
 
@@ -33,6 +33,18 @@
 ### 0.3 本次文档边界
 
 只写设计与执行指导：不创建源码、不建库、不执行迁移、不导入真实 EPUB、不产生验收结论。不修改 PRD、系统设计历史章节、M00～M02 完成条件、历史证据；新增链接仅作入口补充。
+### 0.4 2026-11-23 实施补记（0.2）
+
+后端与前端核心已按本文落地，提交 `d08976b`；`readict_test` 已执行 V7，`readict_dev` 未迁移。实现中确认并回写以下差异，其余契约未变：
+
+1. `spineHref` 统一为**包内完整路径**（如 `OEBPS/Text/ch1.xhtml`），章节表、`index.json`、`manifest` 与接口一致；不是相对 OPF 的 href。
+2. `<link rel="stylesheet">` 保留，但仅当目标为包内 CSS；其余 `link`／`meta` 仍剔除。
+3. 共享错误类型为新增的 `com.readict.shared.web.ApiProblem`，未迁移 `identity.DomainProblem`，避免影响 M01 既有行为。
+4. CSS 解析使用 `com.helger:ph-css:7.0.5`（Apache-2.0，镜像可用版本），不是 8.4.0。
+5. 新增错误码 `EPUB_INVALID_XHTML`、`COVER_NOT_FOUND`、`LEASE_LOST`、`BOOK_STATE_CONFLICT`；`text-index` 块字段为 `utf16Length`。
+6. 确定性只在本机同 JDK 内验证；跨 JDK 未测，仍需按 V04 处理。
+
+未完成项：前端书架页无真实浏览器人工检查；A03／A07／A11／A12 等未覆盖；`readict_dev` 迁移和 M08 清理执行后置。矩阵状态见实施记录，不因本文更新而升格。
 
 ## 1. 目标、范围与明确不做
 
@@ -314,7 +326,7 @@ UPDATE import_task SET lease_token=?, lease_until=?, updated_at=UTC_TIMESTAMP(3)
 
 - 路径：绝对路径、盘符、反斜杠混淆、`..` 越界、重复规范化路径、符号链接条目、非常规文件、嵌套归档（`.zip`／`.epub` 条目）。
 - XML：DTD、外部实体、外部 schema、网络访问、超长实体；解析参数固定（`disallow-doctype-decl=true`、`external-general-entities=false`、`external-parameter-entities=false`、`load-external-dtd=false`、`ACCESS_EXTERNAL_DTD=""`、`ACCESS_EXTERNAL_SCHEMA=""`、`FEATURE_SECURE_PROCESSING=true`）。
-- 内容：`script`、`iframe`、`object`、`embed`、`applet`、`form`／`input`／`button`／`select`／`textarea`、`base`、`link`、`meta`（除本文注入的 CSP）、`noscript`、`template`、`canvas`、`audio`、`video`、MathML、`foreignObject`、SMIL 动画（`animate`／`set`／`animateTransform`）、事件属性（`on*`）、`style` 属性中的 `url()`／`expression`、`data:` URI。
+- 内容：`script`、`iframe`、`object`、`embed`、`applet`、`form`／`input`／`button`／`select`／`textarea`、`base`、`meta`（除本文注入的 CSP）、`noscript`、`template`、`canvas`、`audio`、`video`、MathML、`foreignObject`、SMIL 动画（`animate`／`set`／`animateTransform`）、事件属性（`on*`）、`style` 属性中的 `url()`／`expression`、`data:` URI。`link` 仅保留 `rel=stylesheet` 且目标为包内 CSS 的引用，其余删除。
 - 外部 URI：`http:`／`https:`／协议相对 `//`／`javascript:`／`mailto:`／`tel:` 全部删除；内部链接只保留指向已保留 spine 项或 `#fragment` 的形式。
 - 隐藏内容：`hidden` 属性、内联 `display:none`／`visibility:hidden` 的元素连同文本删除并计数，避免“看不见的正文”进入索引。
 
@@ -368,7 +380,7 @@ CSP 只作纵深防护，不替代清洗；`img-src blob:` 是阅读引擎替换
 ### 7.9 错误码分类
 
 - 同步（HTTP）：`UPLOAD_TOO_LARGE`、`REQUEST_TOO_LARGE`、`UNSUPPORTED_MEDIA_TYPE`、`EPUB_FILE_TYPE_REQUIRED`、`IDEMPOTENCY_KEY_REQUIRED`、`INVALID_IDEMPOTENCY_KEY`、`IDEMPOTENCY_KEY_REUSED`、`BOOK_DELETING`、`IMPORT_LIMIT_REACHED`、`STORAGE_NOT_CONFIGURED`、`STORAGE_UNAVAILABLE`。
-- 异步（`import_task.error_code`，用户可见文案由前端映射）：`EPUB_INVALID_ZIP`、`EPUB_INVALID_MIMETYPE`、`EPUB_INVALID_CONTAINER`、`EPUB_INVALID_OPF`、`EPUB_INVALID_SPINE`、`EPUB_ENTRY_LIMIT`、`EPUB_ENTRY_TOO_LARGE`、`EPUB_TOTAL_TOO_LARGE`、`EPUB_PATH_TOO_LONG`、`EPUB_TOO_DEEP`、`EPUB_PATH_TRAVERSAL`、`EPUB_SPINE_TOO_LARGE`、`EPUB_DTD_FORBIDDEN`、`EPUB_FIXED_LAYOUT`、`EPUB_ENCRYPTED`、`EPUB_NO_CONTENT`、`EPUB_CHAPTER_TOO_LARGE`、`EPUB_ARTIFACT_TOO_LARGE`、`EPUB_INDEX_TOO_LARGE`、`EPUB_ARTIFACT_UNDETERMINISTIC`、`SOURCE_MISSING`、`STORAGE_WRITE_FAILED`、`IMPORT_TIMEOUT`、`INTERNAL_ERROR`。
+- 异步（`import_task.error_code`，用户可见文案由前端映射）：`EPUB_INVALID_ZIP`、`EPUB_INVALID_MIMETYPE`、`EPUB_INVALID_CONTAINER`、`EPUB_INVALID_OPF`、`EPUB_INVALID_SPINE`、`EPUB_INVALID_XHTML`、`EPUB_ENTRY_LIMIT`、`EPUB_ENTRY_TOO_LARGE`、`EPUB_TOTAL_TOO_LARGE`、`EPUB_PATH_TOO_LONG`、`EPUB_TOO_DEEP`、`EPUB_PATH_TRAVERSAL`、`EPUB_SPINE_TOO_LARGE`、`EPUB_DTD_FORBIDDEN`、`EPUB_FIXED_LAYOUT`、`EPUB_ENCRYPTED`、`EPUB_NO_CONTENT`、`EPUB_CHAPTER_TOO_LARGE`、`EPUB_ARTIFACT_TOO_LARGE`、`EPUB_INDEX_TOO_LARGE`、`EPUB_ARTIFACT_UNDETERMINISTIC`、`SOURCE_MISSING`、`STORAGE_WRITE_FAILED`、`IMPORT_TIMEOUT`、`LEASE_LOST`、`BOOK_STATE_CONFLICT`、`INTERNAL_ERROR`。封面缺失不是错误（`COVER_NOT_FOUND` 只用于读取已删除／缺失封面）。
 
 `error_code` 之外的用户文案必须安全、可操作、不含路径与堆栈；技术细节只进脱敏日志。
 
@@ -406,7 +418,7 @@ CSP 只作纵深防护，不替代清洗；`img-src blob:` 是阅读引擎替换
 ### 8.6 块与标识
 
 - 块 = 首个含文本的块级元素；其内部若再出现块级元素，则内层自成一块，不重复收集文本。
-- `blockId` 在**单章内**从 `b-1` 递增，按文档顺序；跨章唯一性由 `spineHref` 保证。
+- `blockId` 在**单章内**从 `b-1` 递增，按文档顺序；跨章唯一性由 `spineHref` 保证。`spineHref` 为包内完整路径（如 `OEBPS/Text/ch1.xhtml`），章节表、索引、manifest 与接口使用同一值。
 - 块文本 = 该块内全部文本节点按顺序连接，`br` 记为 `\n`；不 trim、不压缩空白、不做 Unicode 归一化。
 - `textHash = SHA-256(块文本 UTF-8 字节)`；`utf16Length = Java String.length()`（UTF-16 码元计数），与浏览器 JS `length` 一致。
 
@@ -642,8 +654,8 @@ ALTER TABLE book
   "pipelineVersion": "epub-safe-v1",
   "epubUrl": "/api/v1/books/{bookId}/artifacts/{artifactId}/epub",
   "textIndexUrl": "/api/v1/books/{bookId}/artifacts/{artifactId}/text-index",
-  "spine": [{"chapterId": "c0000000-0000-4000-8000-000000000001", "href": "Text/ch1.xhtml", "index": 0, "title": "Chapter 1", "textLength": 4210}],
-  "toc": [{"id": "toc-1", "label": "Chapter 1", "href": "Text/ch1.xhtml", "children": []}],
+  "spine": [{"chapterId": "c0000000-0000-4000-8000-000000000001", "href": "OEBPS/Text/ch1.xhtml", "index": 0, "title": "Chapter 1", "textLength": 4210}],
+  "toc": [{"id": "toc-1", "label": "Chapter 1", "href": "OEBPS/Text/ch1.xhtml", "children": []}],
   "settings": {"font": "Georgia", "fontSize": 20, "lineHeight": 1.8, "width": 660, "theme": "warm", "pronunciation": "en-GB"},
   "settingsVersion": 1
 }
@@ -737,7 +749,7 @@ UPDATE book SET status='FAILED', updated_at=UTC_TIMESTAMP(3) WHERE id=? AND stat
 | `HttpMediaTypeNotSupportedException` | 415 `UNSUPPORTED_MEDIA_TYPE` |
 | 业务 `DomainProblem` 等价值异常 | 按错误码表 |
 
-`DomainProblem` 现位于 `identity.domain`；本模块需要一个共享错误类型。建议将其提升到 `com.readict.shared.web`（保留 `identity` 的兼容别名或一次性迁移调用点），**不得**让 `library` 反向依赖 `identity` 内部类。该重构属实施范围，需单独提交并在 M00／M01 回归中确认无行为变化。
+`DomainProblem` 现位于 `identity.domain`；本模块需要独立的共享错误类型。实际实现新增 `com.readict.shared.web.ApiProblem` 并由 `ApiExceptionHandler` 统一映射，`identity` 侧保持不变，**没有**让 `library` 反向依赖 `identity` 内部类。若后续要合并两套错误类型，须单独提交并在 M00／M01 回归中确认无行为变化。
 
 ### 11.5 日志与脱敏
 
@@ -970,3 +982,4 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8080/api/v1/books/imports/$($result.imp
 | 版本 | 日期 | 变更 |
 |---|---|---|
 | 0.1 | 2026-11-23 | 建立 M03 实现前契约：存储、任务、安全流水线、确定性产物、V7、API、前后端指导与验收矩阵；ADR-0008 以“提议”登记，待用户确认 |
+| 0.2 | 2026-11-23 | 按实现回写差异：`spineHref` 为包内完整路径、保留包内 stylesheet link、共享错误类型改为 `ApiProblem`、ph-css 7.0.5、新增错误码；补实施状态与[实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)入口。状态为部分完成，未整体验收 |

@@ -1,0 +1,58 @@
+{
+  "record": "m03-2026-11-23-local",
+  "date": "2026-11-23",
+  "appCommit": "d08976b",
+  "status": "partial",
+  "environment": {
+    "os": "Windows 11",
+    "jdk": "21.0.10",
+    "maven": "3.9.14",
+    "springBoot": "4.1.2",
+    "node": "24",
+    "mysql": "8.0.44",
+    "database": "readict_test",
+    "storageRootLeaf": "readict_test",
+    "phCss": "7.0.5"
+  },
+  "commands": [
+    { "command": "mvn test", "result": "90 tests, 0 failures" },
+    { "command": "mvn -Pmysql-it verify", "result": "50 tests, 0 failures" },
+    { "command": "npm run lint", "result": "0 warnings, 0 errors" },
+    { "command": "npm test", "result": "30 tests, 0 failures" },
+    { "command": "npm run build", "result": "success" }
+  ],
+  "migration": { "schema": "readict_test", "before": "V6", "applied": "V7", "secondStartupMigrations": 0, "devSchemaMigrated": false },
+  "libraryTests": { "unit": 16, "integration": 2 },
+  "coverage": [
+    { "id": "A01", "status": "pass" },
+    { "id": "A02", "status": "partial", "gap": "EPUB2 only parsed in unit test" },
+    { "id": "A03", "status": "not-covered" },
+    { "id": "A04", "status": "pass" },
+    { "id": "A05", "status": "partial", "gap": "entry budget only" },
+    { "id": "A06", "status": "partial", "gap": "resolver-level only" },
+    { "id": "A07", "status": "not-covered" },
+    { "id": "A08", "status": "pass" },
+    { "id": "A09", "status": "pass" },
+    { "id": "A10", "status": "partial", "gap": "business limit unit only" },
+    { "id": "A11", "status": "not-covered" },
+    { "id": "A12", "status": "not-covered" },
+    { "id": "A13", "status": "partial", "gap": "READY reuse only" },
+    { "id": "A14", "status": "partial", "gap": "exact 409 not asserted" },
+    { "id": "A15", "status": "pass" },
+    { "id": "A16", "status": "pass" },
+    { "id": "A17", "status": "partial" },
+    { "id": "A18", "status": "pass" },
+    { "id": "A19", "status": "partial", "gap": "no browser DOM comparison" },
+    { "id": "A20", "status": "pass" },
+    { "id": "A21", "status": "partial", "gap": "no HTTP assertion" },
+    { "id": "A22", "status": "pass" }
+  ],
+  "notVerified": [
+    "browser manual check for the bookshelf page",
+    "crash takeover and post-publish DB failure",
+    "DTD/XXE hostile fixture",
+    "real EPUB samples",
+    "readict_dev migration",
+    "range requests for epub download"
+  ]
+}
