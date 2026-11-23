@@ -1,8 +1,8 @@
 # M03 文件、EPUB 导入与书架技术设计与执行文档
 
-版本：0.2；日期：2026-11-23。状态：**本机核心实现完成（后端＋前端代码，`readict_test` 已迁移并验收接口），前端浏览器人工检查与部分异常矩阵未完成；M03 未整体验收通过**。实际结果见 [M03 实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)。
+版本：0.3；日期：2026-11-23。状态：**本机核心实现完成（后端＋前端代码，`readict_test` 已迁移，接口与恢复矩阵验收通过，浏览器自动检查完成），人工视觉确认、真实 EPUB 与 V03 全量矩阵未完成；M03 未整体验收通过**。实际结果见 [M03 实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)。
 
-需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)。总体设计：[系统技术设计](../architecture/Readict-V1.1-系统技术设计.md)。任务来源：[模块化开发计划](Readict-V1.1-模块化开发计划.md)。既定决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)、[ADR-0008](../decisions/ADR-0008-EPUB安全流水线与确定性产物.md)（提议）。前置实现：[M00 记录](../../../validation/implementation/m00/README.md)、[M01 记录](../../../validation/implementation/m01/README.md)、[M02 记录](../../../validation/implementation/m02/README.md)、[A02 记录](../../../validation/implementation/a02/README.md)。
+需求基线：[PRD V1.1](../../requirements/prd/PRD-v1.1.md)。总体设计：[系统技术设计](../architecture/Readict-V1.1-系统技术设计.md)。任务来源：[模块化开发计划](Readict-V1.1-模块化开发计划.md)。既定决定：[ADR-0001](../decisions/ADR-0001-本机环境与本地词典及翻译技术选型.md)、[ADR-0002](../decisions/ADR-0002-业务持久层采用MyBatis-Plus与XML.md)、[ADR-0008](../decisions/ADR-0008-EPUB安全流水线与确定性产物.md)（已采纳）。前置实现：[M00 记录](../../../validation/implementation/m00/README.md)、[M01 记录](../../../validation/implementation/m01/README.md)、[M02 记录](../../../validation/implementation/m02/README.md)、[A02 记录](../../../validation/implementation/a02/README.md)。
 
 阅读顺序：实际起点 → 范围与证据 → 流程与目录 → 存储与任务 → 安全流水线与产物 → V7 与 API → 后端／前端指导 → 六项任务 → 验收与命令 → 未决事项。
 
@@ -44,7 +44,7 @@
 5. 新增错误码 `EPUB_INVALID_XHTML`、`COVER_NOT_FOUND`、`LEASE_LOST`、`BOOK_STATE_CONFLICT`；`text-index` 块字段为 `utf16Length`。
 6. 确定性只在本机同 JDK 内验证；跨 JDK 未测，仍需按 V04 处理。
 
-未完成项：前端书架页无真实浏览器人工检查；A03／A07／A11／A12 等未覆盖；`readict_dev` 迁移和 M08 清理执行后置。矩阵状态见实施记录，不因本文更新而升格。
+未完成项：A03／A05／A07／A11／A12 已补单测或集成（见实施记录）；人工视觉确认、真实 EPUB、V03 全量恶意矩阵与跨 JDK 确定性、`readict_dev` 迁移和 M08 清理执行后置。矩阵状态见实施记录，不因本文更新而升格。
 
 ## 1. 目标、范围与明确不做
 
@@ -977,9 +977,10 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8080/api/v1/books/imports/$($result.imp
 
 ## 16. 交付边界与变更记录
 
-本次只新增本文与 ADR-0008（提议），并在技术索引、模块计划、系统设计 §18.2 与 ADR 索引补充入口；不创建源码、不建库、不执行迁移、不生成通过记录、不改 PRD 与历史证据。实现完成后按协作规则以中文提交说明改动、原因与实际验证结果，并推送现有远程。
+本次只新增本文与 ADR-0008（现已采纳），并在技术索引、模块计划、系统设计 §18.2 与 ADR 索引补充入口；不创建源码、不建库、不执行迁移、不生成通过记录、不改 PRD 与历史证据。实现完成后按协作规则以中文提交说明改动、原因与实际验证结果，并推送现有远程。
 
 | 版本 | 日期 | 变更 |
 |---|---|---|
 | 0.1 | 2026-11-23 | 建立 M03 实现前契约：存储、任务、安全流水线、确定性产物、V7、API、前后端指导与验收矩阵；ADR-0008 以“提议”登记，待用户确认 |
+| 0.3 | 2026-11-23 | ADR-0008 采纳；补 A03／A05／A07／A11／A12 单测与恢复集成；Edge headless 浏览器检查通过；状态更新为“接口与恢复矩阵已验收，人工确认与真实 EPUB 待办” |
 | 0.2 | 2026-11-23 | 按实现回写差异：`spineHref` 为包内完整路径、保留包内 stylesheet link、共享错误类型改为 `ApiProblem`、ph-css 7.0.5、新增错误码；补实施状态与[实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)入口。状态为部分完成，未整体验收 |

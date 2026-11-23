@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-11-23T05:23:58.752Z",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "dialogs": [],
+  "screenshots": [
+    "01-empty-shelf-1440.png",
+    "02-import-dialog.png",
+    "03-import-done.png",
+    "04-shelf-ready-1440.png",
+    "05-delete-confirm.png",
+    "06-shelf-390.png"
+  ],
+  "email": "browser_1795411438796_667935@readict.test",
+  "cardTitle": "浏览器验收样书",
+  "cardStatus": "可阅读",
+  "deleteDialogText": "删除《浏览器验收样书》？将删除原始文件与阅读资源，阅读进度一并清除；已收藏的单词和原文快照会保留。取消确认删除",
+  "horizontalOverflow390": false,
+  "bookCountBeforeDelete": 1,
+  "deleteStatus": 202,
+  "bookCountAfterDelete": 0,
+  "finishedAt": "2026-11-23T05:24:09.399Z"
+}

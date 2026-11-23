@@ -1,8 +1,9 @@
 {
   "record": "m03-2026-11-23-local",
   "date": "2026-11-23",
-  "appCommit": "d08976b",
+  "appCommits": ["d08976b", "158e37e"],
   "status": "partial",
+  "adr": { "id": "ADR-0008", "status": "adopted", "adoptedOn": "2026-11-23", "gatesOpen": ["V03", "V04"] },
   "environment": {
     "os": "Windows 11",
     "jdk": "21.0.10",
@@ -11,31 +12,45 @@
     "node": "24",
     "mysql": "8.0.44",
     "database": "readict_test",
-    "storageRootLeaf": "readict_test",
+    "browser": "Microsoft Edge (Playwright channel=msedge, headless)",
     "phCss": "7.0.5"
   },
   "commands": [
-    { "command": "mvn test", "result": "90 tests, 0 failures" },
-    { "command": "mvn -Pmysql-it verify", "result": "50 tests, 0 failures" },
+    { "command": "mvn test", "result": "94 tests, 0 failures" },
+    { "command": "mvn -Pmysql-it verify", "result": "52 tests, 0 failures" },
     { "command": "npm run lint", "result": "0 warnings, 0 errors" },
     { "command": "npm test", "result": "30 tests, 0 failures" },
     { "command": "npm run build", "result": "success" }
   ],
   "migration": { "schema": "readict_test", "before": "V6", "applied": "V7", "secondStartupMigrations": 0, "devSchemaMigrated": false },
-  "libraryTests": { "unit": 16, "integration": 2 },
+  "libraryTests": { "unit": 20, "integration": 4 },
+  "browser": {
+    "tool": "playwright (reader-core node_modules) with Edge",
+    "screenshots": [
+      "browser/01-empty-shelf-1440.png",
+      "browser/02-import-dialog.png",
+      "browser/03-import-done.png",
+      "browser/04-shelf-ready-1440.png",
+      "browser/05-delete-confirm.png",
+      "browser/06-shelf-390.png"
+    ],
+    "summaryFile": "browser/summary.json",
+    "result": "import to READY, delete confirm text includes snapshot retention, 390px no horizontal overflow, no dialogs, delete 202, shelf empty after delete",
+    "knownConsoleError": "404 /favicon.ico (frontend has no icon)"
+  },
   "coverage": [
     { "id": "A01", "status": "pass" },
     { "id": "A02", "status": "partial", "gap": "EPUB2 only parsed in unit test" },
-    { "id": "A03", "status": "not-covered" },
+    { "id": "A03", "status": "pass" },
     { "id": "A04", "status": "pass" },
-    { "id": "A05", "status": "partial", "gap": "entry budget only" },
+    { "id": "A05", "status": "partial", "gap": "time budget not constructed" },
     { "id": "A06", "status": "partial", "gap": "resolver-level only" },
-    { "id": "A07", "status": "not-covered" },
+    { "id": "A07", "status": "pass" },
     { "id": "A08", "status": "pass" },
     { "id": "A09", "status": "pass" },
-    { "id": "A10", "status": "partial", "gap": "business limit unit only" },
-    { "id": "A11", "status": "not-covered" },
-    { "id": "A12", "status": "not-covered" },
+    { "id": "A10", "status": "partial", "gap": "no 26 MB HTTP request" },
+    { "id": "A11", "status": "pass" },
+    { "id": "A12", "status": "pass" },
     { "id": "A13", "status": "partial", "gap": "READY reuse only" },
     { "id": "A14", "status": "partial", "gap": "exact 409 not asserted" },
     { "id": "A15", "status": "pass" },
@@ -48,11 +63,12 @@
     { "id": "A22", "status": "pass" }
   ],
   "notVerified": [
-    "browser manual check for the bookshelf page",
-    "crash takeover and post-publish DB failure",
-    "DTD/XXE hostile fixture",
+    "human visual confirmation of the bookshelf page",
     "real EPUB samples",
+    "V03 full hostile matrix and resource-exhaustion observation",
+    "V04 browser DOM/index comparison and cross-JDK determinism",
     "readict_dev migration",
+    "M08 physical cleanup and orphan reclamation",
     "range requests for epub download"
   ]
 }

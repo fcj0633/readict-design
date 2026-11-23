@@ -144,7 +144,7 @@ M00-01～M00-05 已完成本机阶段验收；M01核心与本地模拟已验收�
 
 ### M03 文件、EPUB 导入与书架
 
-前置：M00、M01 已可用认证。接口：/books、/books/imports、cover、reader-manifest、产物下载。数据：book、artifact、chapter、import_task、必要文件清理状态。详细目录、V7 DDL、存储键、预算、清洗白名单、确定性规则、API 契约、六项步骤、命令和退出条件见[M03 独立执行文档](M03-文件、EPUB导入与书架技术设计与执行文档.md)（0.2；本机核心已实现，测试记录见[实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)，未整体验收）；安全流水线与不可变产物决定见[ADR-0008](../decisions/ADR-0008-EPUB安全流水线与确定性产物.md)（提议，待确认）。
+前置：M00、M01 已可用认证。接口：/books、/books/imports、cover、reader-manifest、产物下载。数据：book、artifact、chapter、import_task、必要文件清理状态。详细目录、V7 DDL、存储键、预算、清洗白名单、确定性规则、API 契约、六项步骤、命令和退出条件见[M03 独立执行文档](M03-文件、EPUB导入与书架技术设计与执行文档.md)（0.3；本机核心已实现，测试记录见[实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)，未整体验收）；安全流水线与不可变产物决定见[ADR-0008](../decisions/ADR-0008-EPUB安全流水线与确定性产物.md)（已采纳）。
 
 | 任务 | 工作与完成证据 |
 |---|---|
@@ -329,7 +329,7 @@ flowchart LR
 | M00 | 已完成本机阶段验收 | 应用提交 ced5f6e；[验收记录](../../../validation/implementation/m00/README.md) |
 | M01 | 部分完成：核心与本地模拟已验收，真实通道待材料 | [M01 记录](../../../validation/implementation/m01/README.md)；应用提交见记录 |
 | M02 | 本机MVP词典底座完成；开发库已启用；完整质量未通过 | [当前验收](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)；保留r2／r3历史质量记录 |
-| M03 | 进行中：本机核心已实现，`readict_test` 接口验收通过；浏览器检查与部分异常矩阵待补，`readict_dev` 未迁移 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 d08976b；待 M03-06 收尾 |
+| M03 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵验收通过，浏览器自动检查完成；真实 EPUB、V03 全量矩阵、`readict_dev` 迁移待办 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 158e37e；待 M03-06 收尾 |
 | M04 | 未开始，已有 EPUB 实验 | 待正式适配器验证 |
 | M05 | 未开始，已有原型／实验 | 待正式联调 |
 | M06 | 未开始 | 待正式事务验证 |
