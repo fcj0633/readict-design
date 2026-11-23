@@ -49,8 +49,8 @@ Mock 服务集中在 `prototypes/reader-ui/src/lib/services.ts`，样书和词�
 ## 2026-11-23 阅读器 UI 优化
 
 - 正式应用阅读页改为 60px 顶栏（返回、书名、当前章节）+ 独立纸面 + 右侧 Lucide 工具轨 + 纸内底栏；目录/设置改为覆盖式抽屉，不改变 iframe 尺寸。
-- 纸面宽度 `clamp(920px, 76vw, 1100px)`，正文仍使用 660/720px 行宽；1920/1440/1366 三档桌面为当前验收基线。
+- 2026-11-23 第二轮：纸面 `min(1560px, calc(100vw - 48px))`，正文标准 `clamp(820px, 46vw, 900px)`、宽松 `clamp(880px, 50vw, 940px)`；书名 22px，工具栏 54px 胶囊，底栏只保留页码与失败重试。1920/1440/1366 三档桌面为当前验收基线。
 - 保存状态收进底栏，失败时显示“未同步 · 重试”，不再使用顶部通栏错误条。
 - M03 manifest 的 TOC 仍是扁平列表，目录层级由前端按 PART/BOOK/... 标签做展示层分组，不修改后端契约。
 - 查词卡片当前仅为 `?preview=dictionary` 的开发视觉预览；真实 M05 查词与 M06 收藏仍未接入。
-- 实测记录与截图：[阅读器 UI 优化记录](../../validation/ui/2026-11-23-reader-redesign/README.md)。
+- 实测记录与截图：[阅读器 UI 优化记录（第一轮）](../../validation/ui/2026-11-23-reader-redesign/README.md)；[第二轮 polish 记录](../../validation/ui/2026-11-23-reader-polish/README.md)。
