@@ -1,5 +1,7 @@
 # 技术设计与选型
 
+- [UX-R02 阅读器比例优化与视觉原型说明](implementation/UX-R02-阅读器比例优化与视觉原型说明.md)：参考微信读书的三张独立暖色视觉方案，等待选择；[方案与复核](../../validation/implementation/ux-r02/2026-11-25/README.md)。仅视觉设计，未修改正式前端。
+
 - [UX-R01 正式阅读器视觉改版执行说明](implementation/UX-R01-正式阅读器视觉改版执行说明.md)：选定视觉稿落地至真实EPUB.js阅读器，独立于M04历史基线；[本轮截图与验证](../../validation/implementation/ux-r01/2026-11-25/README.md)。
 
 技术设计与实施指导集中在本目录。正式应用 M00 已完成本机阶段验收，详见 [M00 实施与验收记录](../../validation/implementation/m00/README.md)；该结果不代表后续业务模块或生产部署已完成。
