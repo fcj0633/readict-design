@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-25",
+  "stableScreenshots": [
+    {
+      "name": "reader-1920",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "canvas": 1000,
+      "columnWidth": "1000px",
+      "railOpacity": "1",
+      "toolOpacity": "0.7"
+    },
+    {
+      "name": "reader-1440",
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": 1000,
+      "columnWidth": "1000px",
+      "railOpacity": "1",
+      "toolOpacity": "0.7"
+    },
+    {
+      "name": "reader-1366",
+      "viewport": [
+        1366,
+        768
+      ],
+      "canvas": 1000,
+      "columnWidth": "1000px",
+      "railOpacity": "1",
+      "toolOpacity": "0.7"
+    },
+    {
+      "name": "comparison-1672",
+      "viewport": [
+        1672,
+        941
+      ],
+      "canvas": 1000,
+      "columnWidth": "1000px",
+      "railOpacity": "1",
+      "toolOpacity": "0.7"
+    },
+    {
+      "name": "dark-1440",
+      "viewport": [
+        1440,
+        900
+      ],
+      "canvas": 900,
+      "columnWidth": "900px",
+      "railOpacity": "1",
+      "toolOpacity": "0.7"
+    }
+  ],
+  "preferencesRestored": true
+}

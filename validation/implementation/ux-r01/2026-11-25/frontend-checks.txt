@@ -1,0 +1,93 @@
+=== lint ===
+
+> readict-frontend@0.0.1 lint
+> oxlint
+
+
+
+=== tests ===
+
+> readict-frontend@0.0.1 test
+> tsx --test src/lib/*.test.ts src/features/auth/*.test.ts src/features/settings/*.test.ts src/features/library/*.test.ts src/features/reader/*.test.ts src/features/reader/engine/*.test.ts src/features/reader/progress/*.test.ts src/features/reader/preview/*.test.ts
+
+✔ phone paste removes exactly one supported prefix and keeps other country input invalid (1.068ms)
+✔ password code-point policy matches accepted and rejected examples (0.6622ms)
+✔ decodes user independently of status responses and disallows external redirects (1.2058ms)
+✔ decodes a shelf response and rejects malformed items (1.446ms)
+✔ decodes import tasks with and without safe errors (0.2725ms)
+✔ generates RFC 4122 version 4 request ids (1.0352ms)
+✔ rejects wrong extension, empty and oversized files locally (0.8189ms)
+✔ maps known error codes and falls back for unknown ones (0.2175ms)
+✔ polls quickly first and backs off after thirty seconds (0.1175ms)
+✔ computes clamped upload percentage (0.1659ms)
+✔ describes task and book states without inventing success (0.1715ms)
+✔ formats dates and cover initials defensively (18.4468ms)
+✔ decodes the wrapped GET response (0.8711ms)
+✔ decodes the direct PUT response body (0.2449ms)
+✔ builds a bounded quote starting at the offset (1.9288ms)
+✔ never splits a surrogate pair at quote boundaries (0.2402ms)
+✔ finds a unique quote and refuses ambiguous ones (1.0791ms)
+✔ compares the persisted quote with the current block text (0.2014ms)
+✔ locates offsets at block starts, middles and boundaries (2.4271ms)
+✔ rejects offsets outside the chapter (0.3704ms)
+✔ reading themes retain every supported user font size and line height (2.0539ms)
+✔ paragraph rhythm does not impose an indent or important rules on book-specific layout (0.4528ms)
+✔ places the card to the right when there is room (1.4523ms)
+✔ flips to the left near the right edge (0.29ms)
+✔ clamps vertically below the top bar and bounds the card height (0.3569ms)
+✔ keeps a narrow viewport card inside the page (0.2418ms)
+✔ initializes from the server and saves with expectedVersion 0 (3.8781ms)
+✔ stops automatic saving on conflict and can resume from the server version (1.6917ms)
+✔ keeps a local pending anchor when the network fails (0.8083ms)
+✔ normalizes fragments and relative prefixes (1.3938ms)
+✔ matches chapter hrefs with fragments and path suffixes (0.3009ms)
+✔ finds labels and counts nested nodes (0.2861ms)
+✔ groups a flat PART/CHAPTER manifest into a display tree (0.459ms)
+✔ validates server preferences and version (2.1805ms)
+✔ debounces 500ms and never overlaps saves or overwrites newer draft (7.1532ms)
+✔ unknown network result retries the same request identity and payload (0.5861ms)
+✔ 409 preserves draft until user chooses server or resubmits (0.4303ms)
+✔ disposed requests cannot publish late results (0.2651ms)
+✔ validates status JSON (21.9294ms)
+✔ preserves a valid 503 Problem Details (0.8877ms)
+✔ rejects HTML and malformed JSON without exposing body (1.0103ms)
+✔ rejects invalid success fields and success with a problem media type (2.235ms)
+✔ does not treat non-2xx JSON or malformed problem as success (0.9987ms)
+✔ maps network failure (0.3629ms)
+✔ preserves cancellation (0.1988ms)
+✔ uses same-origin relative path and supplied signal (1.3707ms)
+✔ late response cannot replace newer result and disposal ignores pending response (0.904ms)
+✔ fetches CSRF for mutations, sends same-origin header and handles 204 (21.4209ms)
+✔ CSRF failure refreshes token but never replays a write (5.7525ms)
+✔ ordinary forbidden does not trigger token refresh loop (1.3335ms)
+✔ rejects malformed JSON, HTML and propagates abort without replay (0.8841ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 972.7181
+
+
+=== build ===
+
+> readict-frontend@0.0.1 build
+> tsc -b && vite build
+
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 2241 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:   0.31 kB
+dist/assets/index-CalJGunq.css   27.73 kB │ gzip:   6.53 kB
+dist/assets/index-rvvpoxWe.js   699.03 kB │ gzip: 214.93 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 654ms

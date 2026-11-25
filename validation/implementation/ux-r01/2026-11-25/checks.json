@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-25",
+  "lint": "PASS",
+  "tests": {
+    "total": 51,
+    "passed": 51,
+    "failed": 0
+  },
+  "build": "PASS",
+  "warning": "Existing main chunk >500kB; final 699.03kB / gzip214.93kB",
+  "applicationCommit": "cd5ae33d45baf9379018951b715f1a92a4c06888",
+  "schema": "V8; zero migrations",
+  "backendChanges": false,
+  "newDependencies": false
+}

@@ -1,5 +1,7 @@
 # 技术设计与选型
 
+- [UX-R01 正式阅读器视觉改版执行说明](implementation/UX-R01-正式阅读器视觉改版执行说明.md)：选定视觉稿落地至真实EPUB.js阅读器，独立于M04历史基线；[本轮截图与验证](../../validation/implementation/ux-r01/2026-11-25/README.md)。
+
 技术设计与实施指导集中在本目录。正式应用 M00 已完成本机阶段验收，详见 [M00 实施与验收记录](../../validation/implementation/m00/README.md)；该结果不代表后续业务模块或生产部署已完成。
 
 - [Readict V1.1 系统技术设计文档](architecture/Readict-V1.1-系统技术设计.md)：整体架构、模块、阅读器、数据库与 API、关键一致性规则及待验证任务；区分已有证据、工程设计和候选方案。
