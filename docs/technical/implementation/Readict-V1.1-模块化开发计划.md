@@ -1,7 +1,7 @@
 # Readict V1.1 模块化开发计划
 
-版本：0.10；日期：2026-11-25（新增 M05 MVP 开发执行文档，校正模块现状；保留历史任务与验收门槛）。
-状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 核心账号与本地模拟流程验收通过，真实通道待材料；M02 本机 LOCAL_MVP 词典底座完成，完整质量仍未通过；A02 本机音频底座可用，卡片接入、人工试听与权利检查分列；M03／M04 核心已实现并执行开发库 V7／V8，未整体验收；M05 本机 MVP 已实现、完整验收未完成，M06～M09 未开发。真实结果见 [M00](../../../validation/implementation/m00/README.md)、[M01](../../../validation/implementation/m01/README.md)、[M02](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)、[A02](../../../validation/implementation/a02/2026-11-23-local-subset/README.md)、[M03](../../../validation/implementation/m03/2026-11-23-local/README.md)及[M04](../../../validation/implementation/m04/README.md)；本次不补记任何新通过结论。
+版本：0.11；日期：2026-11-25（新增 M05/M06 开发执行文档，校正模块现状；保留历史任务与验收门槛）。
+状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 核心账号与本地模拟流程验收通过，真实通道待材料；M02 本机 LOCAL_MVP 词典底座完成，完整质量仍未通过；A02 本机音频底座可用，卡片接入、人工试听与权利检查分列；M03／M04 核心已实现并执行开发库 V7／V8，未整体验收；M05 本机 MVP 已实现、完整验收未完成，M06 执行文档 0.1 草案已建立，M07～M09 未开发。真实结果见 [M00](../../../validation/implementation/m00/README.md)、[M01](../../../validation/implementation/m01/README.md)、[M02](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)、[A02](../../../validation/implementation/a02/2026-11-23-local-subset/README.md)、[M03](../../../validation/implementation/m03/2026-11-23-local/README.md)及[M04](../../../validation/implementation/m04/README.md)；本次不补记任何新通过结论。
 
 当前仓库约定：源码、迁移和正式测试在 readict-app；详细文档、实施记录及截图在 readict-design。应用不建 docs/，单次环境准备和验收脚本不提交，个人便利工具放在忽略的 .local/。以下环境与选型表中的“未验证”等描述保留原始计划编写时的基线，M00 当前结果以验收记录为准。
 
@@ -191,7 +191,9 @@ M00-01～M00-05 已完成本机阶段验收；M01核心与本地模拟已验收�
 
 ### M06 收藏、快照和回看
 
-前置：M01、M04、M05。接口：/favorites 及 state／sources／detail；数据：favorite_word、context、mutation_receipt，词典数据集快照引用。
+前置：M01、M04、M05。接口：/favorites 及 state／sources／detail；数据：user_favorite_word、favorite_word_context、mutation_receipt，词典数据集快照引用。
+
+当前执行依据：[M06 技术设计与执行文档](M06-收藏、快照与回看技术设计与执行文档.md)（0.1；2026-11-25；待实施）。本轮只写开发计划，不建表、不写源码、不创建通过记录。
 
 | 任务 | 工作与完成证据 |
 |---|---|
@@ -334,7 +336,7 @@ flowchart LR
 | M03 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵验收通过，浏览器自动检查完成；真实 EPUB、V03 全量矩阵待办；`readict_dev` 已于 2026-11-23 执行 V7 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 158e37e；待 M03-06 收尾 |
 | M04 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵通过，Edge 自动检查完成；真实 EPUB、跨版式恢复待办 | [实施记录](../../../validation/implementation/m04/2026-11-23-local/README.md)；应用提交 afa5425；待 M04-06 收尾 |
 | M05 | 本机 MVP 已实现：点词查词、真实 COL 卡片与真实录音接入；完整验收未完成 | [实施记录](../../../validation/implementation/m05/2026-11-25-local-mvp/README.md)；应用提交 2b9af06 |
-| M06 | 未开始 | 待正式事务验证 |
+| M06 | 未开始；0.1 执行文档已建立 | 见 [M06 执行文档](M06-收藏、快照与回看技术设计与执行文档.md)；待 V9 与事务验证 |
 | M07 | 未开始，真实服务待配置 | 待 SDK 和真实调用 |
 | M08 | 未开始 | 待故障验证 |
 | M09 | 未开始 | 待本机阶段验收 |
