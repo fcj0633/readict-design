@@ -1,0 +1,29 @@
+m06-it.log: 14:04:17.734 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 8
+m06-it.log: 14:04:18.028 INFO  [] o.f.core.internal.command.DbMigrate - Migrating schema `readict_test` to version "9 - favorites"
+m06-it.log: 14:04:20.223 INFO  [] o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema `readict_test`, now at version v9 (execution time 00:02.144s)
+m06-it.log: 14:04:48.358 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-it.log: 14:04:48.358 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-it.log: 14:04:58.549 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-it.log: 14:04:58.549 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-browser-backend.log: 14:04:25.352 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-browser-backend.log: 14:04:25.359 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:28:23.163 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:28:23.180 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:29:09.002 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:29:09.004 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:29:10.678 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:29:10.678 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:29:14.017 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:29:14.018 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:29:54.443 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:29:54.443 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:30:02.289 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:30:02.289 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:30:27.750 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:30:27.751 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:30:35.999 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:30:36.004 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:30:49.126 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:30:49.127 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.
+m06-xml-final-verify.log: 14:31:18.793 INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema `readict_test`: 9
+m06-xml-final-verify.log: 14:31:18.793 INFO  [] o.f.core.internal.command.DbMigrate - Schema `readict_test` is up to date. No migration necessary.

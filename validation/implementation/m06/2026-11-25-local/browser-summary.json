@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-25",
+  "browser": "Chromium 158.0.8127.37",
+  "backend": "final packaged MyBatis/XML application, test profile",
+  "desktop": {
+    "width": 1440,
+    "height": 900,
+    "saveAndAppend": {
+      "words": 1,
+      "contexts": 2
+    },
+    "cardStayedOpenAfterStableLayout": true,
+    "returnNotice": "已核验原句并恢复收藏位置",
+    "highlightMatchesActualWordRange": true,
+    "highlightToleranceCssPixels": 1
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "horizontalOverflow": false,
+    "deletedSourceContexts": 2,
+    "returnLinksAfterBookDeletion": 0
+  },
+  "bookDeletion": {
+    "httpStatus": 202,
+    "uiErrorAlerts": 0
+  },
+  "favoriteDeletion": {
+    "words": 0,
+    "contexts": 0,
+    "logoutStatus": 204
+  },
+  "cleanup": {
+    "fixtureUsersRemaining": 0,
+    "fixtureDatasetRemaining": 0,
+    "activeDictionaryDataset": null,
+    "activeDictionaryVersionAfterCasRestore": 134,
+    "previewServersStopped": true
+  },
+  "initialReflow": {
+    "result": "first screenshot taken during initial font reflow; card closed by existing reader reflow behavior",
+    "evidence": "final-xml/00-initial-reflow-1440.png",
+    "rerun": "waited for document.fonts.ready and stable layout; subsequent saves preserved the card"
+  },
+  "dataScope": "Synthetic EPUB and synthetic child/children dictionary fixture only",
+  "applicationCommit": "2e43155"
+}

@@ -1,0 +1,47 @@
+{
+  "applicationBaseline": "2b9af06",
+  "designBaseline": "304cc66",
+  "database": "readict_test",
+  "existingMigrations": [
+    {
+      "file": "V1__create_system_metadata.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "82af16e7beed1f6a5e5ccccb7e6cb074ee2f5cf5674ecc21a7ff5f0ad9fddd9a"
+    },
+    {
+      "file": "V2__identity_and_settings.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "0ad128f3261dd75d5720c5ac5154031e828fc545c2dbfc9ebfe4f30dda2b6138"
+    },
+    {
+      "file": "V3__spring_session_jdbc.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "12681613b92971e864acd78fd83f4124fa84a167585c09286ecafcc5aaa7a5f9"
+    },
+    {
+      "file": "V4__verification_and_rate_limit.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "710113f8c53dd31246db287abe8e1c5feeeda8a35001ced45d265b865217a133"
+    },
+    {
+      "file": "V5__dictionary_foundation.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "35e7a88faf638c70cf94b6df847f572438726f45ba8b0a135582bf1b07b5d79f"
+    },
+    {
+      "file": "V6__dictionary_audio.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "7244b745bbf2da88a310f0c29c98b906d239579ed1bfe0dbdf4e0fdcb1ee3169"
+    },
+    {
+      "file": "V7__library_books.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "0d40ae312b714de744c6a0b516eb4715f3cf69528575bd3363303d071c492041"
+    },
+    {
+      "file": "V8__reading_progress.sql",
+      "unchangedFromHead": true,
+      "workingSha256": "0ab68ac5b3df0e6f1cf23801d18423bf0b4ddee24d75d0e2503494eef17a2675"
+    }
+  ]
+}

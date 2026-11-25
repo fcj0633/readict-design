@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-25",
+  "database": "readict_test",
+  "fullRegression": {
+    "command": "mvn -Pmysql-it verify",
+    "ordinaryTests": 110,
+    "integrationTests": 67,
+    "failures": 0,
+    "errors": 0,
+    "result": "passed",
+    "source": "m06-xml-final-verify.log"
+  },
+  "finalContracts": {
+    "command": "mvn -Pmysql-it -Dtest=ContextKeyTest,LookupServiceTest,LookupReceiptStoreTest -Dit.test=FavoriteIT verify",
+    "ordinaryTests": 5,
+    "integrationTests": 11,
+    "failures": 0,
+    "errors": 0,
+    "result": "passed"
+  },
+  "frontend": {
+    "lint": "passed",
+    "tests": 62,
+    "failures": 0,
+    "build": "passed",
+    "note": "Vite chunk-size warning remains"
+  },
+  "favoritesCases": [
+    {
+      "name": "saveDeleteCompetitionMaintainsConstraintsAndOldReceiptStaysDeleted",
+      "timeSeconds": 2.287,
+      "result": "passed"
+    },
+    {
+      "name": "receiptsReplayRejectDifferentPayloadAndNeverResurrect",
+      "timeSeconds": 0.817,
+      "result": "passed"
+    },
+    {
+      "name": "detachFailureRollsBackBookDeletion",
+      "timeSeconds": 0.567,
+      "result": "passed"
+    },
+    {
+      "name": "validatesSourcesAndAppendsUsingExistingEvidence",
+      "timeSeconds": 0.824,
+      "result": "passed"
+    },
+    {
+      "name": "concurrentSavesDeduplicateAndPreserveFirstSnapshot",
+      "timeSeconds": 1.101,
+      "result": "passed"
+    },
+    {
+      "name": "detachesSnapshotsAndRejectsNewWritesWhenBookDeleted",
+      "timeSeconds": 0.576,
+      "result": "passed"
+    },
+    {
+      "name": "concurrentDifferentBooksConvergeOnOneLemma",
+      "timeSeconds": 0.718,
+      "result": "passed"
+    },
+    {
+      "name": "appendsDistinctPositionsAndPaginatesWithFilterBoundCursor",
+      "timeSeconds": 0.709,
+      "result": "passed"
+    },
+    {
+      "name": "contextInsertFailureRollsBackWordAndReceipt",
+      "timeSeconds": 0.51,
+      "result": "passed"
+    },
+    {
+      "name": "httpRequiresAuthenticationCsrfAndReturnsPrivateProjections",
+      "timeSeconds": 3.619,
+      "result": "passed"
+    },
+    {
+      "name": "isolatesUsersAndSearchesLiteralWildcardsWithStableCursor",
+      "timeSeconds": 1.069,
+      "result": "passed"
+    }
+  ],
+  "applicationCommit": "2e43155"
+}

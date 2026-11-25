@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "applicationBaseline": "2b9af06",
+  "designBaseline": "304cc66",
+  "runs": [
+    {
+      "run": "initial-fixture",
+      "result": "failed",
+      "reason": "自建索引把 33 个 UTF-16 单元误标为 32；6 个收藏 IT 在来源验证阶段失败，修正样本后重跑"
+    },
+    {
+      "run": "first-real-database",
+      "result": "failed",
+      "reason": "MySQL DATETIME 返回 LocalDateTime，按 Timestamp 强转导致列表和回执失败；改为显式 UTC 转换"
+    },
+    {
+      "run": "focused-core",
+      "result": "passed",
+      "unitTests": 5,
+      "integrationTests": 16
+    },
+    {
+      "run": "all-with-browser-consumer",
+      "result": "failed",
+      "unitTests": 110,
+      "integrationTests": 67,
+      "integrationFailures": 3,
+      "reason": "浏览器服务和缓存测试上下文在同库、不同私有存储根竞争导入队列；停止服务，测试默认存储根置空，带私有存储的测试类结束后关闭上下文"
+    },
+    {
+      "run": "isolated-all",
+      "result": "passed",
+      "unitTests": 110,
+      "integrationTests": 67
+    },
+    {
+      "run": "mybatis-xml-all",
+      "result": "passed",
+      "unitTests": 110,
+      "integrationTests": 67
+    },
+    {
+      "run": "final-contract-check",
+      "result": "passed",
+      "unitTests": 5,
+      "integrationTests": 11,
+      "notes": "最终跨用户 HTTP、fallback state-source 与未确认首次词条拒绝增补通过"
+    }
+  ],
+  "browserResponseLoss": {
+    "kind": "controlled_network_failure_after_real_commit",
+    "requests": 2,
+    "sameIdempotencyKey": true,
+    "finalWords": 1,
+    "finalContexts": 1
+  },
+  "browserFirstPass": {
+    "widths": [
+      1440,
+      390
+    ],
+    "heightDesktop": 900,
+    "heightMobile": 844,
+    "mobileHorizontalOverflow": false,
+    "returnNotice": "已核验原句并恢复收藏位置",
+    "deletedSourceReturnLinks": 0
+  },
+  "dataScope": "自建 EPUB、自建 child/children 词条；真实 Session、HTTP、MySQL、EPUB 解析和阅读定位。未使用个人 EPUB 或真实词典正文作为测试夹具。"
+}
