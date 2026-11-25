@@ -1,0 +1,3736 @@
+{
+  "startedAt": "2026-11-25T11:04:28.819Z",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "lookupCalls": [
+    {
+      "status": 200,
+      "request": {
+        "bookId": "a16093ab-82ea-484d-894a-f773212e3ade",
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-2",
+          "sentenceStart": 0,
+          "sentenceEnd": 95,
+          "sentence": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+          "surface": "children",
+          "wordStart": 4,
+          "wordEnd": 12,
+          "wordRangeCfi": "epubcfi(/6/2!/4/4,/1:4,/1:12)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/2/1:11,/4/1:95)",
+          "quote": {
+            "exact": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+            "prefix": "",
+            "suffix": "They carried a small lantern and a folded map, and the morning air smelled of rain and cut grass. At the gate they stopped to li"
+          }
+        }
+      },
+      "response": {
+        "lookupId": "a2190aed-1417-449d-987f-fcde22b69e5e",
+        "expiresAt": "2026-11-25T11:14:34.765310900Z",
+        "status": "FOUND",
+        "queryKey": "children",
+        "dataset": {
+          "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+          "datasetVersion": "col-local-mvp-1",
+          "normalizationVersion": "col-normalize-v1",
+          "provider": "local-col",
+          "policyVersion": "unverified"
+        },
+        "resolvedLemmaKey": "child",
+        "entry": {
+          "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+          "entryKey": "s18745:r0:c0",
+          "headword": "child",
+          "lemmaKey": "child",
+          "lemmaMethod": "EXACT_HEADWORD",
+          "sectionOrder": 0,
+          "componentOrder": 0,
+          "parentEntryKey": null,
+          "phonetics": [
+            {
+              "ipa": "/tʃaɪld/",
+              "accent": "unknown",
+              "audioId": null,
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 435,
+                "startOffset": 384
+              }
+            }
+          ],
+          "sourceRange": {
+            "unit": "UTF16_CODE_UNIT",
+            "endOffset": 3630,
+            "startOffset": 316
+          },
+          "sourceRecordHash": "987259c029654d8c869c49e297f0fef4c6c089f4ab45a2d905f4f3a63debafa0",
+          "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+          "datasetVersion": "col-local-mvp-1",
+          "provider": "local-col",
+          "providerVersion": "col-local-mvp-1",
+          "lemma": "child",
+          "regionOrder": 0,
+          "licensePolicyVersion": "unverified",
+          "cachePolicy": "memory",
+          "snapshotAllowed": false,
+          "attribution": "本地 COL；来源及使用权利待核实",
+          "senses": [
+            {
+              "zh": "小孩",
+              "pos": "noun",
+              "labels": [],
+              "rawPos": "N-COUNT",
+              "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+              "senseId": "5beb0518-4fc0-8ada-91e6-93d340c6fb53",
+              "senseKey": "p0",
+              "sourceLabel": "1",
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 1987,
+                "startOffset": 985
+              },
+              "providerOrder": 0,
+              "boundaryEvidence": {
+                "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                "offsetBasis": "DECODED_COMPACT_BODY",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 1987,
+                  "startOffset": 985
+                },
+                "bodyCharacterOffset": 50
+              }
+            },
+            {
+              "zh": "子女",
+              "pos": "noun",
+              "labels": [],
+              "rawPos": "N-COUNT",
+              "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+              "senseId": "27d20c06-5f14-8f9f-bdb8-5311ae94017d",
+              "senseKey": "p1",
+              "sourceLabel": "2",
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 3355,
+                "startOffset": 2343
+              },
+              "providerOrder": 1,
+              "boundaryEvidence": {
+                "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                "offsetBasis": "DECODED_COMPACT_BODY",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 3355,
+                  "startOffset": 2343
+                },
+                "bodyCharacterOffset": 60
+              }
+            }
+          ],
+          "references": [],
+          "notes": [
+            {
+              "raw": "( children )",
+              "kind": "EXPLICIT_FORM_TABLE",
+              "region": 0,
+              "candidates": [],
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 883,
+                "startOffset": 525
+              }
+            }
+          ],
+          "originalSurface": "children",
+          "detectedPos": "unknown",
+          "posMethod": "UNKNOWN",
+          "pronunciations": {
+            "status": "available",
+            "word": "child",
+            "source": "local-sound",
+            "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+            "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+            "items": [
+              {
+                "audioId": "76f521a3-a0d4-8d4a-bb24-5b9ab00b2723",
+                "accent": "en-GB",
+                "mime": "audio/mpeg",
+                "durationMs": 804
+              },
+              {
+                "audioId": "e7f4fa1b-2fa0-8700-b1fe-6d4889cae144",
+                "accent": "en-US",
+                "mime": "audio/mpeg",
+                "durationMs": 634
+              }
+            ]
+          }
+        },
+        "regions": [
+          {
+            "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+            "entryKey": "s18745:r0:c0",
+            "headword": "child",
+            "lemmaKey": "child",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 0,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/tʃaɪld/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 435,
+                  "startOffset": 384
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 3630,
+              "startOffset": 316
+            },
+            "sourceRecordHash": "987259c029654d8c869c49e297f0fef4c6c089f4ab45a2d905f4f3a63debafa0",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "child",
+            "regionOrder": 0,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "小孩",
+                "pos": "noun",
+                "labels": [],
+                "rawPos": "N-COUNT",
+                "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+                "senseId": "5beb0518-4fc0-8ada-91e6-93d340c6fb53",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 1987,
+                  "startOffset": 985
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 1987,
+                    "startOffset": 985
+                  },
+                  "bodyCharacterOffset": 50
+                }
+              },
+              {
+                "zh": "子女",
+                "pos": "noun",
+                "labels": [],
+                "rawPos": "N-COUNT",
+                "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+                "senseId": "27d20c06-5f14-8f9f-bdb8-5311ae94017d",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 3355,
+                  "startOffset": 2343
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 3355,
+                    "startOffset": 2343
+                  },
+                  "bodyCharacterOffset": 60
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( children )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 0,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 883,
+                  "startOffset": 525
+                }
+              }
+            ],
+            "originalSurface": "children",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "child",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "76f521a3-a0d4-8d4a-bb24-5b9ab00b2723",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 804
+                },
+                {
+                  "audioId": "e7f4fa1b-2fa0-8700-b1fe-6d4889cae144",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 634
+                }
+              ]
+            }
+          }
+        ],
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "artifactHash": "00404015a173bac13b175515e29480e364d21374af1c895183c28113cb1b434a",
+          "pipelineVersion": "epub-safe-v1",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-2",
+          "sentenceStart": 0,
+          "sentenceEnd": 95,
+          "contextKind": "sentence",
+          "sentence": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+          "surface": "children",
+          "wordStart": 4,
+          "wordEnd": 12,
+          "wordRangeCfi": "epubcfi(/6/2!/4/4,/1:4,/1:12)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/2/1:11,/4/1:95)",
+          "quote": {
+            "exact": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+            "prefix": "",
+            "suffix": "They carried a small lantern and a folded map, and the morning air smelled of rain and cut grass. At the gate they stopped to li"
+          }
+        },
+        "pronunciations": {
+          "status": "available",
+          "word": "child",
+          "source": "local-sound",
+          "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+          "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+          "items": [
+            {
+              "audioId": "76f521a3-a0d4-8d4a-bb24-5b9ab00b2723",
+              "accent": "en-GB",
+              "mime": "audio/mpeg",
+              "durationMs": 804
+            },
+            {
+              "audioId": "e7f4fa1b-2fa0-8700-b1fe-6d4889cae144",
+              "accent": "en-US",
+              "mime": "audio/mpeg",
+              "durationMs": 634
+            }
+          ]
+        },
+        "audioError": null,
+        "favoriteState": null
+      }
+    },
+    {
+      "status": 200,
+      "request": {
+        "bookId": "a16093ab-82ea-484d-894a-f773212e3ade",
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-3",
+          "sentenceStart": 0,
+          "sentenceEnd": 23,
+          "sentence": "The best plan was zzzz.",
+          "surface": "best",
+          "wordStart": 4,
+          "wordEnd": 8,
+          "wordRangeCfi": "epubcfi(/6/2!/4/6,/1:4,/1:8)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/4/1:278,/6/1:23)",
+          "quote": {
+            "exact": "The best plan was zzzz.",
+            "prefix": "",
+            "suffix": ""
+          }
+        }
+      },
+      "response": {
+        "lookupId": "24ba9f7f-4462-46f2-bd70-9b61a4d73f67",
+        "expiresAt": "2026-11-25T11:14:35.948358800Z",
+        "status": "AMBIGUOUS",
+        "queryKey": "best",
+        "dataset": {
+          "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+          "datasetVersion": "col-local-mvp-1",
+          "normalizationVersion": "col-normalize-v1",
+          "provider": "local-col",
+          "policyVersion": "unverified"
+        },
+        "resolvedLemmaKey": null,
+        "entry": null,
+        "regions": [
+          {
+            "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+            "entryKey": "s46069:r0:c0",
+            "headword": "good",
+            "lemmaKey": "good",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 0,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/ɡʊd/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 1431,
+                  "startOffset": 1383
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 33945,
+              "startOffset": 1058
+            },
+            "sourceRecordHash": "2e368595ce51b9dea13e92ac597fcc0cf17803fe5e298630d6c2796ea72f6f45",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "good",
+            "regionOrder": 0,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "令人愉快的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "8d0af64a-c2b8-8852-a1b0-138c4ae3659a",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 3115,
+                  "startOffset": 2206
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 3115,
+                    "startOffset": 2206
+                  },
+                  "bodyCharacterOffset": 34
+                }
+              },
+              {
+                "zh": "质量高的; 水准高的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "361e0baa-78d0-8770-aad5-1262ed3ec4d9",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 4425,
+                  "startOffset": 3495
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 4425,
+                    "startOffset": 3495
+                  },
+                  "bodyCharacterOffset": 50
+                }
+              },
+              {
+                "zh": "擅长的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "48e0b328-c3af-89a6-ae38-896d6f7dbc7d",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 5871,
+                  "startOffset": 4849
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 5871,
+                    "startOffset": 4849
+                  },
+                  "bodyCharacterOffset": 74
+                }
+              },
+              {
+                "zh": "很可能带来好结果的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "3348b99a-b8be-8f94-86ed-4c755d28d490",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 7298,
+                  "startOffset": 6218
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 7298,
+                    "startOffset": 6218
+                  },
+                  "bodyCharacterOffset": 126
+                }
+              },
+              {
+                "zh": "合理的; 有效的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "545ab1ef-bc0c-8460-b5ab-c5754e66cfe3",
+                "senseKey": "p4",
+                "sourceLabel": "5",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 8728,
+                  "startOffset": 7706
+                },
+                "providerOrder": 4,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 8728,
+                    "startOffset": 7706
+                  },
+                  "bodyCharacterOffset": 69
+                }
+              },
+              {
+                "zh": "令人向往的; 可接受的; 对的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "c658950c-d839-8595-ae28-9c2c65c501e9",
+                "senseKey": "p5",
+                "sourceLabel": "6",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 10254,
+                  "startOffset": 9144
+                },
+                "providerOrder": 5,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 10254,
+                    "startOffset": 9144
+                  },
+                  "bodyCharacterOffset": 129
+                }
+              },
+              {
+                "zh": "令人不满意",
+                "pos": "noun",
+                "labels": [
+                  {
+                    "raw": "[with brd-neg]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 11118,
+                      "startOffset": 11072
+                    }
+                  }
+                ],
+                "rawPos": "N-UNCOUNT",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "5f941304-d62e-8e57-ada2-4c800fe4370a",
+                "senseKey": "p6",
+                "sourceLabel": "7",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 11124,
+                  "startOffset": 10493
+                },
+                "providerOrder": 6,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 11124,
+                    "startOffset": 10493
+                  },
+                  "bodyCharacterOffset": 107
+                }
+              },
+              {
+                "zh": "准确的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "4357d8a9-2534-868d-ba43-e1b4818e5b63",
+                "senseKey": "p7",
+                "sourceLabel": "8",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 12385,
+                  "startOffset": 11374
+                },
+                "providerOrder": 7,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 12385,
+                    "startOffset": 11374
+                  },
+                  "bodyCharacterOffset": 63
+                }
+              },
+              {
+                "zh": "(买卖) 合算的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "bc0d1216-1403-8936-b538-77cb361f678b",
+                "senseKey": "p8",
+                "sourceLabel": "9",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 13885,
+                  "startOffset": 12805
+                },
+                "providerOrder": 8,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 13885,
+                    "startOffset": 12805
+                  },
+                  "bodyCharacterOffset": 120
+                }
+              },
+              {
+                "zh": "愉快的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "258b58cb-a403-8f0b-99a4-3d09f6630b31",
+                "senseKey": "p9",
+                "sourceLabel": "10",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15178,
+                  "startOffset": 14163
+                },
+                "providerOrder": 9,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15178,
+                    "startOffset": 14163
+                  },
+                  "bodyCharacterOffset": 67
+                }
+              },
+              {
+                "zh": "亲密的",
+                "pos": "adjective",
+                "labels": [
+                  {
+                    "raw": "[ADJ n]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 16122,
+                      "startOffset": 16083
+                    }
+                  }
+                ],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "da021b68-c5b5-8705-9354-9662ecd0bdb2",
+                "senseKey": "p10",
+                "sourceLabel": "11",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 16128,
+                  "startOffset": 15551
+                },
+                "providerOrder": 10,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 16128,
+                    "startOffset": 15551
+                  },
+                  "bodyCharacterOffset": 77
+                }
+              },
+              {
+                "zh": "十足的",
+                "pos": "adjective",
+                "labels": [
+                  {
+                    "raw": "['a' ADJ n]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 16915,
+                      "startOffset": 16872
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 16953,
+                      "startOffset": 16917
+                    }
+                  }
+                ],
+                "rawPos": "ADJ",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "e6ee3ddc-4a98-8ee2-be8b-b32276c1e307",
+                "senseKey": "p11",
+                "sourceLabel": "12",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 16959,
+                  "startOffset": 16350
+                },
+                "providerOrder": 11,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 16959,
+                    "startOffset": 16350
+                  },
+                  "bodyCharacterOffset": 67
+                }
+              },
+              {
+                "zh": "很好 (用于表示高兴、满意、同意)",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "CONVENTION",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "78e6493b-98bf-8c0b-97ca-90300d06685b",
+                "senseKey": "p12",
+                "sourceLabel": "13",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 18335,
+                  "startOffset": 17185
+                },
+                "providerOrder": 12,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 18335,
+                    "startOffset": 17185
+                  },
+                  "bodyCharacterOffset": 173
+                }
+              },
+              {
+                "zh": "庆幸的是",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "PHRASE",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "fff296c8-4d22-8a31-9b0d-39681f05a5a9",
+                "senseKey": "p13",
+                "sourceLabel": "14",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 19767,
+                  "startOffset": 18721
+                },
+                "providerOrder": 13,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 19767,
+                    "startOffset": 18721
+                  },
+                  "bodyCharacterOffset": 88
+                }
+              },
+              {
+                "zh": "完好如新",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "PHRASE",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "ee7bf0a0-1fd4-84db-9333-b5f95024b168",
+                "senseKey": "p14",
+                "sourceLabel": "15",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 21107,
+                  "startOffset": 19994
+                },
+                "providerOrder": 14,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 21107,
+                    "startOffset": 19994
+                  },
+                  "bodyCharacterOffset": 162
+                }
+              },
+              {
+                "zh": "我亲爱的 (用以称呼某人、某地或某事物)",
+                "pos": "unknown",
+                "labels": [
+                  {
+                    "raw": "[情感]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 22437,
+                      "startOffset": 22401
+                    }
+                  }
+                ],
+                "rawPos": "PHRASE",
+                "entryId": "12bd619f-ea35-88e9-8c09-c150a558ac83",
+                "senseId": "801ca860-403e-8fb5-9dea-0969bb8376c9",
+                "senseKey": "p15",
+                "sourceLabel": "16",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 22443,
+                  "startOffset": 21367
+                },
+                "providerOrder": 15,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 22443,
+                    "startOffset": 21367
+                  },
+                  "bodyCharacterOffset": 117
+                }
+              }
+            ],
+            "references": [
+              {
+                "kind": "SEE",
+                "root": false,
+                "marker": 14,
+                "region": 0,
+                "ruleId": "COL_EXPLICIT_REFERENCE",
+                "usable": true,
+                "targets": [
+                  {
+                    "target": "faith",
+                    "display": "faith",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 25476,
+                      "startOffset": 25378
+                    },
+                    "evidenceType": "ENTRY_HREF"
+                  }
+                ],
+                "conflict": false,
+                "resolutions": [
+                  {
+                    "target": "faith",
+                    "results": [
+                      {
+                        "path": [
+                          "faith"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 38579
+                      },
+                      {
+                        "path": [
+                          "faith"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 38589
+                      }
+                    ]
+                  }
+                ],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 25482,
+                  "startOffset": 24172
+                },
+                "componentOrder": 0
+              },
+              {
+                "kind": "SEE",
+                "root": false,
+                "marker": 15,
+                "region": 0,
+                "ruleId": "COL_EXPLICIT_REFERENCE",
+                "usable": true,
+                "targets": [
+                  {
+                    "target": "far",
+                    "display": "far",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 26875,
+                      "startOffset": 26781
+                    },
+                    "evidenceType": "ENTRY_HREF"
+                  }
+                ],
+                "conflict": false,
+                "resolutions": [
+                  {
+                    "target": "far",
+                    "results": [
+                      {
+                        "path": [
+                          "far"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 38841
+                      }
+                    ]
+                  }
+                ],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 26881,
+                  "startOffset": 25574
+                },
+                "componentOrder": 0
+              },
+              {
+                "kind": "SEE",
+                "root": false,
+                "marker": 14,
+                "region": 0,
+                "ruleId": "COL_EXPLICIT_REFERENCE",
+                "usable": true,
+                "targets": [
+                  {
+                    "target": "shape",
+                    "display": "shape",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 29679,
+                      "startOffset": 29581
+                    },
+                    "evidenceType": "ENTRY_HREF"
+                  }
+                ],
+                "conflict": false,
+                "resolutions": [
+                  {
+                    "target": "shape",
+                    "results": [
+                      {
+                        "path": [
+                          "shape"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 96650
+                      },
+                      {
+                        "path": [
+                          "shape"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 96655
+                      },
+                      {
+                        "path": [
+                          "shape"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 96657
+                      }
+                    ]
+                  }
+                ],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 29685,
+                  "startOffset": 28375
+                },
+                "componentOrder": 0
+              },
+              {
+                "kind": "SEE",
+                "root": false,
+                "marker": 31,
+                "region": 0,
+                "ruleId": "COL_EXPLICIT_REFERENCE",
+                "usable": true,
+                "targets": [
+                  {
+                    "target": "stead",
+                    "display": "stead",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 31098,
+                      "startOffset": 31000
+                    },
+                    "evidenceType": "ENTRY_HREF"
+                  }
+                ],
+                "conflict": false,
+                "resolutions": [
+                  {
+                    "target": "stead",
+                    "results": [
+                      {
+                        "path": [
+                          "stead"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 102944
+                      }
+                    ]
+                  }
+                ],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 31104,
+                  "startOffset": 29777
+                },
+                "componentOrder": 0
+              },
+              {
+                "kind": "SEE",
+                "root": false,
+                "marker": 13,
+                "region": 0,
+                "ruleId": "COL_EXPLICIT_REFERENCE",
+                "usable": true,
+                "targets": [
+                  {
+                    "target": "time",
+                    "display": "time",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 32497,
+                      "startOffset": 32401
+                    },
+                    "evidenceType": "ENTRY_HREF"
+                  }
+                ],
+                "conflict": false,
+                "resolutions": [
+                  {
+                    "target": "time",
+                    "results": [
+                      {
+                        "path": [
+                          "time"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 109663
+                      },
+                      {
+                        "path": [
+                          "time"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 109676
+                      },
+                      {
+                        "path": [
+                          "time"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 109707
+                      }
+                    ]
+                  }
+                ],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 32503,
+                  "startOffset": 31196
+                },
+                "componentOrder": 0
+              },
+              {
+                "kind": "SEE",
+                "root": false,
+                "marker": 20,
+                "region": 0,
+                "ruleId": "COL_EXPLICIT_REFERENCE",
+                "usable": true,
+                "targets": [
+                  {
+                    "target": "true",
+                    "display": "true",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 33903,
+                      "startOffset": 33807
+                    },
+                    "evidenceType": "ENTRY_HREF"
+                  }
+                ],
+                "conflict": false,
+                "resolutions": [
+                  {
+                    "target": "true",
+                    "results": [
+                      {
+                        "path": [
+                          "true"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 112225
+                      },
+                      {
+                        "path": [
+                          "true"
+                        ],
+                        "status": "TARGET_PRESENT",
+                        "sourceOrdinal": 112241
+                      }
+                    ]
+                  }
+                ],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 33909,
+                  "startOffset": 32595
+                },
+                "componentOrder": 0
+              }
+            ],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 0,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 2104,
+                  "startOffset": 1521
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "good",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "44bf49e7-c142-8e6c-b53f-8e671e7f7518",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 504
+                },
+                {
+                  "audioId": "da3fd56e-02ea-82ce-b25b-508010075056",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 561
+                }
+              ]
+            }
+          },
+          {
+            "entryId": "b6de00d3-c6eb-85be-a7f5-ea25eb5fd56c",
+            "entryKey": "s46069:r1:c0",
+            "headword": "good",
+            "lemmaKey": "good",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 1,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/ɡʊd/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 34303,
+                  "startOffset": 34255
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 41461,
+              "startOffset": 33947
+            },
+            "sourceRecordHash": "2e368595ce51b9dea13e92ac597fcc0cf17803fe5e298630d6c2796ea72f6f45",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "good",
+            "regionOrder": 1,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "有益的",
+                "pos": "adjective",
+                "labels": [
+                  {
+                    "raw": "[v-link ADJ 'for' n]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 35712,
+                      "startOffset": 35660
+                    }
+                  }
+                ],
+                "rawPos": "ADJ",
+                "entryId": "b6de00d3-c6eb-85be-a7f5-ea25eb5fd56c",
+                "senseId": "1f4493a8-e08a-8dcc-ba50-b0d39d992b88",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 35718,
+                  "startOffset": 35136
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 35718,
+                    "startOffset": 35136
+                  },
+                  "bodyCharacterOffset": 69
+                }
+              },
+              {
+                "zh": "利益",
+                "pos": "noun",
+                "labels": [
+                  {
+                    "raw": "[with poss]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 36583,
+                      "startOffset": 36540
+                    }
+                  }
+                ],
+                "rawPos": "N-SING",
+                "entryId": "b6de00d3-c6eb-85be-a7f5-ea25eb5fd56c",
+                "senseId": "91a436f5-7892-8f79-87b6-e35d3e882d8d",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 36589,
+                  "startOffset": 35974
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 36589,
+                    "startOffset": 35974
+                  },
+                  "bodyCharacterOffset": 100
+                }
+              },
+              {
+                "zh": "没用处",
+                "pos": "noun",
+                "labels": [],
+                "rawPos": "N-UNCOUNT",
+                "entryId": "b6de00d3-c6eb-85be-a7f5-ea25eb5fd56c",
+                "senseId": "f169a29a-e993-87dd-9e60-46350f0af139",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 38179,
+                  "startOffset": 37069
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 38179,
+                    "startOffset": 37069
+                  },
+                  "bodyCharacterOffset": 140
+                }
+              },
+              {
+                "zh": "对某人有益",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "PHRASE",
+                "entryId": "b6de00d3-c6eb-85be-a7f5-ea25eb5fd56c",
+                "senseId": "63758910-5299-8910-b67b-36fdfdae9b5b",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 39642,
+                  "startOffset": 38583
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 39642,
+                    "startOffset": 38583
+                  },
+                  "bodyCharacterOffset": 100
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 1,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 34935,
+                  "startOffset": 34352
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "good",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "44bf49e7-c142-8e6c-b53f-8e671e7f7518",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 504
+                },
+                {
+                  "audioId": "da3fd56e-02ea-82ce-b25b-508010075056",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 561
+                }
+              ]
+            }
+          },
+          {
+            "entryId": "e01c211d-3e12-876f-a336-166891907831",
+            "entryKey": "s46069:r2:c0",
+            "headword": "good",
+            "lemmaKey": "good",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 2,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/ɡʊd/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 41822,
+                  "startOffset": 41774
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 50712,
+              "startOffset": 41463
+            },
+            "sourceRecordHash": "2e368595ce51b9dea13e92ac597fcc0cf17803fe5e298630d6c2796ea72f6f45",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "good",
+            "regionOrder": 2,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "善",
+                "pos": "noun",
+                "labels": [],
+                "rawPos": "N-UNCOUNT",
+                "entryId": "e01c211d-3e12-876f-a336-166891907831",
+                "senseId": "b27a53ac-3c5d-806f-8944-160af9711ba2",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 43624,
+                  "startOffset": 42655
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 43624,
+                    "startOffset": 42655
+                  },
+                  "bodyCharacterOffset": 90
+                }
+              },
+              {
+                "zh": "有道德的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "e01c211d-3e12-876f-a336-166891907831",
+                "senseId": "883ab0b6-3dd3-8771-ad50-c98ae461ee9d",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 44886,
+                  "startOffset": 43864
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 44886,
+                    "startOffset": 43864
+                  },
+                  "bodyCharacterOffset": 73
+                }
+              },
+              {
+                "zh": "(尤指小孩) 听话的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "e01c211d-3e12-876f-a336-166891907831",
+                "senseId": "067e424a-848e-8b5e-99ea-0dbf680ab48a",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 46170,
+                  "startOffset": 45106
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 46170,
+                    "startOffset": 45106
+                  },
+                  "bodyCharacterOffset": 109
+                }
+              },
+              {
+                "zh": "好心的",
+                "pos": "adjective",
+                "labels": [],
+                "rawPos": "ADJ",
+                "entryId": "e01c211d-3e12-876f-a336-166891907831",
+                "senseId": "ccd15f1d-c36a-8f2f-9981-f83ce46a77bb",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 47512,
+                  "startOffset": 46520
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 47512,
+                    "startOffset": 46520
+                  },
+                  "bodyCharacterOffset": 44
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 2,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 42454,
+                  "startOffset": 41871
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "good",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "44bf49e7-c142-8e6c-b53f-8e671e7f7518",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 504
+                },
+                {
+                  "audioId": "da3fd56e-02ea-82ce-b25b-508010075056",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 561
+                }
+              ]
+            }
+          },
+          {
+            "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+            "entryKey": "s118435:r1:c0",
+            "headword": "well",
+            "lemmaKey": "well",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 1,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/wɛl/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 12821,
+                  "startOffset": 12773
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 23441,
+              "startOffset": 12464
+            },
+            "sourceRecordHash": "b915d54b570d266554436d16e93383499e89f60cb4ab6a3ce3afd00caca40f55",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "well",
+            "regionOrder": 3,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "(标准或程度) 出色地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 14244,
+                      "startOffset": 14199
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "ffe5f524-e4c5-86c8-93f4-c72f0c4ba915",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 14250,
+                  "startOffset": 13660
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 14250,
+                    "startOffset": 13660
+                  },
+                  "bodyCharacterOffset": 77
+                }
+              },
+              {
+                "zh": "完全地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15184,
+                      "startOffset": 15139
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "3279a74e-b230-89d1-8a39-f92f0989a8c8",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15190,
+                  "startOffset": 14622
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15190,
+                    "startOffset": 14622
+                  },
+                  "bodyCharacterOffset": 63
+                }
+              },
+              {
+                "zh": "(评价) 令人满意地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 16008,
+                      "startOffset": 15963
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "5adcab77-19c7-85de-9806-2c9905ed93b5",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 16014,
+                  "startOffset": 15410
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 16014,
+                    "startOffset": 15410
+                  },
+                  "bodyCharacterOffset": 85
+                }
+              },
+              {
+                "zh": "用于过去分词之前，表示高水准或高程度",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "COMB in ADJ",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "d1f7ab5a-5da7-8681-ac6d-e460d10f3e7d",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 17286,
+                  "startOffset": 16265
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 17286,
+                    "startOffset": 16265
+                  },
+                  "bodyCharacterOffset": 118
+                }
+              },
+              {
+                "zh": "(程度或标准) 怎样",
+                "pos": "adverb",
+                "labels": [],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "487f357d-b543-8f0d-8f9a-58165da018d9",
+                "senseKey": "p4",
+                "sourceLabel": "5",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 18724,
+                  "startOffset": 17699
+                },
+                "providerOrder": 4,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 18724,
+                    "startOffset": 17699
+                  },
+                  "bodyCharacterOffset": 71
+                }
+              },
+              {
+                "zh": "(用于介词短语之前，表示强调) 远远地; 很久地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV prep]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19812,
+                      "startOffset": 19770
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19850,
+                      "startOffset": 19814
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "015d7307-ea49-8c3c-ac8c-144cf09903e4",
+                "senseKey": "p5",
+                "sourceLabel": "6",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 19856,
+                  "startOffset": 19105
+                },
+                "providerOrder": 5,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 19856,
+                    "startOffset": 19105
+                  },
+                  "bodyCharacterOffset": 183
+                }
+              },
+              {
+                "zh": "(用于某些形容词之前，表示强调) 很",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV adj]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20831,
+                      "startOffset": 20790
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20869,
+                      "startOffset": 20833
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "bff1dbeb-bf6a-865c-ac9a-2bca6c8f92d9",
+                "senseKey": "p6",
+                "sourceLabel": "7",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 20875,
+                  "startOffset": 20263
+                },
+                "providerOrder": 6,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 20875,
+                    "startOffset": 20263
+                  },
+                  "bodyCharacterOffset": 58
+                }
+              },
+              {
+                "zh": "用于(perfectly), (jolly), (damn)副词之后，强调观点或真相",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 22263,
+                      "startOffset": 22227
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "524dfffa-2abc-80ee-b6d2-afdb260e5a71",
+                "senseKey": "p7",
+                "sourceLabel": "8",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 22269,
+                  "startOffset": 21154
+                },
+                "providerOrder": 7,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 22269,
+                    "startOffset": 21154
+                  },
+                  "bodyCharacterOffset": 137
+                }
+              },
+              {
+                "zh": "(用于may, could等词的后面) 很可能",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[modal ADV]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23165,
+                      "startOffset": 23122
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23203,
+                      "startOffset": 23167
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "bd948bf7-4e8a-8860-ac4f-e1e8602740e4",
+                "senseId": "81ef83c5-9fc4-827f-af18-4222adb221ea",
+                "senseKey": "p8",
+                "sourceLabel": "9",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 23209,
+                  "startOffset": 22541
+                },
+                "providerOrder": 8,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 23209,
+                    "startOffset": 22541
+                  },
+                  "bodyCharacterOffset": 107
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 1,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 13453,
+                  "startOffset": 12870
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "well",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "5b13d83d-ba15-890c-bdca-b01d27b1349c",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 1204
+                },
+                {
+                  "audioId": "25c52169-f522-82b9-9123-f7717735dea0",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 517
+                }
+              ]
+            }
+          },
+          {
+            "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+            "entryKey": "s118490:r1:c0",
+            "headword": "well",
+            "lemmaKey": "well",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 1,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/wɛl/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 12775,
+                  "startOffset": 12727
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 23395,
+              "startOffset": 12423
+            },
+            "sourceRecordHash": "104732a58b76ecf44a6fadfe7c5c6821796618495a64b78dc0f4382a7840de32",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "well",
+            "regionOrder": 4,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "(标准或程度) 出色地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 14198,
+                      "startOffset": 14153
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "582cc25f-af95-8d6c-8648-c1e99803deba",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 14204,
+                  "startOffset": 13614
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 14204,
+                    "startOffset": 13614
+                  },
+                  "bodyCharacterOffset": 77
+                }
+              },
+              {
+                "zh": "完全地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15138,
+                      "startOffset": 15093
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "6444bbd2-2305-8c6f-96ed-31c3b9f44971",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15144,
+                  "startOffset": 14576
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15144,
+                    "startOffset": 14576
+                  },
+                  "bodyCharacterOffset": 63
+                }
+              },
+              {
+                "zh": "(评价) 令人满意地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15962,
+                      "startOffset": 15917
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "8afdff09-b082-8451-8c6f-6bcf175711ba",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15968,
+                  "startOffset": 15364
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15968,
+                    "startOffset": 15364
+                  },
+                  "bodyCharacterOffset": 85
+                }
+              },
+              {
+                "zh": "用于过去分词之前，表示高水准或高程度",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "COMB in ADJ",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "40e79b3b-62bf-8aaa-9b4f-183151835617",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 17240,
+                  "startOffset": 16219
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 17240,
+                    "startOffset": 16219
+                  },
+                  "bodyCharacterOffset": 118
+                }
+              },
+              {
+                "zh": "(程度或标准) 怎样",
+                "pos": "adverb",
+                "labels": [],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "c42fa680-c7e5-8063-988b-0afdea7c2f9f",
+                "senseKey": "p4",
+                "sourceLabel": "5",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 18678,
+                  "startOffset": 17653
+                },
+                "providerOrder": 4,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 18678,
+                    "startOffset": 17653
+                  },
+                  "bodyCharacterOffset": 71
+                }
+              },
+              {
+                "zh": "(用于介词短语之前，表示强调) 远远地; 很久地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV prep]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19766,
+                      "startOffset": 19724
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19804,
+                      "startOffset": 19768
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "2fb7c42f-c909-819f-bce1-c4e92175e722",
+                "senseKey": "p5",
+                "sourceLabel": "6",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 19810,
+                  "startOffset": 19059
+                },
+                "providerOrder": 5,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 19810,
+                    "startOffset": 19059
+                  },
+                  "bodyCharacterOffset": 183
+                }
+              },
+              {
+                "zh": "(用于某些形容词之前，表示强调) 很",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV adj]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20785,
+                      "startOffset": 20744
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20823,
+                      "startOffset": 20787
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "65dd9f0c-271a-8bd6-ac11-2778b7a63887",
+                "senseKey": "p6",
+                "sourceLabel": "7",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 20829,
+                  "startOffset": 20217
+                },
+                "providerOrder": 6,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 20829,
+                    "startOffset": 20217
+                  },
+                  "bodyCharacterOffset": 58
+                }
+              },
+              {
+                "zh": "用于(perfectly), (jolly), (damn)副词之后，强调观点或真相",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 22217,
+                      "startOffset": 22181
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "c9c25923-de01-89cb-9f67-c10fdf86c706",
+                "senseKey": "p7",
+                "sourceLabel": "8",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 22223,
+                  "startOffset": 21108
+                },
+                "providerOrder": 7,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 22223,
+                    "startOffset": 21108
+                  },
+                  "bodyCharacterOffset": 137
+                }
+              },
+              {
+                "zh": "(用于may, could等词的后面) 很可能",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[modal ADV]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23119,
+                      "startOffset": 23076
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23157,
+                      "startOffset": 23121
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "659cf431-0106-8ed9-98ae-f5c2a91e278a",
+                "senseId": "7821fd97-3ac6-8e33-9882-9b78a7d1019e",
+                "senseKey": "p8",
+                "sourceLabel": "9",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 23163,
+                  "startOffset": 22495
+                },
+                "providerOrder": 8,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 23163,
+                    "startOffset": 22495
+                  },
+                  "bodyCharacterOffset": 107
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 1,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 13407,
+                  "startOffset": 12824
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "well",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "5b13d83d-ba15-890c-bdca-b01d27b1349c",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 1204
+                },
+                {
+                  "audioId": "25c52169-f522-82b9-9123-f7717735dea0",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 517
+                }
+              ]
+            }
+          },
+          {
+            "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+            "entryKey": "s118517:r1:c0",
+            "headword": "well",
+            "lemmaKey": "well",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 1,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/wɛl/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 12775,
+                  "startOffset": 12727
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 23395,
+              "startOffset": 12423
+            },
+            "sourceRecordHash": "104732a58b76ecf44a6fadfe7c5c6821796618495a64b78dc0f4382a7840de32",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "well",
+            "regionOrder": 5,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "(标准或程度) 出色地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 14198,
+                      "startOffset": 14153
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "f3725555-9996-87e1-9c04-f5db894cd02a",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 14204,
+                  "startOffset": 13614
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 14204,
+                    "startOffset": 13614
+                  },
+                  "bodyCharacterOffset": 77
+                }
+              },
+              {
+                "zh": "完全地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15138,
+                      "startOffset": 15093
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "fbc6db12-ba9d-8096-92fd-6085ffd50778",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15144,
+                  "startOffset": 14576
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15144,
+                    "startOffset": 14576
+                  },
+                  "bodyCharacterOffset": 63
+                }
+              },
+              {
+                "zh": "(评价) 令人满意地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15962,
+                      "startOffset": 15917
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "804c90ab-277e-83a6-a01a-7147550c9d3e",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15968,
+                  "startOffset": 15364
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15968,
+                    "startOffset": 15364
+                  },
+                  "bodyCharacterOffset": 85
+                }
+              },
+              {
+                "zh": "用于过去分词之前，表示高水准或高程度",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "COMB in ADJ",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "573e58da-2ec2-8a8f-bac1-e7f2577021a7",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 17240,
+                  "startOffset": 16219
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 17240,
+                    "startOffset": 16219
+                  },
+                  "bodyCharacterOffset": 118
+                }
+              },
+              {
+                "zh": "(程度或标准) 怎样",
+                "pos": "adverb",
+                "labels": [],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "a3ea0fe8-5b08-873c-8c10-cd4548552a88",
+                "senseKey": "p4",
+                "sourceLabel": "5",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 18678,
+                  "startOffset": 17653
+                },
+                "providerOrder": 4,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 18678,
+                    "startOffset": 17653
+                  },
+                  "bodyCharacterOffset": 71
+                }
+              },
+              {
+                "zh": "(用于介词短语之前，表示强调) 远远地; 很久地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV prep]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19766,
+                      "startOffset": 19724
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19804,
+                      "startOffset": 19768
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "a0ea1c98-0259-87df-a165-c72ad0713769",
+                "senseKey": "p5",
+                "sourceLabel": "6",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 19810,
+                  "startOffset": 19059
+                },
+                "providerOrder": 5,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 19810,
+                    "startOffset": 19059
+                  },
+                  "bodyCharacterOffset": 183
+                }
+              },
+              {
+                "zh": "(用于某些形容词之前，表示强调) 很",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV adj]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20785,
+                      "startOffset": 20744
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20823,
+                      "startOffset": 20787
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "c3247c8c-7453-8246-bbc6-a75eea622b90",
+                "senseKey": "p6",
+                "sourceLabel": "7",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 20829,
+                  "startOffset": 20217
+                },
+                "providerOrder": 6,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 20829,
+                    "startOffset": 20217
+                  },
+                  "bodyCharacterOffset": 58
+                }
+              },
+              {
+                "zh": "用于(perfectly), (jolly), (damn)副词之后，强调观点或真相",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 22217,
+                      "startOffset": 22181
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "81f58a91-e221-8902-9373-ec2a6bf0fce4",
+                "senseKey": "p7",
+                "sourceLabel": "8",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 22223,
+                  "startOffset": 21108
+                },
+                "providerOrder": 7,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 22223,
+                    "startOffset": 21108
+                  },
+                  "bodyCharacterOffset": 137
+                }
+              },
+              {
+                "zh": "(用于may, could等词的后面) 很可能",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[modal ADV]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23119,
+                      "startOffset": 23076
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23157,
+                      "startOffset": 23121
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "5bb7eb6e-a765-811a-9dbf-3252e3c7d389",
+                "senseId": "0616862f-24b6-8b05-afa2-51573eecb502",
+                "senseKey": "p8",
+                "sourceLabel": "9",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 23163,
+                  "startOffset": 22495
+                },
+                "providerOrder": 8,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 23163,
+                    "startOffset": 22495
+                  },
+                  "bodyCharacterOffset": 107
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 1,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 13407,
+                  "startOffset": 12824
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "well",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "5b13d83d-ba15-890c-bdca-b01d27b1349c",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 1204
+                },
+                {
+                  "audioId": "25c52169-f522-82b9-9123-f7717735dea0",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 517
+                }
+              ]
+            }
+          },
+          {
+            "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+            "entryKey": "s118571:r1:c0",
+            "headword": "well",
+            "lemmaKey": "well",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 1,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/wɛl/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 12775,
+                  "startOffset": 12727
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 23395,
+              "startOffset": 12423
+            },
+            "sourceRecordHash": "104732a58b76ecf44a6fadfe7c5c6821796618495a64b78dc0f4382a7840de32",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "well",
+            "regionOrder": 6,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "(标准或程度) 出色地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 14198,
+                      "startOffset": 14153
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "06ff8f8e-0d03-80fb-8e9e-74648fce34bb",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 14204,
+                  "startOffset": 13614
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 14204,
+                    "startOffset": 13614
+                  },
+                  "bodyCharacterOffset": 77
+                }
+              },
+              {
+                "zh": "完全地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15138,
+                      "startOffset": 15093
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "4b0e8779-1438-81f1-8998-83f972453cde",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15144,
+                  "startOffset": 14576
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15144,
+                    "startOffset": 14576
+                  },
+                  "bodyCharacterOffset": 63
+                }
+              },
+              {
+                "zh": "(评价) 令人满意地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV after v]",
+                    "kind": "GRAMMAR",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 15962,
+                      "startOffset": 15917
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "20e6b16d-1022-8cd7-9706-8dd0948669fd",
+                "senseKey": "p2",
+                "sourceLabel": "3",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 15968,
+                  "startOffset": 15364
+                },
+                "providerOrder": 2,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 15968,
+                    "startOffset": 15364
+                  },
+                  "bodyCharacterOffset": 85
+                }
+              },
+              {
+                "zh": "用于过去分词之前，表示高水准或高程度",
+                "pos": "unknown",
+                "labels": [],
+                "rawPos": "COMB in ADJ",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "73ddf691-035a-828c-afb7-97f782a428d7",
+                "senseKey": "p3",
+                "sourceLabel": "4",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 17240,
+                  "startOffset": 16219
+                },
+                "providerOrder": 3,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 17240,
+                    "startOffset": 16219
+                  },
+                  "bodyCharacterOffset": 118
+                }
+              },
+              {
+                "zh": "(程度或标准) 怎样",
+                "pos": "adverb",
+                "labels": [],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "235d40fa-cddd-89ab-a238-abb762489930",
+                "senseKey": "p4",
+                "sourceLabel": "5",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 18678,
+                  "startOffset": 17653
+                },
+                "providerOrder": 4,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 18678,
+                    "startOffset": 17653
+                  },
+                  "bodyCharacterOffset": 71
+                }
+              },
+              {
+                "zh": "(用于介词短语之前，表示强调) 远远地; 很久地",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV prep]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19766,
+                      "startOffset": 19724
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 19804,
+                      "startOffset": 19768
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "fb1d94b1-8253-8606-9ee3-7d1db699a78a",
+                "senseKey": "p5",
+                "sourceLabel": "6",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 19810,
+                  "startOffset": 19059
+                },
+                "providerOrder": 5,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 19810,
+                    "startOffset": 19059
+                  },
+                  "bodyCharacterOffset": 183
+                }
+              },
+              {
+                "zh": "(用于某些形容词之前，表示强调) 很",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[ADV adj]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20785,
+                      "startOffset": 20744
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 20823,
+                      "startOffset": 20787
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "324c18f2-1306-8c2b-b467-1c85f06b6602",
+                "senseKey": "p6",
+                "sourceLabel": "7",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 20829,
+                  "startOffset": 20217
+                },
+                "providerOrder": 6,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 20829,
+                    "startOffset": 20217
+                  },
+                  "bodyCharacterOffset": 58
+                }
+              },
+              {
+                "zh": "用于(perfectly), (jolly), (damn)副词之后，强调观点或真相",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 22217,
+                      "startOffset": 22181
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "e5e719aa-61ae-84c7-a1f8-01ef61c90379",
+                "senseKey": "p7",
+                "sourceLabel": "8",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 22223,
+                  "startOffset": 21108
+                },
+                "providerOrder": 7,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 22223,
+                    "startOffset": 21108
+                  },
+                  "bodyCharacterOffset": 137
+                }
+              },
+              {
+                "zh": "(用于may, could等词的后面) 很可能",
+                "pos": "adverb",
+                "labels": [
+                  {
+                    "raw": "[modal ADV]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23119,
+                      "startOffset": 23076
+                    }
+                  },
+                  {
+                    "raw": "[强调]",
+                    "kind": "UNCLASSIFIED",
+                    "sourceRange": {
+                      "unit": "UTF16_CODE_UNIT",
+                      "endOffset": 23157,
+                      "startOffset": 23121
+                    }
+                  }
+                ],
+                "rawPos": "ADV",
+                "entryId": "b7e61dbd-3a61-8fad-8813-91076d88c3d2",
+                "senseId": "9e0230c8-7e9e-81ff-b9b2-3ac78dfe37d9",
+                "senseKey": "p8",
+                "sourceLabel": "9",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 23163,
+                  "startOffset": 22495
+                },
+                "providerOrder": 8,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 23163,
+                    "startOffset": 22495
+                  },
+                  "bodyCharacterOffset": 107
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( better, best )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 1,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 13407,
+                  "startOffset": 12824
+                }
+              }
+            ],
+            "originalSurface": "best",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "well",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "5b13d83d-ba15-890c-bdca-b01d27b1349c",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 1204
+                },
+                {
+                  "audioId": "25c52169-f522-82b9-9123-f7717735dea0",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 517
+                }
+              ]
+            }
+          }
+        ],
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "artifactHash": "00404015a173bac13b175515e29480e364d21374af1c895183c28113cb1b434a",
+          "pipelineVersion": "epub-safe-v1",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-3",
+          "sentenceStart": 0,
+          "sentenceEnd": 23,
+          "contextKind": "sentence",
+          "sentence": "The best plan was zzzz.",
+          "surface": "best",
+          "wordStart": 4,
+          "wordEnd": 8,
+          "wordRangeCfi": "epubcfi(/6/2!/4/6,/1:4,/1:8)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/4/1:278,/6/1:23)",
+          "quote": {
+            "exact": "The best plan was zzzz.",
+            "prefix": "",
+            "suffix": ""
+          }
+        },
+        "pronunciations": null,
+        "audioError": null,
+        "favoriteState": null
+      }
+    },
+    {
+      "status": 200,
+      "request": {
+        "bookId": "a16093ab-82ea-484d-894a-f773212e3ade",
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-3",
+          "sentenceStart": 0,
+          "sentenceEnd": 23,
+          "sentence": "The best plan was zzzz.",
+          "surface": "zzzz",
+          "wordStart": 18,
+          "wordEnd": 22,
+          "wordRangeCfi": "epubcfi(/6/2!/4/6,/1:18,/1:22)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/4/1:278,/6/1:23)",
+          "quote": {
+            "exact": "The best plan was zzzz.",
+            "prefix": "",
+            "suffix": ""
+          }
+        }
+      },
+      "response": {
+        "lookupId": null,
+        "expiresAt": null,
+        "status": "NOT_FOUND",
+        "queryKey": "zzzz",
+        "dataset": {
+          "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+          "datasetVersion": "col-local-mvp-1",
+          "normalizationVersion": "col-normalize-v1",
+          "provider": "local-col",
+          "policyVersion": "unverified"
+        },
+        "resolvedLemmaKey": null,
+        "entry": null,
+        "regions": [],
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "artifactHash": "00404015a173bac13b175515e29480e364d21374af1c895183c28113cb1b434a",
+          "pipelineVersion": "epub-safe-v1",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-3",
+          "sentenceStart": 0,
+          "sentenceEnd": 23,
+          "contextKind": "sentence",
+          "sentence": "The best plan was zzzz.",
+          "surface": "zzzz",
+          "wordStart": 18,
+          "wordEnd": 22,
+          "wordRangeCfi": "epubcfi(/6/2!/4/6,/1:18,/1:22)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/4/1:278,/6/1:23)",
+          "quote": {
+            "exact": "The best plan was zzzz.",
+            "prefix": "",
+            "suffix": ""
+          }
+        },
+        "pronunciations": null,
+        "audioError": null,
+        "favoriteState": null
+      }
+    },
+    {
+      "status": 200,
+      "request": {
+        "bookId": "a16093ab-82ea-484d-894a-f773212e3ade",
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-2",
+          "sentenceStart": 0,
+          "sentenceEnd": 95,
+          "sentence": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+          "surface": "children",
+          "wordStart": 4,
+          "wordEnd": 12,
+          "wordRangeCfi": "epubcfi(/6/2!/4/4,/1:4,/1:12)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/2/1:11,/4/1:95)",
+          "quote": {
+            "exact": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+            "prefix": "",
+            "suffix": "They carried a small lantern and a folded map, and the morning air smelled of rain and cut grass. At the gate they stopped to li"
+          }
+        }
+      },
+      "response": {
+        "lookupId": "7ceffd87-34bc-48da-9588-6dac6e39381b",
+        "expiresAt": "2026-11-25T11:14:37.831024200Z",
+        "status": "FOUND",
+        "queryKey": "children",
+        "dataset": {
+          "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+          "datasetVersion": "col-local-mvp-1",
+          "normalizationVersion": "col-normalize-v1",
+          "provider": "local-col",
+          "policyVersion": "unverified"
+        },
+        "resolvedLemmaKey": "child",
+        "entry": {
+          "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+          "entryKey": "s18745:r0:c0",
+          "headword": "child",
+          "lemmaKey": "child",
+          "lemmaMethod": "EXACT_HEADWORD",
+          "sectionOrder": 0,
+          "componentOrder": 0,
+          "parentEntryKey": null,
+          "phonetics": [
+            {
+              "ipa": "/tʃaɪld/",
+              "accent": "unknown",
+              "audioId": null,
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 435,
+                "startOffset": 384
+              }
+            }
+          ],
+          "sourceRange": {
+            "unit": "UTF16_CODE_UNIT",
+            "endOffset": 3630,
+            "startOffset": 316
+          },
+          "sourceRecordHash": "987259c029654d8c869c49e297f0fef4c6c089f4ab45a2d905f4f3a63debafa0",
+          "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+          "datasetVersion": "col-local-mvp-1",
+          "provider": "local-col",
+          "providerVersion": "col-local-mvp-1",
+          "lemma": "child",
+          "regionOrder": 0,
+          "licensePolicyVersion": "unverified",
+          "cachePolicy": "memory",
+          "snapshotAllowed": false,
+          "attribution": "本地 COL；来源及使用权利待核实",
+          "senses": [
+            {
+              "zh": "小孩",
+              "pos": "noun",
+              "labels": [],
+              "rawPos": "N-COUNT",
+              "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+              "senseId": "5beb0518-4fc0-8ada-91e6-93d340c6fb53",
+              "senseKey": "p0",
+              "sourceLabel": "1",
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 1987,
+                "startOffset": 985
+              },
+              "providerOrder": 0,
+              "boundaryEvidence": {
+                "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                "offsetBasis": "DECODED_COMPACT_BODY",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 1987,
+                  "startOffset": 985
+                },
+                "bodyCharacterOffset": 50
+              }
+            },
+            {
+              "zh": "子女",
+              "pos": "noun",
+              "labels": [],
+              "rawPos": "N-COUNT",
+              "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+              "senseId": "27d20c06-5f14-8f9f-bdb8-5311ae94017d",
+              "senseKey": "p1",
+              "sourceLabel": "2",
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 3355,
+                "startOffset": 2343
+              },
+              "providerOrder": 1,
+              "boundaryEvidence": {
+                "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                "offsetBasis": "DECODED_COMPACT_BODY",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 3355,
+                  "startOffset": 2343
+                },
+                "bodyCharacterOffset": 60
+              }
+            }
+          ],
+          "references": [],
+          "notes": [
+            {
+              "raw": "( children )",
+              "kind": "EXPLICIT_FORM_TABLE",
+              "region": 0,
+              "candidates": [],
+              "sourceRange": {
+                "unit": "UTF16_CODE_UNIT",
+                "endOffset": 883,
+                "startOffset": 525
+              }
+            }
+          ],
+          "originalSurface": "children",
+          "detectedPos": "unknown",
+          "posMethod": "UNKNOWN",
+          "pronunciations": {
+            "status": "available",
+            "word": "child",
+            "source": "local-sound",
+            "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+            "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+            "items": [
+              {
+                "audioId": "76f521a3-a0d4-8d4a-bb24-5b9ab00b2723",
+                "accent": "en-GB",
+                "mime": "audio/mpeg",
+                "durationMs": 804
+              },
+              {
+                "audioId": "e7f4fa1b-2fa0-8700-b1fe-6d4889cae144",
+                "accent": "en-US",
+                "mime": "audio/mpeg",
+                "durationMs": 634
+              }
+            ]
+          }
+        },
+        "regions": [
+          {
+            "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+            "entryKey": "s18745:r0:c0",
+            "headword": "child",
+            "lemmaKey": "child",
+            "lemmaMethod": "EXACT_HEADWORD",
+            "sectionOrder": 0,
+            "componentOrder": 0,
+            "parentEntryKey": null,
+            "phonetics": [
+              {
+                "ipa": "/tʃaɪld/",
+                "accent": "unknown",
+                "audioId": null,
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 435,
+                  "startOffset": 384
+                }
+              }
+            ],
+            "sourceRange": {
+              "unit": "UTF16_CODE_UNIT",
+              "endOffset": 3630,
+              "startOffset": 316
+            },
+            "sourceRecordHash": "987259c029654d8c869c49e297f0fef4c6c089f4ab45a2d905f4f3a63debafa0",
+            "datasetId": "9ebe9056-db26-8dac-99c6-f45713f0b6d9",
+            "datasetVersion": "col-local-mvp-1",
+            "provider": "local-col",
+            "providerVersion": "col-local-mvp-1",
+            "lemma": "child",
+            "regionOrder": 0,
+            "licensePolicyVersion": "unverified",
+            "cachePolicy": "memory",
+            "snapshotAllowed": false,
+            "attribution": "本地 COL；来源及使用权利待核实",
+            "senses": [
+              {
+                "zh": "小孩",
+                "pos": "noun",
+                "labels": [],
+                "rawPos": "N-COUNT",
+                "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+                "senseId": "5beb0518-4fc0-8ada-91e6-93d340c6fb53",
+                "senseKey": "p0",
+                "sourceLabel": "1",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 1987,
+                  "startOffset": 985
+                },
+                "providerOrder": 0,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 1987,
+                    "startOffset": 985
+                  },
+                  "bodyCharacterOffset": 50
+                }
+              },
+              {
+                "zh": "子女",
+                "pos": "noun",
+                "labels": [],
+                "rawPos": "N-COUNT",
+                "entryId": "5b60ab89-c0aa-86b7-adf8-4279348fc05d",
+                "senseId": "27d20c06-5f14-8f9f-bdb8-5311ae94017d",
+                "senseKey": "p1",
+                "sourceLabel": "2",
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 3355,
+                  "startOffset": 2343
+                },
+                "providerOrder": 1,
+                "boundaryEvidence": {
+                  "ruleId": "COL_BILINGUAL_LEXICAL_UNITS",
+                  "offsetBasis": "DECODED_COMPACT_BODY",
+                  "sourceRange": {
+                    "unit": "UTF16_CODE_UNIT",
+                    "endOffset": 3355,
+                    "startOffset": 2343
+                  },
+                  "bodyCharacterOffset": 60
+                }
+              }
+            ],
+            "references": [],
+            "notes": [
+              {
+                "raw": "( children )",
+                "kind": "EXPLICIT_FORM_TABLE",
+                "region": 0,
+                "candidates": [],
+                "sourceRange": {
+                  "unit": "UTF16_CODE_UNIT",
+                  "endOffset": 883,
+                  "startOffset": 525
+                }
+              }
+            ],
+            "originalSurface": "children",
+            "detectedPos": "unknown",
+            "posMethod": "UNKNOWN",
+            "pronunciations": {
+              "status": "available",
+              "word": "child",
+              "source": "local-sound",
+              "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+              "items": [
+                {
+                  "audioId": "76f521a3-a0d4-8d4a-bb24-5b9ab00b2723",
+                  "accent": "en-GB",
+                  "mime": "audio/mpeg",
+                  "durationMs": 804
+                },
+                {
+                  "audioId": "e7f4fa1b-2fa0-8700-b1fe-6d4889cae144",
+                  "accent": "en-US",
+                  "mime": "audio/mpeg",
+                  "durationMs": 634
+                }
+              ]
+            }
+          }
+        ],
+        "source": {
+          "artifactId": "889e7eca-15dc-4d32-b698-644a083cdcc6",
+          "artifactHash": "00404015a173bac13b175515e29480e364d21374af1c895183c28113cb1b434a",
+          "pipelineVersion": "epub-safe-v1",
+          "spineHref": "OEBPS/Text/ch1.xhtml",
+          "blockId": "b-2",
+          "sentenceStart": 0,
+          "sentenceEnd": 95,
+          "contextKind": "sentence",
+          "sentence": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+          "surface": "children",
+          "wordStart": 4,
+          "wordEnd": 12,
+          "wordRangeCfi": "epubcfi(/6/2!/4/4,/1:4,/1:12)",
+          "sentenceRangeCfi": "epubcfi(/6/2!/4,/2/1:11,/4/1:95)",
+          "quote": {
+            "exact": "The children are running toward the old house while the sun rose slowly over the quiet valley. ",
+            "prefix": "",
+            "suffix": "They carried a small lantern and a folded map, and the morning air smelled of rain and cut grass. At the gate they stopped to li"
+          }
+        },
+        "pronunciations": {
+          "status": "available",
+          "word": "child",
+          "source": "local-sound",
+          "audioDatasetId": "f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+          "audioDatasetVersion": "audio-v1/f6c163ff-131c-8968-8b23-6a1f21db6d4c",
+          "items": [
+            {
+              "audioId": "76f521a3-a0d4-8d4a-bb24-5b9ab00b2723",
+              "accent": "en-GB",
+              "mime": "audio/mpeg",
+              "durationMs": 804
+            },
+            {
+              "audioId": "e7f4fa1b-2fa0-8700-b1fe-6d4889cae144",
+              "accent": "en-US",
+              "mime": "audio/mpeg",
+              "durationMs": 634
+            }
+          ]
+        },
+        "audioError": null,
+        "favoriteState": null
+      }
+    }
+  ],
+  "email": "m05_1795604601616@readict.test",
+  "bookId": "a16093ab-82ea-484d-894a-f773212e3ade",
+  "importState": "SUCCEEDED",
+  "audioCalls": [
+    {
+      "status": 206,
+      "type": "audio/mpeg"
+    }
+  ],
+  "card": {
+    "text": "M05 · 真实 COL 词典child/tʃaɪld/原文词形：children词头：childnoun小孩noun子女原文语境The children are running toward the old house while the sun rose slowly over the quiet valley. child 英音child 美音收藏（M06）child",
+    "box": {
+      "x": 432.984375,
+      "y": 265.390625,
+      "width": 390,
+      "height": 374.75
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "audioButtons": [
+      "child 英音",
+      "child 美音"
+    ]
+  },
+  "audio": {
+    "active": 1,
+    "text": "child 英音child 美音"
+  },
+  "ambiguous": {
+    "text": "M05 · 真实 COL 词典good/ɡʊd/原文词形：best词头：goodgoodwelladjective令人愉快的adjective质量高的; 水准高的adjective擅长的更多释义（13）原文语境The best plan was zzzz.good 英音good 美音收藏（M06）",
+    "candidates": 2
+  },
+  "notFound": "M05 · 真实 COL 词典zzzz原文词形：zzzz未收录「zzzz」。原文仍可继续阅读，换一个词试试。",
+  "mobile": {
+    "box": {
+      "x": 16,
+      "y": 299.390625,
+      "width": 358,
+      "height": 374.75
+    },
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "overflow": false
+  },
+  "security": {
+    "anonymous": 403,
+    "noCsrf": 403,
+    "crossUser": 404,
+    "strangerRegister": 201,
+    "anonymousWithCsrf": 401
+  },
+  "finishedAt": "2026-11-25T11:04:40.142Z"
+}

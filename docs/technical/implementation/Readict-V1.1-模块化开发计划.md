@@ -1,7 +1,7 @@
 # Readict V1.1 模块化开发计划
 
 版本：0.10；日期：2026-11-25（新增 M05 MVP 开发执行文档，校正模块现状；保留历史任务与验收门槛）。
-状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 核心账号与本地模拟流程验收通过，真实通道待材料；M02 本机 LOCAL_MVP 词典底座完成，完整质量仍未通过；A02 本机音频底座可用，卡片接入、人工试听与权利检查分列；M03／M04 核心已实现并执行开发库 V7／V8，未整体验收；M05 待实施，M06～M09 未开发。真实结果见 [M00](../../../validation/implementation/m00/README.md)、[M01](../../../validation/implementation/m01/README.md)、[M02](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)、[A02](../../../validation/implementation/a02/2026-11-23-local-subset/README.md)、[M03](../../../validation/implementation/m03/2026-11-23-local/README.md)及[M04](../../../validation/implementation/m04/README.md)；本次不补记任何新通过结论。
+状态：M00-01～M00-05 已完成本机阶段验收，应用实现提交为 ced5f6e；M01 核心账号与本地模拟流程验收通过，真实通道待材料；M02 本机 LOCAL_MVP 词典底座完成，完整质量仍未通过；A02 本机音频底座可用，卡片接入、人工试听与权利检查分列；M03／M04 核心已实现并执行开发库 V7／V8，未整体验收；M05 本机 MVP 已实现、完整验收未完成，M06～M09 未开发。真实结果见 [M00](../../../validation/implementation/m00/README.md)、[M01](../../../validation/implementation/m01/README.md)、[M02](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)、[A02](../../../validation/implementation/a02/2026-11-23-local-subset/README.md)、[M03](../../../validation/implementation/m03/2026-11-23-local/README.md)及[M04](../../../validation/implementation/m04/README.md)；本次不补记任何新通过结论。
 
 当前仓库约定：源码、迁移和正式测试在 readict-app；详细文档、实施记录及截图在 readict-design。应用不建 docs/，单次环境准备和验收脚本不提交，个人便利工具放在忽略的 .local/。以下环境与选型表中的“未验证”等描述保留原始计划编写时的基线，M00 当前结果以验收记录为准。
 
@@ -176,7 +176,7 @@ M00-01～M00-05 已完成本机阶段验收；M01核心与本地模拟已验收�
 
 前置：M02、M04；认证沿用 M01。接口：/dictionary/lookups、source 校验、收藏状态查询契约；收藏正式动作在 M06 接入。
 
-当前执行依据：[M05 技术设计与执行文档](M05-单词定位、词典查询与卡片技术设计与执行文档.md)（0.1；2026-11-25；待实施）。按用户 MVP 优先安排，先完成真实点词、规范来源、COL 卡片与 A02-05 录音接入；仅做必要验证，完整矩阵后置。先复用当前阅读器与已落地设计，UX-R02 未选定方案不作为批准规格；前端 NLP 与定位库依赖按实际需要后续决定，本轮不做猜测词形。短期 lookupId 使用有界进程内凭据，M06 收藏／M07 翻译入口不提供模拟成功。下表保留原模块完整目标，不表示本轮全部交付。
+当前执行依据：[M05 技术设计与执行文档](M05-单词定位、词典查询与卡片技术设计与执行文档.md)（0.2；2026-11-25；本机 MVP 已实现，完整验收未完成）。按用户 MVP 优先安排，先完成真实点词、规范来源、COL 卡片与 A02-05 录音接入；仅做必要验证，完整矩阵后置。先复用当前阅读器与已落地设计，UX-R02 未选定方案不作为批准规格；前端 NLP 与定位库依赖按实际需要后续决定，本轮不做猜测词形。短期 lookupId 使用有界进程内凭据，M06 收藏／M07 翻译入口不提供模拟成功。下表保留原模块完整目标，不表示本轮全部交付。
 
 | 任务 | 工作与完成证据 |
 |---|---|
@@ -333,7 +333,7 @@ flowchart LR
 | M02 | 本机MVP词典底座完成；开发库已启用；完整质量未通过 | [当前验收](../../../validation/implementation/m02/local-mvp-2026-11-22/README.md)；保留r2／r3历史质量记录 |
 | M03 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵验收通过，浏览器自动检查完成；真实 EPUB、V03 全量矩阵待办；`readict_dev` 已于 2026-11-23 执行 V7 | [实施记录](../../../validation/implementation/m03/2026-11-23-local/README.md)；应用提交 158e37e；待 M03-06 收尾 |
 | M04 | 进行中：本机核心已实现，`readict_test` 接口与恢复矩阵通过，Edge 自动检查完成；真实 EPUB、跨版式恢复待办 | [实施记录](../../../validation/implementation/m04/2026-11-23-local/README.md)；应用提交 afa5425；待 M04-06 收尾 |
-| M05 | 未开始，已有原型／实验 | 待正式联调 |
+| M05 | 本机 MVP 已实现：点词查词、真实 COL 卡片与真实录音接入；完整验收未完成 | [实施记录](../../../validation/implementation/m05/2026-11-25-local-mvp/README.md)；应用提交 2b9af06 |
 | M06 | 未开始 | 待正式事务验证 |
 | M07 | 未开始，真实服务待配置 | 待 SDK 和真实调用 |
 | M08 | 未开始 | 待故障验证 |
