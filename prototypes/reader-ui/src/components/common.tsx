@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Brand } from '../integrated/Brand'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -7,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import type { WordContext } from '@/lib/types'
 
 export function Header({ title, back, children }: { title?: string; back?: string; children?: ReactNode }) {
-  return <header className="app-header"><Link to="/books" className="wordmark">Readict<span className="brand-dot">.</span></Link>{back && <Link to={back} className="back-link"><ArrowLeft size={17} />{back === '/books' ? '返回书架' : '继续阅读'}</Link>}{title && <span className="header-title">{title}</span>}<div className="header-actions">{children}</div></header>
+  return <header className="app-header"><Brand />{back && <Link to={back} className="back-link"><ArrowLeft size={17} />{back === '/books' ? '返回书架' : '继续阅读'}</Link>}{title && <span className="header-title">{title}</span>}<div className="header-actions">{children}</div></header>
 }
 export function IconButton({ label, children, onClick, active = false }: { label: string; children: ReactNode; onClick: () => void; active?: boolean }) {
   return <Tooltip><TooltipTrigger render={<Button variant="ghost" size="icon" aria-label={label} aria-pressed={active} className={`icon-button ${active ? 'is-active' : ''}`} onClick={onClick} />}>{children}</TooltipTrigger><TooltipContent side="left">{label}</TooltipContent></Tooltip>

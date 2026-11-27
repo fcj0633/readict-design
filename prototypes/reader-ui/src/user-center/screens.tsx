@@ -4,7 +4,8 @@ import { Link, Navigate, NavLink, Route, Routes, useLocation, useNavigate } from
 import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronDown, Eye, EyeOff, Headphones, LogOut, Mail, Settings2, ShieldCheck, Smartphone, UserRound, FlaskConical, AlertCircle } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '../components/ui/dialog';
 import { passwordValid, useDemo } from './model';
-const base = '/user-center';
+import { Brand } from '../integrated/Brand';
+const base = '';
 function Button({
   children,
   onClick,
@@ -27,7 +28,7 @@ function Avatar({
 }) {
   return <span className={`uc-avatar ${large ? 'large' : ''}`}><UserRound strokeWidth={1.3} /></span>;
 }
-function Header() {
+export function MemberHeader() {
   const d = useDemo(),
     navigate = useNavigate(),
     location = useLocation(),
@@ -57,10 +58,14 @@ function Header() {
     setBusy(false);
     if (ok) {
       close();
-      navigate(`${base}/login`);
+      navigate(`${base}/login`, {
+        state: {
+          from: location.pathname
+        }
+      });
     }
   }
-  return <header className="uc-header"><div className="uc-header-inner"><Link className="uc-logo" to={`${base}/books`}>Readict<span>.</span></Link>{!auth && <nav className="uc-main-nav" aria-label="主导航"><NavLink to={`${base}/books`}>书架</NavLink><NavLink to={`${base}/favorites`}>收藏</NavLink></nav>}<span className="uc-prototype-label">用户中心 · 交互原型</span>{!auth && d.authenticated && <div className="uc-menu-root" ref={root} onBlur={e => {
+  return <header className="uc-header"><div className="uc-header-inner"><Brand />{!auth && <nav className="uc-main-nav" aria-label="主导航"><NavLink to={`${base}/books`}>我的书架</NavLink><NavLink to={`${base}/favorites`}>我的收藏</NavLink></nav>}<span className="uc-prototype-label">交互原型</span>{!auth && d.authenticated && <div className="uc-menu-root" ref={root} onBlur={e => {
         if (e.relatedTarget && !e.currentTarget.contains(e.relatedTarget)) setOpen(false);
       }}><button ref={trigger} className="uc-avatar-trigger" aria-label="打开账户菜单" aria-expanded={open} aria-haspopup="menu" onClick={() => setOpen(!open)} onKeyDown={e => {
           if (e.key === 'ArrowDown') {
@@ -81,17 +86,16 @@ function Header() {
         }}><div className="uc-menu-identity"><strong>{d.nickname}</strong><span>{d.identity === 'phone' ? '+86 138 **** 0000' : 'reader@example.com'}</span><small>示例身份 · 不连接真实账号</small></div><Link role="menuitem" to={`${base}/account`} onClick={() => close()}><UserRound />个人账户<ArrowRight /></Link><Link role="menuitem" to={`${base}/settings/reading`} onClick={() => close()}><Settings2 />个性化设置<ArrowRight /></Link><div className="uc-menu-separator" /><button role="menuitem" disabled={busy} onClick={logout}><LogOut />{busy ? '正在退出…' : '退出登录'}</button>{d.logoutError && <p className="uc-menu-error" role="alert">{d.logoutError}</p>}</div>}</div>}{!auth && !d.authenticated && <Link to={`${base}/login`} className="uc-text-link">演示登录</Link>}</div></header>;
 }
 function PageTitle({
-  eyebrow,
   title,
   description,
   children
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   description: string;
   children?: ReactNode;
 }) {
-  return <div className="uc-page-title"><div><span className="uc-eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>{children}</div>;
+  return <div className="uc-page-title"><div><h1>{title}</h1><p>{description}</p></div>{children}</div>;
 }
 function Modal({
   open,
@@ -124,7 +128,7 @@ function PasswordField({
   const [show, setShow] = useState(false);
   return <label className="uc-field">{label}<span className="uc-password"><input type={show ? 'text' : 'password'} autoComplete={autoComplete} value={value} onChange={e => onChange(e.target.value)} required /><button type="button" aria-label={`${show ? '隐藏' : '显示'}${label}`} onClick={() => setShow(!show)}>{show ? <EyeOff size={18} /> : <Eye size={18} />}</button></span></label>;
 }
-function Account() {
+export function Account() {
   const returnFocus = useRef<HTMLElement | null>(null);
   const d = useDemo(),
     navigate = useNavigate(),
@@ -167,7 +171,7 @@ function Account() {
       }
     });
   }
-  return <main className="uc-account"><PageTitle eyebrow="YOUR ACCOUNT" title="个人账户" description="在这里，照顾好你的阅读身份。" /><section className="uc-identity"><Avatar large /><div><div className="uc-name">{d.nickname}<span className="uc-tag">示例身份</span></div><p>属于你的书架，属于你的阅读时光。</p></div><Button secondary onClick={() => open('profile')}>编辑资料</Button></section><div className="uc-section-heading"><h2>账户与安全</h2><span>联系方式与登录凭据</span></div><section className="uc-account-list"><Contact icon={<Mail />} title="邮箱" bound={d.identity !== 'phone'} verified={d.emailVerified} value="reader@example.com" onExplain={() => open('verification')} /><Contact icon={<Smartphone />} title="手机号" bound={d.identity !== 'email'} verified={d.phoneVerified} value="+86 138 **** 0000" onExplain={() => open('verification')} /><div className="uc-account-row"><span className="uc-row-icon"><ShieldCheck /></span><div><h3>登录密码</h3><p>定期更新密码，保护阅读记录与收藏。</p></div><Button secondary onClick={() => open('password')}>修改密码</Button></div></section><div className="uc-account-note"><ShieldCheck size={18} /><p>此页面使用示例身份。真实验证服务暂不可用，联系方式格式正确也不代表已完成所有权验证。</p></div><Link className="uc-preference-link" to={`${base}/settings/reading`}><span><Settings2 size={20} /><strong>让阅读更合你的习惯</strong><small>字体、纸面与发音偏好</small></span><ArrowRight size={20} /></Link>
+  return <main className="uc-account"><PageTitle eyebrow="YOUR ACCOUNT" title="个人账户" description="管理个人资料、联系方式与账户安全。" /><section className="uc-identity"><Avatar large /><div><div className="uc-name">{d.nickname}<span className="uc-tag">示例身份</span></div><p>你的阅读资料与偏好。</p></div><Button secondary onClick={() => open('profile')}>编辑资料</Button></section><div className="uc-section-heading"><h2>账户与安全</h2><span>联系方式与登录凭据</span></div><section className="uc-account-list"><Contact icon={<Mail />} title="邮箱" bound={d.identity !== 'phone'} verified={d.emailVerified} value="reader@example.com" onExplain={() => open('verification')} /><Contact icon={<Smartphone />} title="手机号" bound={d.identity !== 'email'} verified={d.phoneVerified} value="+86 138 **** 0000" onExplain={() => open('verification')} /><div className="uc-account-row"><span className="uc-row-icon"><ShieldCheck /></span><div><h3>登录密码</h3><p>定期更新密码，保护阅读记录与收藏。</p></div><Button secondary onClick={() => open('password')}>修改密码</Button></div></section><div className="uc-account-note"><ShieldCheck size={18} /><p>此页面使用示例身份。真实验证服务暂不可用，联系方式格式正确也不代表已完成所有权验证。</p></div><Link className="uc-preference-link" to={`${base}/settings/reading`}><span><Settings2 size={20} /><strong>让阅读更合你的习惯</strong><small>字体、纸面与发音偏好</small></span><ArrowRight size={20} /></Link>
   <Modal returnFocus={returnFocus} open={dialog === 'profile'} onOpenChange={v => {
       if (!v) setDialog('');
     }} title="编辑资料" description="调整此原型中显示的阅读身份。"><form onSubmit={e => {
@@ -208,9 +212,9 @@ function SaveStatus() {
       conflict: '有待处理的版本冲突'
     }[d.phase]}</span>;
 }
-function Settings() {
+export function Settings() {
   const d = useDemo();
-  return <main className="uc-settings"><PageTitle eyebrow="MAKE ROOM FOR READING" title="个性化设置" description="把每一页，调成你喜欢的样子。"><SaveStatus /></PageTitle><div className="uc-settings-layout"><aside className="uc-settings-nav" aria-label="设置分类"><NavLink to={`${base}/settings/reading`}><BookOpen size={18} />阅读设置</NavLink><NavLink to={`${base}/settings/pronunciation`}><Headphones size={18} />词典与发音</NavLink><Link className="uc-back-account" to={`${base}/account`}><ArrowLeft size={14} />个人账户</Link></aside><div className="uc-settings-content">{d.phase === 'error' && <div className="uc-save-banner" role="alert"><div><strong>设置还没有保存成功</strong><p>演示同步失败；当前修改已保留，可以重试。</p></div><Button secondary onClick={d.retry}>重新保存</Button></div>}{d.phase === 'conflict' && <div className="uc-save-banner conflict" role="alert"><div><strong>另一处演示设置已更新</strong><p>当前草稿仍保留。请选择使用已保存版本，或重新保存你的修改。</p><div className="uc-conflict-actions"><Button secondary onClick={() => d.resolve(false)}>使用已保存设置</Button><Button onClick={() => d.resolve(true)}>保留当前修改并重新保存</Button></div></div></div>}<Routes><Route path="reading" element={<Reading />} /><Route path="pronunciation" element={<Pronunciation />} /><Route path="*" element={<Navigate to="reading" replace />} /></Routes></div></div></main>;
+  return <main className="uc-settings"><PageTitle eyebrow="MAKE ROOM FOR READING" title="个性化设置" description="调整阅读排版与发音偏好。"><SaveStatus /></PageTitle><div className="uc-settings-layout"><aside className="uc-settings-nav" aria-label="设置分类"><NavLink to={`${base}/settings/reading`}><BookOpen size={18} />阅读设置</NavLink><NavLink to={`${base}/settings/pronunciation`}><Headphones size={18} />词典与发音</NavLink><Link className="uc-back-account" to={`${base}/account`}><ArrowLeft size={14} />个人账户</Link></aside><div className="uc-settings-content">{d.phase === 'error' && <div className="uc-save-banner" role="alert"><div><strong>设置还没有保存成功</strong><p>演示同步失败；当前修改已保留，可以重试。</p></div><Button secondary onClick={d.retry}>重新保存</Button></div>}{d.phase === 'conflict' && <div className="uc-save-banner conflict" role="alert"><div><strong>另一处演示设置已更新</strong><p>当前草稿仍保留。请选择使用已保存版本，或重新保存你的修改。</p><div className="uc-conflict-actions"><Button secondary onClick={() => d.resolve(false)}>使用已保存设置</Button><Button onClick={() => d.resolve(true)}>保留当前修改并重新保存</Button></div></div></div>}<Routes><Route path="reading" element={<Reading />} /><Route path="pronunciation" element={<Pronunciation />} /><Route path="*" element={<Navigate to="reading" replace />} /></Routes></div></div></main>;
 }
 function Choices<T extends string | number>({
   label,
@@ -231,7 +235,7 @@ function Choices<T extends string | number>({
 function Reading() {
   const d = useDemo(),
     p = d.draft;
-  return <><div className="uc-content-heading"><h2>阅读设置</h2><p>好的排版，让注意力留在故事里。</p></div><div className="uc-reading-grid"><div className="uc-reading-controls"><div className="uc-control-group"><h3>正文字体</h3><div className="uc-fonts">{(['Georgia', 'Palatino Linotype', 'Arial'] as const).map(font => <button disabled={d.phase === 'loading'} key={font} aria-pressed={p.font === font} onClick={() => d.edit({
+  return <><div className="uc-content-heading"><h2>阅读设置</h2><p>选择适合你的字体与阅读纸面。</p></div><div className="uc-reading-grid"><div className="uc-reading-controls"><div className="uc-control-group"><h3>正文字体</h3><div className="uc-fonts">{(['Georgia', 'Palatino Linotype', 'Arial'] as const).map(font => <button disabled={d.phase === 'loading'} key={font} aria-pressed={p.font === font} onClick={() => d.edit({
               font
             })} style={{
               fontFamily: font
@@ -252,18 +256,11 @@ function Reading() {
 }
 function Pronunciation() {
   const d = useDemo();
-  return <div className="uc-pronunciation"><div className="uc-content-heading"><h2>词典与发音</h2><p>可靠的释义，熟悉的声音。</p></div><div className="uc-dictionary-source"><span className="uc-row-icon"><BookOpen /></span><div><h3>词典来源 <span className="uc-tag">只读</span></h3><strong>COL</strong><p>标准词典释义与发音，延续当前阅读器的数据来源。</p></div></div><div className="uc-control-group"><h3>优先发音口音</h3><p className="uc-section-copy">查词时，优先选择你更习惯的发音。</p><div className="uc-accent-options">{(['en-GB', 'en-US'] as const).map((accent, i) => <button key={accent} disabled={d.phase === 'loading'} aria-pressed={d.draft.pronunciation === accent} onClick={() => d.edit({
+  return <div className="uc-pronunciation"><div className="uc-content-heading"><h2>词典与发音</h2><p>可靠的释义，熟悉的声音。</p></div><div className="uc-dictionary-source"><span className="uc-row-icon"><BookOpen /></span><div><h3>词典来源 <span className="uc-tag">只读</span></h3><strong>COL</strong><p>正式产品的词典来源；本原型查词使用内置示例数据。</p></div></div><div className="uc-control-group"><h3>优先发音口音</h3><p className="uc-section-copy">查词时，优先选择你更习惯的发音。</p><div className="uc-accent-options">{(['en-GB', 'en-US'] as const).map((accent, i) => <button key={accent} disabled={d.phase === 'loading'} aria-pressed={d.draft.pronunciation === accent} onClick={() => d.edit({
           pronunciation: accent
-        })}><span className="uc-radio">{d.draft.pronunciation === accent && <span />}</span><span><strong>{i === 0 ? '英式发音' : '美式发音'}</strong><small>{i === 0 ? 'British English' : 'American English'}</small></span><span className="uc-accent-code">{i === 0 ? 'UK' : 'US'}</span></button>)}</div></div><div className="uc-audio-note"><Headphones size={20} /><div><strong>有录音时，让声音跟随你的偏好</strong><p>当前阅读器已接入 COL 音频。具体单词或口音仍可能缺少录音，此偏好不保证每次都能播放。本页只演示偏好保存，不请求或播放真实音频。</p></div></div></div>;
+        })}><span className="uc-radio">{d.draft.pronunciation === accent && <span />}</span><span><strong>{i === 0 ? '英式发音' : '美式发音'}</strong><small>{i === 0 ? 'British English' : 'American English'}</small></span><span className="uc-accent-code">{i === 0 ? 'UK' : 'US'}</span></button>)}</div></div><div className="uc-audio-note"><Headphones size={20} /><div><strong>有录音时，让声音跟随你的偏好</strong><p>正式前端已接入 COL 音频，具体单词或口音仍可能缺少录音。本原型使用示例词典，阅读器发音为浏览器语音演示；本页只保存口音偏好，不请求真实录音。</p></div></div></div>;
 }
-const library = [['pride', 'Pride and Prejudice', 'Jane Austen', '阅读中 · 32%'], ['garden', 'The Secret Garden', 'Frances Hodgson Burnett', '未开始'], ['gatsby', 'The Great Gatsby', 'F. Scott Fitzgerald', '未开始'], ['jane', 'Jane Eyre', 'Charlotte Brontë', '未开始'], ['moby', 'Moby-Dick', 'Herman Melville', '未开始'], ['little-women', 'Little Women', 'Louisa May Alcott', '未开始']];
-function Books() {
-  return <main className="uc-books"><PageTitle eyebrow="A QUIET PLACE FOR YOUR BOOKS" title="我的书架" description="用户中心导航预览 · 以下为示例藏书，不读取原有书架记录。" /><section className="uc-book-hero"><img src="/user-center/covers/pride.jpg" alt="Pride and Prejudice 封面" /><div><span className="uc-eyebrow">CONTINUE READING · 示例进度</span><h2>Pride and Prejudice</h2><p>Jane Austen</p><span>Chapter 12 · 32%</span></div><a className="uc-button" href="/index.html#/">查看已有阅读原型 <ArrowRight size={17} /></a></section><div className="uc-section-heading"><h2>我的藏书 <small>6 本示例</small></h2><span>仅用于头像导航展示</span></div><div className="uc-book-grid">{library.map(([id, title, author, status]) => <div key={id}><img src={`/user-center/covers/${id}.jpg`} alt={`${title} 封面`} /><h3>{title}</h3><p>{author}</p><small>{status}</small></div>)}</div></main>;
-}
-function Favorites() {
-  return <main className="uc-account"><PageTitle eyebrow="WORDS WORTH KEEPING" title="我的收藏" description="原有收藏与阅读语境保留在已有原型中。" /><div className="uc-empty"><BookOpen size={34} /><h2>把遇见的单词，留在故事里</h2><p>本入口用于演示统一导航，不读取或改写已有收藏。</p><a className="uc-button" href="/index.html#/favorites">打开已有收藏原型 <ArrowRight size={16} /></a></div></main>;
-}
-function Auth({
+export function Auth({
   mode
 }: {
   mode: 'login' | 'register' | 'forgot-password' | 'reset-password';
@@ -309,7 +306,8 @@ function Auth({
     setConfirm('');
     if (mode === 'login') {
       d.login();
-      navigate(`${base}/account`);
+      const from = location.state?.from;
+      navigate(typeof from === 'string' && /^\/(books|favorites|account|settings\/(reading|pronunciation))$/.test(from) ? from : '/books');
     } else {
       d.endSession();
       navigate(`${base}/login`, {
@@ -319,7 +317,7 @@ function Auth({
       });
     }
   }
-  return <main className="uc-auth"><div className="uc-auth-intro"><span className="uc-eyebrow">YOUR NEXT CHAPTER</span><h1>{title}</h1><p>一本书，一段安静的时间。</p></div><section className="uc-auth-paper"><div className="uc-auth-demo"><FlaskConical size={16} />认证流程原型 · 不连接真实账户</div>{location.state?.notice && <p className="uc-auth-notice" role="status">{location.state.notice}</p>}<form onSubmit={submit}>{mode !== 'reset-password' && <><div className="uc-auth-tabs" role="group" aria-label="登录方式">{(['email', 'phone'] as const).map(c => <button type="button" aria-pressed={channel === c} key={c} onClick={() => {
+  return <main className="uc-auth"><div className="uc-auth-intro"><h1>{title}</h1><p>一本书，一段安静的时间。</p></div><section className="uc-auth-paper"><div className="uc-auth-demo"><FlaskConical size={16} />认证流程原型 · 不连接真实账户</div>{location.state?.notice && <p className="uc-auth-notice" role="status">{location.state.notice}</p>}<form onSubmit={submit}>{mode !== 'reset-password' && <><div className="uc-auth-tabs" role="group" aria-label="登录方式">{(['email', 'phone'] as const).map(c => <button type="button" aria-pressed={channel === c} key={c} onClick={() => {
               setChannel(c);
               setContact('');
               setError('');
@@ -330,16 +328,7 @@ function Auth({
             'reset-password': '重置密码（演示）'
           }[mode]}<ArrowRight size={17} /></Button></form><p className="uc-auth-switch">{mode === 'login' ? <>还没有账户？ <Link to={`${base}/register`}>注册</Link></> : <Link to={`${base}/login`}>返回登录</Link>}</p>{mode === 'forgot-password' && <Link className="uc-reset-demo" to={`${base}/reset-password`}>仅预览重置表单（无真实恢复凭据）</Link>}</section><p className="uc-auth-footnote">请使用示例信息体验。密码与恢复凭据不会保存。</p></main>;
 }
-function DemoTools() {
+export function DemoTools() {
   const d = useDemo();
   return <details className="uc-demo-tools"><summary><FlaskConical size={15} />原型演示状态<ChevronDown size={13} /></summary><div><strong>评审工具 · 非用户设置</strong><label>联系方式场景<select value={d.identity} onChange={e => d.setIdentity(e.target.value as typeof d.identity)}><option value="email">邮箱已绑定，手机未绑定</option><option value="phone">手机已绑定，邮箱未绑定</option><option value="both">邮箱与手机均已绑定</option></select></label><label className="uc-check"><input type="checkbox" checked={d.emailVerified} onChange={e => d.setEmailVerified(e.target.checked)} />邮箱已验证（仅演示）</label><label className="uc-check"><input type="checkbox" checked={d.phoneVerified} onChange={e => d.setPhoneVerified(e.target.checked)} />手机号已验证（仅演示）</label><label>下一次设置保存<select value={d.scenario} onChange={e => d.setScenario(e.target.value as typeof d.scenario)}><option value="normal">成功</option><option value="error">失败，可重试</option><option value="conflict">版本冲突，保留草稿</option></select></label><small>选择后修改任一阅读或发音偏好触发。</small><label className="uc-check"><input type="checkbox" checked={d.logoutFail} onChange={e => d.setLogoutFail(e.target.checked)} />下一次退出失败</label><Link to={`${base}/login`}>查看登录页面 <ArrowRight size={13} /></Link></div></details>;
-}
-export function UserCenter() {
-  const d = useDemo(),
-    location = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = 'Readict · 用户中心设计预览';
-  }, [location.pathname]);
-  return <div className="uc-app"><Header />{d.storageError && <p className="uc-storage-error" role="alert">{d.storageError}</p>}<Routes><Route path={`${base}/books`} element={<Books />} /><Route path={`${base}/favorites`} element={<Favorites />} /><Route path={`${base}/account`} element={d.authenticated ? <Account /> : <Navigate to={`${base}/login`} replace />} /><Route path={`${base}/settings/*`} element={d.authenticated ? <Settings /> : <Navigate to={`${base}/login`} replace />} />{(['login', 'register', 'forgot-password', 'reset-password'] as const).map(mode => <Route key={mode} path={`${base}/${mode}`} element={<Auth key={mode} mode={mode} />} />)}<Route path="*" element={<Navigate to={`${base}/account`} replace />} /></Routes><footer className="uc-footer"><span>Readict · Quiet Library</span><span>交互设计原型 · 身份与同步均为演示</span><a href="/index.html#/">返回已有原型 <ArrowRight size={13} /></a></footer><DemoTools /></div>;
 }

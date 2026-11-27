@@ -1,9 +1,5 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { HashRouter } from 'react-router-dom';
-import '../index.css';
-import '../readict.css';
-import { DemoProvider } from './model';
-import { UserCenter } from './screens';
-import './user-center.css';
-createRoot(document.getElementById('root')!).render(<StrictMode><HashRouter><DemoProvider><UserCenter /></DemoProvider></HashRouter></StrictMode>);
+const routes = new Set(['books', 'favorites', 'account', 'settings/reading', 'settings/pronunciation', 'login', 'register', 'forgot-password', 'reset-password']);
+const requested = window.location.hash.replace(/^#\/(?:user-center\/)?/, '');
+const target = routes.has(requested) ? requested : 'account';
+window.location.replace(`/index.html${window.location.search}#/${target}`);
+export {};

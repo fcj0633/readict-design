@@ -19,13 +19,16 @@ export const defaults: Preferences = {
   pronunciation: 'en-GB'
 };
 export const storageKey = 'readict-user-center-prototype-v1';
-function load() {
+function load(fallback: Omit<Preferences, 'pronunciation'> = defaults) {
   try {
     const value = JSON.parse(localStorage.getItem(storageKey) || 'null');
     const p = value?.preferences;
     if (!p || !['Georgia', 'Palatino Linotype', 'Arial'].includes(p.font) || ![18, 20, 22, 24].includes(p.fontSize) || ![1.6, 1.8, 2].includes(p.lineHeight) || ![660, 720].includes(p.width) || !['white', 'warm', 'dark'].includes(p.theme) || !['en-GB', 'en-US'].includes(p.pronunciation)) return {
       nickname: 'Reader',
-      preferences: defaults
+      preferences: {
+        ...fallback,
+        pronunciation: defaults.pronunciation
+      }
     };
     return {
       nickname: typeof value.nickname === 'string' && value.nickname.trim() ? value.nickname.slice(0, 32) : 'Reader',
@@ -34,7 +37,10 @@ function load() {
   } catch {
     return {
       nickname: 'Reader',
-      preferences: defaults
+      preferences: {
+        ...fallback,
+        pronunciation: defaults.pronunciation
+      }
     };
   }
 }
@@ -69,11 +75,24 @@ type Demo = {
 };
 const Context = createContext<Demo | null>(null);
 export function DemoProvider({
-  children
+  children,
+  initialPreferences = defaults,
+  onSaved
 }: {
   children: ReactNode;
+  initialPreferences?: {
+    font: Preferences['font'];
+    fontSize: number;
+    lineHeight: number;
+    width: number;
+    theme: Preferences['theme'];
+  };
+  onSaved?: (preferences: Preferences) => void;
 }) {
-  const [initial] = useState(load),
+  const [initial] = useState(() => load({
+      ...defaults,
+      ...initialPreferences
+    } as Preferences)),
     [nickname, setNickname] = useState(initial.nickname);
   const [authenticated, setAuthenticated] = useState(true),
     [logoutFail, setLogoutFail] = useState(false),
@@ -151,6 +170,7 @@ export function DemoProvider({
         committed.current = p;
         setStored(p);
         setPhase('saved');
+        onSaved?.(p);
       }, 650);
     }, immediate ? 0 : 500);
   }
@@ -172,10 +192,15 @@ export function DemoProvider({
     generation.current++;
     const value = server.current;
     pendingDraft.current = value;
-    committed.current = value;
     setDraft(value);
+    if (!persist(value)) {
+      setPhase('error');
+      return;
+    }
+    committed.current = value;
     setStored(value);
-    setPhase(persist(value) ? 'saved' : 'error');
+    setPhase('saved');
+    onSaved?.(value);
   }
   function rename(value: string) {
     const n = value.trim().slice(0, 32);
