@@ -1,0 +1,32 @@
+[
+  {
+    "name": "pride",
+    "source": "https://standardebooks.org/ebooks/jane-austen/pride-and-prejudice",
+    "url": "https://standardebooks.org/images/covers/jane-austen_pride-and-prejudice/495dd49502f1fd5609a27a16f5af2f0a387accb4/cover.jpg"
+  },
+  {
+    "name": "garden",
+    "source": "https://standardebooks.org/ebooks/frances-hodgson-burnett/the-secret-garden",
+    "url": "https://standardebooks.org/images/covers/frances-hodgson-burnett_the-secret-garden/e414886da4054305c15ae06a308d574a0f3306d5/cover.jpg"
+  },
+  {
+    "name": "jane",
+    "source": "https://standardebooks.org/ebooks/charlotte-bronte/jane-eyre",
+    "url": "https://standardebooks.org/images/covers/charlotte-bronte_jane-eyre/315cd8030f893603f1cd1c5df3d11e000bfc3c8f/cover.jpg"
+  },
+  {
+    "name": "moby",
+    "source": "https://standardebooks.org/ebooks/herman-melville/moby-dick",
+    "url": "https://standardebooks.org/images/covers/herman-melville_moby-dick/d30d8f15cb2f832ae68dbbc08e6b2a154aa6d109/cover.jpg"
+  },
+  {
+    "name": "little-women",
+    "source": "https://standardebooks.org/ebooks/louisa-may-alcott/little-women",
+    "url": "https://standardebooks.org/images/covers/louisa-may-alcott_little-women/8733ac8e3ea8910f6ca84540675d7e9e41fe6820/cover.jpg"
+  },
+  {
+    "name": "gatsby",
+    "source": "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby",
+    "url": "https://standardebooks.org/images/covers/f-scott-fitzgerald_the-great-gatsby/399c03297cdb569cde0a0e487576c5fc3ca96ed3/cover.jpg"
+  }
+]
