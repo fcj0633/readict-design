@@ -1,0 +1,68 @@
+{
+  "startedAt": "2026-11-28T12:44:04.523Z",
+  "checks": {
+    "importState": "SUCCEEDED",
+    "card": {
+      "text": "COL 词典accept/əkˈsɛpt/V-T/V-I接受V-T相信V-T接受更多释义（7）原文语境The children accept the invitation with quiet pleasure. accept 英音accept 美音收藏",
+      "senses": 3,
+      "candidates": 0,
+      "topBefore": 265.390625,
+      "topAfter": 265.390625,
+      "sensesExpanded": 10,
+      "scrollable": true
+    },
+    "favorite": {
+      "text": "已收藏"
+    },
+    "outsideClosed": true,
+    "secondCard": "COL 词典accept/əkˈsɛpt/V-T/V-I接受V-T相信V-T接受更多释义（7）原文语境The children accept the invitation with quiet pleasure. accept 英音accept 美音已收藏",
+    "list": {
+      "rows": 1,
+      "text": "accept/əkˈsɛpt/V-T/V-I接受V-T相信V-T接受发音取消收藏",
+      "hasSentenceTab": 0,
+      "hasTime": false
+    },
+    "narrow": {
+      "overflow": false,
+      "rows": 1
+    },
+    "audioRequests": [
+      {
+        "status": 200
+      }
+    ],
+    "audio": {
+      "text": "发音",
+      "calls": [
+        {
+          "status": 206,
+          "type": "audio/mpeg"
+        }
+      ]
+    },
+    "detail": {
+      "text": "收藏详情accept/əkˈsɛpt/发音V-T/V-I接受V-T相信V-T接受V-T容忍V-T接受V-T接纳V-T接纳V-T承担 (责任等)V-T接受V-T接受原文例句The children accept the invitation with quiet pleasure. The Accepting Garden关闭详情取消收藏",
+      "examples": 1
+    },
+    "removed": true,
+    "phoneDefault": {
+      "first": "手机号",
+      "pressed": "true"
+    }
+  },
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Permissions policy violation: unload is not allowed in this document.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "pageErrors": [],
+  "email": "cr6_1795869844537@readict.test",
+  "bookId": "ced031f9-719b-45b6-8231-b3f8a9354658",
+  "audioCalls": [
+    {
+      "status": 206,
+      "type": "audio/mpeg"
+    }
+  ],
+  "finishedAt": "2026-11-28T12:44:16.750Z"
+}
