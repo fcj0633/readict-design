@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "file": "V1__create_system_metadata.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V2__identity_and_settings.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V3__spring_session_jdbc.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V4__verification_and_rate_limit.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V5__dictionary_foundation.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V6__dictionary_audio.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V7__library_books.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V8__reading_progress.sql",
+      "unchanged": true
+    },
+    {
+      "file": "V9__favorites.sql",
+      "unchanged": true
+    }
+  ],
+  "dev": "V9 before and after; startup validated 9 migrations and applied 0",
+  "test": "V9 before and after; no schema changes",
+  "testDictionary": "Imported existing validated COL local bundle; active version 140 -> 141; restored empty pointer with CAS 141 -> 142 and removed exact imported dataset. Final integration tests may increment pointer versions independently."
+}

@@ -1,0 +1,11 @@
+{
+  "results": [
+    "真实注册不自动登录并保留回跳",
+    "dev联系方式本地验证不伪造verified",
+    "真实本地恢复链路与旧会话失效",
+    "真实改密弹窗成功后重新登录"
+  ],
+  "environment": "readict_dev",
+  "migration": "V9 unchanged",
+  "mode": "DEV_LOCAL"
+}

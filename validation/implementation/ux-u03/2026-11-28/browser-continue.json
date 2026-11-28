@@ -1,0 +1,6 @@
+{
+  "secondPageCandidate": true,
+  "independentSearch": true,
+  "cursorRequests": 1,
+  "fixtureArrangement": "Existing reading progress; test-owned book last_read_at reset to created_at to place it after 20 unread imports"
+}

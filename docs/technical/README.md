@@ -37,3 +37,5 @@
 - [ADR-0008](decisions/ADR-0008-EPUB安全流水线与确定性产物.md)：**已采纳**；Java EPUB 安全流水线、确定性不可变产物与 `epub-safe-v1` 的取舍；已按此方案实现本机版本（ph-css 7.0.5），采纳不等于 V03／V04 已通过。
 
 - [M06 实施与验证记录](../../validation/implementation/m06/2026-11-25-local/README.md)：收藏、三态卡片、快照、删书保留与回原文；V9 仅测试库，开发库迁移待单独批准。
+
+- [UX-U03 正式前端融合本机实施与验证](../../validation/implementation/ux-u03/2026-11-28/README.md)：真实业务适配、共享设置与句子锚点修复，最终视觉待人工确认。

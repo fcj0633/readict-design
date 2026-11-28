@@ -1,0 +1,8 @@
+{
+  "results": [
+    "真实COL best歧义",
+    "真实COL thought未命中",
+    "真实Provider故障重试恢复FOUND"
+  ],
+  "audio": "test dataset not configured: unavailable branch; no TTS"
+}

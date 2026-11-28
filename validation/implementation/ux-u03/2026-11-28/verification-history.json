@@ -1,0 +1,23 @@
+{
+  "failuresAndCorrections": [
+    "npm ci initially failed EPERM because existing Readict Vite held a native build module. Stopped only confirmed project Vite, then npm ci/lint/test/build passed.",
+    "Shared Playwright MCP profile was in use. Used installed Playwright with isolated headless Chrome contexts; did not terminate the occupied browser.",
+    "Old redirect and 25 MB copy assertions were updated to approved /books, /settings/reading and 25 MiB contracts. An intermediate UTF-8 test-file conversion issue was restored from HEAD and corrected.",
+    "TypeScript async state narrowing in flushAll required a predicate; final type check passes.",
+    "Settings specimen text made button accessible names include sample prose. Added explicit control labels; browser checks pass.",
+    "Network retry harness originally clicked while debounce was still pending. Waited for actual failed request state before retry; exact requestId replay passed.",
+    "Actual repeated-quote favorite return failed: approved backend sentence CFI correction and exact saved-CFI browser validation fixed it.",
+    "Windows javapath launcher had a separate JDK child. Identified and stopped only the exact task child, restarted updated test JAR; intermediate port-conflict evidence remains local.",
+    "Playwright route.fetch could not reproduce the multipart file stream. Loss-of-response test reconstructs the same fixture upload through real HTTP using the captured key, aborts the browser response, then allows its real retry; passed.",
+    "Favorites reload correctly resets page-local tab state. Harness now explicitly selects sentence view after reload; retained failure screenshots.",
+    "Temporary SQL fixture setup used incorrect PowerShell native argument syntax once. Corrected explicit --execute argument; exact test-owned rows then verified.",
+    "Automatic command review rejected compound process/cleanup commands. Split service operations and used verified literal paths with per-file native PowerShell cleanup; all intended fixture cleanup completed."
+  ],
+  "limits": [
+    "No full COL quality approval",
+    "No real recording playback in this run: test audio dataset not configured",
+    "No real SMS/email delivery",
+    "No Firefox/Safari or production deployment validation",
+    "Final human visual review pending"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "books 1440 no overflow",
+    "account 1440 no overflow",
+    "reading 1440 no overflow",
+    "favorites 1440 no overflow",
+    "books 1920 no overflow",
+    "account 1920 no overflow",
+    "reading 1920 no overflow",
+    "favorites 1920 no overflow",
+    "books 1366 no overflow",
+    "account 1366 no overflow",
+    "reading 1366 no overflow",
+    "favorites 1366 no overflow",
+    "books 390 no overflow",
+    "account 390 no overflow",
+    "reading 390 no overflow",
+    "favorites 390 no overflow",
+    "two-account book/favorite ownership 404 and empty shelf",
+    "stats failure does not erase real favorite list"
+  ],
+  "pageErrors": []
+}

@@ -1,0 +1,7 @@
+{
+  "checkingDoesNotRenderPrivatePage": true,
+  "unavailableAllowsRetryWithoutGuestRedirect": true,
+  "privateRequests": 0,
+  "resetWithoutProofRedirects": true,
+  "method": "Controlled network abort for auth/me, isolated guest context; no mock user response"
+}

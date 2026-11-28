@@ -1,0 +1,6 @@
+{
+  "nonReadyNavigationDisabled": true,
+  "coverFailureFallback": true,
+  "emptyWrongTypeOver25MiB": true,
+  "fixtureArrangement": "Three exact test-owned book rows temporarily assigned IMPORTING/FAILED/BROKEN; actual UI/API projections, not prototype data"
+}

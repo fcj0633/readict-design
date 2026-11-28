@@ -1,0 +1,63 @@
+{
+  "appStatus": [],
+  "designHead": "0e71ccbf88878496fa42a1c0d83493bc06cef2ad",
+  "appHead": "6fcda1b3024c0314ad50a6ff592161eb52da6f55",
+  "designStatus": [
+    " M docs/requirements/changes/README.md",
+    " M prototypes/reader-ui/README.md",
+    " M prototypes/reader-ui/public/covers/garden.jpg",
+    " M prototypes/reader-ui/public/covers/pride.jpg",
+    " M prototypes/reader-ui/src/components/Bookshelf.tsx",
+    " M prototypes/reader-ui/src/data/mock.ts",
+    " M prototypes/reader-ui/src/lib/store.tsx",
+    " M prototypes/reader-ui/src/lib/types.ts",
+    "?? audio/",
+    "?? dict/",
+    "?? \"docs/requirements/changes/CR-0001-Quiet-Library\\351\\246\\226\\351\\241\\265\\345\\216\\237\\345\\236\\213.md\"",
+    "?? prototypes/reader-ui/public/covers/gatsby.jpg",
+    "?? prototypes/reader-ui/public/covers/jane.jpg",
+    "?? prototypes/reader-ui/public/covers/little-women.jpg",
+    "?? prototypes/reader-ui/public/covers/moby.jpg",
+    "?? prototypes/reader-ui/public/covers/sources.json",
+    "?? prototypes/reader-ui/scripts/bookshelf-preview.js",
+    "?? prototypes/reader-ui/src/components/bookshelf.css"
+  ],
+  "migrations": [
+    {
+      "file": "V1__create_system_metadata.sql",
+      "Hash": "82AF16E7BEED1F6A5E5CCCCB7E6CB074EE2F5CF5674ECC21A7FF5F0AD9FDDD9A"
+    },
+    {
+      "file": "V2__identity_and_settings.sql",
+      "Hash": "0AD128F3261DD75D5720C5AC5154031E828FC545C2DBFC9EBFE4F30DDA2B6138"
+    },
+    {
+      "file": "V3__spring_session_jdbc.sql",
+      "Hash": "12681613B92971E864ACD78FD83F4124FA84A167585C09286ECAFCC5AAA7A5F9"
+    },
+    {
+      "file": "V4__verification_and_rate_limit.sql",
+      "Hash": "710113F8C53DD31246DB287ABE8E1C5FEEEDA8A35001CED45D265B865217A133"
+    },
+    {
+      "file": "V5__dictionary_foundation.sql",
+      "Hash": "35E7A88FAF638C70CF94B6DF847F572438726F45BA8B0A135582BF1B07B5D79F"
+    },
+    {
+      "file": "V6__dictionary_audio.sql",
+      "Hash": "7244B745BBF2DA88A310F0C29C98B906D239579ED1BFE0DBDF4E0FDCB1EE3169"
+    },
+    {
+      "file": "V7__library_books.sql",
+      "Hash": "0D40AE312B714DE744C6A0B516EB4715F3CF69528575BD3363303D071C492041"
+    },
+    {
+      "file": "V8__reading_progress.sql",
+      "Hash": "0AB68AC5B3DF0E6F1CF23801D18423BF0B4DDEE24D75D0E2503494EEF17A2675"
+    },
+    {
+      "file": "V9__favorites.sql",
+      "Hash": "4F04600CF5BF44CC31FC903C7D8A5C4C876CD66661D786EE5955D13157761184"
+    }
+  ]
+}
